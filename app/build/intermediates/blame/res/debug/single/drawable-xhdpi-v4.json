@@ -1,0 +1,1158 @@
+[
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/share_vp_back.9.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/share_vp_back.9.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/edititem_img_onekey.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/edititem_img_onekey.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/about.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/about.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/popup_share_wxficon.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/popup_share_wxficon.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/buyersshow_input_icon.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/buyersshow_input_icon.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/cat1.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/cat1.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/add_r_maijiaxiu.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/add_r_maijiaxiu.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/chick.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/chick.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abs__ab_solid_dark_holo.9.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/drawable-xhdpi/abs__ab_solid_dark_holo.9.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abs__ic_menu_moreoverflow_normal_holo_light.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/drawable-xhdpi/abs__ic_menu_moreoverflow_normal_holo_light.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/progress_drawable.xml",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/progress_drawable.xml"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abs__btn_cab_done_pressed_holo_light.9.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/drawable-xhdpi/abs__btn_cab_done_pressed_holo_light.9.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abs__spinner_ab_pressed_holo_dark.9.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/drawable-xhdpi/abs__spinner_ab_pressed_holo_dark.9.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/business_community_tip2.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/business_community_tip2.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/shopedit_icon_delete.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/shopedit_icon_delete.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/more_gonglue_icon.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/more_gonglue_icon.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abs__ic_clear_search_api_holo_light.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/drawable-xhdpi/abs__ic_clear_search_api_holo_light.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/update.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/update.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/cb8.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/cb8.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/toast_back.9.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/toast_back.9.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/ssdk_logo.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/ssdk_logo.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/logo_evernote.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/logo_evernote.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/auth_follow_cb_chd.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/auth_follow_cb_chd.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/tag_icon_more.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/tag_icon_more.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/icon_top.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/icon_top.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abs__textfield_search_right_default_holo_light.9.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/drawable-xhdpi/abs__textfield_search_right_default_holo_light.9.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/logo_qq.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/logo_qq.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/reg_shopinfo_miaomiao.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/reg_shopinfo_miaomiao.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/cat2.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/cat2.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/logo_renren.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/logo_renren.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abs__cab_background_bottom_holo_light.9.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/drawable-xhdpi/abs__cab_background_bottom_holo_light.9.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abs__progress_bg_holo_dark.9.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/drawable-xhdpi/abs__progress_bg_holo_dark.9.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/wd91sf_06.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/wd91sf_06.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abs__ic_search_api_holo_light.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/drawable-xhdpi/abs__ic_search_api_holo_light.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/main_shop_list_item_icon_bg.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/main_shop_list_item_icon_bg.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abs__ab_bottom_solid_dark_holo.9.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/drawable-xhdpi/abs__ab_bottom_solid_dark_holo.9.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/weixin1.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/weixin1.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/arrow_title_left.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/arrow_title_left.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abs__cab_background_top_holo_light.9.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/drawable-xhdpi/abs__cab_background_top_holo_light.9.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abs__list_activated_holo.9.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/drawable-xhdpi/abs__list_activated_holo.9.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/gray_point.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/gray_point.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/tab_bottom_bg.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/tab_bottom_bg.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/logo_foursquare.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/logo_foursquare.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/logo_neteasemicroblog.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/logo_neteasemicroblog.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abs__btn_cab_done_default_holo_light.9.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/drawable-xhdpi/abs__btn_cab_done_default_holo_light.9.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/promo_setting_title.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/promo_setting_title.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abs__progress_primary_holo_dark.9.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/drawable-xhdpi/abs__progress_primary_holo_dark.9.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/logo_twitter.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/logo_twitter.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/sdl_background_dark.9.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/sdl_background_dark.9.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abs__menu_dropdown_panel_holo_light.9.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/drawable-xhdpi/abs__menu_dropdown_panel_holo_light.9.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/reds.9.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/reds.9.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abs__ab_stacked_transparent_dark_holo.9.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/drawable-xhdpi/abs__ab_stacked_transparent_dark_holo.9.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/logo_line.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/logo_line.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/progress_line.9.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/progress_line.9.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abs__cab_background_bottom_holo_dark.9.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/drawable-xhdpi/abs__cab_background_bottom_holo_dark.9.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/logo_sohumicroblog.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/logo_sohumicroblog.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/progress_text.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/progress_text.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/customergallery_item_camerabg.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/customergallery_item_camerabg.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/business_community_tip.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/business_community_tip.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/copyurl_guide_layout.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/copyurl_guide_layout.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/logo_qzone.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/logo_qzone.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/weixinkefu.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/weixinkefu.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/buyersshow_shared_qzone_noselect.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/buyersshow_shared_qzone_noselect.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/tag_popup_title_close_p.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/tag_popup_title_close_p.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/cb1.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/cb1.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abs__ic_ab_back_holo_dark.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/drawable-xhdpi/abs__ic_ab_back_holo_dark.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/logo_mingdao.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/logo_mingdao.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/reg_title.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/reg_title.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abs__btn_cab_done_pressed_holo_dark.9.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/drawable-xhdpi/abs__btn_cab_done_pressed_holo_dark.9.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/mask_overall.9.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/mask_overall.9.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/add_s_maijiaxiu.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/add_s_maijiaxiu.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abs__ic_cab_done_holo_dark.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/drawable-xhdpi/abs__ic_cab_done_holo_dark.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abs__ab_bottom_transparent_light_holo.9.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/drawable-xhdpi/abs__ab_bottom_transparent_light_holo.9.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abs__spinner_48_outer_holo.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/drawable-xhdpi/abs__spinner_48_outer_holo.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/logo_vkontakte.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/logo_vkontakte.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/tag_bg.9.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/tag_bg.9.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/img_cancel.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/img_cancel.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abs__ic_go.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/drawable-xhdpi/abs__ic_go.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/shibai.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/shibai.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/majiaxiu_share_s.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/majiaxiu_share_s.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/maijiaxiu_link.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/maijiaxiu_link.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/customergallery_item_cb_selected.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/customergallery_item_cb_selected.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/input_box_reg.9.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/input_box_reg.9.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abs__progress_bg_holo_light.9.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/drawable-xhdpi/abs__progress_bg_holo_light.9.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/header_deflaut.jpg",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/header_deflaut.jpg"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/logo_sohusuishenkan.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/logo_sohusuishenkan.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/cb3.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/cb3.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abs__list_pressed_holo_light.9.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/drawable-xhdpi/abs__list_pressed_holo_light.9.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abs__spinner_ab_pressed_holo_light.9.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/drawable-xhdpi/abs__spinner_ab_pressed_holo_light.9.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/tag_content_bg.9.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/tag_content_bg.9.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/webview_failed.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/webview_failed.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/add_payment.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/add_payment.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/weixin2.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/weixin2.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/business_community_edittext_corner_bg.xml",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/business_community_edittext_corner_bg.xml"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/maijiaxiu_share_r.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/maijiaxiu_share_r.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abs__ab_transparent_dark_holo.9.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/drawable-xhdpi/abs__ab_transparent_dark_holo.9.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abs__textfield_search_selected_holo_dark.9.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/drawable-xhdpi/abs__textfield_search_selected_holo_dark.9.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/logo_wechatmoments.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/logo_wechatmoments.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/buyersshow_shared_qzone_selected.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/buyersshow_shared_qzone_selected.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/keyboard_confirm_p.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/keyboard_confirm_p.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/load_page3.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/load_page3.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abs__btn_cab_done_default_holo_dark.9.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/drawable-xhdpi/abs__btn_cab_done_default_holo_dark.9.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abs__ic_ab_back_holo_light.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/drawable-xhdpi/abs__ic_ab_back_holo_light.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/man_promo_success.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/man_promo_success.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/cat3.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/cat3.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/mydynamic_note_link.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/mydynamic_note_link.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/logo_kaixin.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/logo_kaixin.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abs__ic_clear_disabled.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/drawable-xhdpi/abs__ic_clear_disabled.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/tencent.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/tencent.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/test_menu.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/test_menu.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abs__cab_background_top_holo_dark.9.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/drawable-xhdpi/abs__cab_background_top_holo_dark.9.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abs__spinner_ab_disabled_holo_light.9.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/drawable-xhdpi/abs__spinner_ab_disabled_holo_light.9.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/ggtmc.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/ggtmc.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/maijiaxiu_edit.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/maijiaxiu_edit.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abs__textfield_search_selected_holo_light.9.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/drawable-xhdpi/abs__textfield_search_selected_holo_light.9.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/logo_shortmessage.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/logo_shortmessage.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abs__list_focused_holo.9.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/drawable-xhdpi/abs__list_focused_holo.9.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/first_guide.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/first_guide.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/light.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/light.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/tag_popup_title_bg.9.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/tag_popup_title_bg.9.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/white560.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/white560.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abs__textfield_search_right_selected_holo_dark.9.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/drawable-xhdpi/abs__textfield_search_right_selected_holo_dark.9.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/shopedit_icon_new.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/shopedit_icon_new.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/close_icon_maijiaxiu.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/close_icon_maijiaxiu.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/pin.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/pin.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/reg_shopinfo_deflaut.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/reg_shopinfo_deflaut.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abs__textfield_search_right_default_holo_dark.9.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/drawable-xhdpi/abs__textfield_search_right_default_holo_dark.9.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/push.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/push.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/buyersshow_shared_twb_noselect.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/buyersshow_shared_twb_noselect.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/cb7.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/cb7.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/buyersshow_shared_wb_selected.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/buyersshow_shared_wb_selected.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/reg_success_frame.9.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/reg_success_frame.9.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abs__ab_bottom_transparent_dark_holo.9.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/drawable-xhdpi/abs__ab_bottom_transparent_dark_holo.9.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/load_page2.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/load_page2.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/progress_background.9.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/progress_background.9.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/popup_share_icon.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/popup_share_icon.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abs__textfield_search_default_holo_dark.9.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/drawable-xhdpi/abs__textfield_search_default_holo_dark.9.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/logo_googleplus.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/logo_googleplus.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abs__list_selector_disabled_holo_dark.9.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/drawable-xhdpi/abs__list_selector_disabled_holo_dark.9.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abs__ab_solid_light_holo.9.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/drawable-xhdpi/abs__ab_solid_light_holo.9.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abs__menu_dropdown_panel_holo_dark.9.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/drawable-xhdpi/abs__menu_dropdown_panel_holo_dark.9.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/edititem_img_success.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/edititem_img_success.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abs__btn_cab_done_focused_holo_dark.9.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/drawable-xhdpi/abs__btn_cab_done_focused_holo_dark.9.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/ic_launcher.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abs__ab_stacked_solid_dark_holo.9.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/drawable-xhdpi/abs__ab_stacked_solid_dark_holo.9.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/edititem_img_moments.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/edititem_img_moments.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/edititem_img_friends.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/edititem_img_friends.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/logo_youdao.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/logo_youdao.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/tut2.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/tut2.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/btn_sel.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/btn_sel.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/logout.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/logout.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/popup_share_copyicon.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/popup_share_copyicon.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/qq.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/qq.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abs__progress_secondary_holo_dark.9.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/drawable-xhdpi/abs__progress_secondary_holo_dark.9.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/weixin_pengyong_maijiaxiu.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/weixin_pengyong_maijiaxiu.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abs__ab_transparent_light_holo.9.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/drawable-xhdpi/abs__ab_transparent_light_holo.9.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/newitem_img_add.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/newitem_img_add.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abs__list_divider_holo_light.9.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/drawable-xhdpi/abs__list_divider_holo_light.9.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abs__list_divider_holo_dark.9.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/drawable-xhdpi/abs__list_divider_holo_dark.9.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abs__ab_bottom_solid_inverse_holo.9.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/drawable-xhdpi/abs__ab_bottom_solid_inverse_holo.9.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/load_page4.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/load_page4.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/logo_douban.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/logo_douban.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abs__progress_secondary_holo_light.9.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/drawable-xhdpi/abs__progress_secondary_holo_light.9.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/jiaocheng_yijiandaifa.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/jiaocheng_yijiandaifa.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/defaul_tavator.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/defaul_tavator.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/tag_input_bg.9.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/tag_input_bg.9.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/ballon_release.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/ballon_release.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/tag_btn_bg_p.9.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/tag_btn_bg_p.9.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/add_card.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/add_card.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abs__btn_cab_done_focused_holo_light.9.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/drawable-xhdpi/abs__btn_cab_done_focused_holo_light.9.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/list_item_default.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/list_item_default.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/tut_icon.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/tut_icon.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abs__list_pressed_holo_dark.9.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/drawable-xhdpi/abs__list_pressed_holo_dark.9.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/buyersshow_shared_twb_selected.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/buyersshow_shared_twb_selected.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abs__spinner_ab_default_holo_light.9.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/drawable-xhdpi/abs__spinner_ab_default_holo_light.9.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/logo_tencentweibo.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/logo_tencentweibo.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abs__ab_bottom_solid_light_holo.9.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/drawable-xhdpi/abs__ab_bottom_solid_light_holo.9.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/auth_follow_cb_unc.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/auth_follow_cb_unc.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abs__ic_commit_search_api_holo_light.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/drawable-xhdpi/abs__ic_commit_search_api_holo_light.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abs__tab_selected_focused_holo.9.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/drawable-xhdpi/abs__tab_selected_focused_holo.9.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/cb2.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/cb2.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/an_chick1.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/an_chick1.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/cb5.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/cb5.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/cb4.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/cb4.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abs__spinner_ab_focused_holo_light.9.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/drawable-xhdpi/abs__spinner_ab_focused_holo_light.9.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abs__list_selector_disabled_holo_light.9.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/drawable-xhdpi/abs__list_selector_disabled_holo_light.9.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/logo_wechat.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/logo_wechat.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/popup_share_wxmicon.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/popup_share_wxmicon.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/btn_back_nor.9.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/btn_back_nor.9.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/next_preview.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/next_preview.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/red.9.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/red.9.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/logo_linkedin.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/logo_linkedin.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/sdl_background_light.9.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/sdl_background_light.9.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abs__progress_primary_holo_light.9.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/drawable-xhdpi/abs__progress_primary_holo_light.9.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/ssdk_auth_title_back.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/ssdk_auth_title_back.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abs__ic_voice_search.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/drawable-xhdpi/abs__ic_voice_search.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/dash.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/dash.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/buyersshow_shared_wb_noselect.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/buyersshow_shared_wb_noselect.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/title_back.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/title_back.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abs__spinner_ab_focused_holo_dark.9.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/drawable-xhdpi/abs__spinner_ab_focused_holo_dark.9.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/mydynamic_note_read.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/mydynamic_note_read.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/title_man_pressed_red.9.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/title_man_pressed_red.9.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/edittext_back.9.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/edittext_back.9.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/arrow_white_right.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/arrow_white_right.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/logo_tumblr.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/logo_tumblr.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/tag_input_focus_bg.9.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/tag_input_focus_bg.9.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abs__ab_share_pack_holo_dark.9.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/drawable-xhdpi/abs__ab_share_pack_holo_dark.9.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/tag_popup_title_close.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/tag_popup_title_close.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/commodity_list_item_menu_bg.9.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/commodity_list_item_menu_bg.9.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abs__ab_solid_shadow_holo.9.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/drawable-xhdpi/abs__ab_solid_shadow_holo.9.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/logo_pinterest.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/logo_pinterest.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/weixin_moments_maijiaxiu.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/weixin_moments_maijiaxiu.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abs__ic_clear_search_api_disabled_holo_light.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/drawable-xhdpi/abs__ic_clear_search_api_disabled_holo_light.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/write.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/write.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abs__textfield_search_right_selected_holo_light.9.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/drawable-xhdpi/abs__textfield_search_right_selected_holo_light.9.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abs__ab_share_pack_holo_light.9.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/drawable-xhdpi/abs__ab_share_pack_holo_light.9.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abs__spinner_ab_default_holo_dark.9.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/drawable-xhdpi/abs__spinner_ab_default_holo_dark.9.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/an_chick4.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/an_chick4.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/icon.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/icon.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/edititem_img_newitem.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/edititem_img_newitem.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/buyersshow_link_icon.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/buyersshow_link_icon.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/beijing.9.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/beijing.9.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abs__textfield_search_default_holo_light.9.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/drawable-xhdpi/abs__textfield_search_default_holo_light.9.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/tag_btn_bg.9.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/tag_btn_bg.9.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abs__spinner_48_inner_holo.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/drawable-xhdpi/abs__spinner_48_inner_holo.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/main_bottom_bg.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/main_bottom_bg.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/white_preview.9.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/white_preview.9.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/buyersshow_link_icon_grey.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/buyersshow_link_icon_grey.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/logo_wechatfavorite.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/logo_wechatfavorite.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/load_page1.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/load_page1.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abs__ic_menu_share_holo_light.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/drawable-xhdpi/abs__ic_menu_share_holo_light.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/ssdk_back_arr.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/ssdk_back_arr.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abs__ab_stacked_solid_light_holo.9.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/drawable-xhdpi/abs__ab_stacked_solid_light_holo.9.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abs__list_longpressed_holo.9.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/drawable-xhdpi/abs__list_longpressed_holo.9.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/white.9.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/white.9.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/weixin_payment_icon.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/weixin_payment_icon.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abs__ic_cab_done_holo_light.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/drawable-xhdpi/abs__ic_cab_done_holo_light.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abs__ic_menu_share_holo_dark.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/drawable-xhdpi/abs__ic_menu_share_holo_dark.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/logo_yixinmoments.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/logo_yixinmoments.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abs__ic_menu_moreoverflow_normal_holo_dark.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/drawable-xhdpi/abs__ic_menu_moreoverflow_normal_holo_dark.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abs__ab_stacked_transparent_light_holo.9.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/drawable-xhdpi/abs__ab_stacked_transparent_light_holo.9.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/btn_cancel_back.9.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/btn_cancel_back.9.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/logo_dropbox.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/logo_dropbox.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/mydynamic_note_reply.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/mydynamic_note_reply.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abs__spinner_ab_disabled_holo_dark.9.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/drawable-xhdpi/abs__spinner_ab_disabled_holo_dark.9.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/cb6.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/cb6.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/weixin_collect_money.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/weixin_collect_money.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/title_maijiaxiu.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/title_maijiaxiu.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/shopedit_icon_in.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/shopedit_icon_in.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/reg_shopinfo_text.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/reg_shopinfo_text.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/ssdk_oks_yaoyiyao.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/ssdk_oks_yaoyiyao.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/an_chick3.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/an_chick3.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/zhezhao.9.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/zhezhao.9.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/title_shadow.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/title_shadow.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/weibo.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/weibo.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/mydynamic_note_link2.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/mydynamic_note_link2.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abs__ic_go_search_api_holo_light.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/drawable-xhdpi/abs__ic_go_search_api_holo_light.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abs__ic_commit_search_api_holo_dark.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/drawable-xhdpi/abs__ic_commit_search_api_holo_dark.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/customergallery_item_cb_noselect.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/customergallery_item_cb_noselect.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abs__tab_selected_holo.9.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/drawable-xhdpi/abs__tab_selected_holo.9.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/ssdk_oks_shake_to_share_back.xml",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/ssdk_oks_shake_to_share_back.xml"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/logo_facebook.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/logo_facebook.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/tag_bg_none.9.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/tag_bg_none.9.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/white_point.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/white_point.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/logo_flickr.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/logo_flickr.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/more_app_icon.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/more_app_icon.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abs__ic_voice_search_api_holo_light.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/drawable-xhdpi/abs__ic_voice_search_api_holo_light.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/mag.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/mag.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/btn_rest.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/btn_rest.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/maijiaxiu_delete.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/maijiaxiu_delete.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/logo_instagram.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/logo_instagram.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/ssdk_title_div.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/ssdk_title_div.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/tag_bar_bg.9.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/tag_bar_bg.9.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/promotion_icon.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/promotion_icon.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/logo_email.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/logo_email.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/keyboard_confirm.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/keyboard_confirm.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abs__tab_unselected_pressed_holo.9.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/drawable-xhdpi/abs__tab_unselected_pressed_holo.9.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abs__tab_selected_pressed_holo.9.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/drawable-xhdpi/abs__tab_selected_pressed_holo.9.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/tut3.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/tut3.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/logo_sinaweibo.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/logo_sinaweibo.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abs__toast_frame.9.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/drawable-xhdpi/abs__toast_frame.9.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/an_chick2.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/an_chick2.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/newitem_item_add.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/newitem_item_add.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abs__ic_search.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/drawable-xhdpi/abs__ic_search.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/logo_yixin.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/logo_yixin.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/auth_title_back.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/auth_title_back.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/icon_data_select.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/icon_data_select.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/input_box_p_reg.9.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/input_box_p_reg.9.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/tut1.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/drawable-xhdpi/tut1.png"
+    }
+]

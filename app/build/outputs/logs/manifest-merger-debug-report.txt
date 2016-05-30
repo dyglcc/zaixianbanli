@@ -1,0 +1,1131 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:2:1-725:12
+	xmlns:tools
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:3:5-51
+	xmlns:android
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:2:11-69
+	package
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:4:5-27
+		INJECTED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml
+supports-screens
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:8:5-13:39
+	android:resizeable
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:12:9-34
+	android:largeScreens
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:10:9-36
+	android:anyDensity
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:9:9-34
+	android:normalScreens
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:11:9-37
+	android:smallScreens
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:13:9-36
+permission#getui.permission.GetuiService.qfpay.wxshop
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:16:5-18:44
+	android:protectionLevel
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:18:9-41
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:17:9-66
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:20:5-79
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:20:22-76
+uses-permission#android.permission.WAKE_LOCK
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:21:5-68
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:21:22-65
+uses-permission#getui.permission.GetuiService.qfpay.wxshop
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:22:5-82
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:22:22-79
+uses-permission#android.permission.INTERNET
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:23:5-67
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:23:22-64
+uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:24:5-81
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:24:22-78
+uses-permission#android.permission.WRITE_SETTINGS
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:25:5-73
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:25:22-70
+uses-permission#android.permission.VIBRATE
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:26:5-66
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:26:22-63
+uses-permission#android.permission.ACCESS_DOWNLOAD_MANAGER
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:27:5-82
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:27:22-79
+uses-permission#android.permission.DOWNLOAD_WITHOUT_NOTIFICATION
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:28:5-88
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:28:22-85
+uses-permission#android.permission.SYSTEM_ALERT_WINDOW
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:29:5-78
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:29:22-75
+uses-permission#android.permission.DISABLE_KEYGUARD
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:30:5-75
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:30:22-72
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:31:5-81
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:31:22-78
+uses-permission#android.permission.GET_TASKS
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:32:5-68
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:32:22-65
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:33:5-76
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:33:22-73
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:34:5-79
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:34:22-76
+uses-permission#android.permission.CHANGE_WIFI_STATE
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:35:5-76
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:35:22-73
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:36:5-81
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:36:22-78
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:37:5-75
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:37:22-72
+uses-permission#android.permission.MANAGE_ACCOUNTS
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:38:5-74
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:38:22-71
+uses-permission#android.permission.GET_ACCOUNTS
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:39:5-71
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:39:22-68
+uses-permission#com.android.launcher.permission.INSTALL_SHORTCUT
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:40:5-88
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:40:22-85
+uses-permission#android.permission.CAMERA
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:41:5-65
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:41:22-62
+uses-permission#android.permission.CALL_PHONE
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:42:5-69
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:42:22-66
+uses-permission#android.permission.RECORD_AUDIO
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:48:5-71
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:48:22-68
+uses-permission#android.permission.ACCESS_MOCK_LOCATION
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:51:5-79
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:51:22-76
+uses-permission#android.permission.MOUNT_UNMOUNT_FILESYSTEMS
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:53:5-83
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:53:22-81
+uses-permission#android.permission.MODIFY_AUDIO_SETTINGS
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:59:5-80
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:59:22-77
+uses-feature#android.hardware.camera
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:65:5-60
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:65:19-57
+uses-feature#android.hardware.camera.autofocus
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:66:5-70
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:66:19-67
+application
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:68:5-723:19
+MERGED from [com.actionbarsherlock:actionbarsherlock:4.4.0] /Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/AndroidManifest.xml:4:3-17
+MERGED from [com.daimajia.easing:library:1.0.0] /Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.daimajia.easing/library/1.0.0/AndroidManifest.xml:11:5-15:19
+	android:label
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:75:9-41
+	android:allowBackup
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:70:9-35
+	android:icon
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:72:9-38
+		REJECTED from [com.daimajia.easing:library:1.0.0] /Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.daimajia.easing/library/1.0.0/AndroidManifest.xml:13:9-45
+	android:theme
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:79:9-42
+	android:hardwareAccelerated
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:74:9-43
+	android:largeHeap
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:76:9-33
+	android:killAfterRestore
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:73:9-40
+	tools:replace
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:80:9-37
+	android:allowClearUserData
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:71:9-43
+	android:persistent
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:78:9-34
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:69:9-43
+	android:logo
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:77:9-54
+activity#qfpay.wxshop.ui.main.WelcomeActivity_
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:84:9-95:20
+	android:screenOrientation
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:87:13-49
+	android:theme
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:89:13-49
+	android:exported
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:86:13-36
+	android:taskAffinity
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:88:13-48
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:85:13-53
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:90:13-94:29
+action#android.intent.action.MAIN
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:91:17-69
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:91:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:93:17-77
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:93:27-74
+activity#qfpay.wxshop.ui.main.MainActivity_
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:97:9-104:59
+	android:windowSoftInputMode
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:104:13-56
+	android:screenOrientation
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:102:13-49
+	android:configChanges
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:99:13-63
+	android:theme
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:103:13-63
+	android:hardwareAccelerated
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:100:13-47
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:98:13-50
+	android:launchMode
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:101:13-44
+activity#qfpay.wxshop.ui.web.CommonWebActivity_
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:106:9-110:52
+	android:screenOrientation
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:110:13-49
+	android:configChanges
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:108:13-74
+	android:exported
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:109:13-36
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:107:13-54
+activity#qfpay.wxshop.ui.web.WebActivity_
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:111:9-115:52
+	android:screenOrientation
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:115:13-49
+	android:configChanges
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:113:13-74
+	android:exported
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:114:13-36
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:112:13-48
+activity#qfpay.wxshop.ui.web.huoyuan.CommonWebActivityHuoyuan_
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:118:9-122:52
+	android:screenOrientation
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:122:13-49
+	android:configChanges
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:120:13-74
+	android:exported
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:121:13-36
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:119:13-69
+activity#qfpay.wxshop.activity.OnekeybehalfWhatisActivty_
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:124:9-129:52
+	android:screenOrientation
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:129:13-49
+	android:configChanges
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:126:13-74
+	android:hardwareAccelerated
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:128:13-48
+	android:exported
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:127:13-36
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:125:13-64
+activity#qfpay.wxshop.ui.commodity.detailmanager.ItemDetailManagerActivity_
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:131:9-136:63
+	android:windowSoftInputMode
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:134:13-60
+	android:screenOrientation
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:135:13-49
+	android:configChanges
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:133:13-74
+	android:theme
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:136:13-60
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:132:13-94
+activity#qfpay.wxshop.ui.commodity.detailmanager.ItemDetailDescriptionEditActivity_
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:138:9-142:63
+	android:windowSoftInputMode
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:140:13-61
+	android:screenOrientation
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:141:13-49
+	android:theme
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:142:13-60
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:139:13-102
+activity#qfpay.wxshop.ui.commodity.detailmanager.ItemDetailSkuEditActivity_
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:144:3-148:63
+	android:windowSoftInputMode
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:146:13-61
+	android:screenOrientation
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:147:13-49
+	android:theme
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:148:13-60
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:145:13-94
+activity#qfpay.wxshop.ui.commodity.EdititemDoneActivity_
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:150:9-154:63
+	android:screenOrientation
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:153:13-49
+	android:configChanges
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:152:13-74
+	android:theme
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:154:13-60
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:151:13-63
+activity#qfpay.wxshop.activity.ManagePreViewActivity_
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:156:9-160:63
+	android:screenOrientation
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:159:13-49
+	android:configChanges
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:158:13-74
+	android:theme
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:160:13-60
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:157:13-72
+activity#qfpay.wxshop.activity.ShopHeaderPhotoPickerActivity_
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:162:9-165:52
+	android:screenOrientation
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:165:13-49
+	android:configChanges
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:164:13-74
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:163:13-68
+activity#qfpay.wxshop.activity.ShopHeaderPreviewActivity_
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:167:9-170:52
+	android:screenOrientation
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:170:13-49
+	android:configChanges
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:169:13-74
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:168:13-64
+activity#qfpay.wxshop.ui.main.MoreActivity_
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:172:9-175:52
+	android:screenOrientation
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:175:13-49
+	android:configChanges
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:174:13-74
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:173:13-50
+activity#qfpay.wxshop.activity.menu.MyInComeActivity
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:177:9-180:52
+	android:screenOrientation
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:180:13-49
+	android:configChanges
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:179:13-74
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:178:13-59
+activity#qfpay.wxshop.ui.presonalinfo.ShopInfoActivity_
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:182:9-185:52
+	android:screenOrientation
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:185:13-49
+	android:configChanges
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:184:13-74
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:183:13-62
+activity#qfpay.wxshop.activity.NoticeCenterActivity_
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:187:9-190:52
+	android:screenOrientation
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:190:13-49
+	android:configChanges
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:189:13-74
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:188:13-59
+activity#qfpay.wxshop.ui.customergallery.CustomerGalleryActivity_
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:192:9-194:58
+	android:screenOrientation
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:194:13-55
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:193:13-72
+activity#qfpay.wxshop.ui.lovelycard.LovelyCardEditActivity_
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:196:9-198:58
+	android:screenOrientation
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:198:13-55
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:197:13-66
+activity#qfpay.wxshop.ui.lovelycard.LovelyCardCommentActivity_
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:200:9-202:58
+	android:screenOrientation
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:202:13-55
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:201:13-69
+receiver#qfpay.wxshop.getui.RestartReceiver
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:205:9-59
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:205:19-56
+receiver#qfpay.wxshop.config.update.InstalledReceiver
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:206:9-216:20
+	android:enabled
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:208:13-35
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:207:13-60
+intent-filter#android.intent.action.PACKAGE_REPLACED
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:209:13-215:29
+action#android.intent.action.PACKAGE_REPLACED
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:210:17-211:26
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:210:25-78
+data
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:213:17-214:24
+	android:scheme
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:213:23-47
+meta-data#PUSH_APPID
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:220:9-222:54
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:221:13-38
+	android:value
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:222:13-51
+meta-data#PUSH_APPKEY
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:223:9-225:54
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:224:13-39
+	android:value
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:225:13-51
+meta-data#PUSH_APPSECRET
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:226:9-228:54
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:227:13-42
+	android:value
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:228:13-51
+meta-data#PUSH_GROUPID
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:229:9-231:32
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:230:13-40
+	android:value
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:231:13-29
+receiver#qfpay.wxshop.getui.PushReceiver
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:234:9-240:20
+	android:exported
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:236:13-37
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:235:13-47
+intent-filter#com.igexin.sdk.action.8imafJpbTT6OWrl4CZRjA2
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:237:13-239:29
+action#com.igexin.sdk.action.8imafJpbTT6OWrl4CZRjA2
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:238:17-87
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:238:25-84
+service#qfpay.wxshop.getui.StartAlarmService
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:242:9-247:19
+	android:label
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:245:13-41
+	android:process
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:246:13-44
+	android:exported
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:244:13-36
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:243:13-52
+service#com.igexin.sdk.PushService
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:250:9-255:19
+	android:label
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:253:13-47
+	android:process
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:254:13-43
+	android:exported
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:252:13-36
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:251:13-54
+receiver#com.igexin.sdk.PushReceiver
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:257:9-264:20
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:257:19-61
+intent-filter#android.intent.action.BOOT_COMPLETED+android.intent.action.USER_PRESENT+android.net.conn.CONNECTIVITY_CHANGE+com.igexin.sdk.action.refreshls
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:258:13-263:29
+action#android.intent.action.BOOT_COMPLETED
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:259:17-79
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:259:25-76
+action#android.net.conn.CONNECTIVITY_CHANGE
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:260:17-79
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:260:25-76
+action#android.intent.action.USER_PRESENT
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:261:17-77
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:261:25-74
+action#com.igexin.sdk.action.refreshls
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:262:17-74
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:262:25-71
+receiver#com.igexin.sdk.PushManagerReceiver
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:265:9-271:20
+	android:exported
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:267:13-37
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:266:13-62
+intent-filter#com.igexin.sdk.action.pushmanager
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:268:13-270:29
+action#com.igexin.sdk.action.pushmanager
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:269:17-76
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:269:25-73
+activity#com.igexin.sdk.PushActivity
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:273:9-281:20
+	android:theme
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:280:13-72
+	android:process
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:278:13-43
+	android:exported
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:276:13-37
+	android:persistent
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:277:13-38
+	android:excludeFromRecents
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:275:13-46
+	android:taskAffinity
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:279:13-67
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:274:13-55
+service#com.igexin.download.DownloadService
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:283:9-285:46
+	android:process
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:285:13-43
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:284:13-63
+receiver#com.igexin.download.DownloadReceiver
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:287:9-291:20
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:287:19-70
+intent-filter#android.net.conn.CONNECTIVITY_CHANGE
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:288:13-290:29
+provider#com.igexin.download.DownloadProvider
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:293:9-296:46
+	android:process
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:296:13-43
+	android:authorities
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:295:13-59
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:294:13-64
+activity#com.igexin.getuiext.activity.GetuiExtActivity
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:299:9-306:75
+	android:configChanges
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:301:13-72
+	android:theme
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:306:13-72
+	android:process
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:304:13-43
+	android:exported
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:303:13-37
+	android:excludeFromRecents
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:302:13-46
+	android:taskAffinity
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:305:13-62
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:300:13-73
+receiver#com.igexin.getuiext.service.PayloadReceiver
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:308:9-318:20
+	android:exported
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:310:13-37
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:309:13-71
+intent-filter#com.igexin.sdk.action.7fjUl2Z3LH6xYy7NQK4ni4+com.igexin.sdk.action.8imafJpbTT6OWrl4CZRjA2
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:311:13-317:29
+action#com.igexin.sdk.action.7fjUl2Z3LH6xYy7NQK4ni4
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:314:17-87
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:314:25-84
+service#com.igexin.getuiext.service.GetuiExtService
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:320:9-322:46
+	android:process
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:322:13-43
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:321:13-71
+activity#qfpay.wxshop.activity.NewIntroductionActivity
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:327:9-332:20
+	android:screenOrientation
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:330:13-49
+	android:configChanges
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:329:13-74
+	android:theme
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:331:13-72
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:328:13-61
+activity#com.loveplusplus.demo.image.ImagePagerActivity
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:334:9-339:20
+	android:screenOrientation
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:337:13-49
+	android:configChanges
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:336:13-74
+	android:theme
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:338:13-60
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:335:13-74
+activity#qfpay.wxshop.activity.EditAdvertisementActivity_
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:341:9-346:20
+	android:screenOrientation
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:344:13-49
+	android:configChanges
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:343:13-74
+	android:theme
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:345:13-60
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:342:13-64
+activity#qfpay.wxshop.activity.ShopNameEditActivity_
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:348:9-353:20
+	android:screenOrientation
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:351:13-49
+	android:configChanges
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:350:13-74
+	android:theme
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:352:13-60
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:349:13-59
+activity#qfpay.wxshop.activity.WeixinEditActivity_
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:355:9-360:20
+	android:screenOrientation
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:358:13-49
+	android:configChanges
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:357:13-74
+	android:theme
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:359:13-60
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:356:13-57
+activity#qfpay.wxshop.activity.CopyUrlGuideActivity_
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:362:9-367:20
+	android:screenOrientation
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:365:13-49
+	android:configChanges
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:364:13-74
+	android:theme
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:366:13-60
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:363:13-59
+activity#qfpay.wxshop.ui.selectpic.ImageGridActivity
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:369:9-374:20
+	android:screenOrientation
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:372:13-49
+	android:configChanges
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:371:13-74
+	android:theme
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:373:13-60
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:370:13-59
+activity#qfpay.wxshop.ui.selectpic.AlbumActivity
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:376:9-381:20
+	android:screenOrientation
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:379:13-49
+	android:configChanges
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:378:13-74
+	android:theme
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:380:13-60
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:377:13-55
+activity#qfpay.wxshop.activity.FunctionNoticeActivity
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:383:9-388:20
+	android:screenOrientation
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:386:13-49
+	android:configChanges
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:385:13-74
+	android:theme
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:387:13-60
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:384:13-60
+activity#qfpay.wxshop.activity.MaijiaxiuEmptyActivity_
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:390:9-395:20
+	android:screenOrientation
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:393:13-49
+	android:configChanges
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:392:13-74
+	android:theme
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:394:13-60
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:391:13-61
+activity#qfpay.wxshop.ui.buyersshow.BuyersShowReleaseActivity_
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:397:9-402:20
+	android:screenOrientation
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:400:13-49
+	android:configChanges
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:399:13-74
+	android:theme
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:401:13-60
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:398:13-69
+activity#qfpay.wxshop.ui.buyersshow.GoodsListForBuyersShowActivity_
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:404:9-409:20
+	android:screenOrientation
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:407:13-49
+	android:configChanges
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:406:13-74
+	android:theme
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:408:13-60
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:405:13-74
+activity#qfpay.wxshop.activity.ManPromoActivity_
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:411:9-417:20
+	android:windowSoftInputMode
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:416:13-73
+	android:screenOrientation
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:414:13-49
+	android:configChanges
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:413:13-74
+	android:theme
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:415:13-60
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:412:13-55
+activity#qfpay.wxshop.activity.ManPromoSuccessActivity_
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:419:9-425:20
+	android:windowSoftInputMode
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:424:13-73
+	android:screenOrientation
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:422:13-49
+	android:configChanges
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:421:13-74
+	android:theme
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:423:13-60
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:420:13-62
+activity#qfpay.wxshop.activity.share.ShareActivity
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:427:9-433:20
+	android:windowSoftInputMode
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:432:13-73
+	android:screenOrientation
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:430:13-49
+	android:configChanges
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:429:13-74
+	android:theme
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:431:13-46
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:428:13-57
+activity#qfpay.wxshop.activity.GeneralWebViewActivity
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:435:9-440:20
+	android:screenOrientation
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:438:13-49
+	android:configChanges
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:437:13-74
+	android:theme
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:439:13-60
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:436:13-60
+activity#qfpay.wxshop.activity.ChangePwdActivity
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:442:9-447:20
+	android:screenOrientation
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:445:13-49
+	android:configChanges
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:444:13-74
+	android:theme
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:446:13-60
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:443:13-55
+activity#qfpay.wxshop.activity.ChangeBankCardInfoActivity
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:449:9-455:20
+	android:screenOrientation
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:452:13-49
+	android:configChanges
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:451:13-74
+	android:theme
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:454:13-60
+	android:exported
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:453:13-36
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:450:13-64
+activity#qfpay.wxshop.activity.InputShopNameActivity
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:457:9-463:20
+	android:windowSoftInputMode
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:462:13-73
+	android:screenOrientation
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:460:13-49
+	android:configChanges
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:459:13-74
+	android:theme
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:461:13-60
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:458:13-59
+activity#qfpay.wxshop.activity.LoginActivity
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:465:9-470:20
+	android:screenOrientation
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:468:13-49
+	android:configChanges
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:467:13-74
+	android:theme
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:469:13-60
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:466:13-51
+activity#qfpay.wxshop.activity.LoginPreviewActivity
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:472:9-476:20
+	android:screenOrientation
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:475:13-49
+	android:configChanges
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:474:13-74
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:473:13-58
+activity#qfpay.wxshop.activity.RegBankAccountActivity_
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:478:9-484:20
+	android:windowSoftInputMode
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:483:13-73
+	android:screenOrientation
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:481:13-49
+	android:configChanges
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:480:13-74
+	android:theme
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:482:13-60
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:479:13-61
+activity#qfpay.wxshop.activity.BankPickerActivity_
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:487:9-493:20
+	android:windowSoftInputMode
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:492:13-73
+	android:screenOrientation
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:490:13-49
+	android:configChanges
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:489:13-74
+	android:theme
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:491:13-60
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:488:13-57
+activity#qfpay.wxshop.activity.RegStep1Activity_
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:496:9-501:20
+	android:windowSoftInputMode
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:500:13-68
+	android:screenOrientation
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:499:13-49
+	android:configChanges
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:498:13-74
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:497:13-55
+activity#qfpay.wxshop.activity.RegCompleteActivity
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:503:9-507:20
+	android:screenOrientation
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:506:13-49
+	android:configChanges
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:505:13-74
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:504:13-57
+activity#qfpay.wxshop.activity.ShowBankInfoActivity
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:509:9-513:20
+	android:screenOrientation
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:512:13-49
+	android:configChanges
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:511:13-74
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:510:13-58
+activity#qfpay.wxshop.activity.menu.WeiXinCollectMoney
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:515:9-521:20
+	android:windowSoftInputMode
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:520:13-73
+	android:screenOrientation
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:518:13-49
+	android:configChanges
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:517:13-74
+	android:theme
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:519:13-60
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:516:13-61
+activity#qfpay.wxshop.ui.presonalinfo.ShopInfoActivity
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:523:9-529:20
+	android:windowSoftInputMode
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:528:13-73
+	android:screenOrientation
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:526:13-49
+	android:configChanges
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:525:13-74
+	android:theme
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:527:13-60
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:524:13-61
+activity#qfpay.wxshop.activity.SelectPicActivity_
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:532:9-537:20
+	android:screenOrientation
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:535:13-49
+	android:configChanges
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:534:13-74
+	android:theme
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:536:13-60
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:533:13-56
+activity#qfpay.wxshop.activity.OtherShopViewActivity
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:539:9-544:20
+	android:screenOrientation
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:542:13-49
+	android:configChanges
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:541:13-74
+	android:theme
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:543:13-60
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:540:13-59
+activity#qfpay.wxshop.activity.SSNPublishActivity_
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:546:9-551:20
+	android:windowSoftInputMode
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:550:13-55
+	android:screenOrientation
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:549:13-49
+	android:configChanges
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:548:13-74
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:547:13-57
+activity#qfpay.wxshop.activity.SSNEditActivity_
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:553:9-558:20
+	android:windowSoftInputMode
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:557:13-55
+	android:screenOrientation
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:556:13-49
+	android:configChanges
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:555:13-74
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:554:13-54
+activity#qfpay.wxshop.ui.BusinessCommunity.MyTopicDetailActivity_
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:559:9-564:20
+	android:windowSoftInputMode
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:563:13-55
+	android:screenOrientation
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:562:13-49
+	android:configChanges
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:561:13-74
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:560:13-72
+activity#qfpay.wxshop.ui.BusinessCommunity.MyDynamicOneNoteDetailActivity_
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:565:9-570:20
+	android:windowSoftInputMode
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:569:13-55
+	android:screenOrientation
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:568:13-49
+	android:configChanges
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:567:13-74
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:566:13-81
+activity#qfpay.wxshop.ui.BusinessCommunity.PublishNoteActivity_
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:571:9-575:20
+	android:screenOrientation
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:574:13-49
+	android:configChanges
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:573:13-74
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:572:13-70
+activity#qfpay.wxshop.ui.BusinessCommunity.MyNotificationListActivity_
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:576:9-581:20
+	android:windowSoftInputMode
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:580:13-55
+	android:screenOrientation
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:579:13-49
+	android:configChanges
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:578:13-74
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:577:13-77
+activity#qfpay.wxshop.ui.BusinessCommunity.AllTopicListActivity_
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:582:9-587:20
+	android:windowSoftInputMode
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:586:13-55
+	android:screenOrientation
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:585:13-49
+	android:configChanges
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:584:13-74
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:583:13-71
+activity#qfpay.wxshop.ui.BusinessCommunity.ShopDetailActivity_
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:588:9-593:20
+	android:windowSoftInputMode
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:592:13-55
+	android:screenOrientation
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:591:13-49
+	android:configChanges
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:590:13-74
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:589:13-69
+activity#qfpay.wxshop.activity.LabelActivity_
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:594:9-598:75
+	android:label
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:597:13-56
+	android:theme
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:598:13-72
+	android:hardwareAccelerated
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:596:13-47
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:595:13-52
+activity#qfpay.wxshop.activity.OfficialGoodIsWhatActivity_
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:599:9-603:75
+	android:label
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:602:13-56
+	android:theme
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:603:13-72
+	android:hardwareAccelerated
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:601:13-47
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:600:13-65
+activity#qfpay.wxshop.activity.WeixinQmmActivity
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:604:9-609:20
+	android:screenOrientation
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:607:13-49
+	android:configChanges
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:606:13-74
+	android:theme
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:608:13-60
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:605:13-55
+activity#qfpay.wxshop.activity.HuoyuanQmmActivity_
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:610:9-615:20
+	android:screenOrientation
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:613:13-49
+	android:configChanges
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:612:13-74
+	android:theme
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:614:13-60
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:611:13-69
+meta-data#UMENG_CHANNEL
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:616:9-618:46
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:617:13-41
+	android:value
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:618:13-43
+		INJECTED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml
+meta-data#FIRST_LAUNCHER
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:619:9-621:50
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:620:13-42
+	android:value
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:621:13-47
+		INJECTED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml
+meta-data#UMENG_APPKEY
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:622:9-625:21
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:623:13-40
+	android:value
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:624:13-53
+meta-data#app_name
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:626:9-628:34
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:627:13-36
+	android:value
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:628:13-31
+activity#cn.sharesdk.framework.ShareSDKUIShell
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:630:9-674:20
+	android:windowSoftInputMode
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:634:13-67
+	android:configChanges
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:632:13-74
+	android:theme
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:633:13-72
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:631:13-65
+meta-data#AuthorizeAdapter
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:644:13-111
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:644:24-55
+	android:value
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:644:56-108
+meta-data#QZoneWebShareAdapter
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:650:13-118
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:650:24-59
+	android:value
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:650:60-115
+activity#qfpay.wxshop.share.WXEntryActivity
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:675:9-680:63
+	android:screenOrientation
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:679:13-49
+	android:configChanges
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:677:13-74
+	android:theme
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:680:13-60
+	android:exported
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:678:13-36
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:676:13-50
+receiver#qfpay.wxshop.getui.LaunchReceiver
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:682:9-692:20
+	android:exported
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:685:13-36
+	android:enabled
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:684:13-35
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:683:13-49
+intent-filter#android.intent.action.BOOT_COMPLETED+android.intent.category.HOME
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:686:13-691:29
+category#android.intent.category.HOME
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:690:17-73
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:690:27-70
+receiver#qfpay.wxshop.getui.AlarmReceiver
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:693:9-696:39
+	android:exported
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:696:13-36
+	android:enabled
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:695:13-35
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:694:13-48
+meta-data#com.amap.api.v2.apikey
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:698:9-700:64
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:699:13-50
+	android:value
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:700:13-61
+activity#com.tencent.tauth.AuthActivity
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:703:9-713:20
+	android:noHistory
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:705:13-37
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:704:13-58
+	android:launchMode
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:706:13-44
+intent-filter#android.intent.action.VIEW+android.intent.category.BROWSABLE+android.intent.category.DEFAULT
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:707:13-712:29
+action#android.intent.action.VIEW
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:708:17-69
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:708:25-66
+category#android.intent.category.DEFAULT
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:709:17-76
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:709:27-73
+category#android.intent.category.BROWSABLE
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:710:17-78
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:710:27-75
+activity#com.tencent.connect.common.AssistActivity
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:714:9-718:74
+	android:screenOrientation
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:717:13-49
+	android:configChanges
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:716:13-63
+	android:theme
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:718:13-72
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:715:13-69
+meta-data#EASEMOB_APPKEY
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:720:9-88
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:720:20-49
+	android:value
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:720:51-85
+service#com.easemob.chat.EMChatService
+ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:722:9-66
+	android:name
+		ADDED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml:722:18-63
+uses-sdk
+INJECTED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.android.support:multidex:1.0.1] /Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.android.support/multidex/1.0.1/AndroidManifest.xml:18:5-42
+MERGED from [com.github.lzyzsd:circleprogress:1.0.1] /Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.github.lzyzsd/circleprogress/1.0.1/AndroidManifest.xml:7:5-9:41
+MERGED from [com.actionbarsherlock:actionbarsherlock:4.4.0] /Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/AndroidManifest.xml:3:3-70
+MERGED from [com.daimajia.easing:library:1.0.0] /Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.daimajia.easing/library/1.0.0/AndroidManifest.xml:7:5-9:41
+MERGED from [com.daimajia.androidanimations:library:1.1.3] /Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.daimajia.androidanimations/library/1.1.3/AndroidManifest.xml:8:5-10:41
+	android:targetSdkVersion
+		INJECTED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/AndroidManifest.xml
