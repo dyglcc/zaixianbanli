@@ -17,7 +17,7 @@ import java.net.URL;
 import java.util.Date;
 
 import qfpay.wxshop.R;
-import qfpay.wxshop.data.net.ConstValue;
+import qfpay.wxshop.utils.ConstValue;
 import qfpay.wxshop.utils.QMMAlert;
 import qfpay.wxshop.utils.Toaster;
 

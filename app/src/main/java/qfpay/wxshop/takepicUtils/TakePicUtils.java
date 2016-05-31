@@ -12,7 +12,6 @@ import qfpay.wxshop.ui.BusinessCommunity.PublishNoteActivity;
 import qfpay.wxshop.ui.selectpic.AlbumActivity;
 import qfpay.wxshop.utils.MobAgentTools;
 import qfpay.wxshop.utils.QMMAlert;
-import qfpay.wxshop.utils.T;
 import qfpay.wxshop.utils.Toaster;
 import android.app.Activity;
 import android.content.Context;

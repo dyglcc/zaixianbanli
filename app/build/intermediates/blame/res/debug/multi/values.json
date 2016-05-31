@@ -8634,9 +8634,30 @@
                     "startLine": 568,
                     "startColumn": 4,
                     "startOffset": 40670,
-                    "endLine": 570,
+                    "endLine": 574,
+                    "endColumn": 8,
+                    "endOffset": 40932
+                },
+                "from": {
+                    "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/zaixianbanli/android_sdk_v0/unspecified/res/values/values.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 101,
+                        "endLine": 9,
+                        "endColumn": 8,
+                        "endOffset": 363
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 575,
+                    "startColumn": 4,
+                    "startOffset": 40937,
+                    "endLine": 577,
                     "endColumn": 12,
-                    "endOffset": 40833
+                    "endOffset": 41100
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/values/styles.xml",
@@ -8652,12 +8673,12 @@
             },
             {
                 "to": {
-                    "startLine": 571,
+                    "startLine": 578,
                     "startColumn": 4,
-                    "startOffset": 40838,
-                    "endLine": 577,
+                    "startOffset": 41105,
+                    "endLine": 584,
                     "endColumn": 12,
-                    "endOffset": 41262
+                    "endOffset": 41529
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/values/styles.xml",
@@ -8673,12 +8694,12 @@
             },
             {
                 "to": {
-                    "startLine": 578,
+                    "startLine": 585,
                     "startColumn": 4,
-                    "startOffset": 41267,
-                    "endLine": 583,
+                    "startOffset": 41534,
+                    "endLine": 590,
                     "endColumn": 12,
-                    "endOffset": 41601
+                    "endOffset": 41868
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/values/styles.xml",
@@ -8694,12 +8715,12 @@
             },
             {
                 "to": {
-                    "startLine": 584,
+                    "startLine": 591,
                     "startColumn": 4,
-                    "startOffset": 41606,
-                    "endLine": 586,
+                    "startOffset": 41873,
+                    "endLine": 593,
                     "endColumn": 12,
-                    "endOffset": 41767
+                    "endOffset": 42034
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/values/styles.xml",
@@ -8715,12 +8736,12 @@
             },
             {
                 "to": {
-                    "startLine": 587,
+                    "startLine": 594,
                     "startColumn": 4,
-                    "startOffset": 41772,
-                    "endLine": 597,
+                    "startOffset": 42039,
+                    "endLine": 604,
                     "endColumn": 9,
-                    "endOffset": 42473
+                    "endOffset": 42740
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/values/sdl__theme.xml",
@@ -8736,12 +8757,12 @@
             },
             {
                 "to": {
-                    "startLine": 598,
+                    "startLine": 605,
                     "startColumn": 4,
-                    "startOffset": 42478,
-                    "endLine": 608,
+                    "startOffset": 42745,
+                    "endLine": 615,
                     "endColumn": 9,
-                    "endOffset": 43189
+                    "endOffset": 43456
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/values/sdl__theme.xml",
@@ -8757,12 +8778,12 @@
             },
             {
                 "to": {
-                    "startLine": 609,
+                    "startLine": 616,
                     "startColumn": 4,
-                    "startOffset": 43194,
-                    "endLine": 617,
+                    "startOffset": 43461,
+                    "endLine": 624,
                     "endColumn": 12,
-                    "endOffset": 43626
+                    "endOffset": 43893
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/values/styles.xml",
@@ -8778,12 +8799,12 @@
             },
             {
                 "to": {
-                    "startLine": 618,
+                    "startLine": 625,
                     "startColumn": 4,
-                    "startOffset": 43631,
-                    "endLine": 625,
+                    "startOffset": 43898,
+                    "endLine": 632,
                     "endColumn": 12,
-                    "endOffset": 44063
+                    "endOffset": 44330
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/values/styles.xml",
@@ -8799,12 +8820,12 @@
             },
             {
                 "to": {
-                    "startLine": 626,
+                    "startLine": 633,
                     "startColumn": 4,
-                    "startOffset": 44068,
-                    "endLine": 630,
+                    "startOffset": 44335,
+                    "endLine": 637,
                     "endColumn": 12,
-                    "endOffset": 44324
+                    "endOffset": 44591
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/values/styles.xml",
@@ -8820,12 +8841,12 @@
             },
             {
                 "to": {
-                    "startLine": 631,
+                    "startLine": 638,
                     "startColumn": 4,
-                    "startOffset": 44329,
-                    "endLine": 640,
+                    "startOffset": 44596,
+                    "endLine": 647,
                     "endColumn": 12,
-                    "endOffset": 44932
+                    "endOffset": 45199
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/values/themes.xml",
@@ -8841,12 +8862,12 @@
             },
             {
                 "to": {
-                    "startLine": 641,
+                    "startLine": 648,
                     "startColumn": 4,
-                    "startOffset": 44937,
-                    "endLine": 650,
+                    "startOffset": 45204,
+                    "endLine": 657,
                     "endColumn": 12,
-                    "endOffset": 45556
+                    "endOffset": 45823
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/values/themes.xml",
@@ -8862,12 +8883,12 @@
             },
             {
                 "to": {
-                    "startLine": 651,
+                    "startLine": 658,
                     "startColumn": 4,
-                    "startOffset": 45561,
-                    "endLine": 658,
+                    "startOffset": 45828,
+                    "endLine": 665,
                     "endColumn": 12,
-                    "endOffset": 46030
+                    "endOffset": 46297
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/values/themes.xml",
@@ -8883,12 +8904,12 @@
             },
             {
                 "to": {
-                    "startLine": 659,
+                    "startLine": 666,
                     "startColumn": 4,
-                    "startOffset": 46035,
-                    "endLine": 668,
+                    "startOffset": 46302,
+                    "endLine": 675,
                     "endColumn": 12,
-                    "endOffset": 46653
+                    "endOffset": 46920
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/values/themes.xml",
@@ -8904,12 +8925,12 @@
             },
             {
                 "to": {
-                    "startLine": 669,
+                    "startLine": 676,
                     "startColumn": 4,
-                    "startOffset": 46658,
-                    "endLine": 671,
+                    "startOffset": 46925,
+                    "endLine": 678,
                     "endColumn": 12,
-                    "endOffset": 46833
+                    "endOffset": 47100
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/values/styles.xml",
@@ -8925,12 +8946,12 @@
             },
             {
                 "to": {
-                    "startLine": 672,
+                    "startLine": 679,
                     "startColumn": 4,
-                    "startOffset": 46838,
-                    "endLine": 674,
+                    "startOffset": 47105,
+                    "endLine": 681,
                     "endColumn": 12,
-                    "endOffset": 47011
+                    "endOffset": 47278
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/values/styles.xml",
@@ -8946,12 +8967,12 @@
             },
             {
                 "to": {
-                    "startLine": 675,
+                    "startLine": 682,
                     "startColumn": 4,
-                    "startOffset": 47016,
-                    "endLine": 677,
+                    "startOffset": 47283,
+                    "endLine": 684,
                     "endColumn": 12,
-                    "endOffset": 47195
+                    "endOffset": 47462
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/values/styles.xml",
@@ -8967,12 +8988,12 @@
             },
             {
                 "to": {
-                    "startLine": 678,
+                    "startLine": 685,
                     "startColumn": 4,
-                    "startOffset": 47200,
-                    "endLine": 682,
+                    "startOffset": 47467,
+                    "endLine": 689,
                     "endColumn": 12,
-                    "endOffset": 47456
+                    "endOffset": 47723
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/values/styles.xml",
@@ -8988,12 +9009,12 @@
             },
             {
                 "to": {
-                    "startLine": 683,
+                    "startLine": 690,
                     "startColumn": 4,
-                    "startOffset": 47461,
-                    "endLine": 686,
+                    "startOffset": 47728,
+                    "endLine": 693,
                     "endColumn": 12,
-                    "endOffset": 47674
+                    "endOffset": 47941
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/values/styles.xml",
@@ -9009,12 +9030,12 @@
             },
             {
                 "to": {
-                    "startLine": 687,
+                    "startLine": 694,
                     "startColumn": 4,
-                    "startOffset": 47679,
-                    "endLine": 696,
+                    "startOffset": 47946,
+                    "endLine": 703,
                     "endColumn": 12,
-                    "endOffset": 48364
+                    "endOffset": 48631
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/values/themes.xml",
@@ -9030,12 +9051,12 @@
             },
             {
                 "to": {
-                    "startLine": 697,
+                    "startLine": 704,
                     "startColumn": 4,
-                    "startOffset": 48369,
-                    "endLine": 699,
+                    "startOffset": 48636,
+                    "endLine": 706,
                     "endColumn": 12,
-                    "endOffset": 48532
+                    "endOffset": 48799
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/values/themes.xml",
@@ -9051,12 +9072,12 @@
             },
             {
                 "to": {
-                    "startLine": 700,
+                    "startLine": 707,
                     "startColumn": 4,
-                    "startOffset": 48537,
-                    "endLine": 706,
+                    "startOffset": 48804,
+                    "endLine": 713,
                     "endColumn": 12,
-                    "endOffset": 48969
+                    "endOffset": 49236
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/values/themes.xml",
@@ -9072,12 +9093,12 @@
             },
             {
                 "to": {
-                    "startLine": 707,
+                    "startLine": 714,
                     "startColumn": 4,
-                    "startOffset": 48974,
-                    "endLine": 714,
+                    "startOffset": 49241,
+                    "endLine": 721,
                     "endColumn": 10,
-                    "endOffset": 49457
+                    "endOffset": 49724
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/values/themes.xml",
@@ -9093,11 +9114,11 @@
             },
             {
                 "to": {
-                    "startLine": 715,
+                    "startLine": 722,
                     "startColumn": 4,
-                    "startOffset": 49462,
+                    "startOffset": 49729,
                     "endColumn": 23,
-                    "endOffset": 49481
+                    "endOffset": 49748
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/values/sdl__theme.xml",
@@ -9112,12 +9133,12 @@
             },
             {
                 "to": {
-                    "startLine": 716,
+                    "startLine": 723,
                     "startColumn": 4,
-                    "startOffset": 49486,
-                    "endLine": 729,
+                    "startOffset": 49753,
+                    "endLine": 736,
                     "endColumn": 9,
-                    "endOffset": 50160
+                    "endOffset": 50427
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/values/sdl__theme.xml",
@@ -9133,12 +9154,12 @@
             },
             {
                 "to": {
-                    "startLine": 730,
+                    "startLine": 737,
                     "startColumn": 4,
-                    "startOffset": 50165,
-                    "endLine": 733,
+                    "startOffset": 50432,
+                    "endLine": 740,
                     "endColumn": 9,
-                    "endOffset": 50313
+                    "endOffset": 50580
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/values/sdl__theme.xml",
@@ -9154,12 +9175,12 @@
             },
             {
                 "to": {
-                    "startLine": 734,
+                    "startLine": 741,
                     "startColumn": 4,
-                    "startOffset": 50318,
-                    "endLine": 740,
+                    "startOffset": 50585,
+                    "endLine": 747,
                     "endColumn": 9,
-                    "endOffset": 50625
+                    "endOffset": 50892
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/values/sdl__theme.xml",
@@ -9175,12 +9196,12 @@
             },
             {
                 "to": {
-                    "startLine": 741,
+                    "startLine": 748,
                     "startColumn": 4,
-                    "startOffset": 50630,
-                    "endLine": 757,
+                    "startOffset": 50897,
+                    "endLine": 764,
                     "endColumn": 9,
-                    "endOffset": 51468
+                    "endOffset": 51735
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/values/sdl__theme.xml",
@@ -9196,12 +9217,12 @@
             },
             {
                 "to": {
-                    "startLine": 758,
+                    "startLine": 765,
                     "startColumn": 4,
-                    "startOffset": 51473,
-                    "endLine": 762,
+                    "startOffset": 51740,
+                    "endLine": 769,
                     "endColumn": 9,
-                    "endOffset": 51671
+                    "endOffset": 51938
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/values/sdl__theme.xml",
@@ -9217,12 +9238,12 @@
             },
             {
                 "to": {
-                    "startLine": 763,
+                    "startLine": 770,
                     "startColumn": 4,
-                    "startOffset": 51676,
-                    "endLine": 765,
+                    "startOffset": 51943,
+                    "endLine": 772,
                     "endColumn": 9,
-                    "endOffset": 51779
+                    "endOffset": 52046
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/values/sdl__theme.xml",
@@ -9238,12 +9259,12 @@
             },
             {
                 "to": {
-                    "startLine": 766,
+                    "startLine": 773,
                     "startColumn": 4,
-                    "startOffset": 51784,
-                    "endLine": 770,
+                    "startOffset": 52051,
+                    "endLine": 777,
                     "endColumn": 9,
-                    "endOffset": 51965
+                    "endOffset": 52232
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/values/sdl__theme.xml",
@@ -9259,12 +9280,12 @@
             },
             {
                 "to": {
-                    "startLine": 771,
+                    "startLine": 778,
                     "startColumn": 4,
-                    "startOffset": 51970,
-                    "endLine": 773,
+                    "startOffset": 52237,
+                    "endLine": 780,
                     "endColumn": 9,
-                    "endOffset": 52068
+                    "endOffset": 52335
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/values/sdl__theme.xml",
@@ -9280,12 +9301,12 @@
             },
             {
                 "to": {
-                    "startLine": 774,
+                    "startLine": 781,
                     "startColumn": 4,
-                    "startOffset": 52073,
-                    "endLine": 776,
+                    "startOffset": 52340,
+                    "endLine": 783,
                     "endColumn": 9,
-                    "endOffset": 52187
+                    "endOffset": 52454
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/values/sdl__theme.xml",
@@ -9301,12 +9322,12 @@
             },
             {
                 "to": {
-                    "startLine": 777,
+                    "startLine": 784,
                     "startColumn": 4,
-                    "startOffset": 52192,
-                    "endLine": 780,
+                    "startOffset": 52459,
+                    "endLine": 787,
                     "endColumn": 9,
-                    "endOffset": 52334
+                    "endOffset": 52601
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/values/sdl__theme.xml",
@@ -9322,12 +9343,12 @@
             },
             {
                 "to": {
-                    "startLine": 781,
+                    "startLine": 788,
                     "startColumn": 4,
-                    "startOffset": 52339,
-                    "endLine": 784,
+                    "startOffset": 52606,
+                    "endLine": 791,
                     "endColumn": 9,
-                    "endOffset": 52491
+                    "endOffset": 52758
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/values/sdl__theme.xml",
@@ -9343,12 +9364,12 @@
             },
             {
                 "to": {
-                    "startLine": 785,
+                    "startLine": 792,
                     "startColumn": 4,
-                    "startOffset": 52496,
-                    "endLine": 791,
+                    "startOffset": 52763,
+                    "endLine": 798,
                     "endColumn": 9,
-                    "endOffset": 52851
+                    "endOffset": 53118
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/values/sdl__theme.xml",
@@ -9364,12 +9385,12 @@
             },
             {
                 "to": {
-                    "startLine": 792,
+                    "startLine": 799,
                     "startColumn": 4,
-                    "startOffset": 52856,
-                    "endLine": 799,
+                    "startOffset": 53123,
+                    "endLine": 806,
                     "endColumn": 9,
-                    "endOffset": 53289
+                    "endOffset": 53556
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/values/sdl__theme.xml",
@@ -9385,12 +9406,12 @@
             },
             {
                 "to": {
-                    "startLine": 800,
+                    "startLine": 807,
                     "startColumn": 4,
-                    "startOffset": 53294,
-                    "endLine": 803,
+                    "startOffset": 53561,
+                    "endLine": 810,
                     "endColumn": 9,
-                    "endOffset": 53484
+                    "endOffset": 53751
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/values/sdl__theme.xml",
@@ -9406,12 +9427,12 @@
             },
             {
                 "to": {
-                    "startLine": 804,
+                    "startLine": 811,
                     "startColumn": 4,
-                    "startOffset": 53489,
-                    "endLine": 810,
+                    "startOffset": 53756,
+                    "endLine": 817,
                     "endColumn": 9,
-                    "endOffset": 53804
+                    "endOffset": 54071
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/values/sdl__theme.xml",
@@ -9427,12 +9448,12 @@
             },
             {
                 "to": {
-                    "startLine": 811,
+                    "startLine": 818,
                     "startColumn": 4,
-                    "startOffset": 53809,
-                    "endLine": 818,
+                    "startOffset": 54076,
+                    "endLine": 825,
                     "endColumn": 9,
-                    "endOffset": 54178
+                    "endOffset": 54445
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/values/sdl__theme.xml",
@@ -9448,12 +9469,12 @@
             },
             {
                 "to": {
-                    "startLine": 819,
+                    "startLine": 826,
                     "startColumn": 4,
-                    "startOffset": 54183,
-                    "endLine": 822,
+                    "startOffset": 54450,
+                    "endLine": 829,
                     "endColumn": 9,
-                    "endOffset": 54330
+                    "endOffset": 54597
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/values/sdl__theme.xml",
@@ -9469,12 +9490,12 @@
             },
             {
                 "to": {
-                    "startLine": 823,
+                    "startLine": 830,
                     "startColumn": 4,
-                    "startOffset": 54335,
-                    "endLine": 826,
+                    "startOffset": 54602,
+                    "endLine": 833,
                     "endColumn": 12,
-                    "endOffset": 54539
+                    "endOffset": 54806
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/values/values.xml",
@@ -9490,12 +9511,12 @@
             },
             {
                 "to": {
-                    "startLine": 827,
+                    "startLine": 834,
                     "startColumn": 4,
-                    "startOffset": 54544,
-                    "endLine": 829,
+                    "startOffset": 54811,
+                    "endLine": 836,
                     "endColumn": 12,
-                    "endOffset": 54685
+                    "endOffset": 54952
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/values/values.xml",
@@ -9511,11 +9532,11 @@
             },
             {
                 "to": {
-                    "startLine": 830,
+                    "startLine": 837,
                     "startColumn": 4,
-                    "startOffset": 54690,
+                    "startOffset": 54957,
                     "endColumn": 80,
-                    "endOffset": 54766
+                    "endOffset": 55033
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/values/values.xml",
@@ -9530,12 +9551,12 @@
             },
             {
                 "to": {
-                    "startLine": 831,
+                    "startLine": 838,
                     "startColumn": 4,
-                    "startOffset": 54771,
-                    "endLine": 833,
+                    "startOffset": 55038,
+                    "endLine": 840,
                     "endColumn": 12,
-                    "endOffset": 54924
+                    "endOffset": 55191
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/values/values.xml",
@@ -9551,12 +9572,12 @@
             },
             {
                 "to": {
-                    "startLine": 834,
+                    "startLine": 841,
                     "startColumn": 4,
-                    "startOffset": 54929,
-                    "endLine": 842,
+                    "startOffset": 55196,
+                    "endLine": 849,
                     "endColumn": 12,
-                    "endOffset": 55407
+                    "endOffset": 55674
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/values/values.xml",
@@ -9572,12 +9593,12 @@
             },
             {
                 "to": {
-                    "startLine": 843,
+                    "startLine": 850,
                     "startColumn": 4,
-                    "startOffset": 55412,
-                    "endLine": 847,
+                    "startOffset": 55679,
+                    "endLine": 854,
                     "endColumn": 12,
-                    "endOffset": 55681
+                    "endOffset": 55948
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/values/values.xml",
@@ -9593,12 +9614,12 @@
             },
             {
                 "to": {
-                    "startLine": 848,
+                    "startLine": 855,
                     "startColumn": 4,
-                    "startOffset": 55686,
-                    "endLine": 855,
+                    "startOffset": 55953,
+                    "endLine": 862,
                     "endColumn": 12,
-                    "endOffset": 56148
+                    "endOffset": 56415
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/values/values.xml",
@@ -9614,12 +9635,12 @@
             },
             {
                 "to": {
-                    "startLine": 856,
+                    "startLine": 863,
                     "startColumn": 4,
-                    "startOffset": 56153,
-                    "endLine": 861,
+                    "startOffset": 56420,
+                    "endLine": 868,
                     "endColumn": 12,
-                    "endOffset": 56499
+                    "endOffset": 56766
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/values/values.xml",
@@ -9635,12 +9656,12 @@
             },
             {
                 "to": {
-                    "startLine": 862,
+                    "startLine": 869,
                     "startColumn": 4,
-                    "startOffset": 56504,
-                    "endLine": 865,
+                    "startOffset": 56771,
+                    "endLine": 872,
                     "endColumn": 12,
-                    "endOffset": 56766
+                    "endOffset": 57033
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/values/values.xml",
@@ -9656,12 +9677,12 @@
             },
             {
                 "to": {
-                    "startLine": 866,
+                    "startLine": 873,
                     "startColumn": 4,
-                    "startOffset": 56771,
-                    "endLine": 875,
+                    "startOffset": 57038,
+                    "endLine": 882,
                     "endColumn": 12,
-                    "endOffset": 57400
+                    "endOffset": 57667
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/values/values.xml",
@@ -9677,12 +9698,12 @@
             },
             {
                 "to": {
-                    "startLine": 876,
+                    "startLine": 883,
                     "startColumn": 4,
-                    "startOffset": 57405,
-                    "endLine": 886,
+                    "startOffset": 57672,
+                    "endLine": 893,
                     "endColumn": 12,
-                    "endOffset": 58089
+                    "endOffset": 58356
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/values/values.xml",
@@ -9698,11 +9719,11 @@
             },
             {
                 "to": {
-                    "startLine": 887,
+                    "startLine": 894,
                     "startColumn": 4,
-                    "startOffset": 58094,
+                    "startOffset": 58361,
                     "endColumn": 82,
-                    "endOffset": 58172
+                    "endOffset": 58439
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/values/values.xml",
@@ -9717,11 +9738,11 @@
             },
             {
                 "to": {
-                    "startLine": 888,
+                    "startLine": 895,
                     "startColumn": 4,
-                    "startOffset": 58177,
+                    "startOffset": 58444,
                     "endColumn": 108,
-                    "endOffset": 58281
+                    "endOffset": 58548
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/values/values.xml",
@@ -9736,12 +9757,12 @@
             },
             {
                 "to": {
-                    "startLine": 889,
+                    "startLine": 896,
                     "startColumn": 4,
-                    "startOffset": 58286,
-                    "endLine": 892,
+                    "startOffset": 58553,
+                    "endLine": 899,
                     "endColumn": 12,
-                    "endOffset": 58494
+                    "endOffset": 58761
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/values/values.xml",
@@ -9757,12 +9778,12 @@
             },
             {
                 "to": {
-                    "startLine": 893,
+                    "startLine": 900,
                     "startColumn": 4,
-                    "startOffset": 58499,
-                    "endLine": 895,
+                    "startOffset": 58766,
+                    "endLine": 902,
                     "endColumn": 12,
-                    "endOffset": 58625
+                    "endOffset": 58892
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/values/values.xml",
@@ -9778,11 +9799,11 @@
             },
             {
                 "to": {
-                    "startLine": 896,
+                    "startLine": 903,
                     "startColumn": 4,
-                    "startOffset": 58630,
+                    "startOffset": 58897,
                     "endColumn": 94,
-                    "endOffset": 58720
+                    "endOffset": 58987
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/values/values.xml",
@@ -9797,11 +9818,11 @@
             },
             {
                 "to": {
-                    "startLine": 897,
+                    "startLine": 904,
                     "startColumn": 4,
-                    "startOffset": 58725,
+                    "startOffset": 58992,
                     "endColumn": 128,
-                    "endOffset": 58849
+                    "endOffset": 59116
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/values/values.xml",
@@ -9816,11 +9837,11 @@
             },
             {
                 "to": {
-                    "startLine": 898,
+                    "startLine": 905,
                     "startColumn": 4,
-                    "startOffset": 58854,
+                    "startOffset": 59121,
                     "endColumn": 128,
-                    "endOffset": 58978
+                    "endOffset": 59245
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/values/values.xml",
@@ -9835,12 +9856,12 @@
             },
             {
                 "to": {
-                    "startLine": 899,
+                    "startLine": 906,
                     "startColumn": 4,
-                    "startOffset": 58983,
-                    "endLine": 903,
+                    "startOffset": 59250,
+                    "endLine": 910,
                     "endColumn": 12,
-                    "endOffset": 59255
+                    "endOffset": 59522
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/values/values.xml",
@@ -9856,12 +9877,12 @@
             },
             {
                 "to": {
-                    "startLine": 904,
+                    "startLine": 911,
                     "startColumn": 4,
-                    "startOffset": 59260,
-                    "endLine": 907,
+                    "startOffset": 59527,
+                    "endLine": 914,
                     "endColumn": 12,
-                    "endOffset": 59462
+                    "endOffset": 59729
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/values/values.xml",
@@ -9877,12 +9898,12 @@
             },
             {
                 "to": {
-                    "startLine": 908,
+                    "startLine": 915,
                     "startColumn": 4,
-                    "startOffset": 59467,
-                    "endLine": 910,
+                    "startOffset": 59734,
+                    "endLine": 917,
                     "endColumn": 12,
-                    "endOffset": 59587
+                    "endOffset": 59854
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/values/values.xml",
@@ -9898,11 +9919,11 @@
             },
             {
                 "to": {
-                    "startLine": 911,
+                    "startLine": 918,
                     "startColumn": 4,
-                    "startOffset": 59592,
+                    "startOffset": 59859,
                     "endColumn": 90,
-                    "endOffset": 59678
+                    "endOffset": 59945
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/values/values.xml",
@@ -9917,12 +9938,12 @@
             },
             {
                 "to": {
-                    "startLine": 912,
+                    "startLine": 919,
                     "startColumn": 4,
-                    "startOffset": 59683,
-                    "endLine": 917,
+                    "startOffset": 59950,
+                    "endLine": 924,
                     "endColumn": 12,
-                    "endOffset": 60033
+                    "endOffset": 60300
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/values/values.xml",
@@ -9938,12 +9959,12 @@
             },
             {
                 "to": {
-                    "startLine": 918,
+                    "startLine": 925,
                     "startColumn": 4,
-                    "startOffset": 60038,
-                    "endLine": 921,
+                    "startOffset": 60305,
+                    "endLine": 928,
                     "endColumn": 12,
-                    "endOffset": 60297
+                    "endOffset": 60564
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/values/values.xml",
@@ -9959,12 +9980,12 @@
             },
             {
                 "to": {
-                    "startLine": 922,
+                    "startLine": 929,
                     "startColumn": 4,
-                    "startOffset": 60302,
-                    "endLine": 925,
+                    "startOffset": 60569,
+                    "endLine": 932,
                     "endColumn": 12,
-                    "endOffset": 60574
+                    "endOffset": 60841
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/values/values.xml",
@@ -9980,12 +10001,12 @@
             },
             {
                 "to": {
-                    "startLine": 926,
+                    "startLine": 933,
                     "startColumn": 4,
-                    "startOffset": 60579,
-                    "endLine": 929,
+                    "startOffset": 60846,
+                    "endLine": 936,
                     "endColumn": 12,
-                    "endOffset": 60830
+                    "endOffset": 61097
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/values/values.xml",
@@ -10001,12 +10022,12 @@
             },
             {
                 "to": {
-                    "startLine": 930,
+                    "startLine": 937,
                     "startColumn": 4,
-                    "startOffset": 60835,
-                    "endLine": 933,
+                    "startOffset": 61102,
+                    "endLine": 940,
                     "endColumn": 12,
-                    "endOffset": 61101
+                    "endOffset": 61368
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/values/values.xml",
@@ -10022,12 +10043,12 @@
             },
             {
                 "to": {
-                    "startLine": 934,
+                    "startLine": 941,
                     "startColumn": 4,
-                    "startOffset": 61106,
-                    "endLine": 937,
+                    "startOffset": 61373,
+                    "endLine": 944,
                     "endColumn": 12,
-                    "endOffset": 61366
+                    "endOffset": 61633
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/values/values.xml",
@@ -10043,12 +10064,12 @@
             },
             {
                 "to": {
-                    "startLine": 938,
+                    "startLine": 945,
                     "startColumn": 4,
-                    "startOffset": 61371,
-                    "endLine": 941,
+                    "startOffset": 61638,
+                    "endLine": 948,
                     "endColumn": 12,
-                    "endOffset": 61644
+                    "endOffset": 61911
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/values/values.xml",
@@ -10064,12 +10085,12 @@
             },
             {
                 "to": {
-                    "startLine": 942,
+                    "startLine": 949,
                     "startColumn": 4,
-                    "startOffset": 61649,
-                    "endLine": 945,
+                    "startOffset": 61916,
+                    "endLine": 952,
                     "endColumn": 12,
-                    "endOffset": 61901
+                    "endOffset": 62168
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/values/values.xml",
@@ -10085,12 +10106,12 @@
             },
             {
                 "to": {
-                    "startLine": 946,
+                    "startLine": 953,
                     "startColumn": 4,
-                    "startOffset": 61906,
-                    "endLine": 949,
+                    "startOffset": 62173,
+                    "endLine": 956,
                     "endColumn": 12,
-                    "endOffset": 62173
+                    "endOffset": 62440
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/values/values.xml",
@@ -10106,12 +10127,12 @@
             },
             {
                 "to": {
-                    "startLine": 950,
+                    "startLine": 957,
                     "startColumn": 4,
-                    "startOffset": 62178,
-                    "endLine": 953,
+                    "startOffset": 62445,
+                    "endLine": 960,
                     "endColumn": 12,
-                    "endOffset": 62379
+                    "endOffset": 62646
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/values/values.xml",
@@ -10127,12 +10148,12 @@
             },
             {
                 "to": {
-                    "startLine": 954,
+                    "startLine": 961,
                     "startColumn": 4,
-                    "startOffset": 62384,
-                    "endLine": 958,
+                    "startOffset": 62651,
+                    "endLine": 965,
                     "endColumn": 12,
-                    "endOffset": 62649
+                    "endOffset": 62916
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/values/values.xml",
@@ -10148,12 +10169,12 @@
             },
             {
                 "to": {
-                    "startLine": 959,
+                    "startLine": 966,
                     "startColumn": 4,
-                    "startOffset": 62654,
-                    "endLine": 961,
+                    "startOffset": 62921,
+                    "endLine": 968,
                     "endColumn": 12,
-                    "endOffset": 62807
+                    "endOffset": 63074
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/values/values.xml",
@@ -10169,12 +10190,12 @@
             },
             {
                 "to": {
-                    "startLine": 962,
+                    "startLine": 969,
                     "startColumn": 4,
-                    "startOffset": 62812,
-                    "endLine": 964,
+                    "startOffset": 63079,
+                    "endLine": 971,
                     "endColumn": 12,
-                    "endOffset": 62936
+                    "endOffset": 63203
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/values/values.xml",
@@ -10190,12 +10211,12 @@
             },
             {
                 "to": {
-                    "startLine": 965,
+                    "startLine": 972,
                     "startColumn": 4,
-                    "startOffset": 62941,
-                    "endLine": 967,
+                    "startOffset": 63208,
+                    "endLine": 974,
                     "endColumn": 12,
-                    "endOffset": 63065
+                    "endOffset": 63332
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/values/values.xml",
@@ -10211,12 +10232,12 @@
             },
             {
                 "to": {
-                    "startLine": 968,
+                    "startLine": 975,
                     "startColumn": 4,
-                    "startOffset": 63070,
-                    "endLine": 972,
+                    "startOffset": 63337,
+                    "endLine": 979,
                     "endColumn": 12,
-                    "endOffset": 63332
+                    "endOffset": 63599
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/values/values.xml",
@@ -10232,12 +10253,12 @@
             },
             {
                 "to": {
-                    "startLine": 973,
+                    "startLine": 980,
                     "startColumn": 4,
-                    "startOffset": 63337,
-                    "endLine": 976,
+                    "startOffset": 63604,
+                    "endLine": 983,
                     "endColumn": 12,
-                    "endOffset": 63534
+                    "endOffset": 63801
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/values/vpi__styles.xml",
@@ -10253,12 +10274,12 @@
             },
             {
                 "to": {
-                    "startLine": 977,
+                    "startLine": 984,
                     "startColumn": 4,
-                    "startOffset": 63539,
-                    "endLine": 982,
+                    "startOffset": 63806,
+                    "endLine": 989,
                     "endColumn": 12,
-                    "endOffset": 63887
+                    "endOffset": 64154
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/values/vpi__styles.xml",
@@ -10274,12 +10295,12 @@
             },
             {
                 "to": {
-                    "startLine": 983,
+                    "startLine": 990,
                     "startColumn": 4,
-                    "startOffset": 63892,
-                    "endLine": 1049,
+                    "startOffset": 64159,
+                    "endLine": 1056,
                     "endColumn": 12,
-                    "endOffset": 69042
+                    "endOffset": 69309
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/values/values.xml",
@@ -10295,12 +10316,12 @@
             },
             {
                 "to": {
-                    "startLine": 1050,
+                    "startLine": 1057,
                     "startColumn": 4,
-                    "startOffset": 69047,
-                    "endLine": 1116,
+                    "startOffset": 69314,
+                    "endLine": 1123,
                     "endColumn": 12,
-                    "endOffset": 74423
+                    "endOffset": 74690
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/values/values.xml",
@@ -10316,12 +10337,12 @@
             },
             {
                 "to": {
-                    "startLine": 1117,
+                    "startLine": 1124,
                     "startColumn": 4,
-                    "startOffset": 74428,
-                    "endLine": 1150,
+                    "startOffset": 74695,
+                    "endLine": 1157,
                     "endColumn": 12,
-                    "endOffset": 77317
+                    "endOffset": 77584
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/values/values.xml",
@@ -10337,12 +10358,12 @@
             },
             {
                 "to": {
-                    "startLine": 1151,
+                    "startLine": 1158,
                     "startColumn": 4,
-                    "startOffset": 77322,
-                    "endLine": 1154,
+                    "startOffset": 77589,
+                    "endLine": 1161,
                     "endColumn": 12,
-                    "endOffset": 77479
+                    "endOffset": 77746
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/values/values.xml",
@@ -10358,12 +10379,12 @@
             },
             {
                 "to": {
-                    "startLine": 1155,
+                    "startLine": 1162,
                     "startColumn": 4,
-                    "startOffset": 77484,
-                    "endLine": 1158,
+                    "startOffset": 77751,
+                    "endLine": 1165,
                     "endColumn": 12,
-                    "endOffset": 77635
+                    "endOffset": 77902
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/values/values.xml",
@@ -10379,12 +10400,12 @@
             },
             {
                 "to": {
-                    "startLine": 1159,
+                    "startLine": 1166,
                     "startColumn": 4,
-                    "startOffset": 77640,
-                    "endLine": 1161,
+                    "startOffset": 77907,
+                    "endLine": 1168,
                     "endColumn": 12,
-                    "endOffset": 77813
+                    "endOffset": 78080
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/values/themes.xml",
@@ -10400,12 +10421,12 @@
             },
             {
                 "to": {
-                    "startLine": 1162,
+                    "startLine": 1169,
                     "startColumn": 4,
-                    "startOffset": 77818,
-                    "endLine": 1163,
+                    "startOffset": 78085,
+                    "endLine": 1170,
                     "endColumn": 12,
-                    "endOffset": 77852
+                    "endOffset": 78119
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/values/vpi__styles.xml",
@@ -10421,12 +10442,12 @@
             },
             {
                 "to": {
-                    "startLine": 1164,
+                    "startLine": 1171,
                     "startColumn": 4,
-                    "startOffset": 77857,
-                    "endLine": 1167,
+                    "startOffset": 78124,
+                    "endLine": 1174,
                     "endColumn": 12,
-                    "endOffset": 78042
+                    "endOffset": 78309
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/values/vpi__styles.xml",
@@ -10442,12 +10463,12 @@
             },
             {
                 "to": {
-                    "startLine": 1168,
+                    "startLine": 1175,
                     "startColumn": 4,
-                    "startOffset": 78047,
-                    "endLine": 1179,
+                    "startOffset": 78314,
+                    "endLine": 1186,
                     "endColumn": 12,
-                    "endOffset": 78938
+                    "endOffset": 79205
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/values/values.xml",
@@ -10463,12 +10484,12 @@
             },
             {
                 "to": {
-                    "startLine": 1180,
+                    "startLine": 1187,
                     "startColumn": 4,
-                    "startOffset": 78943,
-                    "endLine": 1191,
+                    "startOffset": 79210,
+                    "endLine": 1198,
                     "endColumn": 12,
-                    "endOffset": 79822
+                    "endOffset": 80089
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/values/values.xml",
@@ -10484,12 +10505,12 @@
             },
             {
                 "to": {
-                    "startLine": 1192,
+                    "startLine": 1199,
                     "startColumn": 4,
-                    "startOffset": 79827,
-                    "endLine": 1196,
+                    "startOffset": 80094,
+                    "endLine": 1203,
                     "endColumn": 12,
-                    "endOffset": 80083
+                    "endOffset": 80350
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/values/values.xml",
@@ -10505,12 +10526,12 @@
             },
             {
                 "to": {
-                    "startLine": 1197,
+                    "startLine": 1204,
                     "startColumn": 4,
-                    "startOffset": 80088,
-                    "endLine": 1205,
+                    "startOffset": 80355,
+                    "endLine": 1212,
                     "endColumn": 12,
-                    "endOffset": 80546
+                    "endOffset": 80813
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/values/values.xml",
@@ -10526,12 +10547,12 @@
             },
             {
                 "to": {
-                    "startLine": 1206,
+                    "startLine": 1213,
                     "startColumn": 4,
-                    "startOffset": 80551,
-                    "endLine": 1211,
+                    "startOffset": 80818,
+                    "endLine": 1218,
                     "endColumn": 12,
-                    "endOffset": 80883
+                    "endOffset": 81150
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/values/values.xml",
@@ -10547,12 +10568,12 @@
             },
             {
                 "to": {
-                    "startLine": 1212,
+                    "startLine": 1219,
                     "startColumn": 4,
-                    "startOffset": 80888,
-                    "endLine": 1220,
+                    "startOffset": 81155,
+                    "endLine": 1227,
                     "endColumn": 12,
-                    "endOffset": 81397
+                    "endOffset": 81664
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/values/values.xml",
@@ -10568,12 +10589,12 @@
             },
             {
                 "to": {
-                    "startLine": 1221,
+                    "startLine": 1228,
                     "startColumn": 4,
-                    "startOffset": 81402,
-                    "endLine": 1223,
+                    "startOffset": 81669,
+                    "endLine": 1230,
                     "endColumn": 12,
-                    "endOffset": 81553
+                    "endOffset": 81820
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/values/values.xml",
@@ -10589,12 +10610,12 @@
             },
             {
                 "to": {
-                    "startLine": 1224,
+                    "startLine": 1231,
                     "startColumn": 4,
-                    "startOffset": 81558,
-                    "endLine": 1228,
+                    "startOffset": 81825,
+                    "endLine": 1235,
                     "endColumn": 12,
-                    "endOffset": 81887
+                    "endOffset": 82154
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/values/values.xml",
@@ -10610,12 +10631,12 @@
             },
             {
                 "to": {
-                    "startLine": 1229,
+                    "startLine": 1236,
                     "startColumn": 4,
-                    "startOffset": 81892,
-                    "endLine": 1232,
+                    "startOffset": 82159,
+                    "endLine": 1239,
                     "endColumn": 12,
-                    "endOffset": 82186
+                    "endOffset": 82453
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/values/values.xml",
@@ -10631,11 +10652,11 @@
             },
             {
                 "to": {
-                    "startLine": 1233,
+                    "startLine": 1240,
                     "startColumn": 4,
-                    "startOffset": 82191,
+                    "startOffset": 82458,
                     "endColumn": 102,
-                    "endOffset": 82289
+                    "endOffset": 82556
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/values/values.xml",
@@ -10650,12 +10671,12 @@
             },
             {
                 "to": {
-                    "startLine": 1234,
+                    "startLine": 1241,
                     "startColumn": 4,
-                    "startOffset": 82294,
-                    "endLine": 1239,
+                    "startOffset": 82561,
+                    "endLine": 1246,
                     "endColumn": 12,
-                    "endOffset": 82627
+                    "endOffset": 82894
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/values/values.xml",
@@ -10671,11 +10692,11 @@
             },
             {
                 "to": {
-                    "startLine": 1240,
+                    "startLine": 1247,
                     "startColumn": 4,
-                    "startOffset": 82632,
+                    "startOffset": 82899,
                     "endColumn": 101,
-                    "endOffset": 82729
+                    "endOffset": 82996
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/values/values.xml",
@@ -10690,12 +10711,12 @@
             },
             {
                 "to": {
-                    "startLine": 1241,
+                    "startLine": 1248,
                     "startColumn": 4,
-                    "startOffset": 82734,
-                    "endLine": 1250,
+                    "startOffset": 83001,
+                    "endLine": 1257,
                     "endColumn": 12,
-                    "endOffset": 83571
+                    "endOffset": 83838
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/values/values.xml",
@@ -10711,12 +10732,12 @@
             },
             {
                 "to": {
-                    "startLine": 1251,
+                    "startLine": 1258,
                     "startColumn": 4,
-                    "startOffset": 83576,
-                    "endLine": 1262,
+                    "startOffset": 83843,
+                    "endLine": 1269,
                     "endColumn": 12,
-                    "endOffset": 84439
+                    "endOffset": 84706
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/values/values.xml",
@@ -10732,12 +10753,12 @@
             },
             {
                 "to": {
-                    "startLine": 1263,
+                    "startLine": 1270,
                     "startColumn": 4,
-                    "startOffset": 84444,
-                    "endLine": 1274,
+                    "startOffset": 84711,
+                    "endLine": 1281,
                     "endColumn": 12,
-                    "endOffset": 85335
+                    "endOffset": 85602
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/values/values.xml",
@@ -10753,11 +10774,11 @@
             },
             {
                 "to": {
-                    "startLine": 1275,
+                    "startLine": 1282,
                     "startColumn": 4,
-                    "startOffset": 85340,
+                    "startOffset": 85607,
                     "endColumn": 100,
-                    "endOffset": 85436
+                    "endOffset": 85703
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/values/values.xml",
@@ -10772,11 +10793,11 @@
             },
             {
                 "to": {
-                    "startLine": 1276,
+                    "startLine": 1283,
                     "startColumn": 4,
-                    "startOffset": 85441,
+                    "startOffset": 85708,
                     "endColumn": 66,
-                    "endOffset": 85503
+                    "endOffset": 85770
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/values/values.xml",
@@ -10791,11 +10812,11 @@
             },
             {
                 "to": {
-                    "startLine": 1277,
+                    "startLine": 1284,
                     "startColumn": 4,
-                    "startOffset": 85508,
+                    "startOffset": 85775,
                     "endColumn": 102,
-                    "endOffset": 85606
+                    "endOffset": 85873
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/values/values.xml",
@@ -10810,12 +10831,12 @@
             },
             {
                 "to": {
-                    "startLine": 1278,
+                    "startLine": 1285,
                     "startColumn": 4,
-                    "startOffset": 85611,
-                    "endLine": 1280,
+                    "startOffset": 85878,
+                    "endLine": 1287,
                     "endColumn": 12,
-                    "endOffset": 85762
+                    "endOffset": 86029
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/values/values.xml",
@@ -10831,11 +10852,11 @@
             },
             {
                 "to": {
-                    "startLine": 1281,
+                    "startLine": 1288,
                     "startColumn": 4,
-                    "startOffset": 85767,
+                    "startOffset": 86034,
                     "endColumn": 102,
-                    "endOffset": 85865
+                    "endOffset": 86132
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/values/values.xml",
@@ -10850,11 +10871,11 @@
             },
             {
                 "to": {
-                    "startLine": 1282,
+                    "startLine": 1289,
                     "startColumn": 4,
-                    "startOffset": 85870,
+                    "startOffset": 86137,
                     "endColumn": 67,
-                    "endOffset": 85933
+                    "endOffset": 86200
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/values/values.xml",
@@ -10869,11 +10890,11 @@
             },
             {
                 "to": {
-                    "startLine": 1283,
+                    "startLine": 1290,
                     "startColumn": 4,
-                    "startOffset": 85938,
+                    "startOffset": 86205,
                     "endColumn": 92,
-                    "endOffset": 86026
+                    "endOffset": 86293
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/values/values.xml",
@@ -10888,12 +10909,12 @@
             },
             {
                 "to": {
-                    "startLine": 1284,
+                    "startLine": 1291,
                     "startColumn": 4,
-                    "startOffset": 86031,
-                    "endLine": 1286,
+                    "startOffset": 86298,
+                    "endLine": 1293,
                     "endColumn": 12,
-                    "endOffset": 86189
+                    "endOffset": 86456
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/values/values.xml",
@@ -10909,12 +10930,12 @@
             },
             {
                 "to": {
-                    "startLine": 1287,
+                    "startLine": 1294,
                     "startColumn": 4,
-                    "startOffset": 86194,
-                    "endLine": 1289,
+                    "startOffset": 86461,
+                    "endLine": 1296,
                     "endColumn": 12,
-                    "endOffset": 86352
+                    "endOffset": 86619
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/values/values.xml",
@@ -10930,12 +10951,12 @@
             },
             {
                 "to": {
-                    "startLine": 1290,
+                    "startLine": 1297,
                     "startColumn": 4,
-                    "startOffset": 86357,
-                    "endLine": 1293,
+                    "startOffset": 86624,
+                    "endLine": 1300,
                     "endColumn": 12,
-                    "endOffset": 86655
+                    "endOffset": 86922
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/values/values.xml",
@@ -10951,12 +10972,12 @@
             },
             {
                 "to": {
-                    "startLine": 1294,
+                    "startLine": 1301,
                     "startColumn": 4,
-                    "startOffset": 86660,
-                    "endLine": 1297,
+                    "startOffset": 86927,
+                    "endLine": 1304,
                     "endColumn": 12,
-                    "endOffset": 86984
+                    "endOffset": 87251
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/values/values.xml",
@@ -10972,12 +10993,12 @@
             },
             {
                 "to": {
-                    "startLine": 1298,
+                    "startLine": 1305,
                     "startColumn": 4,
-                    "startOffset": 86989,
-                    "endLine": 1300,
+                    "startOffset": 87256,
+                    "endLine": 1307,
                     "endColumn": 12,
-                    "endOffset": 87190
+                    "endOffset": 87457
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/values/values.xml",
@@ -10993,12 +11014,12 @@
             },
             {
                 "to": {
-                    "startLine": 1301,
+                    "startLine": 1308,
                     "startColumn": 4,
-                    "startOffset": 87195,
-                    "endLine": 1306,
+                    "startOffset": 87462,
+                    "endLine": 1313,
                     "endColumn": 12,
-                    "endOffset": 87535
+                    "endOffset": 87802
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/values/values.xml",
@@ -11014,11 +11035,11 @@
             },
             {
                 "to": {
-                    "startLine": 1307,
+                    "startLine": 1314,
                     "startColumn": 4,
-                    "startOffset": 87540,
+                    "startOffset": 87807,
                     "endColumn": 107,
-                    "endOffset": 87643
+                    "endOffset": 87910
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/values/values.xml",
@@ -11033,12 +11054,12 @@
             },
             {
                 "to": {
-                    "startLine": 1308,
+                    "startLine": 1315,
                     "startColumn": 4,
-                    "startOffset": 87648,
-                    "endLine": 1314,
+                    "startOffset": 87915,
+                    "endLine": 1321,
                     "endColumn": 12,
-                    "endOffset": 88113
+                    "endOffset": 88380
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/values/values.xml",
@@ -11054,12 +11075,12 @@
             },
             {
                 "to": {
-                    "startLine": 1315,
+                    "startLine": 1322,
                     "startColumn": 4,
-                    "startOffset": 88118,
-                    "endLine": 1318,
+                    "startOffset": 88385,
+                    "endLine": 1325,
                     "endColumn": 12,
-                    "endOffset": 88398
+                    "endOffset": 88665
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/values/values.xml",
@@ -11075,11 +11096,11 @@
             },
             {
                 "to": {
-                    "startLine": 1319,
+                    "startLine": 1326,
                     "startColumn": 4,
-                    "startOffset": 88403,
+                    "startOffset": 88670,
                     "endColumn": 98,
-                    "endOffset": 88497
+                    "endOffset": 88764
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/values/values.xml",
@@ -11094,12 +11115,12 @@
             },
             {
                 "to": {
-                    "startLine": 1320,
+                    "startLine": 1327,
                     "startColumn": 4,
-                    "startOffset": 88502,
-                    "endLine": 1322,
+                    "startOffset": 88769,
+                    "endLine": 1329,
                     "endColumn": 12,
-                    "endOffset": 88663
+                    "endOffset": 88930
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/values/values.xml",
@@ -11115,11 +11136,11 @@
             },
             {
                 "to": {
-                    "startLine": 1323,
+                    "startLine": 1330,
                     "startColumn": 4,
-                    "startOffset": 88668,
+                    "startOffset": 88935,
                     "endColumn": 90,
-                    "endOffset": 88754
+                    "endOffset": 89021
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/values/values.xml",
@@ -11134,12 +11155,12 @@
             },
             {
                 "to": {
-                    "startLine": 1324,
+                    "startLine": 1331,
                     "startColumn": 4,
-                    "startOffset": 88759,
-                    "endLine": 1326,
+                    "startOffset": 89026,
+                    "endLine": 1333,
                     "endColumn": 12,
-                    "endOffset": 88978
+                    "endOffset": 89245
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/values/values.xml",
@@ -11155,12 +11176,12 @@
             },
             {
                 "to": {
-                    "startLine": 1327,
+                    "startLine": 1334,
                     "startColumn": 4,
-                    "startOffset": 88983,
-                    "endLine": 1330,
+                    "startOffset": 89250,
+                    "endLine": 1337,
                     "endColumn": 12,
-                    "endOffset": 89304
+                    "endOffset": 89571
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/values/values.xml",
@@ -11176,12 +11197,12 @@
             },
             {
                 "to": {
-                    "startLine": 1331,
+                    "startLine": 1338,
                     "startColumn": 4,
-                    "startOffset": 89309,
-                    "endLine": 1335,
+                    "startOffset": 89576,
+                    "endLine": 1342,
                     "endColumn": 12,
-                    "endOffset": 89700
+                    "endOffset": 89967
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/values/values.xml",
@@ -11197,12 +11218,12 @@
             },
             {
                 "to": {
-                    "startLine": 1336,
+                    "startLine": 1343,
                     "startColumn": 4,
-                    "startOffset": 89705,
-                    "endLine": 1342,
+                    "startOffset": 89972,
+                    "endLine": 1349,
                     "endColumn": 12,
-                    "endOffset": 90162
+                    "endOffset": 90429
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/values/values.xml",
@@ -11218,11 +11239,11 @@
             },
             {
                 "to": {
-                    "startLine": 1343,
+                    "startLine": 1350,
                     "startColumn": 4,
-                    "startOffset": 90167,
+                    "startOffset": 90434,
                     "endColumn": 94,
-                    "endOffset": 90257
+                    "endOffset": 90524
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/values/values.xml",
@@ -11237,11 +11258,11 @@
             },
             {
                 "to": {
-                    "startLine": 1344,
+                    "startLine": 1351,
                     "startColumn": 4,
-                    "startOffset": 90262,
+                    "startOffset": 90529,
                     "endColumn": 86,
-                    "endOffset": 90344
+                    "endOffset": 90611
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/values/values.xml",
@@ -11256,11 +11277,11 @@
             },
             {
                 "to": {
-                    "startLine": 1345,
+                    "startLine": 1352,
                     "startColumn": 4,
-                    "startOffset": 90349,
+                    "startOffset": 90616,
                     "endColumn": 74,
-                    "endOffset": 90419
+                    "endOffset": 90686
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/values/values.xml",
@@ -11275,12 +11296,12 @@
             },
             {
                 "to": {
-                    "startLine": 1346,
+                    "startLine": 1353,
                     "startColumn": 4,
-                    "startOffset": 90424,
-                    "endLine": 1349,
+                    "startOffset": 90691,
+                    "endLine": 1356,
                     "endColumn": 12,
-                    "endOffset": 90668
+                    "endOffset": 90935
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/values/values.xml",
@@ -11296,12 +11317,12 @@
             },
             {
                 "to": {
-                    "startLine": 1350,
+                    "startLine": 1357,
                     "startColumn": 4,
-                    "startOffset": 90673,
-                    "endLine": 1355,
+                    "startOffset": 90940,
+                    "endLine": 1362,
                     "endColumn": 12,
-                    "endOffset": 91107
+                    "endOffset": 91374
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/values/values.xml",
@@ -11317,12 +11338,12 @@
             },
             {
                 "to": {
-                    "startLine": 1356,
+                    "startLine": 1363,
                     "startColumn": 4,
-                    "startOffset": 91112,
-                    "endLine": 1359,
+                    "startOffset": 91379,
+                    "endLine": 1366,
                     "endColumn": 12,
-                    "endOffset": 91425
+                    "endOffset": 91692
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/values/values.xml",
@@ -11338,12 +11359,12 @@
             },
             {
                 "to": {
-                    "startLine": 1360,
+                    "startLine": 1367,
                     "startColumn": 4,
-                    "startOffset": 91430,
-                    "endLine": 1362,
+                    "startOffset": 91697,
+                    "endLine": 1369,
                     "endColumn": 12,
-                    "endOffset": 91623
+                    "endOffset": 91890
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/values/values.xml",
@@ -11359,12 +11380,12 @@
             },
             {
                 "to": {
-                    "startLine": 1363,
+                    "startLine": 1370,
                     "startColumn": 4,
-                    "startOffset": 91628,
-                    "endLine": 1367,
+                    "startOffset": 91895,
+                    "endLine": 1374,
                     "endColumn": 12,
-                    "endOffset": 91923
+                    "endOffset": 92190
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/values/values.xml",
@@ -11380,12 +11401,12 @@
             },
             {
                 "to": {
-                    "startLine": 1368,
+                    "startLine": 1375,
                     "startColumn": 4,
-                    "startOffset": 91928,
-                    "endLine": 1378,
+                    "startOffset": 92195,
+                    "endLine": 1385,
                     "endColumn": 12,
-                    "endOffset": 92551
+                    "endOffset": 92818
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/values/vpi__styles.xml",
@@ -11401,12 +11422,12 @@
             },
             {
                 "to": {
-                    "startLine": 1379,
+                    "startLine": 1386,
                     "startColumn": 4,
-                    "startOffset": 92556,
-                    "endLine": 1382,
+                    "startOffset": 92823,
+                    "endLine": 1389,
                     "endColumn": 12,
-                    "endOffset": 92753
+                    "endOffset": 93020
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/values/styles_common.xml",
@@ -11422,12 +11443,12 @@
             },
             {
                 "to": {
-                    "startLine": 1383,
+                    "startLine": 1390,
                     "startColumn": 4,
-                    "startOffset": 92758,
-                    "endLine": 1386,
+                    "startOffset": 93025,
+                    "endLine": 1393,
                     "endColumn": 12,
-                    "endOffset": 92955
+                    "endOffset": 93222
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/values/styles_common.xml",
@@ -11443,12 +11464,12 @@
             },
             {
                 "to": {
-                    "startLine": 1387,
+                    "startLine": 1394,
                     "startColumn": 4,
-                    "startOffset": 92960,
-                    "endLine": 1390,
+                    "startOffset": 93227,
+                    "endLine": 1397,
                     "endColumn": 12,
-                    "endOffset": 93161
+                    "endOffset": 93428
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/values/styles_common.xml",
@@ -11464,12 +11485,12 @@
             },
             {
                 "to": {
-                    "startLine": 1391,
+                    "startLine": 1398,
                     "startColumn": 4,
-                    "startOffset": 93166,
-                    "endLine": 1394,
+                    "startOffset": 93433,
+                    "endLine": 1401,
                     "endColumn": 12,
-                    "endOffset": 93352
+                    "endOffset": 93619
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/values/styles_common.xml",
@@ -11485,12 +11506,12 @@
             },
             {
                 "to": {
-                    "startLine": 1395,
+                    "startLine": 1402,
                     "startColumn": 4,
-                    "startOffset": 93357,
-                    "endLine": 1397,
+                    "startOffset": 93624,
+                    "endLine": 1404,
                     "endColumn": 12,
-                    "endOffset": 93465
+                    "endOffset": 93732
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/values/styles_common.xml",
@@ -11506,12 +11527,12 @@
             },
             {
                 "to": {
-                    "startLine": 1398,
+                    "startLine": 1405,
                     "startColumn": 4,
-                    "startOffset": 93470,
-                    "endLine": 1401,
+                    "startOffset": 93737,
+                    "endLine": 1408,
                     "endColumn": 12,
-                    "endOffset": 93655
+                    "endOffset": 93922
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/values/styles_common.xml",
@@ -11527,12 +11548,12 @@
             },
             {
                 "to": {
-                    "startLine": 1402,
+                    "startLine": 1409,
                     "startColumn": 4,
-                    "startOffset": 93660,
-                    "endLine": 1405,
+                    "startOffset": 93927,
+                    "endLine": 1412,
                     "endColumn": 12,
-                    "endOffset": 93843
+                    "endOffset": 94110
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/values/styles_common.xml",
@@ -11548,12 +11569,12 @@
             },
             {
                 "to": {
-                    "startLine": 1406,
+                    "startLine": 1413,
                     "startColumn": 4,
-                    "startOffset": 93848,
-                    "endLine": 1412,
+                    "startOffset": 94115,
+                    "endLine": 1419,
                     "endColumn": 12,
-                    "endOffset": 94229
+                    "endOffset": 94496
                 },
                 "from": {
                     "file": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/values/styles.xml",

@@ -10,13 +10,9 @@ import org.androidannotations.annotations.ViewById;
 import qfpay.wxshop.R;
 import qfpay.wxshop.WxShopApplication;
 import qfpay.wxshop.config.WDConfig;
-import qfpay.wxshop.data.handler.MainHandler;
-import qfpay.wxshop.data.net.AbstractNet;
-import qfpay.wxshop.data.net.ConstValue;
-import qfpay.wxshop.data.netImpl.UserPaymentImpl;
 import qfpay.wxshop.app.BaseActivity;
-import qfpay.wxshop.ui.main.*;
 import qfpay.wxshop.ui.view.MyWatcher;
+import qfpay.wxshop.utils.ConstValue;
 import qfpay.wxshop.utils.MobAgentTools;
 import qfpay.wxshop.utils.Toaster;
 import qfpay.wxshop.utils.Utils;
@@ -83,11 +79,7 @@ public class RegBankAccountActivity extends BaseActivity {
 		}
 	}
 	
-	@Click
-	void et_bank() {
-		BankPickerActivity_.intent(this).startForResult(0);
-	}
-	
+
 	@Click(R.id.tv_confirm)
 	void doneEdit() {
 		if (isEditAll()) {
@@ -156,39 +148,12 @@ public class RegBankAccountActivity extends BaseActivity {
 						}
 						MobAgentTools.OnEventMobOnDiffUser(RegBankAccountActivity.this, "confirm_bankinfo");
 						
-						save2Server();
 					}
 				}, "确认信息", msgStr, "继续修改", "提交", false, true);
 
 	}
 	
-	protected void save2Server() {
-		String bankCode = et_card.getText().toString().trim().replaceAll(ConstValue.fengefu, "");
-		String account = et_account.getText().toString();
-		String bankName = et_bank.getText().toString();
-		AbstractNet net = new UserPaymentImpl(RegBankAccountActivity.this);
-		Bundle bun = new Bundle();
-		bun.putString("card_number", bankCode);
-		bun.putString("card_holder_name", account);
-		bun.putString("card_bank", bankName);
-		net.request(bun, new MainHandler(RegBankAccountActivity.this) {
-			@Override
-			public void onSuccess(Bundle bundle) {
-				
-				MobAgentTools.OnEventMobOnDiffUser(RegBankAccountActivity.this, "binding_succeed");
-				Toaster.l(RegBankAccountActivity.this, getResources().getString(R.string.bankcard_reg_success));
-				finish();
-				WxShopApplication.dataEngine.setLoginStatus(true);
-				Intent intent = new Intent(RegBankAccountActivity.this, MainActivity_.class);
-				intent.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
-				startActivity(intent);
-			}
-			@Override
-			public void onFailed(Bundle bundle) {
-			}
-		});
-	}
-	
+
 	protected void showDialogInputError(String content) {
 		Utils.showDialog(RegBankAccountActivity.this, null, 
 				getString(R.string.mm_hint), content, getString(R.string.know), null, false, false);
@@ -198,12 +163,6 @@ public class RegBankAccountActivity extends BaseActivity {
 	 * 设置"了解更多"可以点击
 	 */
 	void setKnowMore() {
-//		String knowMore = "了解更多";
-//		String tip = getString(R.string.money_receive_NBD).toString() + "      " + knowMore;
-//		SpannableString span = new SpannableString(tip);
-//		span.setSpan(new MyClickSpan(), tip.lastIndexOf(knowMore), tip.length(), Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
-//		tv_knowmore.setText(span);
-//		tv_knowmore.setMovementMethod(LinkMovementMethod.getInstance());
 		tv_knowmore.setText(R.string.money_receive_NBD);
 	}
 	

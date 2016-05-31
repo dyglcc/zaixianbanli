@@ -1,7 +1,7 @@
 package qfpay.wxshop.config.update;
 
 import qfpay.wxshop.WxShopApplication;
-import qfpay.wxshop.utils.T;
+
 import android.content.BroadcastReceiver;
 import android.content.ComponentName;
 import android.content.Context;

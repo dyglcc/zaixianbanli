@@ -1,8 +1,7 @@
 package qfpay.wxshop.ui.view;
 
-import qfpay.wxshop.utils.MobAgentTools;
 import qfpay.wxshop.R;
-import qfpay.wxshop.utils.T;
+
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -16,7 +15,6 @@ import android.graphics.PorterDuffXfermode;
 import android.graphics.RectF;
 import android.util.AttributeSet;
 import android.util.TypedValue;
-import android.view.View;
 import android.widget.ImageView;
 
 public class CustomImageView extends ImageView {

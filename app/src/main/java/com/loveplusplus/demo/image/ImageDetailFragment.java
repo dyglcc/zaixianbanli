@@ -10,9 +10,6 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 
-import com.androidquery.AQuery;
-import com.androidquery.callback.AjaxStatus;
-import com.androidquery.callback.BitmapAjaxCallback;
 import com.co.senab.photoview.PhotoViewAttacher;
 import com.co.senab.photoview.PhotoViewAttacher.OnPhotoTapListener;
 
@@ -65,7 +62,7 @@ public class ImageDetailFragment extends Fragment {
 
 		super.onActivityCreated(savedInstanceState);
 
-		AQuery aquery = new AQuery(getActivity());
+//		AQuery aquery = new AQuery(getActivity());
 		// aquery.id(mImageView).progress(progressBar).image(new
 		// BitmapAjaxCallback(){
 		//
@@ -76,20 +73,20 @@ public class ImageDetailFragment extends Fragment {
 		//
 		//
 		// }
-		//
-		// });
-		aquery.id(mImageView).progress(progressBar).image(mImageUrl, true, true, 0, 0,
-				new BitmapAjaxCallback() {
-
-					@Override
-					public void callback(String url, ImageView iv, Bitmap bm,
-							AjaxStatus status) {
-
-						iv.setImageBitmap(bm);
-						mAttacher.update();
-					}
-
-				});
+//		//
+//		// });
+//		aquery.id(mImageView).progress(progressBar).image(mImageUrl, true, true, 0, 0,
+//				new BitmapAjaxCallback() {
+//
+//					@Override
+//					public void callback(String url, ImageView iv, Bitmap bm,
+//							AjaxStatus status) {
+//
+//						iv.setImageBitmap(bm);
+//						mAttacher.update();
+//					}
+//
+//				});
 
 	}
 

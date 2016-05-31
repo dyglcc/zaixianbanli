@@ -2,7 +2,6 @@ package qfpay.wxshop.data.beans;
 
 import java.io.Serializable;
 
-import qfpay.wxshop.data.net.RetrofitWrapper.CommonJsonBean;
 
 public class GoodSingleItemResponseWrapper extends CommonJsonBean {
 	private static final long serialVersionUID = 1L;

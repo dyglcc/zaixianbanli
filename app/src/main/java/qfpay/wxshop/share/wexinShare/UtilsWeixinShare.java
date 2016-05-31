@@ -2,7 +2,6 @@ package qfpay.wxshop.share.wexinShare;
 
 import qfpay.wxshop.WxShopApplication;
 import qfpay.wxshop.utils.BitmapUtil;
-import qfpay.wxshop.utils.T;
 import qfpay.wxshop.utils.Utils;
 import android.content.Context;
 import android.graphics.Bitmap;

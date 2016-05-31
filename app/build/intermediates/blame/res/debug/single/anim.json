@@ -16,12 +16,12 @@
         "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/anim/quit.xml"
     },
     {
-        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/anim/slide_timepicker.xml",
-        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/anim/slide_timepicker.xml"
-    },
-    {
         "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/anim/anim_splash_disappear.xml",
         "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/anim/anim_splash_disappear.xml"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/anim/slide_timepicker.xml",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/anim/slide_timepicker.xml"
     },
     {
         "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/anim/anim_lovely_cat.xml",

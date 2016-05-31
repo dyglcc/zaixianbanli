@@ -3240,6 +3240,11 @@ containing a value of this type.
         public static final int Animation=0x7f09003b;
         /**  API 11 theme customizations can go here. 
  API 14 theme customizations can go here. 
+
+        Theme customizations available in newer API levels can go in
+        res/values-vXX/styles.xml, while customizations related to
+        backward-compatibility can go here.
+    
          */
         public static final int AppBaseTheme=0x7f090000;
         /**  All customizations that are NOT specific to a particular API-level can go here. 

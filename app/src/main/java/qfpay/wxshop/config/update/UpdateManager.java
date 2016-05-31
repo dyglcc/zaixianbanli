@@ -1,7 +1,6 @@
 package qfpay.wxshop.config.update;
 
-import qfpay.wxshop.data.net.ConstValue;
-import qfpay.wxshop.ui.main.MainActivity;
+import qfpay.wxshop.utils.ConstValue;
 import qfpay.wxshop.utils.MobAgentTools;
 
 import java.io.File;
@@ -13,7 +12,6 @@ import java.net.MalformedURLException;
 import java.net.URL;
 
 import qfpay.wxshop.R;
-import qfpay.wxshop.WxShopApplication;
 import qfpay.wxshop.utils.Toaster;
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -123,87 +121,6 @@ public class UpdateManager {
 				updateComment = updateComment + conments[i] + "\n";
 			}
 		}
-	}
-
-	// 外部接口让主Activity调用
-	public void checkUpdateInfo(String force) {
-		boolean forceFlag = false;
-		if (force != null && force.equals("force")) {
-			forceFlag = true;
-		}
-		showNoticeDialog(forceFlag);
-	}
-
-	private void showNoticeDialog(boolean forceFlag) {
-		AlertDialog.Builder builder = new Builder(mContext);
-		builder.setTitle(mContext.getResources().getString(
-				R.string.update_apk_log_text));
-		builder.setMessage(updateComment);
-		builder.setPositiveButton(mContext.getString(R.string.update_text),
-				new OnClickListener() {
-					@Override
-					public void onClick(DialogInterface dialog, int which) {
-						dialog.dismiss();
-						WxShopApplication.dataEngine.setShownUpdate(false);
-						showDownloadDialog();
-					}
-				});
-		if (!forceFlag) { // 强制更新的话就不显现
-			builder.setNegativeButton(mContext.getString(R.string.later),
-					new OnClickListener() {
-						@Override
-						public void onClick(DialogInterface dialog, int which) {
-							if(mContext instanceof MainActivity){
-								Toaster.l(mContext, "喵~'更多'页中仍然可以更新哟~");
-							}
-							dialog.dismiss();
-						}
-					});
-		}
-
-		// if (forceFlag) { // 强制更新
-		builder.setCancelable(false);
-		// }
-		noticeDialog = builder.create();
-		if (mContext != null) {
-			if (!((Activity) mContext).isFinishing()) {
-				noticeDialog.show();
-			}
-		}
-
-	}
-
-	private void showDownloadDialog() {
-		AlertDialog.Builder builder = new Builder(mContext);
-		builder.setTitle(mContext.getResources().getString(
-				R.string.apk_downloading));
-
-		final LayoutInflater inflater = LayoutInflater.from(mContext);
-		View v = inflater.inflate(R.layout.main_progress, null);
-		mProgress = (ProgressBar) v.findViewById(R.id.progress);
-
-		builder.setView(v);
-		builder.setNegativeButton(
-				mContext.getResources().getString(R.string.cancel),
-				new OnClickListener() {
-					@Override
-					public void onClick(DialogInterface dialog, int which) {
-						if(mContext instanceof MainActivity){
-							Toaster.l(mContext, "喵~'更多'页中仍然可以更新哟~");
-						}
-						dialog.dismiss();
-						interceptFlag = true;
-					}
-				});
-		downloadDialog = builder.create();
-		downloadDialog.setCancelable(false);
-		if (mContext != null) {
-			if (!((Activity) mContext).isFinishing()) {
-				downloadDialog.show();
-			}
-		}
-
-		downloadApk();
 	}
 
 	private Runnable mdownApkRunnable = new Runnable() {

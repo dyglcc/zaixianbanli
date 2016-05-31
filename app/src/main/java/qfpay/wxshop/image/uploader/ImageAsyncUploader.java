@@ -13,7 +13,6 @@ import qfpay.wxshop.image.net.CountingFileRequestEntity;
 import qfpay.wxshop.image.net.ImageNetProcesser;
 import qfpay.wxshop.image.net.ImageUrlSetter;
 import qfpay.wxshop.image.processer.ImageDecoder;
-import qfpay.wxshop.utils.T;
 
 import com.j256.ormlite.dao.Dao;
 

@@ -17,8 +17,6 @@ import com.tencent.mm.sdk.openapi.WXAPIFactory;
 import com.umeng.analytics.MobclickAgent;
 import com.umeng.analytics.onlineconfig.UmengOnlineConfigureListener;
 
-import org.acra.ReportingInteractionMode;
-import org.acra.annotation.ReportsCrashes;
 import org.androidannotations.annotations.Background;
 import org.androidannotations.annotations.EApplication;
 import org.androidannotations.api.BackgroundExecutor;
@@ -41,20 +39,16 @@ import qfpay.wxshop.listener.MaijiaxiuUploadListener;
 import qfpay.wxshop.ui.main.*;
 import qfpay.wxshop.ui.main.MoreActivity;
 import qfpay.wxshop.ui.selectpic.ImageItem;
-import qfpay.wxshop.utils.T;
 import qfpay.wxshop.utils.Utils;
 import android.os.Handler;
 
 @EApplication
-@ReportsCrashes(mailTo = "lifangzhe@qfpay.com", mode = ReportingInteractionMode.SILENT, formKey = "")
 public class WxShopApplication extends Application {
 	public static IWXAPI api;
 	public static  boolean IS_NEED_REFRESH_MINE_HUOYUAN = false;
 	public static  boolean IS_NEED_REFRESH_ONE_KEY_BEFALLF = false;
 
-    private ObjectGraph objectGraph;
 
-	public static DataEngine dataEngine;
 	public byte[] aeskey;
 	public String cookie;
 	public static String DEFAULT_KEY = "ffffffffffffffffffffffffffffffff";

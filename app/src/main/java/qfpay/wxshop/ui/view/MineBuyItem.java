@@ -11,16 +11,12 @@ import org.androidannotations.annotations.ViewById;
 
 import qfpay.wxshop.R;
 import qfpay.wxshop.WxShopApplication;
-import qfpay.wxshop.config.WDConfig;
 import qfpay.wxshop.data.beans.MyHuoyuanItemBean;
 import qfpay.wxshop.data.handler.MainHandler;
 import qfpay.wxshop.data.net.AbstractNet;
 import qfpay.wxshop.data.netImpl.FactoryContractNetImpl;
 import qfpay.wxshop.ui.main.fragment.MaijiaxiuFragment;
-import qfpay.wxshop.ui.web.*;
-import qfpay.wxshop.ui.web.huoyuan.*;
 import qfpay.wxshop.utils.MobAgentTools;
-import qfpay.wxshop.utils.T;
 import qfpay.wxshop.utils.Toaster;
 import qfpay.wxshop.utils.Utils;
 import android.app.Activity;

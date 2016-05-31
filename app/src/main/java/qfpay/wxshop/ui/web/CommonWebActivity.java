@@ -16,7 +16,6 @@ import org.androidannotations.annotations.ViewById;
 
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.List;
 
 import hugo.weaving.DebugLog;
 import qfpay.wxshop.R;
@@ -27,12 +26,10 @@ import qfpay.wxshop.share.wexinShare.UtilsWeixinShare;
 import qfpay.wxshop.share.wexinShare.WeiXinDataBean;
 import qfpay.wxshop.app.BaseActivity;
 import qfpay.wxshop.ui.common.actionbar.ShareActionProvider;
-import qfpay.wxshop.ui.main.*;
 import qfpay.wxshop.ui.view.WebViewSavePic;
 import qfpay.wxshop.utils.BitmapUtil;
 import qfpay.wxshop.utils.MobAgentTools;
 import qfpay.wxshop.utils.QFCommonUtils;
-import qfpay.wxshop.utils.T;
 import qfpay.wxshop.utils.Toaster;
 import qfpay.wxshop.utils.Utils;
 /**

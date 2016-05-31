@@ -3,17 +3,13 @@ package qfpay.wxshop.ui.main;
 import android.content.Intent;
 import android.os.Handler;
 import android.view.View;
-import android.view.ViewGroup;
 import android.view.Window;
 import android.view.WindowManager;
-import android.widget.FrameLayout;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.google.gson.Gson;
-import com.igexin.sdk.PushManager;
 import com.squareup.picasso.Picasso;
 import com.umeng.analytics.MobclickAgent;
 
@@ -32,8 +28,6 @@ import qfpay.wxshop.config.WDConfig;
 import qfpay.wxshop.data.beans.SplashParams;
 import qfpay.wxshop.data.net.ConstValue;
 import qfpay.wxshop.app.BaseActivity;
-import qfpay.wxshop.utils.QFCommonUtils;
-import qfpay.wxshop.utils.T;
 
 /**
  *

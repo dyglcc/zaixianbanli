@@ -4,13 +4,10 @@ import org.androidannotations.annotations.Bean;
 import org.androidannotations.annotations.Click;
 import org.androidannotations.annotations.EViewGroup;
 import org.androidannotations.annotations.ViewById;
-import org.androidannotations.annotations.sharedpreferences.Pref;
 
 import qfpay.wxshop.R;
-import qfpay.wxshop.ui.commodity.detailmanager.*;
 //import qfpay.wxshop.ui.main.AppStateSharePreferences_;
 import qfpay.wxshop.ui.main.MainActivity;
-import qfpay.wxshop.ui.main.MainAddAniUtils;
 import qfpay.wxshop.utils.MobAgentTools;
 import qfpay.wxshop.utils.QFCommonUtils;
 import android.app.Activity;

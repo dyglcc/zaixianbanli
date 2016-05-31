@@ -14,8 +14,8 @@ import org.androidannotations.annotations.ViewById;
 import qfpay.wxshop.R;
 import qfpay.wxshop.WxShopApplication;
 import qfpay.wxshop.data.beans.ImageWrapper;
-import qfpay.wxshop.data.net.ConstValue;
 import qfpay.wxshop.app.BaseActivity;
+import qfpay.wxshop.utils.ConstValue;
 import qfpay.wxshop.utils.MobAgentTools;
 import qfpay.wxshop.utils.Toaster;
 import android.content.Context;
@@ -28,7 +28,8 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 
 import com.actionbarsherlock.view.MenuItem;
-import com.squareup.picasso.Picasso;
+import com.adhoc.pic.Picasso;
+
 /**
  * 店铺背景图
  */
@@ -42,8 +43,7 @@ public class ShopHeaderPhotoPickerActivity extends BaseActivity {
 	@ViewById LinearLayout ll_fromgallery, ll_takephoto, ll_fromserver;
 	@ViewById ImageView iv_photo;
 	@ViewById RelativeLayout rl_photo;
-	@Bean     RetrofitWrapper retrofitWrapper;
-	
+
 	ImageWrapper imgWrapper = new ImageWrapper();
 	ImageWrapper imgCacheWrapper = new ImageWrapper();
 	
@@ -89,7 +89,7 @@ public class ShopHeaderPhotoPickerActivity extends BaseActivity {
 	@Click
 	void ll_fromserver() {
 		MobAgentTools.OnEventMobOnDiffUser(this, "CLICK_SELECT_FROM_DESIGNED");
-		SelectPicActivity_.intent(this).startForResult(REQUEST_SAVE);;
+//		SelectPicActivity_.intent(this).startForResult(REQUEST_SAVE);;
 	}
 	
 	void takePhoto() {
@@ -144,11 +144,11 @@ public class ShopHeaderPhotoPickerActivity extends BaseActivity {
 	
 	@UiThread
 	void startReview(ImageWrapper wrapper) {
-		Intent intent = new Intent(this, ShopHeaderPreviewActivity_.class);
-		intent.putExtra(ConstValue.TITLE, "预览背景图");
-		intent.putExtra("wrapper", wrapper);
-		intent.putExtra("isLoadFirst", false);
-		startActivityForResult(intent, REQUEST_SAVE);
+//		Intent intent = new Intent(this, ShopHeaderPreviewActivity_.class);
+//		intent.putExtra(ConstValue.TITLE, "预览背景图");
+//		intent.putExtra("wrapper", wrapper);
+//		intent.putExtra("isLoadFirst", false);
+//		startActivityForResult(intent, REQUEST_SAVE);
 	}
 	
 	@OnActivityResult(REQUEST_SAVE)
@@ -161,12 +161,12 @@ public class ShopHeaderPhotoPickerActivity extends BaseActivity {
 	
 	@UiThread
 	void setPreImg() {
-		if (WxShopApplication.dataEngine.getShopBg() == null || WxShopApplication.dataEngine.getShopBg().equals("")) {
-			iv_photo.setImageResource(R.drawable.header_deflaut);
-		} else {
-			Picasso.with(this).load(WxShopApplication.dataEngine.getShopBg()).fit().centerCrop().placeholder(R.drawable.header_deflaut).
-				error(R.drawable.header_deflaut).into(iv_photo);
-		}
+//		if (WxShopApplication.dataEngine.getShopBg() == null || WxShopApplication.dataEngine.getShopBg().equals("")) {
+//			iv_photo.setImageResource(R.drawable.header_deflaut);
+//		} else {
+//			Picasso.with(this).load("url").fit().centerCrop().placeholder(R.drawable.header_deflaut).
+//				error(R.drawable.header_deflaut).into(iv_photo);
+//		}
 	}
 	
 	void processDir(ImageWrapper imgWrapper, String fileName) {

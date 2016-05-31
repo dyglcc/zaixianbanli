@@ -92,7 +92,7 @@ dependencies {
     compile 'com.github.lzyzsd:circleprogress:1.0.1@aar'
     // AndroidAnnotations
     apt "org.androidannotations:androidannotations:3.3.2"
-    compile "org.androidannotations:androidannotations-api:3.3.2"
+    compile 'org.androidannotations:androidannotations-api:3.3.2'
     // ActionBarSherlock
     compile 'com.actionbarsherlock:actionbarsherlock:4.4.0@aar'
     // GSON
@@ -111,6 +111,7 @@ dependencies {
     compile files('libs/open_sdk_r4547.jar')
     compile files('libs/GetuiSdk2.4.1.0.jar')
     compile 'com.android.support:support-v4:18.0.0'
+    compile project(':android_sdk_v0')
 }
 
 apply plugin: 'announce'

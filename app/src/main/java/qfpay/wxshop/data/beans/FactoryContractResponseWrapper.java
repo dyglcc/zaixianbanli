@@ -1,8 +1,5 @@
 package qfpay.wxshop.data.beans;
 
-import java.util.List;
-
-import qfpay.wxshop.data.net.RetrofitWrapper.CommonJsonBean;
 
 public class FactoryContractResponseWrapper extends CommonJsonBean {
 	private static final long serialVersionUID = 1L;

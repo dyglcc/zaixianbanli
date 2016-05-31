@@ -11,7 +11,6 @@ import org.androidannotations.annotations.UiThread;
 
 import android.content.Context;
 import qfpay.wxshop.utils.MobAgentTools;
-import qfpay.wxshop.utils.T;
 
 @EBean
 public class StatesHandler {

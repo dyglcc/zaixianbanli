@@ -3,26 +3,16 @@ package qfpay.wxshop.app;
 import org.androidannotations.api.BackgroundExecutor;
 
 import qfpay.wxshop.WxShopApplication;
-import qfpay.wxshop.data.net.ConstValue;
 
-import android.app.Instrumentation;
-import android.content.Context;
 import android.os.Bundle;
-import android.view.ContextMenu;
-import android.view.KeyEvent;
-import android.view.MotionEvent;
-import android.view.View;
-import android.view.inputmethod.InputMethodManager;
-import android.widget.EditText;
 
 //import cn.sharesdk.framework.ShareSDK;
-import qfpay.wxshop.data.netImpl.BusinessCommunityService;
-import qfpay.wxshop.utils.T;
-import qfpay.wxshop.utils.Toaster;
+import qfpay.wxshop.utils.ConstValue;
 
 import com.actionbarsherlock.app.SherlockFragmentActivity;
 //import com.adhoc.adhocsdk.AdhocTracker;
 //import com.adhoc.adhocsdk.AdhocTracker;
+import com.adhoc.utils.T;
 import com.umeng.analytics.MobclickAgent;
 
 public class BaseActivity extends SherlockFragmentActivity {

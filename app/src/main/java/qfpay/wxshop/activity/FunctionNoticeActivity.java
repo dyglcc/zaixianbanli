@@ -18,8 +18,7 @@ public class FunctionNoticeActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.main_function_notice);
 
-		WxShopApplication.dataEngine.isSetEdvertiseMent(false);
-		
+
 		ImageView iv_close = (ImageView) findViewById(R.id.iv_close);
 		iv_close.setOnClickListener(new OnClickListener() {
 			

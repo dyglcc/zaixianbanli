@@ -1,8 +1,6 @@
 package qfpay.wxshop.config;
 
 import qfpay.wxshop.WxShopApplication;
-import qfpay.wxshop.data.net.ConstValue;
-import qfpay.wxshop.utils.Toaster;
 import qfpay.wxshop.utils.Utils;
 import android.content.Context;
 

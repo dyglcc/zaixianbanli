@@ -7,7 +7,7 @@ import qfpay.wxshop.data.net.ConstValue;
 import qfpay.wxshop.data.net.PreloadBean;
 import qfpay.wxshop.data.netImpl.BindNetImpl;
 import qfpay.wxshop.utils.MobAgentTools;
-import qfpay.wxshop.utils.T;
+
 import android.app.Notification;
 import android.app.NotificationManager;
 import android.app.PendingIntent;

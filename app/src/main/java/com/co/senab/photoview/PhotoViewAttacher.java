@@ -25,7 +25,6 @@ import com.co.senab.photoview.gestures.OnGestureListener;
 import com.co.senab.photoview.gestures.VersionedGestureDetector;
 import com.co.senab.photoview.scrollerproxy.ScrollerProxy;
 
-import qfpay.wxshop.utils.T;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.Matrix;

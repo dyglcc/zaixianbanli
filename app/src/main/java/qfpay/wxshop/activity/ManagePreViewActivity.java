@@ -3,14 +3,12 @@ package qfpay.wxshop.activity;
 import qfpay.wxshop.R;
 import qfpay.wxshop.WxShopApplication;
 import qfpay.wxshop.activity.share.ShareActivity;
-import qfpay.wxshop.data.beans.GoodsBean;
 import qfpay.wxshop.share.OnShareLinstener;
 import qfpay.wxshop.share.SharedPlatfrom;
 import qfpay.wxshop.app.BaseActivity;
 
-import qfpay.wxshop.data.net.ConstValue;
-import qfpay.wxshop.ui.common.actionbar.SharePopupView;
 import qfpay.wxshop.ui.view.WebViewSavePic;
+import qfpay.wxshop.utils.ConstValue;
 import qfpay.wxshop.utils.ShareUtils;
 import qfpay.wxshop.utils.Toaster;
 import qfpay.wxshop.utils.Utils;
@@ -65,8 +63,6 @@ public class ManagePreViewActivity extends BaseActivity implements OnShareLinste
     @ViewById
     ImageView iv_loading;
 
-    @Extra
-    GoodsBean gooditem;
 
     @Extra
     String title, url,ga_medium;
@@ -84,15 +80,14 @@ public class ManagePreViewActivity extends BaseActivity implements OnShareLinste
                 platfroms.add(SharedPlatfrom.WXMOMENTS);
                 platfroms.add(SharedPlatfrom.ONEKEY);
                 platfroms.add(SharedPlatfrom.COPY);
-                SharePopupView.showSharePopupwin(view, ManagePreViewActivity.this, platfroms);
-
-            }
-        });
-        if (gooditem != null) {
-            layout_progress_load.setVisibility(View.VISIBLE);
-        } else {
-            layout_progress_load.setVisibility(View.INVISIBLE);
+//                SharePopupView.showSharePopupwin(view, ManagePreViewActivity.this, platfroms);
         }
+        });
+//        if (gooditem != null) {
+//            layout_progress_load.setVisibility(View.VISIBLE);
+//        } else {
+//            layout_progress_load.setVisibility(View.INVISIBLE);
+//        }
         init(url);
     }
 
@@ -112,7 +107,7 @@ public class ManagePreViewActivity extends BaseActivity implements OnShareLinste
                 platfroms.add(SharedPlatfrom.WXMOMENTS);
                 platfroms.add(SharedPlatfrom.ONEKEY);
                 platfroms.add(SharedPlatfrom.COPY);
-                SharePopupView.showSharePopupwin(view, ManagePreViewActivity.this, platfroms);
+//                SharePopupView.showSharePopupwin(view, ManagePreViewActivity.this, platfroms);
 
             }
         });
@@ -220,22 +215,22 @@ public class ManagePreViewActivity extends BaseActivity implements OnShareLinste
     public void onShare(SharedPlatfrom which) {
         switch (which) {
             case ONEKEY:
-                WxShopApplication.shareBean = ShareUtils.getShareBean(gooditem, this);
+//                WxShopApplication.shareBean = ShareUtils.getShareBean(gooditem, this);
                 Intent intent = new Intent(ManagePreViewActivity.this, ShareActivity.class);
                 intent.putExtra(ConstValue.gaSrcfrom, ga_medium);
                 intent.putExtra("share_content_type", ShareActivity.SHARE_CONTENT_GOOD_ITEM);
                 startActivity(intent);
                 break;
             case WXFRIEND:
-                ShareUtils.friendGoodItem(gooditem, this, ga_medium +"wcfriend");
+//                ShareUtils.friendGoodItem(gooditem, this, ga_medium +"wcfriend");
                 break;
             case WXMOMENTS:
-                ShareUtils.momentsGoodItem(gooditem, this, ga_medium+"wctimeline");
+//                ShareUtils.momentsGoodItem(gooditem, this, ga_medium+"wctimeline");
                 break;
             case COPY:
-                Toaster.l(ManagePreViewActivity.this, "已复制商品链接");
-                Utils.saveClipBoard(ManagePreViewActivity.this,
-                        "http://" + WxShopApplication.app.getDomainMMWDUrl() + "/item/" + gooditem.getGoodsId());
+//                Toaster.l(ManagePreViewActivity.this, "已复制商品链接");
+//                Utils.saveClipBoard(ManagePreViewActivity.this,
+//                        "http://" + WxShopApplication.app.getDomainMMWDUrl() + "/item/" + gooditem.getGoodsId());
                 break;
             default:
                 break;

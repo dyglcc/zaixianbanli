@@ -7,11 +7,8 @@ import org.androidannotations.annotations.ViewById;
 
 import qfpay.wxshop.R;
 import qfpay.wxshop.WxShopApplication;
-import qfpay.wxshop.data.handler.MainHandler;
-import qfpay.wxshop.data.net.ConstValue;
-import qfpay.wxshop.data.netImpl.ShopNameUpdateImpl;
 import qfpay.wxshop.app.BaseActivity;
-import qfpay.wxshop.ui.presonalinfo.ShopInfoActivity;
+import qfpay.wxshop.utils.ConstValue;
 import qfpay.wxshop.utils.Toaster;
 import android.app.Activity;
 import android.content.Intent;
@@ -56,10 +53,10 @@ public class ShopNameEditActivity extends BaseActivity {
 				}
 			}
 		});
-		String shopName = WxShopApplication.dataEngine.getShopName();
-		if(shopName!=null && !shopName.equals("")){
-			et_text.setText(shopName);
-		}
+//		String shopName = WxShopApplication.dataEngine.getShopName();
+//		if(shopName!=null && !shopName.equals("")){
+//			et_text.setText(shopName);
+//		}
 	}
 
 	@Click void btn_back() {
@@ -97,15 +94,15 @@ public class ShopNameEditActivity extends BaseActivity {
 		}
 		btn_share.setVisibility(View.GONE);
 		layout_progress_load.setVisibility(View.VISIBLE);
-		ShopNameUpdateImpl net = new ShopNameUpdateImpl(ShopNameEditActivity.this);
-		Bundle bun = new Bundle();
-		bun.putString("intro", content);
-		net.request(bun, new MainHandler(ShopNameEditActivity.this, handler) {
-			@Override public void onSuccess(Bundle bundle) {
-				setResultOK();
-			}
-			@Override public void onFailed(Bundle bundle) { }
-		});
+//		ShopNameUpdateImpl net = new ShopNameUpdateImpl(ShopNameEditActivity.this);
+//		Bundle bun = new Bundle();
+//		bun.putString("intro", content);
+//		net.request(bun, new MainHandler(ShopNameEditActivity.this, handler) {
+//			@Override public void onSuccess(Bundle bundle) {
+//				setResultOK();
+//			}
+//			@Override public void onFailed(Bundle bundle) { }
+//		});
 
 	}
 
@@ -118,10 +115,10 @@ public class ShopNameEditActivity extends BaseActivity {
 		super.onWindowFocusChanged(hasFocus);
 	}
 
-	protected void setResultOK() {
-		Intent intent = new Intent(ShopNameEditActivity.this,
-				ShopInfoActivity.class);
-		setResult(Activity.RESULT_OK, intent);
-		finish();
-	}
+//	protected void setResultOK() {
+//		Intent intent = new Intent(ShopNameEditActivity.this,
+//				ShopInfoActivity.class);
+//		setResult(Activity.RESULT_OK, intent);
+//		finish();
+//	}
 }

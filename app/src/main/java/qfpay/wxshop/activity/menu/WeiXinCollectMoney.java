@@ -5,15 +5,12 @@ import java.util.HashMap;
 import m.framework.utils.UIHandler;
 import qfpay.wxshop.R;
 import qfpay.wxshop.WxShopApplication;
-import qfpay.wxshop.data.handler.MainHandler;
-import qfpay.wxshop.data.net.AbstractNet;
-import qfpay.wxshop.data.net.ConstValue;
-import qfpay.wxshop.data.netImpl.CreateWeixinCMImpl;
 import qfpay.wxshop.share.wexinShare.UtilsWeixinShare;
 import qfpay.wxshop.share.wexinShare.WeiXinDataBean;
 import qfpay.wxshop.app.BaseActivity;
 import qfpay.wxshop.ui.view.MoneyEditTextView;
 import qfpay.wxshop.utils.BitmapUtil;
+import qfpay.wxshop.utils.ConstValue;
 import qfpay.wxshop.utils.MobAgentTools;
 import qfpay.wxshop.utils.QMMAlert;
 import qfpay.wxshop.utils.Toaster;
@@ -35,12 +32,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.squareup.okhttp.internal.Platform;
-
-//import cn.sharesdk.framework.Platform;
-//import cn.sharesdk.framework.PlatformActionListener;
-//import cn.sharesdk.framework.ShareSDK;
-//import cn.sharesdk.framework.utils.UIHandler;
+import com.adhoc.http.internal.Platform;
 /*
  * 微信收款
  ***/
@@ -143,8 +135,6 @@ public class WeiXinCollectMoney extends BaseActivity implements Callback {
 		}
 
 		WeiXinDataBean wdb = new WeiXinDataBean();
-		wdb.description = WxShopApplication.dataEngine.getShopName()
-				+ "向你发起一笔交易请求，请点击付款，支持微信支付、银行卡支付";
 		wdb.scope = ConstValue.friend_share;
 		
 		Bitmap bmp = BitmapFactory.decodeResource(getResources(), R.drawable.weixin_collect_money);
@@ -164,46 +154,6 @@ public class WeiXinCollectMoney extends BaseActivity implements Callback {
 			return;
 		}
 		layoutProgress.setVisibility(View.VISIBLE);
-		AbstractNet net = new CreateWeixinCMImpl(WeiXinCollectMoney.this);
-		Bundle para = new Bundle();
-		para.putString("good_name", shopName);
-		para.putString("itemprice", moneString);
-		net.request(para, new MainHandler(WeiXinCollectMoney.this, handler) {
-
-			@Override
-			public void onSuccess(Bundle bundle) {
-				// Toaster.l(WeiXinCollectMoney.this, "返回结果");
-				if (bundle == null) {
-					return;
-				}
-
-				String goodid = bundle.getString("goodid");
-				if (goodid == null || goodid.equals("")) {
-					return;
-				}
-
-				String url = "http://"+WxShopApplication.app.getDomainMMWDUrl()+"/receipt/" + goodid;
-
-				PopUpShare(url);
-
-				// Intent intent = new
-				// Intent(WeiXinCollectMoney.this,CollectMoneyCompleteActivity_.class);
-				//
-				// intent.putExtra("shopName", shopName);
-				// intent.putExtra("moneyString", moneString);
-				// intent.putExtra("url", url);
-				// startActivity(intent);
-				//
-				// finish();
-				layoutProgress.setVisibility(View.INVISIBLE);
-
-			}
-
-			@Override
-			public void onFailed(Bundle bundle) {
-				layoutProgress.setVisibility(View.INVISIBLE);
-			}
-		});
 	}
 
 	private String shopName;
@@ -293,7 +243,7 @@ public class WeiXinCollectMoney extends BaseActivity implements Callback {
 		// 谢谢亲的惠顾！么么哒!
 		String msgContent = shopName + "，价格" + moneString
 				+ "元。点击链接就可以直接付款唷！支持银行卡支付" + url + " 。【"
-				+ WxShopApplication.dataEngine.getShopName() + "】谢谢亲的惠顾！么么哒!";
+				+ "】谢谢亲的惠顾！么么哒!";
 		if (Utils.getDeviceName().toLowerCase().equals("nexus 5")) {
 
 			Utils.saveClipBoard(WeiXinCollectMoney.this, msgContent);
@@ -325,7 +275,7 @@ public class WeiXinCollectMoney extends BaseActivity implements Callback {
 
 //	@Override
 	public void onComplete(Platform plat, int action,
-			HashMap<String, Object> res) {
+						   HashMap<String, Object> res) {
 		Message msg = new Message();
 		msg.arg1 = 1;
 		msg.arg2 = action;

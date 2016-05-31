@@ -1,7 +1,6 @@
 package qfpay.wxshop.activity;
 
 import qfpay.wxshop.R;
-import qfpay.wxshop.data.net.ConstValue;
 import qfpay.wxshop.app.BaseActivity;
 import qfpay.wxshop.utils.Toaster;
 import qfpay.wxshop.utils.Utils;
@@ -23,6 +22,8 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+
 /**
  * 更改银行卡界面
  */
@@ -51,12 +52,12 @@ public class ChangeBankCardInfoActivity extends BaseActivity {
 		});
 		// 取title
 		Intent intent = getIntent();
-		String title = intent.getStringExtra(ConstValue.TITLE);
+		String title = intent.getStringExtra("url{}");
 		tvTitle = (TextView) findViewById(R.id.tv_title);
 		tvTitle.setText(title == null ? getResources()
 				.getString(R.string.title) : title);
 		// 取url
-		url = intent.getStringExtra(ConstValue.URL);
+		url = intent.getStringExtra("url{}");
 		if (url == null || url.equals("")) {
 			Toaster.l(ChangeBankCardInfoActivity.this,
 					getString(R.string.wrong_address));

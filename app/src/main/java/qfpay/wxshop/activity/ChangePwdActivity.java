@@ -1,8 +1,8 @@
 package qfpay.wxshop.activity;
 
 import qfpay.wxshop.R;
-import qfpay.wxshop.data.net.ConstValue;
 import qfpay.wxshop.app.BaseActivity;
+import qfpay.wxshop.utils.ConstValue;
 import qfpay.wxshop.utils.Toaster;
 import qfpay.wxshop.utils.Utils;
 import android.app.AlertDialog;
@@ -23,6 +23,8 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+
 /**
  * 更改密码界面
  */

@@ -12,9 +12,8 @@ import qfpay.wxshop.WxShopApplication;
 import qfpay.wxshop.activity.share.ShareActivity;
 import qfpay.wxshop.data.beans.GoodMSBean;
 import qfpay.wxshop.data.beans.GoodsBean;
-import qfpay.wxshop.data.net.ConstValue;
 import qfpay.wxshop.app.BaseActivity;
-import qfpay.wxshop.ui.commodity.CommodityDataController;
+import qfpay.wxshop.utils.ConstValue;
 import qfpay.wxshop.utils.MobAgentTools;
 import qfpay.wxshop.utils.ShareUtils;
 import qfpay.wxshop.utils.Toaster;
@@ -55,8 +54,6 @@ public class ManPromoSuccessActivity extends BaseActivity {
 	int pos;
 	@Extra
 	String from;
-    @Bean
-    CommodityDataController commodityController;
 
 	@AfterViews
 	void init() {
@@ -81,7 +78,6 @@ public class ManPromoSuccessActivity extends BaseActivity {
 		line_up.setVisibility(View.INVISIBLE);
 		layout_show_label.setVisibility(View.GONE);
 
-        commodityController.reloadCurrentData();
 	}
 
 	@Click
@@ -103,10 +99,6 @@ public class ManPromoSuccessActivity extends BaseActivity {
 
 //        GoodsBean gb = new2Old(data.model);
 //        gb.setMsBean(new2OldMS(data.model));
-        ManagePreViewActivity_.intent(ManPromoSuccessActivity.this).
-                title("商品预览").ga_medium("android_mmwdapp_seckillshare_").
-                url("http://" + WxShopApplication.app.getDomainMMWDUrl() + "/item/" + gb.getGoodsId() + "?ga_medium=android_mmwdapp_seckillshare_&ga_source=entrance").
-                gooditem(gb).start();
 
 	}
 

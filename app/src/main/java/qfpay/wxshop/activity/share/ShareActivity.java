@@ -16,11 +16,9 @@ import android.widget.CompoundButton.OnCheckedChangeListener;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.actionbarsherlock.app.ActionBar;
-import com.androidquery.AQuery;
-import com.squareup.okhttp.internal.Platform;
+import com.adhoc.http.internal.Platform;
 import com.tencent.connect.share.QzoneShare;
 import com.tencent.tauth.Tencent;
 
@@ -40,10 +38,8 @@ import m.framework.utils.UIHandler;
 import qfpay.wxshop.R;
 import qfpay.wxshop.WxShopApplication;
 import qfpay.wxshop.app.BaseActivity;
-import qfpay.wxshop.data.net.ConstValue;
-import qfpay.wxshop.utils.MobAgentTools;
+import qfpay.wxshop.utils.ConstValue;
 import qfpay.wxshop.utils.Toaster;
-import qfpay.wxshop.utils.Utils;
 /**
  * 分享界面
  */
@@ -63,7 +59,6 @@ public class ShareActivity extends BaseActivity {
     private Platform weibo;
     private Platform qzone;
     private Platform tecentWeibo;
-    AQuery aq;
     private String gaSrcfrom;
 
     private String reg1 = "http://" + WxShopApplication.app.getDomainMMWDUrl() + "/shop/\\d+";
@@ -105,7 +100,7 @@ public class ShareActivity extends BaseActivity {
 
         // qq 互联 初始化设置
         mTencent = Tencent.createInstance(ConstValue.QQ_ZONE_ID, this.getApplicationContext());
-        aq = new AQuery(this);
+//        aq = new AQuery(this);
         // 初始化ShareSDK
         if (!initShare) {
 //            ShareSDK.initSDK(this);
@@ -227,13 +222,13 @@ public class ShareActivity extends BaseActivity {
 
 
             if (WxShopApplication.shareBean.imgUrl.indexOf("imgstore01") != -1) {
-                aq.id(iv_pic)
-                        .progress(R.id.progress_share)
-                        .image(WxShopApplication.shareBean.imgUrl, true, true, 120,
-                                R.drawable.icon);
+//                aq.id(iv_pic)
+//                        .progress(R.id.progress_share)
+//                        .image(WxShopApplication.shareBean.imgUrl, true, true, 120,
+//                                R.drawable.icon);
             } else {
-                aq.id(iv_pic).progress(R.id.progress_share)
-                        .image(WxShopApplication.shareBean.imgUrl);
+//                aq.id(iv_pic).progress(R.id.progress_share)
+//                        .image(WxShopApplication.shareBean.imgUrl);
             }
         }
 

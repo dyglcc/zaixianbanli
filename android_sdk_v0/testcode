@@ -1,0 +1,5 @@
+boolean flag = true;
+                    if (flag) {
+                        Error error = new Error();
+                        throw error;
+                    }

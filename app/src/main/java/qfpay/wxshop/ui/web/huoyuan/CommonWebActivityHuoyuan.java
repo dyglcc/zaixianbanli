@@ -40,7 +40,6 @@ import org.androidannotations.annotations.res.DrawableRes;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 import qfpay.wxshop.R;
@@ -53,13 +52,11 @@ import qfpay.wxshop.share.wexinShare.UtilsWeixinShare;
 import qfpay.wxshop.share.wexinShare.WeiXinDataBean;
 import qfpay.wxshop.app.BaseActivity;
 import qfpay.wxshop.ui.common.actionbar.ShareActionProvider;
-import qfpay.wxshop.ui.main.MainTab;
 import qfpay.wxshop.ui.main.fragment.HuoYuanFragment;
 import qfpay.wxshop.ui.main.fragment.MaijiaxiuFragment;
 import qfpay.wxshop.ui.view.WebViewSavePic;
 import qfpay.wxshop.utils.MobAgentTools;
 import qfpay.wxshop.utils.QFCommonUtils;
-import qfpay.wxshop.utils.T;
 import qfpay.wxshop.utils.Utils;
 @EActivity(R.layout.web_common_activity_huoyuan)
 public class CommonWebActivityHuoyuan extends BaseActivity implements

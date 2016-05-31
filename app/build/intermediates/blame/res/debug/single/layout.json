@@ -4,12 +4,12 @@
         "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/layout/main_edit_advert.xml"
     },
     {
-        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/layout/alert_dialog_menu_list_layout_special.xml",
-        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/layout/alert_dialog_menu_list_layout_special.xml"
-    },
-    {
         "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/layout/title_publish_goods.xml",
         "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/layout/title_publish_goods.xml"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/layout/alert_dialog_menu_list_layout_special.xml",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/layout/alert_dialog_menu_list_layout_special.xml"
     },
     {
         "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/layout/common_webview_title_huoyuan.xml",
@@ -60,24 +60,24 @@
         "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/layout/activity_shop_detail.xml"
     },
     {
-        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/layout/main_myhuoyuan_list.xml",
-        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/layout/main_myhuoyuan_list.xml"
-    },
-    {
         "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/layout/lovelycard_comment.xml",
         "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/layout/lovelycard_comment.xml"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/layout/main_myhuoyuan_list.xml",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/layout/main_myhuoyuan_list.xml"
     },
     {
         "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/layout/dialog_part_button.xml",
         "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/layout/dialog_part_button.xml"
     },
     {
-        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/layout/list_item_mydynamic.xml",
-        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/layout/list_item_mydynamic.xml"
-    },
-    {
         "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/layout/increment_popup_dialog.xml",
         "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/layout/increment_popup_dialog.xml"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/layout/list_item_mydynamic.xml",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/layout/list_item_mydynamic.xml"
     },
     {
         "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/layout/abs__activity_chooser_view.xml",
@@ -88,16 +88,16 @@
         "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/layout/commodity_list_item.xml"
     },
     {
-        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/layout/main_progress.xml",
-        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/layout/main_progress.xml"
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/layout/dialog_part_list.xml",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/layout/dialog_part_list.xml"
     },
     {
         "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/layout/main_maijiaxiu_list.xml",
         "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/layout/main_maijiaxiu_list.xml"
     },
     {
-        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/layout/dialog_part_list.xml",
-        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/layout/dialog_part_list.xml"
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/layout/main_progress.xml",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/layout/main_progress.xml"
     },
     {
         "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/layout/main_suisuinian_pub.xml",
@@ -116,20 +116,20 @@
         "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/layout/list_header_banner_official_goods.xml"
     },
     {
-        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/layout/layout_maijiaxiu_add_success.xml",
-        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/layout/layout_maijiaxiu_add_success.xml"
-    },
-    {
         "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/layout/customergallery_layout.xml",
         "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/layout/customergallery_layout.xml"
     },
     {
-        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/layout/list_item_maijiaxiu.xml",
-        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/layout/list_item_maijiaxiu.xml"
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/layout/layout_maijiaxiu_add_success.xml",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/layout/layout_maijiaxiu_add_success.xml"
     },
     {
         "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/layout/main_man_promo.xml",
         "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/layout/main_man_promo.xml"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/layout/list_item_maijiaxiu.xml",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/layout/list_item_maijiaxiu.xml"
     },
     {
         "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/layout/businesscommunity_layout.xml",
@@ -164,12 +164,12 @@
         "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/layout/progressdialog_layout.xml"
     },
     {
-        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/layout/businesscommunication_mynotify_item.xml",
-        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/layout/businesscommunication_mynotify_item.xml"
-    },
-    {
         "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/layout/web_common_activity.xml",
         "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/layout/web_common_activity.xml"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/layout/businesscommunication_mynotify_item.xml",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/layout/businesscommunication_mynotify_item.xml"
     },
     {
         "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/layout/buyersshow_release_layout.xml",
@@ -188,24 +188,24 @@
         "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/layout/sherlock_spinner_item.xml"
     },
     {
-        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/layout/notification_inc.xml",
-        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/layout/notification_inc.xml"
-    },
-    {
         "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/layout/main_publish_goods.xml",
         "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/layout/main_publish_goods.xml"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/layout/notification_inc.xml",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/layout/notification_inc.xml"
     },
     {
         "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/layout/lovelycard_comment_item.xml",
         "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/layout/lovelycard_comment_item.xml"
     },
     {
-        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/layout/main_reg_complete.xml",
-        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/layout/main_reg_complete.xml"
-    },
-    {
         "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/layout/title_show_bank_info.xml",
         "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/layout/title_show_bank_info.xml"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/layout/main_reg_complete.xml",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/layout/main_reg_complete.xml"
     },
     {
         "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/layout/main_list_notice_center.xml",
@@ -236,16 +236,16 @@
         "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/layout/item_gonglue.xml"
     },
     {
-        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/layout/main_preview_webview.xml",
-        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/layout/main_preview_webview.xml"
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/layout/abs__action_mode_bar.xml",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/layout/abs__action_mode_bar.xml"
     },
     {
         "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/layout/title_forum.xml",
         "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/layout/title_forum.xml"
     },
     {
-        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/layout/abs__action_mode_bar.xml",
-        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/layout/abs__action_mode_bar.xml"
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/layout/main_preview_webview.xml",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/layout/main_preview_webview.xml"
     },
     {
         "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/layout/main_publish_income.xml",
@@ -256,12 +256,12 @@
         "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/layout/title_maijiaxiu.xml"
     },
     {
-        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/layout/main_reg_step1.xml",
-        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/layout/main_reg_step1.xml"
-    },
-    {
         "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/layout/title_reg_compelete.xml",
         "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/layout/title_reg_compelete.xml"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/layout/main_reg_step1.xml",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/layout/main_reg_step1.xml"
     },
     {
         "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/layout/item_about.xml",
@@ -308,16 +308,16 @@
         "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/layout/title_reg_login.xml"
     },
     {
-        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/layout/userguide_share_layout.xml",
-        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/layout/userguide_share_layout.xml"
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/layout/title_about_us.xml",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/layout/title_about_us.xml"
     },
     {
         "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/layout/main_show_other_view.xml",
         "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/layout/main_show_other_view.xml"
     },
     {
-        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/layout/title_about_us.xml",
-        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/layout/title_about_us.xml"
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/layout/userguide_share_layout.xml",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/layout/userguide_share_layout.xml"
     },
     {
         "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/layout/alert_dialog_menu_list_layout.xml",
@@ -328,24 +328,24 @@
         "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/layout/alert_dialog_radio_list_layout.xml"
     },
     {
-        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/layout/abs__list_menu_item_radio.xml",
-        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/layout/abs__list_menu_item_radio.xml"
-    },
-    {
         "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/layout/notification.xml",
         "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/layout/notification.xml"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/layout/abs__list_menu_item_radio.xml",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/layout/abs__list_menu_item_radio.xml"
     },
     {
         "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/layout/common_popupwin_info.xml",
         "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/layout/common_popupwin_info.xml"
     },
     {
-        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/layout/layout_page3.xml",
-        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/layout/layout_page3.xml"
-    },
-    {
         "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/layout/activity_forum.xml",
         "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/layout/activity_forum.xml"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/layout/layout_page3.xml",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/layout/layout_page3.xml"
     },
     {
         "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/layout/abs__action_menu_layout.xml",
@@ -416,16 +416,16 @@
         "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/layout/lovelycard_edit.xml"
     },
     {
-        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/layout/item_suisuinian_img_menu.xml",
-        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/layout/item_suisuinian_img_menu.xml"
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/layout/activity_image_grid.xml",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/layout/activity_image_grid.xml"
     },
     {
         "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/layout/list_header_empty_official_goods.xml",
         "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/layout/list_header_empty_official_goods.xml"
     },
     {
-        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/layout/activity_image_grid.xml",
-        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/layout/activity_image_grid.xml"
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/layout/item_suisuinian_img_menu.xml",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/layout/item_suisuinian_img_menu.xml"
     },
     {
         "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/layout/toast_image.xml",
@@ -528,20 +528,20 @@
         "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/layout/web_activity.xml"
     },
     {
-        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/layout/main_onkeybehalf_list.xml",
-        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/layout/main_onkeybehalf_list.xml"
-    },
-    {
         "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/layout/main_reg_bank_setting.xml",
         "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/layout/main_reg_bank_setting.xml"
     },
     {
-        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/layout/abs__list_menu_item_icon.xml",
-        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/layout/abs__list_menu_item_icon.xml"
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/layout/main_onkeybehalf_list.xml",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/layout/main_onkeybehalf_list.xml"
     },
     {
         "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/layout/edititem_done_layout.xml",
         "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/layout/edititem_done_layout.xml"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/layout/abs__list_menu_item_icon.xml",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/layout/abs__list_menu_item_icon.xml"
     },
     {
         "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/layout/shopimg_picker.xml",
@@ -576,16 +576,16 @@
         "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/layout/onkeybehalf_list_item.xml"
     },
     {
-        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/layout/mydynamic_notes_list.xml",
-        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/layout/mydynamic_notes_list.xml"
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/layout/item_image_bucket.xml",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/layout/item_image_bucket.xml"
     },
     {
         "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/layout/title_reg_step2.xml",
         "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/layout/title_reg_step2.xml"
     },
     {
-        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/layout/item_image_bucket.xml",
-        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/layout/item_image_bucket.xml"
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/layout/mydynamic_notes_list.xml",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/layout/mydynamic_notes_list.xml"
     },
     {
         "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/layout/vw_footer.xml",
@@ -648,28 +648,28 @@
         "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/layout/abs__action_menu_item_layout.xml"
     },
     {
-        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/layout/item_more_app.xml",
-        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/layout/item_more_app.xml"
-    },
-    {
         "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/layout/main_collect_money_compelete.xml",
         "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/layout/main_collect_money_compelete.xml"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/layout/item_more_app.xml",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/layout/item_more_app.xml"
     },
     {
         "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/layout/abs__simple_dropdown_hint.xml",
         "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/layout/abs__simple_dropdown_hint.xml"
     },
     {
-        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/layout/lovelycard_main.xml",
-        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/layout/lovelycard_main.xml"
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/layout/customergallery_bucket_item.xml",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/layout/customergallery_bucket_item.xml"
     },
     {
         "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/layout/mytopics_list_item.xml",
         "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/layout/mytopics_list_item.xml"
     },
     {
-        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/layout/customergallery_bucket_item.xml",
-        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/layout/customergallery_bucket_item.xml"
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/layout/lovelycard_main.xml",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/layout/lovelycard_main.xml"
     },
     {
         "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/layout/goodslistforbuyersshow_layout.xml",
@@ -712,12 +712,12 @@
         "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/layout/goodslistforbuyersshow_item.xml"
     },
     {
-        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/layout/vw_header.xml",
-        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/layout/vw_header.xml"
-    },
-    {
         "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/layout/alert_dialog_menu_list_layout_cancel.xml",
         "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/layout/alert_dialog_menu_list_layout_cancel.xml"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/layout/vw_header.xml",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/layout/vw_header.xml"
     },
     {
         "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/layout/abs__search_view.xml",
@@ -732,28 +732,28 @@
         "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/layout/web_common_fragment_huoyuan.xml"
     },
     {
-        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/layout/abs__action_bar_tab.xml",
-        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/layout/abs__action_bar_tab.xml"
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/layout/dialog_contract_layout.xml",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/layout/dialog_contract_layout.xml"
     },
     {
         "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/layout/businesscommunication_mydynamic_newmsg.xml",
         "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/layout/businesscommunication_mydynamic_newmsg.xml"
     },
     {
-        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/layout/dialog_contract_layout.xml",
-        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/layout/dialog_contract_layout.xml"
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/layout/abs__action_bar_tab.xml",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/layout/abs__action_bar_tab.xml"
     },
     {
         "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/layout/item_add_payment.xml",
         "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/layout/item_add_payment.xml"
     },
     {
-        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/layout/alert_dialog_menu_list_layout_title.xml",
-        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/layout/alert_dialog_menu_list_layout_title.xml"
-    },
-    {
         "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/layout/customergallery_bucket.xml",
         "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/layout/customergallery_bucket.xml"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/layout/alert_dialog_menu_list_layout_title.xml",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/layout/alert_dialog_menu_list_layout_title.xml"
     },
     {
         "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/layout/layout_maijiaxiu_item1.xml",
@@ -788,16 +788,16 @@
         "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/layout/common_menuitem_share.xml"
     },
     {
-        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/layout/customerimgdetails_layout.xml",
-        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/layout/customerimgdetails_layout.xml"
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/layout/userguide_preview_layout.xml",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/layout/userguide_preview_layout.xml"
     },
     {
         "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/layout/more_view_maijiaxiu.xml",
         "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/layout/more_view_maijiaxiu.xml"
     },
     {
-        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/layout/userguide_preview_layout.xml",
-        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/layout/userguide_preview_layout.xml"
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/layout/customerimgdetails_layout.xml",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/layout/customerimgdetails_layout.xml"
     },
     {
         "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/layout/main_new_introduction_activity.xml",
@@ -812,12 +812,12 @@
         "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/layout/abs__screen_action_bar_overlay.xml"
     },
     {
-        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/layout/item_weixin.xml",
-        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/layout/item_weixin.xml"
-    },
-    {
         "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/layout/common_popupwin_share.xml",
         "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/layout/common_popupwin_share.xml"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/layout/item_weixin.xml",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/app/src/main/res/layout/item_weixin.xml"
     },
     {
         "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/app/build/intermediates/res/merged/debug/layout/main_collect_money_weixin.xml",
