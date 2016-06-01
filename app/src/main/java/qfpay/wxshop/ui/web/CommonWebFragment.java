@@ -76,7 +76,6 @@ public class CommonWebFragment extends BaseFragment {
         webView.setDownloadListener(new MyWebViewDownLoadListener());
         webView.setWebChromeClient(new MyWebChromeClient());
 
-        header.put("QFCOOKIE", "sessionid=" + WxShopApplication.dataEngine.getcid());
         Utils.setCookies(url, getActivity());
         if (url != null && !"".equals(url)) {
             webView.loadUrl(url, header);
@@ -97,7 +96,6 @@ public class CommonWebFragment extends BaseFragment {
 
         if (getActivity() != null) {
             Utils.setCookies(url, getActivity());
-            header.put("QFCOOKIE", "sessionid=" + WxShopApplication.dataEngine.getcid());
             if (url != null && !"".equals(url)) {
                 webView.loadUrl(url,header);
             }
@@ -119,7 +117,6 @@ public class CommonWebFragment extends BaseFragment {
 
         if (getActivity() != null) {
             Utils.setCookies(url, getActivity());
-            header.put("QFCOOKIE", "sessionid=" + WxShopApplication.dataEngine.getcid());
             if (url != null && !"".equals(url)) {
                 webView.loadUrl(url, header);
             }
@@ -192,7 +189,6 @@ public class CommonWebFragment extends BaseFragment {
                 webView.loadUrl(url, header);
                 CommonWebFragment.this.url = url;
             }
-            header.put("QFCOOKIE", "sessionid=" + WxShopApplication.dataEngine.getcid());
             Utils.setCookies(url, getActivity());
             return true;
         }

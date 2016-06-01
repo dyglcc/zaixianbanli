@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res/qfpay.wxshop"
     android:layout_width="225dp"
     android:layout_height="wrap_content"
     android:paddingRight="10dp" >
 
+    <!--xmlns:app="http://schemas.android.com/apk/res/qfpay.wxshop"-->
     <FrameLayout
         android:id="@+id/fl_list"
         android:layout_width="fill_parent"
@@ -68,17 +68,17 @@
         </LinearLayout>
     </FrameLayout>
 
-    <com.makeramen.RoundedImageView
-        android:id="@+id/iv_shopbg"
-        android:layout_width="34dp"
-        android:layout_height="34dp"
-        android:layout_gravity="end"
-        android:layout_marginTop="2dp"
-        android:scaleType="centerCrop"
-        app:border_color="@color/common_background"
-        app:border_width="1dp"
-        app:corner_radius="50dp"
-        app:mutate_background="true"
-        app:oval="false" />
+    <!--<com.makeramen.RoundedImageView-->
+        <!--android:id="@+id/iv_shopbg"-->
+        <!--android:layout_width="34dp"-->
+        <!--android:layout_height="34dp"-->
+        <!--android:layout_gravity="end"-->
+        <!--android:layout_marginTop="2dp"-->
+        <!--android:scaleType="centerCrop"-->
+        <!--app:border_color="@color/common_background"-->
+        <!--app:border_width="1dp"-->
+        <!--app:corner_radius="50dp"-->
+        <!--app:mutate_background="true"-->
+        <!--app:oval="false" />-->
 
 </FrameLayout>

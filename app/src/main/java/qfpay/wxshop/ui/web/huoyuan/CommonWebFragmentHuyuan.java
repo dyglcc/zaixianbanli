@@ -13,7 +13,6 @@ import org.androidannotations.annotations.ViewById;
 
 import qfpay.wxshop.R;
 import qfpay.wxshop.WxShopApplication;
-import qfpay.wxshop.data.net.ConstValue;
 import qfpay.wxshop.share.SharedPlatfrom;
 import qfpay.wxshop.app.BaseFragment;
 import qfpay.wxshop.ui.web.*;
@@ -67,12 +66,12 @@ public class CommonWebFragmentHuyuan extends BaseFragment {
 		// 创建缓存文件夹
 		webView.getSettings().setDomStorageEnabled(true);
 		webView.getSettings().setAppCacheMaxSize(1024 * 1024 * 20);
-		String webView_cache = ConstValue.getWebView_cache();
-		File file  = new File(webView_cache);
-		if(!file.exists()){
-			file.mkdirs();
-		}
-		webView.getSettings().setAppCachePath(webView_cache);
+//		String webView_cache = ConstValue.getWebView_cache();
+//		File file  = new File(webView_cache);
+//		if(!file.exists()){
+//			file.mkdirs();
+//		}
+//		webView.getSettings().setAppCachePath(webView_cache);
 		webView.getSettings().setAllowFileAccess(true);
 		webView.getSettings().setAppCacheEnabled(true);
 		webView.getSettings().setCacheMode(WebSettings.LOAD_CACHE_ELSE_NETWORK);
@@ -86,7 +85,6 @@ public class CommonWebFragmentHuyuan extends BaseFragment {
 		webView.setWebViewClient(new MyWebViewClient());
 		webView.setDownloadListener(new MyWebViewDownLoadListener());
 		webView.setWebChromeClient(new MyWebChromeClient());
-		header.put("Qfuid", WxShopApplication.dataEngine.getUserId());
 		Utils.setCookies(url, getActivity());
 		if (url != null && !"".equals(url)) {
 			webView.loadUrl(url, header);

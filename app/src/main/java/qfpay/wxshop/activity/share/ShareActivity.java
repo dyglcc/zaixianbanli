@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Handler.Callback;
 import android.os.Message;
+import android.support.v7.app.ActionBar;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.View;
@@ -17,13 +18,10 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.actionbarsherlock.app.ActionBar;
-import com.adhoc.http.internal.Platform;
 import com.tencent.connect.share.QzoneShare;
 import com.tencent.tauth.Tencent;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -56,21 +54,18 @@ public class ShareActivity extends BaseActivity {
     private CheckBox iv_sina;
     private CheckBox iv_qzone;
     private CheckBox iv_tencent;
-    private Platform weibo;
-    private Platform qzone;
-    private Platform tecentWeibo;
     private String gaSrcfrom;
 
-    private String reg1 = "http://" + WxShopApplication.app.getDomainMMWDUrl() + "/shop/\\d+";
-    private String reg2 = "http://" + WxShopApplication.app.getDomainMMWDUrl() + "/item_detail/\\d+";
-    private String reg3 = "http://" + WxShopApplication.app.getDomainMMWDUrl() + "/h5/show.html[?]shopid=\\d+";
-    private String reg4 = "http://" + WxShopApplication.app.getDomainMMWDUrl() + "/item/\\d+";
-    private String reg5 = "http://" + WxShopApplication.app.getDomainMMWDUrl() + "/hmsg/\\d+";
-    Pattern pattern1 = Pattern.compile(reg1);
-    Pattern pattern2 = Pattern.compile(reg2);
-    Pattern pattern3 = Pattern.compile(reg3);
-    Pattern pattern4 = Pattern.compile(reg4);
-    Pattern pattern5 = Pattern.compile(reg5);
+//    private String reg1 = "http://" + WxShopApplication.app.getDomainMMWDUrl() + "/shop/\\d+";
+//    private String reg2 = "http://" + WxShopApplication.app.getDomainMMWDUrl() + "/item_detail/\\d+";
+//    private String reg3 = "http://" + WxShopApplication.app.getDomainMMWDUrl() + "/h5/show.html[?]shopid=\\d+";
+//    private String reg4 = "http://" + WxShopApplication.app.getDomainMMWDUrl() + "/item/\\d+";
+//    private String reg5 = "http://" + WxShopApplication.app.getDomainMMWDUrl() + "/hmsg/\\d+";
+//    Pattern pattern1 = Pattern.compile(reg1);
+//    Pattern pattern2 = Pattern.compile(reg2);
+//    Pattern pattern3 = Pattern.compile(reg3);
+//    Pattern pattern4 = Pattern.compile(reg4);
+//    Pattern pattern5 = Pattern.compile(reg5);
 
     public static int SHARE_CONTENT_SHOP = 1;
     public static int SHARE_CONTENT_GOOD_ITEM = SHARE_CONTENT_SHOP + 1;
@@ -315,12 +310,12 @@ public class ShareActivity extends BaseActivity {
                     }
 
                     // 去掉空间中间的链接
-                    contextStr = contextStr.replaceAll(reg1, "");
-                    contextStr = contextStr.replaceAll(reg2, "");
-                    contextStr = contextStr.replaceAll(reg3, "");
-                    contextStr = contextStr.replaceAll(reg4, "");
-                    contextStr = contextStr.replaceAll(reg5, "");
-                    contextStr = contextStr.replaceAll("店铺链接：", "");
+//                    contextStr = contextStr.replaceAll(reg1, "");
+//                    contextStr = contextStr.replaceAll(reg2, "");
+//                    contextStr = contextStr.replaceAll(reg3, "");
+//                    contextStr = contextStr.replaceAll(reg4, "");
+//                    contextStr = contextStr.replaceAll(reg5, "");
+//                    contextStr = contextStr.replaceAll("店铺链接：", "");
 //                        sp.text = contextStr;
 //                        sp.imageUrl = WxShopApplication.shareBean.qq_imageUrl;
 ////						sp.comment = "我对此分享内容的评论";
@@ -359,39 +354,39 @@ public class ShareActivity extends BaseActivity {
 //	}
 
     // 显示框里的地址需要替换，添加ga 统计。
-    protected String getRepleaceText(String text, String platform) {
-
-        if (gaSrcfrom == null) {
-            return text;
-        }
-        Matcher matcher1 = pattern1.matcher(text);
-        if (matcher1.find()) {
-            String content1 = matcher1.group();
-            text = text.replaceAll(reg1, getGaUrl(content1, platform));
-        }
-        Matcher matcher2 = pattern2.matcher(text);
-        if (matcher2.find()) {
-            String content2 = matcher2.group();
-            text = text.replaceAll(reg2, getGaUrl(content2, platform));
-        }
-        Matcher matcher3 = pattern3.matcher(text);
-        if (matcher3.find()) {
-            String content3 = matcher3.group();
-            text = text.replaceAll(reg3, getGaUrl(content3, platform));
-        }
-        Matcher matcher4 = pattern4.matcher(text);
-        if (matcher4.find()) {
-            String content4 = matcher4.group();
-            text = text.replaceAll(reg4, getGaUrl(content4, platform));
-        }
-        Matcher matcher5 = pattern5.matcher(text);
-        if (matcher5.find()) {
-            String content5 = matcher5.group();
-            text = text.replaceAll(reg5, getGaUrl(content5, platform));
-        }
-
-        return text;
-    }
+//    protected String getRepleaceText(String text, String platform) {
+//
+//        if (gaSrcfrom == null) {
+//            return text;
+//        }
+//        Matcher matcher1 = pattern1.matcher(text);
+//        if (matcher1.find()) {
+//            String content1 = matcher1.group();
+//            text = text.replaceAll(reg1, getGaUrl(content1, platform));
+//        }
+//        Matcher matcher2 = pattern2.matcher(text);
+//        if (matcher2.find()) {
+//            String content2 = matcher2.group();
+//            text = text.replaceAll(reg2, getGaUrl(content2, platform));
+//        }
+//        Matcher matcher3 = pattern3.matcher(text);
+//        if (matcher3.find()) {
+//            String content3 = matcher3.group();
+//            text = text.replaceAll(reg3, getGaUrl(content3, platform));
+//        }
+//        Matcher matcher4 = pattern4.matcher(text);
+//        if (matcher4.find()) {
+//            String content4 = matcher4.group();
+//            text = text.replaceAll(reg4, getGaUrl(content4, platform));
+//        }
+//        Matcher matcher5 = pattern5.matcher(text);
+//        if (matcher5.find()) {
+//            String content5 = matcher5.group();
+//            text = text.replaceAll(reg5, getGaUrl(content5, platform));
+//        }
+//
+//        return text;
+//    }
 
     protected String getGaUrl(String qqTitle_url, String platform) {
         String str = qqTitle_url;
@@ -404,182 +399,4 @@ public class ShareActivity extends BaseActivity {
     private static final int author_cancle = 1;
     private static final int author_complete = author_cancle + 1;
     private static final int author_error = author_complete + 1;
-//    private PlatformActionListener authorListener = new PlatformActionListener() {
-
-//        @Override
-        public void onCancel(Platform arg0, int arg1) {
-//            handler.sendEmptyMessage(author_cancle);
-//            checkAuth();
-        }
-
-//        @Override
-        public void onComplete(Platform platform, int arg1,
-                               HashMap<String, Object> arg2) {
-//            handler.sendEmptyMessage(author_complete);
-//            checkAuth();
-//            if (platform.getName().equals(SinaWeibo.NAME)) {
-//                MobAgentTools.OnEventMobOnDiffUser(ShareActivity.this,
-//                        "sina_auth_success");
-//            } else if (platform.getName().equals(QZone.NAME)) {
-//                MobAgentTools.OnEventMobOnDiffUser(ShareActivity.this,
-//                        "qzone_auth_success");
-//            } else if (platform.getName().equals(TencentWeibo.NAME)) {
-//                MobAgentTools.OnEventMobOnDiffUser(ShareActivity.this,
-//                        "qqweibo_auth_success");
-//            }
-        }
-
-//        @Override
-        public void onError(Platform platform, int arg1, Throwable arg2) {
-//            handler.sendEmptyMessage(author_error);
-//            checkAuth();
-//            if (platform.getName().equals(SinaWeibo.NAME)) {
-//                MobAgentTools.OnEventMobOnDiffUser(ShareActivity.this,
-//                        "sina_auth_fail");
-//            } else if (platform.getName().equals(QZone.NAME)) {
-//                MobAgentTools.OnEventMobOnDiffUser(ShareActivity.this,
-//                        "qzone_auth_fail");
-//            } else if (platform.getName().equals(TencentWeibo.NAME)) {
-//                MobAgentTools.OnEventMobOnDiffUser(ShareActivity.this,
-//                        "qqweibo_auth_fail");
-//            }
-        }
-    };
-//    private Handler handler = new Handler() {
-//        @Override
-//        public void handleMessage(Message msg) {
-//
-//            if (msg.what == author_cancle) {
-//                Toaster.l(ShareActivity.this, "授权取消");
-//            } else if (msg.what == author_complete) {
-//                Toaster.l(ShareActivity.this, "授权完成");
-//
-//            } else if (msg.what == 12) {
-//                Toaster.l(ShareActivity.this, "请选择分享的平台");
-//            } else if (msg.what == author_error) {
-//                Toaster.l(ShareActivity.this, "授权错误");
-//            }
-//
-//        }
-//
-//        ;
-//    };
-
-//    @Override
-//    public boolean handleMessage(Message msg) {
-//        // TODO Auto-generated method stub
-//        String text = Utils.actionToString(msg.arg2);
-//        switch (msg.arg1) {
-//            case 1: {
-//                // 成功
-//                Platform plat = (Platform) msg.obj;
-//                text = plat.getName() + "分享成功";
-//            }
-//            break;
-//            case 2: {
-//                // 失败
-//                if ("WechatClientNotExistException".equals(msg.obj.getClass()
-//                        .getSimpleName())) {
-//                    text = ShareActivity.this
-//                            .getString(R.string.wechat_client_inavailable);
-//                } else if ("WechatTimelineNotSupportedException".equals(msg.obj
-//                        .getClass().getSimpleName())) {
-//                    text = ShareActivity.this
-//                            .getString(R.string.wechat_client_inavailable);
-//                } else {
-//                    text = getString(R.string.fail_share2);
-//                }
-//            }
-//            break;
-//            case 3: {
-//                // 取消
-//                Platform plat = (Platform) msg.obj;
-//                text = plat.getName() + "取消分享";
-//            }
-//            break;
-//        }
-//
-//        Toast.makeText(ShareActivity.this, text, Toast.LENGTH_SHORT).show();
-//        return false;
-//    }
-
-//    @Override
-//    public void onComplete(Platform plat, int action,
-//                           HashMap<String, Object> res) {
-//        Message msg = new Message();
-//        msg.arg1 = 1;
-//        msg.arg2 = action;
-//        msg.obj = plat;
-//        UIHandler.sendMessage(msg, this);
-//        if (plat.getName().equals(SinaWeibo.NAME)) {
-//            isSinaSharing = false;
-//            MobAgentTools.OnEventMobOnDiffUser(ShareActivity.this,
-//                    "sina_share_success_sharesdk");
-//        } else if (plat.getName().equals(QZone.NAME)) {
-//            shareQQzoneSuccess = true;
-//            MobAgentTools.OnEventMobOnDiffUser(ShareActivity.this,
-//                    "qzone_share_success_sharesdk");
-//        } else if (plat.getName().equals(TencentWeibo.NAME)) {
-//            isTencentSharing = false;
-//            MobAgentTools.OnEventMobOnDiffUser(ShareActivity.this,
-//                    "qqweibo_share_success_sharesdk");
-//        }
-//
-//    }
-
-//    public void onCancel(Platform plat, int action) {
-//        Message msg = new Message();
-//        msg.arg1 = 3;
-//        msg.arg2 = action;
-//        msg.obj = plat;
-//        UIHandler.sendMessage(msg, this);
-//        if (plat.getName().equals(SinaWeibo.NAME)) {
-//            isSinaSharing = false;
-//        } else if (plat.getName().equals(QZone.NAME)) {
-//        } else if (plat.getName().equals(TencentWeibo.NAME)) {
-//            isTencentSharing = false;
-//        }
-//
-//    }
-
-//    public void onError(Platform plat, int action, Throwable t) {
-//        t.printStackTrace();
-//        Message msg = new Message();
-//        msg.arg1 = 2;
-//        msg.arg2 = action;
-//        msg.obj = t;
-//        UIHandler.sendMessage(msg, this);
-//        if (plat.getName().equals(SinaWeibo.NAME)) {
-//            MobAgentTools.OnEventMobOnDiffUser(ShareActivity.this,
-//                    "sina_share_faill_sharesdk");
-//            isSinaSharing = false;
-//        } else if (plat.getName().equals(QZone.NAME)) {
-//            MobAgentTools.OnEventMobOnDiffUser(ShareActivity.this,
-//                    "qzone_share_fail_sharesdk");
-////            Toaster.l(this, getResources().getString(R.string.qqshareFail));
-//        } else if (plat.getName().equals(TencentWeibo.NAME)) {
-//            isTencentSharing = false;
-//            MobAgentTools.OnEventMobOnDiffUser(ShareActivity.this,
-//                    "qqweibo_share_fail_sharesdk");
-//        }
-//    }
-
-//    private void checkAuth() {
-//        if (!weibo.isValid()) {
-//            iv_sina.setChecked(false);
-//        }
-//        if (!tecentWeibo.isValid()) {
-//            iv_tencent.setChecked(false);
-//        }
-//        if (!qzone.isValid()) {
-//            iv_qzone.setChecked(false);
-//        }
-//    }
-
-    // sp.site = "http://www.mmweidian.com";
-
-//    private void shareToQzone() {
-//
-//        //分享类型
-//
-//    }
+}

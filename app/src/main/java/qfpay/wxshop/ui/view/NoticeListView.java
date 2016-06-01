@@ -45,25 +45,6 @@ public class NoticeListView extends ListView {
 
 	}
 
-	public void checkFooterView() {
-		if (NoticeCenterActivity_.data.isEmpty() && NoticeCenterActivity_.nodata) {
-			removeFooterView();
-			addEmptyFooterView();
-			return;
-		}
-		// 空列表 有数据
-		if (NoticeCenterActivity_.data.isEmpty() && !NoticeCenterActivity_.nodata) {
-			if (handler != null) {
-				handler.sendEmptyMessage(NoticeCenterActivity_.ACTION_GET_DATA);
-			}
-			return;
-		}
-		if (!NoticeCenterActivity_.data.isEmpty()) {
-			addFooter();
-			return;
-		}
-
-	}
 
 	public View getmFooterView() {
 		return mFooterMOREView;

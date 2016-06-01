@@ -8,16 +8,13 @@ import android.view.View;
 import android.view.ViewGroup;
 //import cn.sharesdk.framework.ShareSDK;
 
-import com.actionbarsherlock.app.SherlockFragment;
-//import com.adhoc.adhocsdk.AdhocTracker;
 import com.adhoc.adhocsdk.AdhocTracker;
 import com.umeng.analytics.MobclickAgent;
 
 import java.lang.ref.WeakReference;
 
-import qfpay.wxshop.utils.*;
 
-public class BaseFragment extends SherlockFragment {
+public class BaseFragment extends Fragment {
 	protected WeakReference<Activity> mParentActivityRef;
 	protected WeakReference<Fragment> mParentFragmentRef;
 	protected boolean attached;

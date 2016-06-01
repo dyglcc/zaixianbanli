@@ -8,15 +8,12 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import qfpay.wxshop.R;
-import qfpay.wxshop.activity.menu.WeiXinCollectMoney;
 import qfpay.wxshop.app.BaseActivity;
 import qfpay.wxshop.utils.ConstValue;
 import qfpay.wxshop.utils.Toaster;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.graphics.drawable.AnimationDrawable;
-import android.os.Bundle;
 import android.os.Handler;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -29,8 +26,6 @@ import android.widget.TextView;
 
 import com.adhoc.adhocsdk.AdhocConstants;
 import com.adhoc.adhocsdk.AdhocTracker;
-import com.adhoc.adhocsdk.BuildParameters;
-import com.adhoc.adhocsdk.ExperimentUtils;
 import com.adhoc.http.Callback;
 import com.adhoc.http.MediaType;
 import com.adhoc.http.Request;
@@ -64,6 +59,7 @@ public class WeixinEditActivity extends BaseActivity {
 
     @AfterViews
     void init() {
+        AdhocTracker.init(WeixinEditActivity.this, "client-id" + System.currentTimeMillis());
         tv_title.setText("编辑微信号");
         btn_share.setText("完成");
         btn_share.setVisibility(View.VISIBLE);

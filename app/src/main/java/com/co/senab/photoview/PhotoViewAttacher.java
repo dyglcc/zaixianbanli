@@ -21,6 +21,7 @@ import static android.view.MotionEvent.ACTION_UP;
 
 import java.lang.ref.WeakReference;
 
+import com.adhoc.utils.T;
 import com.co.senab.photoview.gestures.OnGestureListener;
 import com.co.senab.photoview.gestures.VersionedGestureDetector;
 import com.co.senab.photoview.scrollerproxy.ScrollerProxy;

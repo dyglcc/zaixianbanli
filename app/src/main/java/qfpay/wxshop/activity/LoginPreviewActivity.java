@@ -1,13 +1,10 @@
 package qfpay.wxshop.activity;
 
 import qfpay.wxshop.R;
-import qfpay.wxshop.config.WDConfig;
 import qfpay.wxshop.app.BaseActivity;
 import qfpay.wxshop.utils.MobAgentTools;
-import qfpay.wxshop.utils.QFCommonUtils;
 
 import android.content.Intent;
-import android.media.Image;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -40,18 +37,13 @@ public class LoginPreviewActivity extends BaseActivity {
 		tvLogin = (TextView) findViewById(R.id.tv_login);
 		tvOldLogin = (TextView) findViewById(R.id.tv_old_login);
         shouFaImageView = (ImageView)findViewById(R.id.imageView1);
-        if (QFCommonUtils.isFirstLaunch(this)) {
-            shouFaImageView.setVisibility(View.VISIBLE);
-        } else {
-            shouFaImageView.setVisibility(View.INVISIBLE);
-        }
 		tvRegister.setOnClickListener(new OnClickListener() {
 
 			@Override
 			public void onClick(View v) {
 
-				startActivity(new Intent(LoginPreviewActivity.this,
-						RegStep1Activity_.class));
+//				startActivity(new Intent(LoginPreviewActivity.this,
+//						RegStep1Activity_.class));
 			}
 		});
 		tvLogin.setOnClickListener(new OnClickListener() {
@@ -59,8 +51,8 @@ public class LoginPreviewActivity extends BaseActivity {
 			@Override
 			public void onClick(View v) {
 
-				startActivity(new Intent(LoginPreviewActivity.this,
-						LoginActivity.class));
+//				startActivity(new Intent(LoginPreviewActivity.this,
+//						LoginActivity.class));
 				// finish();
 
 				MobAgentTools.OnEventMobOnDiffUser(LoginPreviewActivity.this, "User login");
@@ -90,11 +82,11 @@ public class LoginPreviewActivity extends BaseActivity {
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-				Intent intent = new Intent(LoginPreviewActivity.this,
-						OtherShopViewActivity.class);
-				intent.putExtra("url", WDConfig.getInstance().URL_DEMO);
-
-				startActivity(intent);
+//				Intent intent = new Intent(LoginPreviewActivity.this,
+//						OtherShopViewActivity.class);
+//				intent.putExtra("url", WDConfig.getInstance().URL_DEMO);
+//
+//				startActivity(intent);
 
 			}
 		});
@@ -103,11 +95,11 @@ public class LoginPreviewActivity extends BaseActivity {
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-				Intent intent = new Intent(LoginPreviewActivity.this,
-						OtherShopViewActivity.class);
-				intent.putExtra("url", WDConfig.getInstance().URL_DEMO);
-
-				startActivity(intent);
+//				Intent intent = new Intent(LoginPreviewActivity.this,
+//						OtherShopViewActivity.class);
+//				intent.putExtra("url", WDConfig.getInstance().URL_DEMO);
+//
+//				startActivity(intent);
 			}
 		});
 		

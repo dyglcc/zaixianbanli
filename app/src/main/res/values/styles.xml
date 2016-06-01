@@ -12,7 +12,7 @@
         <item name="android:button">@drawable/selector_checkbox_sina</item>
     </style>
     <!-- Application theme. -->
-    <style name="AppTheme" parent="Theme.Sherlock.Light">
+    <style name="AppTheme" parent="@style/Base.V7.Theme.AppCompat">
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
     </style>
 

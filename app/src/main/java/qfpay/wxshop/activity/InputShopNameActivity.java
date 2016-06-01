@@ -1,17 +1,14 @@
 package qfpay.wxshop.activity;
 
-import java.io.File;
 import java.util.List;
 
 import qfpay.wxshop.R;
 import qfpay.wxshop.image.jinniu.ProgressUploadFile;
-import qfpay.wxshop.image.jinniu.UploadPic4QiNiuImpl;
 import qfpay.wxshop.takepicUtils.PictureBean;
 import qfpay.wxshop.takepicUtils.TakePicUtils;
 import qfpay.wxshop.app.BaseActivity;
 import qfpay.wxshop.utils.BitmapUtil;
 import qfpay.wxshop.utils.MobAgentTools;
-import qfpay.wxshop.utils.QFCommonUtils;
 import qfpay.wxshop.utils.Utils;
 
 import android.content.Context;
@@ -42,11 +39,6 @@ public class InputShopNameActivity extends BaseActivity {
 
         initViews();
 
-//		getLocation(this);
-
-        MobAgentTools.OnEventMobOnDiffUser(InputShopNameActivity.this,
-                "store information");
-        QFCommonUtils.collect("register_success_" + QFCommonUtils.getMetaData(this), this);
 
     }
 

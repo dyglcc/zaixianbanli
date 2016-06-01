@@ -44,7 +44,6 @@ public class BankPickerItem extends LinearLayout implements OnClickListener {
 	@Override
 	public void onClick(View v) {
 		if (this.activity != null && this.bean != null) {
-			this.activity.onBankPicker(bean);
 		}
 	}
 }

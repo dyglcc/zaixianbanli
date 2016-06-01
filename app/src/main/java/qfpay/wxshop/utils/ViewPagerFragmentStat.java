@@ -1,5 +1,7 @@
 package qfpay.wxshop.utils;
 
+import com.adhoc.utils.T;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;

@@ -6,6 +6,9 @@ import android.content.BroadcastReceiver;
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
+
+import com.adhoc.utils.T;
+
 /**
  * 安装成功自动启动喵喵
  */

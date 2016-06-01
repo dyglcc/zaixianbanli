@@ -1,65 +1,49 @@
 package qfpay.wxshop.activity;
 
-import java.io.File;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
-
-import org.androidannotations.annotations.AfterViews;
-import org.androidannotations.annotations.Click;
-import org.androidannotations.annotations.EActivity;
-import org.androidannotations.annotations.OnActivityResult;
-import org.androidannotations.annotations.UiThread;
-import org.androidannotations.annotations.ViewById;
-
-import qfpay.wxshop.R;
-import qfpay.wxshop.WxShopApplication;
-import qfpay.wxshop.config.WDConfig;
-import qfpay.wxshop.data.beans.SSNItemBean;
-import qfpay.wxshop.data.handler.MainHandler;
-import qfpay.wxshop.data.handler.MainHandlerMulSelectPics;
-import qfpay.wxshop.data.net.AbstractNet;
-import qfpay.wxshop.data.net.ConstValue;
-import qfpay.wxshop.data.netImpl.BuyersShowNetService.GoodWrapper;
-import qfpay.wxshop.data.netImpl.SuiSuiNianCreateImpl;
-import qfpay.wxshop.data.netImpl.UploadPicImpl;
-import qfpay.wxshop.data.netImpl.UploadPicMulImpl;
-import qfpay.wxshop.dialogs.SimpleDialogFragment;
-import qfpay.wxshop.listener.onScrollviewFocusListener;
-import qfpay.wxshop.takepicUtils.PictureBean;
-import qfpay.wxshop.takepicUtils.TakePicUtils;
-import qfpay.wxshop.app.BaseActivity;
-import qfpay.wxshop.ui.buyersshow.*;
-import qfpay.wxshop.ui.main.fragment.MaijiaxiuFragment;
-import qfpay.wxshop.ui.selectpic.ImageItem;
-import qfpay.wxshop.ui.view.EditorView;
-import qfpay.wxshop.utils.MobAgentTools;
-import qfpay.wxshop.utils.Toaster;
-import qfpay.wxshop.utils.Utils;
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.BitmapFactory;
 import android.graphics.drawable.Drawable;
-import android.os.Bundle;
-import android.os.Handler;
-import android.os.Message;
+import android.support.v7.app.ActionBar;
 import android.text.Editable;
 import android.text.TextUtils;
 import android.text.TextWatcher;
 import android.util.TypedValue;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.View.OnFocusChangeListener;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.actionbarsherlock.app.ActionBar;
-import com.actionbarsherlock.view.MenuItem;
+import com.adhoc.utils.T;
+
+import org.androidannotations.annotations.AfterViews;
+import org.androidannotations.annotations.Click;
+import org.androidannotations.annotations.EActivity;
+import org.androidannotations.annotations.UiThread;
+import org.androidannotations.annotations.ViewById;
+
+import java.io.File;
+import java.util.HashMap;
+import java.util.Map;
+
+import qfpay.wxshop.R;
+import qfpay.wxshop.WxShopApplication;
+import qfpay.wxshop.app.BaseActivity;
+import qfpay.wxshop.config.WDConfig;
+import qfpay.wxshop.data.beans.SSNItemBean;
+import qfpay.wxshop.dialogs.SimpleDialogFragment;
+import qfpay.wxshop.listener.onScrollviewFocusListener;
+import qfpay.wxshop.takepicUtils.PictureBean;
+import qfpay.wxshop.takepicUtils.TakePicUtils;
+import qfpay.wxshop.ui.view.EditorView;
+import qfpay.wxshop.utils.MobAgentTools;
+import qfpay.wxshop.utils.Toaster;
+import qfpay.wxshop.utils.Utils;
 //import com.adhoc.adhocsdk.AdhocTracker;
 
 /**
@@ -85,7 +69,6 @@ public class SSNPublishActivity extends BaseActivity implements
 
 	@ViewById
 	ImageView iv_deletelink, iv_linkicon, iv_title, iv_content;
-	private ArrayList<UploadPicMulImpl> uploadMulList = new ArrayList<UploadPicMulImpl>();
 
 	@ViewById
 	TextView tv_link;
@@ -109,13 +92,6 @@ public class SSNPublishActivity extends BaseActivity implements
 				TakePicUtils.TAKE_PIC_MODE_ONLY_SELECT_MUL_PICS);
 	}
 
-	@Click
-	void layout_addpic_spaceing() {
-		MobAgentTools.OnEventMobOnDiffUser(SSNPublishActivity.this, "Click_HybridTextfx");
-		CommonWebActivity_.intent(SSNPublishActivity.this)
-				.url(WxShopApplication.app.SSN_ACTIVITY_URL).title("碎碎念")
-				.start();
-	}
 
 	@AfterViews
 	void inits() {
@@ -221,9 +197,9 @@ public class SSNPublishActivity extends BaseActivity implements
 				getPicSizeStr(this, R.drawable.ic_launcher));
 
 		item = new SSNItemBean();
-		layout_addpic_spaceing.setText(WxShopApplication.app.SSN_ACTIVITY_TEXT
-				.equals("") ? getString(R.string.ssn_have_look)
-				: WxShopApplication.app.SSN_ACTIVITY_TEXT);
+//		layout_addpic_spaceing.setText(WxShopApplication.app.SSN_ACTIVITY_TEXT
+//				.equals("") ? getString(R.string.ssn_have_look)
+//				: WxShopApplication.app.SSN_ACTIVITY_TEXT);
 		
 
 		MobAgentTools.OnEventMobOnDiffUser(SSNPublishActivity.this, "click_HybridText_add");
@@ -290,51 +266,11 @@ public class SSNPublishActivity extends BaseActivity implements
 				}).show();
 	}
 
-	private void finishSuccessEdit() {
-		if (item == null) {
-			finish();
-			return;
-		}
-		Intent intent = new Intent();
-		intent.putExtra("bean", item);
-		if (item.getAlluv() == 0) {
-			item.setAlluv(1);
-		}
-		intent.putExtra("result", MaijiaxiuFragment.ACTION_ADD_SSN);
-		setResult(Activity.RESULT_OK, intent);
-		finish();
-	}
 
 	private SSNItemBean item;
 
 	private void save2Server(String content) {
 
-		if (!isCan()) {
-			return;
-		}
-		AbstractNet net = new SuiSuiNianCreateImpl(SSNPublishActivity.this);
-		Bundle bun = new Bundle();
-		bun.putString("title", et_title.getText().toString());
-		bun.putString("content", content);
-		if (layout_link.getTag() != null) {
-			bun.putString("good_id", layout_link.getTag() + "");
-		}
-		bun.putString("img_url", mScrollview.getImageUrl());
-		net.request(bun, new MainHandler(SSNPublishActivity.this) {
-
-			@Override
-			public void onSuccess(Bundle bundle) {
-				Toaster.l(SSNPublishActivity.this, "创建成功");
-				MobAgentTools.OnEventMobOnDiffUser(SSNPublishActivity.this, "Success_HybridText_Public");
-				item = (SSNItemBean) bundle.getSerializable("bean");
-				finishSuccessEdit();
-			}
-
-			@Override
-			public void onFailed(Bundle bundle) {
-
-			}
-		});
 	}
 
 	private boolean isCan() {
@@ -378,8 +314,6 @@ public class SSNPublishActivity extends BaseActivity implements
 
 			if (WxShopApplication.paths.size() != 0) {
 
-				// 多选图片处理
-				startUploadFiles();
 			}
 		}
 
@@ -388,169 +322,13 @@ public class SSNPublishActivity extends BaseActivity implements
 	private void uploadFile2Server(final PictureBean pb) {
 
 		MobAgentTools.OnEventMobOnDiffUser(SSNPublishActivity.this, "Click_HybridText_Camera");
-		AbstractNet net = new UploadPicImpl(SSNPublishActivity.this);
-		Bundle para = new Bundle();
-		para.putString("fileUrl", pb.getFileStr());
-		para.putString("fileName", "suisuinian");
-
-		final FrameLayout layout = (FrameLayout) mScrollview.addpic(pb
-				.getFileStr());
-		if (layout == null) {
-			Toaster.l(SSNPublishActivity.this, "添加图片失败");
-			return;
-		}
-
-		// category：分类 1. 用户凭证 2. 渠道凭证 3. 喵喵微店
-		// source：文件来源 1. web 2. app 3. 喵喵微店
-		// tag：图片标签(avatar: 头像, qmm: 喵喵微店, showcase: 商品/服务展示图片)
-		para.putString("category", "3");
-		para.putString("source", "3");
-		para.putString("tag", "qmm");
-		net.request(para, new MainHandler(SSNPublishActivity.this) {
-
-			@Override
-			public void onSuccess(Bundle bundle) {
-				// TODO Auto-generated method stub
-				// Toaster.l(SSNPublishActivity.this, "上传图片成功");
-				String object = (String) bundle.get("url");
-				mapFileSize.put(object, getPicSizeStr(pb.getFileStr()));
-				layout.setTag(object);
-				// layout.findViewById(R.id.progressBar1).setVisibility(View.GONE);
-			}
-
-			@Override
-			public void onFailed(Bundle bundle) {
-				// TODO Auto-generated method stub
-
-			}
-		});
 
 	}
 
-	public void startUploadFiles() {
-
-		// 处理图片为小图片
-
-		final int count = WxShopApplication.paths.size();
-
-		TakePicUtils.getInstance().init(this);
-		new Thread(new Runnable() {
-
-			@Override
-			public void run() {
-				for (int i = 0; i < count; i++) {
-					ImageItem item = WxShopApplication.paths.get(i);
-					if (item == null || item.imagePath == null
-							|| item.imagePath.equals("")) {
-						continue;
-					}
-					String desPathFileName = item.imagePath
-							.substring(item.imagePath
-									.lastIndexOf(File.separator) + 1);
-					TakePicUtils.dealPic(ConstValue.getPICTURE_DIR()
-							+ desPathFileName, item.imagePath,
-							SSNPublishActivity.this);
-					item.smallPicPath = ConstValue.getPICTURE_DIR()
-							+ desPathFileName;
-				}
-				upLoadPicHandler.sendEmptyMessage(UPLOAD_FILES);
-			}
-		}).start();
-
-	}
 
 	private static final int UPLOAD_FILES = 4;
 	public static final int CHECK_UPLOAD_STATUS = UPLOAD_FILES + 1;
 	// 重复上传bug1.调用两次js--解决方法：1。定义标志只调用一次。
-	private Handler upLoadPicHandler = new Handler() {
-
-		public void handleMessage(Message msg) {
-			switch (msg.what) {
-			case UPLOAD_FILES:
-				upoadFiles2Server();
-				break;
-			case CHECK_UPLOAD_STATUS:
-				break;
-			}
-
-		};
-	};
-
-	private void upoadFiles2Server() {
-		MobAgentTools.OnEventMobOnDiffUser(SSNPublishActivity.this, "Click_HybridText_addalbum");
-
-		for (int i = 0; i < WxShopApplication.paths.size(); i++) {
-			final ImageItem item = WxShopApplication.paths.get(i);
-			final UploadPicMulImpl net = new UploadPicMulImpl(this, item,
-					upLoadPicHandler);
-			final FrameLayout addpic = (FrameLayout) mScrollview
-					.addpic(item.smallPicPath);
-			if (addpic == null) {
-				Toaster.l(SSNPublishActivity.this, "添加图片失败");
-				return;
-			}
-			Bundle para = new Bundle();
-			// category：分类 1. 用户凭证 2. 渠道凭证 3. 喵喵微店
-			// source：文件来源 1. web 2. app 3. 喵喵微店
-			// tag：图片标签(avatar: 头像, qmm: 喵喵微店, showcase: 商品/服务展示图片)
-			para.putString("category", "3");
-			para.putString("source", "3");
-			para.putString("tag", "qmm");
-			uploadMulList.add(net);
-			net.request(para, new MainHandlerMulSelectPics(
-					SSNPublishActivity.this, net) {
-
-				@Override
-				public void onSuccess(Bundle bundle) {
-					// TODO Auto-generated method stub
-					// Toaster.l(SSNPublishActivity.this, "上传成功");
-					// addpic.findViewById(R.id.progressBar1).setVisibility(
-					// View.GONE);
-				}
-
-				@Override
-				public void onFailed(Bundle bundle) {
-					// TODO Auto-generated method stub
-
-				}
-
-				@Override
-				public void onFinish(boolean success, UploadPicMulImpl net) {
-					if(mapFileSize == null ){
-						return;
-					}
-					if (success) {
-						String object = net.getReturnURL();
-						mapFileSize.put(object,
-								getPicSizeStr(item.smallPicPath));
-						if(addpic!=null){
-							addpic.setTag(object);
-						}
-					}
-				}
-
-			});
-
-		}
-	}
-
-	@Click
-	void layout_link() {
-		MobAgentTools.OnEventMobOnDiffUser(SSNPublishActivity.this, "Click_HybridText_link");
-		GoodsListForBuyersShowActivity_.intent(this).startForResult(
-				REQUEST_TAKE_PIC);
-	}
-
-	@OnActivityResult(REQUEST_TAKE_PIC)
-	void takedLink(int resultCode, Intent data) {
-		if (resultCode == RESULT_OK) {
-			GoodWrapper goodWrapper = (GoodWrapper) data
-					.getSerializableExtra(GoodsListForBuyersShowActivity.RESULT_GOOD_KEY);
-			layout_link.setTag(goodWrapper.getId());
-			setGoodName(goodWrapper.getGood_name(), goodWrapper.getGood_img(),
-					goodWrapper.getId());
-		}
-	}
 
 	@UiThread
 	void setGoodName(String name, String imgPath, int goodId) {
@@ -566,20 +344,6 @@ public class SSNPublishActivity extends BaseActivity implements
 		}
 	}
 
-	@Click
-	void layout_link_close(View v) {
-		if (iv_deletelink.getTag() == null) {
-			layout_link();
-			return;
-		}
-		String tag = (String) iv_deletelink.getTag();
-		if (IV_DELETELINK_DELETE.equals(tag)) {
-			setGoodName(null, null, 0);
-		}
-		if (IV_DELETELINK_LINK.equals(tag)) {
-			return;
-		}
-	}
 
 	private boolean onEditorFocus = false;
 

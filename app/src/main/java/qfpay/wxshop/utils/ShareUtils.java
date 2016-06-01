@@ -5,7 +5,6 @@ import qfpay.wxshop.WxShopApplication;
 import qfpay.wxshop.data.beans.GoodMSBean;
 import qfpay.wxshop.data.beans.GoodsBean;
 import qfpay.wxshop.data.beans.ShareBean;
-import qfpay.wxshop.data.net.ConstValue;
 import qfpay.wxshop.share.wexinShare.UtilsWeixinShare;
 import qfpay.wxshop.share.wexinShare.WeiXinDataBean;
 import android.app.Activity;
@@ -32,7 +31,7 @@ public class ShareUtils {
 		}
 		wdb.description = desc;
 		wdb.scope = ConstValue.friend_share;
-		wdb.url = "http://"+WxShopApplication.app.getDomainMMWDUrl()+"/item/" + gb.getGoodsId();
+		wdb.url = "http://+/item/" + gb.getGoodsId();
 		wdb.imgUrl = gb.getImageUrl();
 		
 		UtilsWeixinShare.shareWeb(wdb, ga_st_extra, context);
@@ -54,7 +53,7 @@ public class ShareUtils {
 		// if (jsonObject.has("MsgImg")) {
 		// shareBean.imgUrl = jsonObject.getString("MsgImg");
 		// }
-		sb.link = "http://"+WxShopApplication.app.getDomainMMWDUrl()+"/item/" + gb.getGoodsId();
+		sb.link = "http://"+"/item/" + gb.getGoodsId();
 
 		// if (jsonObject.has("link")) {
 		// shareBean.link = jsonObject.getString("link");
@@ -70,7 +69,7 @@ public class ShareUtils {
 				descString = descString.substring(0,98)+"...";
 			}
 			sb.title = "亲,我的店铺又有新宝贝了哦! " + gb.getGoodName() + " 仅需" + gb.getPriceStr()
-					+ "元,点击宝贝链接" + "http://"+WxShopApplication.app.getDomainMMWDUrl()+"/item/" + gb.getGoodsId() + " 直接下单购买哦";
+					+ "元,点击宝贝链接" + "http://item/" + gb.getGoodsId() + " 直接下单购买哦";
 			
 //			sb.title = "【新品推荐】" + gb.getGoodName() + "仅需" + gb.getPriceStr()
 //					+ "元，欢迎进店选购下单哟！";
@@ -100,7 +99,7 @@ public class ShareUtils {
 		}
 		WeiXinDataBean wdb = new WeiXinDataBean();
 		MobAgentTools.OnEventMobOnDiffUser(context, "weixin_share_moment_begin");
-		wdb.url = "http://"+WxShopApplication.app.getDomainMMWDUrl()+"/item/" + gb.getGoodsId();
+		wdb.url = "http:///item/" + gb.getGoodsId();
 		wdb.imgUrl = gb.getImageUrl();
 		String desc = gb.getGoodDesc();
 		if (desc.length() > 100) {

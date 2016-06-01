@@ -4,8 +4,6 @@ import java.io.Serializable;
 import java.text.ParseException;
 import java.util.Calendar;
 
-import qfpay.wxshop.utils.QFCommonUtils;
-
 public class CommodityModel implements Serializable {
 	private static final long serialVersionUID = 1L;
 
@@ -23,7 +21,6 @@ public class CommodityModel implements Serializable {
 	private int 				weight;       // 排序权重
 	private String 				update_time;  // 更新时间
 	private String 				create_time;  // 创建时间
-	private SalesPromotionModel goodpanic;    // 秒杀的表示
     private int                 price_count;  // 有多少个价格
 	
 	private boolean isOffshelfed = false;
@@ -114,25 +111,13 @@ public class CommodityModel implements Serializable {
 		return weight;
 	}
 	
-	public Calendar getUpdateTime() throws ParseException {
-		return QFCommonUtils.string2Calendar(update_time, DATE_FORMATSTR);
-	}
-	
-	public Calendar getCreateTime() throws ParseException {
-		return QFCommonUtils.string2Calendar(create_time, DATE_FORMATSTR);
-	}
-	
+
+
 	public String getCreateTimeForOld() {
 		return create_time;
 	}
 	
-	public void setSalesPromotion(SalesPromotionModel salesModel) {
-		this.goodpanic = salesModel;
-	}
-	public SalesPromotionModel getSalesPromotion() {
-		return goodpanic;
-	}
-	
+
 	public void offShelf() {
 		isOffshelfed = true;
 	}
@@ -172,8 +157,6 @@ public class CommodityModel implements Serializable {
             return false;
         if (good_name != null ? !good_name.equals(that.good_name) : that.good_name != null)
             return false;
-        if (goodpanic != null ? !goodpanic.equals(that.goodpanic) : that.goodpanic != null)
-            return false;
         if (update_time != null ? !update_time.equals(that.update_time) : that.update_time != null)
             return false;
 
@@ -194,7 +177,6 @@ public class CommodityModel implements Serializable {
         result = 31 * result + weight;
         result = 31 * result + (update_time != null ? update_time.hashCode() : 0);
         result = 31 * result + (create_time != null ? create_time.hashCode() : 0);
-        result = 31 * result + (goodpanic != null ? goodpanic.hashCode() : 0);
         result = 31 * result + price_count;
         result = 31 * result + (isOffshelfed ? 1 : 0);
         return result;
@@ -215,7 +197,6 @@ public class CommodityModel implements Serializable {
                 ", weight=" + weight +
                 ", update_time='" + update_time + '\'' +
                 ", create_time='" + create_time + '\'' +
-                ", goodpanic=" + goodpanic +
                 ", price_count=" + price_count +
                 ", isOffshelfed=" + isOffshelfed +
                 '}';

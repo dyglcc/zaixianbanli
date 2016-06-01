@@ -8,6 +8,7 @@ import android.graphics.Bitmap;
 import android.net.http.SslError;
 import android.os.AsyncTask;
 import android.os.SystemClock;
+import android.support.v7.app.ActionBar;
 import android.webkit.CookieManager;
 import android.webkit.JsResult;
 import android.webkit.SslErrorHandler;
@@ -19,7 +20,6 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.actionbarsherlock.app.ActionBar;
 
 import org.androidannotations.annotations.AfterViews;
 import org.androidannotations.annotations.Click;
@@ -31,9 +31,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 import qfpay.wxshop.R;
-import qfpay.wxshop.WxShopApplication;
 import qfpay.wxshop.app.BaseActivity;
-import qfpay.wxshop.ui.main.fragment.*;
 import qfpay.wxshop.ui.view.WebViewSavePic;
 import qfpay.wxshop.utils.Utils;
 /**
@@ -72,7 +70,6 @@ public class WebActivity extends BaseActivity {
 		webSettings.setCacheMode(WebSettings.LOAD_DEFAULT);
 		webSettings.setDomStorageEnabled(true);
 		webSettings.setJavaScriptCanOpenWindowsAutomatically(true);
-		header.put("QFCOOKIE", "sessionid=" + WxShopApplication.dataEngine.getcid());
         webView.setWebChromeClient(new WebChromeClient() {
             @Override
             public boolean onJsAlert(WebView view, String url, String message,
@@ -109,7 +106,6 @@ public class WebActivity extends BaseActivity {
 	void btn_back() {
 		
 		Intent intent = new Intent();
-		intent.putExtra("result", OrderFragment_.REFRESH);
 		setResult(Activity.RESULT_OK, intent);
 		finish();
 		

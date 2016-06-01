@@ -12,7 +12,6 @@ import org.androidannotations.annotations.UiThread;
 import org.androidannotations.annotations.ViewById;
 
 import qfpay.wxshop.R;
-import qfpay.wxshop.WxShopApplication;
 import qfpay.wxshop.data.beans.ImageWrapper;
 import qfpay.wxshop.app.BaseActivity;
 import qfpay.wxshop.utils.ConstValue;
@@ -22,13 +21,12 @@ import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.provider.MediaStore;
+import android.view.MenuItem;
 import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 
-import com.actionbarsherlock.view.MenuItem;
-import com.adhoc.pic.Picasso;
 
 /**
  * 店铺背景图

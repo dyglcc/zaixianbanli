@@ -2,8 +2,6 @@ package qfpay.wxshop.ui.view;
 
 import qfpay.wxshop.R;
 import qfpay.wxshop.ui.main.MainActivity;
-import qfpay.wxshop.ui.main.fragment.SSNListFragment;
-import qfpay.wxshop.ui.main.fragment.*;
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.os.Handler;
@@ -20,12 +18,8 @@ public class SSNianListView extends ListView {
 	private View mEmptyFotterView;
 	private LayoutInflater mInflater;
 	private Context mContext;
-	private SSNListFragment fragment;
 	public boolean isaddedEmptyFooter = false;
 
-	public void setFragment(SSNListFragment fragment) {
-		this.fragment = fragment;
-	}
 
 	public SSNianListView(Context context, AttributeSet attrs, int defStyle) {
 		super(context, attrs, defStyle);
@@ -51,28 +45,28 @@ public class SSNianListView extends ListView {
 		mFooterMOREView = mInflater.inflate(R.layout.more_view_maijiaxiu, null);
 	}
 
-	public void checkFooterView() {
-//		if (SSNListFragment_.data.isEmpty() && SSNListFragment_.nodata) {
-//			removeFooterView();
-//			addEmptyFooterView();
+//	public void checkFooterView() {
+////		if (SSNListFragment_.data.isEmpty() && SSNListFragment_.nodata) {
+////			removeFooterView();
+////			addEmptyFooterView();
+////			return;
+////		}
+//		// 空列表 有数据
+//		if ((SSNListFragment_.data.isEmpty() && !SSNListFragment_.nodata)
+//				|| SSNListFragment.data.size() == 1
+//				&& SSNListFragment.data.get(0).getId()
+//						.equals(SSNListFragment.DEMO_ID)) {
+//			if (handler != null) {
+//				handler.sendEmptyMessage(SSNListFragment_.ACTION_GET_DATA);
+//			}
 //			return;
 //		}
-		// 空列表 有数据
-		if ((SSNListFragment_.data.isEmpty() && !SSNListFragment_.nodata)
-				|| SSNListFragment.data.size() == 1
-				&& SSNListFragment.data.get(0).getId()
-						.equals(SSNListFragment.DEMO_ID)) {
-			if (handler != null) {
-				handler.sendEmptyMessage(SSNListFragment_.ACTION_GET_DATA);
-			}
-			return;
-		}
-		if (!SSNListFragment_.data.isEmpty()) {
-			addFooter();
-			return;
-		}
-
-	}
+//		if (!SSNListFragment_.data.isEmpty()) {
+//			addFooter();
+//			return;
+//		}
+//
+//	}
 
 	public View getmFooterView() {
 		return mFooterMOREView;
@@ -114,16 +108,16 @@ public class SSNianListView extends ListView {
 
 		Button btnSee = (Button) mEmptyFotterView
 				.findViewById(R.id.btn_empty_see);
-		btnSee.setOnClickListener(new OnClickListener() {
-
-			@Override
-			public void onClick(View arg0) {
-				if (fragment != null) {
-					((MainActivity) fragment.getActivity()).onAddSsuinian();
-				}
-				mEmptyFotterView.setVisibility(View.INVISIBLE);
-			}
-		});
+//		btnSee.setOnClickListener(new OnClickListener() {
+//
+//			@Override
+//			public void onClick(View arg0) {
+//				if (fragment != null) {
+//					((MainActivity) fragment.getActivity()).onAddSsuinian();
+//				}
+//				mEmptyFotterView.setVisibility(View.INVISIBLE);
+//			}
+//		});
 	}
 
 	private Handler handler;

@@ -1,11 +1,9 @@
 package qfpay.wxshop.ui.web;
 
-import android.content.Intent;
 import android.widget.LinearLayout;
 
-import com.actionbarsherlock.view.Menu;
-import com.actionbarsherlock.view.MenuItem;
-import com.squareup.picasso.Picasso;
+import com.adhoc.pic.Picasso;
+import com.adhoc.utils.T;
 
 import org.androidannotations.annotations.AfterViews;
 import org.androidannotations.annotations.Background;
@@ -17,19 +15,16 @@ import org.androidannotations.annotations.ViewById;
 import java.io.IOException;
 import java.util.ArrayList;
 
-import hugo.weaving.DebugLog;
 import qfpay.wxshop.R;
-import qfpay.wxshop.data.net.ConstValue;
 import qfpay.wxshop.share.OnShareLinstener;
 import qfpay.wxshop.share.SharedPlatfrom;
 import qfpay.wxshop.share.wexinShare.UtilsWeixinShare;
 import qfpay.wxshop.share.wexinShare.WeiXinDataBean;
 import qfpay.wxshop.app.BaseActivity;
-import qfpay.wxshop.ui.common.actionbar.ShareActionProvider;
 import qfpay.wxshop.ui.view.WebViewSavePic;
 import qfpay.wxshop.utils.BitmapUtil;
+import qfpay.wxshop.utils.ConstValue;
 import qfpay.wxshop.utils.MobAgentTools;
-import qfpay.wxshop.utils.QFCommonUtils;
 import qfpay.wxshop.utils.Toaster;
 import qfpay.wxshop.utils.Utils;
 /**
@@ -57,26 +52,6 @@ public class CommonWebActivity extends BaseActivity implements OnShareLinstener 
 		getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 		webFragment.init(url, false,title);
 	}
-	
-	@Override public boolean onCreateOptionsMenu(Menu menu) {
-		getSupportMenuInflater().inflate(R.menu.webview_share, menu);
-		MenuItem shareItem = menu.findItem(R.id.menu_share);
-		if (platFroms != null) {
-			ShareActionProvider shareActionProvider = new ShareActionProvider(this, shareItem, this, platFroms);
-			shareItem.setActionProvider(shareActionProvider);
-		} else {
-			menu.removeItem(R.id.menu_share);
-		}
-		return super.onCreateOptionsMenu(menu);
-	};
-	
-	@Override public boolean onOptionsItemSelected(MenuItem item) {
-		if(item.getItemId() == android.R.id.home){
-			exePush();
-			finish();
-		}
-		return super.onOptionsItemSelected(item);
-	}
 
 
     @Override
@@ -92,9 +67,6 @@ public class CommonWebActivity extends BaseActivity implements OnShareLinstener 
 
 	private void exePush(){
 		if(push!=null && !push.equals("")){
-			Intent intent = new Intent (this,MainActivity_.class);
-			intent.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
-			startActivity(intent);
 		}
         finish();
 	}
@@ -115,10 +87,6 @@ public class CommonWebActivity extends BaseActivity implements OnShareLinstener 
 			break;
 		default:
 			break;
-		}
-		if (!pointName.equals("")) {
-			MobAgentTools.OnEventMobOnDiffUser(this, pointName);
-			QFCommonUtils.collect(pointName, this);
 		}
 	}
 

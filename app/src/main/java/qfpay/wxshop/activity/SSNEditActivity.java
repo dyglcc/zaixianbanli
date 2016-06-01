@@ -18,7 +18,6 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.actionbarsherlock.app.ActionBar;
 import com.adhoc.utils.T;
 
 import org.androidannotations.annotations.AfterViews;
@@ -109,12 +108,6 @@ public class SSNEditActivity extends BaseActivity
 	void inits() {
 
 //		mScrollview.addOnFocusListener(this);
-		ActionBar actionBar = getSupportActionBar();
-		actionBar.setCustomView(R.layout.common_menuitem_suisuinian);
-		actionBar.setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
-		actionBar.setDisplayShowCustomEnabled(true);
-		View view = actionBar.getCustomView();
-		btn_back = (Button) view.findViewById(R.id.btn_back);
 		btn_back.setOnClickListener(new OnClickListener() {
 
 			@Override
@@ -124,7 +117,6 @@ public class SSNEditActivity extends BaseActivity
 
 			}
 		});
-		btn_save = (Button) view.findViewById(R.id.btn_save);
 		btn_save.setOnClickListener(new OnClickListener() {
 
 			@Override

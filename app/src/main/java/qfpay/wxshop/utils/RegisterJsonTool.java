@@ -16,6 +16,8 @@ import qfpay.wxshop.data.beans.CityBean;
 import qfpay.wxshop.data.beans.ProvinceBean;
 import android.content.Context;
 
+import com.adhoc.utils.T;
+
 public class RegisterJsonTool {
 
 	private Context context;

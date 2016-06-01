@@ -8,7 +8,6 @@ import org.androidannotations.annotations.EViewGroup;
 import org.androidannotations.annotations.ViewById;
 
 import qfpay.wxshop.R;
-import qfpay.wxshop.activity.NoticeCenterActivity;
 import qfpay.wxshop.data.beans.NoticeItemBean;
 import qfpay.wxshop.utils.Utils;
 import android.annotation.SuppressLint;
@@ -19,6 +18,8 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import com.adhoc.utils.T;
 
 @EViewGroup(R.layout.list_item_notice)
 public class NoticeItem extends LinearLayout {
@@ -99,7 +100,7 @@ public class NoticeItem extends LinearLayout {
 				}
                 // 一键代发 消息类
                 if(gb2.getType() == 6){
-                    handler.sendEmptyMessage(NoticeCenterActivity.CHANGETAB);
+//                    handler.sendEmptyMessage(NoticeCenterActivity.CHANGETAB);
                 }
 				
 			}
@@ -109,10 +110,10 @@ public class NoticeItem extends LinearLayout {
 
 	protected void go2ReadingActivity(NoticeItemBean gb) {
 		gb.setUnread("0");
-		CommonWebActivity_.intent(context)
-				.url(gb.getLink())
-				.title(gb.getTitle()).start();
-		handler.sendEmptyMessage(NoticeCenterActivity.NOTIFY_DATA);
+//		CommonWebActivity_.intent(context)
+//				.url(gb.getLink())
+//				.title(gb.getTitle()).start();
+//		handler.sendEmptyMessage(NoticeCenterActivity.NOTIFY_DATA);
 	}
 
 	protected void showDialogConfirmCanclePromo(String content, final int pos) {

@@ -1,8 +1,6 @@
 package qfpay.wxshop.ui.view;
 
 import qfpay.wxshop.R;
-import qfpay.wxshop.ui.main.fragment.OfficalListFragment;
-import qfpay.wxshop.ui.main.fragment.*;
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.os.Handler;
@@ -18,12 +16,8 @@ public class OffiGoodsListView extends ListView {
 	private View mEmptyFotterView;
 	private LayoutInflater mInflater;
 	private Context mContext;
-	private OfficalListFragment fragment;
 	public boolean isaddedEmptyFooter = false;
 
-	public void setFragment(OfficalListFragment fragment) {
-		this.fragment = fragment;
-	}
 
 	public OffiGoodsListView(Context context, AttributeSet attrs, int defStyle) {
 		super(context, attrs, defStyle);
@@ -57,16 +51,16 @@ public class OffiGoodsListView extends ListView {
 //			return;
 //		}
 		// 空列表 有数据
-		if ((OfficalListFragment_.data.isEmpty() && !OfficalListFragment_.nodata)) {
-			if (handler != null) {
-				handler.sendEmptyMessage(OfficalListFragment_.ACTION_GET_DATA);
-			}
-			return;
-		}
-		if (!OfficalListFragment_.data.isEmpty()) {
-			addFooter();
-			return;
-		}
+//		if ((OfficalListFragment_.data.isEmpty() && !OfficalListFragment_.nodata)) {
+//			if (handler != null) {
+//				handler.sendEmptyMessage(OfficalListFragment_.ACTION_GET_DATA);
+//			}
+//			return;
+//		}
+//		if (!OfficalListFragment_.data.isEmpty()) {
+//			addFooter();
+//			return;
+//		}
 
 	}
 

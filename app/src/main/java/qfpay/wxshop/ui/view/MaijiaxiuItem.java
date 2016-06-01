@@ -9,12 +9,7 @@ import qfpay.wxshop.R;
 import qfpay.wxshop.WxShopApplication;
 import qfpay.wxshop.data.beans.BuyerResponseWrapper.BuyerShowBean;
 import qfpay.wxshop.data.beans.BuyerResponseWrapper.ImageBean;
-import qfpay.wxshop.data.handler.MainHandler;
-import qfpay.wxshop.data.net.ConstValue;
-import qfpay.wxshop.data.netImpl.MaijiaxiuDelNetImpl;
-import qfpay.wxshop.ui.buyersshow.*;
-import qfpay.wxshop.ui.buyersshow.BuyersShowReleaseNetProcesser;
-import qfpay.wxshop.ui.main.fragment.MaijiaxiuFragment;
+import qfpay.wxshop.utils.ConstValue;
 import qfpay.wxshop.utils.MobAgentTools;
 import qfpay.wxshop.utils.Utils;
 import android.annotation.SuppressLint;
@@ -37,18 +32,15 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.androidquery.AQuery;
+import com.adhoc.utils.T;
 import com.loveplusplus.demo.image.ImagePagerActivity;
 
 public class MaijiaxiuItem extends LinearLayout {
-	BuyersShowReleaseNetProcesser bsrsp;
 	TextView tv_text;
 	TextView tv_date;
 	TextView tv_time;
 	BuyerShowBean gb;
-	private AQuery aquery;
 	private Context context;
-	private MaijiaxiuFragment fragment;
 	private Handler handler;
 	Button btn_del, btn_edit;
 	ImageView iv_0, iv_1, iv_2, iv_3, iv_4, iv_5, iv_6, iv_7, iv_8, iv_extra_1;
@@ -61,15 +53,13 @@ public class MaijiaxiuItem extends LinearLayout {
 		super(context);
 	}
 
-	public MaijiaxiuItem(Context context, MaijiaxiuFragment fragment, BuyerShowBean gb, AQuery aq,
-			Handler handler, int pos, BuyersShowReleaseNetProcesser bean) {
+	public MaijiaxiuItem(Context context, BuyerShowBean gb,
+			Handler handler, int pos) {
 		this(context);
 		LayoutInflater.from(getContext()).inflate(R.layout.list_item_maijiaxiu,
 				this);
 		this.handler = handler;
-		this.aquery = aq;
 		this.context = context;
-		this.fragment = fragment;
 
 		tv_text = (TextView) findViewById(R.id.tv_text);
 		tv_date = (TextView) findViewById(R.id.tv_date);
@@ -91,7 +81,6 @@ public class MaijiaxiuItem extends LinearLayout {
 		line1 = findViewById(R.id.line_1);
 		line2 = findViewById(R.id.line_2);
 		setValues(gb, pos);
-		this.bsrsp = bean;
 
 	}
 
@@ -159,10 +148,6 @@ public class MaijiaxiuItem extends LinearLayout {
 						T.i("index" + offset);
 						if (offset == gb.getContent().length() + 1) {
 
-                            CommonWebActivity_.intent(context).url("http://"+WxShopApplication.app.getDomainMMWDUrl()+"/item_detail/"
-                                    + gb.getGood_id()
-                                    + "?from=app_preview").title("查看商品详情").start();
-
 						}
 					}
 				}
@@ -198,7 +183,6 @@ public class MaijiaxiuItem extends LinearLayout {
 			tv_text.setText(html);
 		}
 
-		tv_date.setText(MaijiaxiuFragment.dateStrs.get(pos));
 		tv_text.setTag(pos);
 		setTextImageListener(tv_text);
 		List<ImageBean> images = gb.getHm_images();
@@ -224,14 +208,14 @@ public class MaijiaxiuItem extends LinearLayout {
 				addListener(iv_extra_1, 0, ib.getUrl());
 			}
 		}
-		if (currentDiffNext(gb, pos)) {
-			line1.setVisibility(View.VISIBLE);
-			line2.setVisibility(View.GONE);
-
-		} else {
-			line1.setVisibility(View.GONE);
-			line2.setVisibility(View.VISIBLE);
-		}
+//		if (currentDiffNext(gb, pos)) {
+//			line1.setVisibility(View.VISIBLE);
+//			line2.setVisibility(View.GONE);
+//
+//		} else {
+//			line1.setVisibility(View.GONE);
+//			line2.setVisibility(View.VISIBLE);
+//		}
 		//
 		String updateTime = getTimeStr(gb.getUpdate_time(), pos);
 		tv_time.setText(updateTime);
@@ -262,25 +246,25 @@ public class MaijiaxiuItem extends LinearLayout {
 		return "发布时间";
 	}
 
-	private boolean currentDiffNext(BuyerShowBean gb2, int pos) {
-		if (pos + 1 >= MaijiaxiuFragment.data.size()) {
-			return true;
-		}
-		BuyerShowBean buyerShowBean = MaijiaxiuFragment.data.get(pos + 1);
-		if (buyerShowBean == null) {
-			return true;
-		}
-		CharSequence dateString = buyerShowBean.getChineseDate();
-		if (dateString == null) {
-			return true;
-		}
-		CharSequence dateString2 = gb2.getChineseDate();
-		if (dateString.equals(dateString2)) {
-			return true;
-		} else {
-			return false;
-		}
-	}
+//	private boolean currentDiffNext(BuyerShowBean gb2, int pos) {
+//		if (pos + 1 >= MaijiaxiuFragment.data.size()) {
+//			return true;
+//		}
+//		BuyerShowBean buyerShowBean = MaijiaxiuFragment.data.get(pos + 1);
+//		if (buyerShowBean == null) {
+//			return true;
+//		}
+//		CharSequence dateString = buyerShowBean.getChineseDate();
+//		if (dateString == null) {
+//			return true;
+//		}
+//		CharSequence dateString2 = gb2.getChineseDate();
+//		if (dateString.equals(dateString2)) {
+//			return true;
+//		} else {
+//			return false;
+//		}
+//	}
 
 //	private CharSequence getDateString(int pos, String datestr) {
 //		if (MaijiaxiuFragment.dateStrs.containsKey(pos)) {
@@ -369,9 +353,9 @@ public class MaijiaxiuItem extends LinearLayout {
 				|| imageBean.getUrl().equals("")) {
 			return;
 		}
-		aquery.id(iv_extra_1).image(
-				Utils.getThumblePic(imageBean.getUrl(), 400), true, true, 0,
-				R.drawable.list_item_default);
+//		aquery.id(iv_extra_1).image(
+//				Utils.getThumblePic(imageBean.getUrl(), 400), true, true, 0,
+//				R.drawable.list_item_default);
 
 	}
 
@@ -439,9 +423,9 @@ public class MaijiaxiuItem extends LinearLayout {
 
 			View parent = (View) imageViews[i].getParent();
 			parent.setVisibility(View.VISIBLE);
-			aquery.id(imageViews[i]).image(
-					Utils.getThumblePic(imageb.getUrl(), 260), true, true, 0,
-					R.drawable.list_item_default);
+//			aquery.id(imageViews[i]).image(
+//					Utils.getThumblePic(imageb.getUrl(), 260), true, true, 0,
+//					R.drawable.list_item_default);
 		}
 	}
 
@@ -465,9 +449,9 @@ public class MaijiaxiuItem extends LinearLayout {
 				MobAgentTools.OnEventMobOnDiffUser(context,
 						"click_maijiaxiu_edit");
 
-				bsrsp.setMaijiaxiuLinstener(fragment, pos);
-				BuyersShowReleaseActivity_.intent(fragment).bean(gb)
-						.startForResult(MaijiaxiuFragment.ACTION_EDIT_MAIJIAXIU);
+//				bsrsp.setMaijiaxiuLinstener(fragment, pos);
+//				BuyersShowReleaseActivity_.intent(fragment).bean(gb)
+//						.startForResult(MaijiaxiuFragment.ACTION_EDIT_MAIJIAXIU);
 			}
 		});
 
@@ -495,28 +479,28 @@ public class MaijiaxiuItem extends LinearLayout {
 					@Override
 					public void onClick(View arg0) {
 
-						MaijiaxiuDelNetImpl netDel = new MaijiaxiuDelNetImpl(
-								(Activity) context);
-						Bundle bun = new Bundle();
-						bun.putString("mid", gb.getMid());
-						netDel.request(bun, new MainHandler(context) {
-
-							@Override
-							public void onSuccess(Bundle bundle) {
-								Message msg = handler.obtainMessage();
-								Bundle bun = new Bundle();
-								bun.putInt("pos", pos);
-								bun.putSerializable("buyshowbean", gb);
-								msg.setData(bun);
-								msg.what = MaijiaxiuFragment.MAIJIAXIU_DEL;
-								handler.sendMessage(msg);
-							}
-
-							@Override
-							public void onFailed(Bundle bundle) {
-
-							}
-						});
+//						MaijiaxiuDelNetImpl netDel = new MaijiaxiuDelNetImpl(
+//								(Activity) context);
+//						Bundle bun = new Bundle();
+//						bun.putString("mid", gb.getMid());
+//						netDel.request(bun, new MainHandler(context) {
+//
+//							@Override
+//							public void onSuccess(Bundle bundle) {
+//								Message msg = handler.obtainMessage();
+//								Bundle bun = new Bundle();
+//								bun.putInt("pos", pos);
+//								bun.putSerializable("buyshowbean", gb);
+//								msg.setData(bun);
+//								msg.what = MaijiaxiuFragment.MAIJIAXIU_DEL;
+//								handler.sendMessage(msg);
+//							}
+//
+//							@Override
+//							public void onFailed(Bundle bundle) {
+//
+//							}
+//						});
 
 					}
 				});

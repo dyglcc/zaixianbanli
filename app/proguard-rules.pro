@@ -1,10 +1,14 @@
--optimizationpasses 99
--dontusemixedcaseclassnames
--dontskipnonpubliclibraryclasses
--dontpreverify
--ignorewarnings
--verbose
--optimizations !code/simplification/arithmetic,!field/*,!class/merging/*
+-allowaccessmodification
+#-repackageclasses 'com.adhoc'
+-keepattributes *Annotation*
+#-optimizationpasses 99
+#-dontusemixedcaseclassnames
+#-dontskipnonpubliclibraryclasses
+#-dontpreverify
+#-ignorewarnings
+#-verbose
+
+#-optimizations !code/simplification/arithmetic,!field/*,!class/merging/*
 
 -keep public class * extends android.app.Activity
 -keep public class * extends android.app.Application
@@ -174,3 +178,13 @@
 -keep class * implements android.os.Parcelable {
   public static final android.os.Parcelable$Creator *;
 }
+#-keepclassmembers class * {
+#    <methods>;
+#}
+#不要混淆ExperimentFlags的所有属性与方法
+-keepclasseswithmembers class com.adhoc.adhocsdk.ExperimentFlags {
+    <fields>;
+    <methods>;
+}
+#不要混淆adhoc的所有interface
+-keep interface com.adhoc.adhocsdk.OnAdHocReceivedData { *; }

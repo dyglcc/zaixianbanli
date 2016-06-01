@@ -9,11 +9,7 @@ import org.androidannotations.annotations.EViewGroup;
 import org.androidannotations.annotations.ViewById;
 
 import qfpay.wxshop.R;
-import qfpay.wxshop.config.WDConfig;
 import qfpay.wxshop.data.beans.OfficialGoodItemBean;
-import qfpay.wxshop.ui.main.fragment.OfficalListFragment;
-import qfpay.wxshop.ui.web.*;
-import qfpay.wxshop.utils.Toaster;
 import qfpay.wxshop.utils.Utils;
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -28,7 +24,8 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.squareup.picasso.Picasso;
+import com.adhoc.pic.Picasso;
+
 
 @EViewGroup(R.layout.list_item_official_goods)
 public class OfficialGoodsItem extends LinearLayout {

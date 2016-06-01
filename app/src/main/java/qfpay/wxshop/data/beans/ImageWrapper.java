@@ -6,7 +6,7 @@ import java.io.Serializable;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import qfpay.wxshop.data.net.ConstValue;
+import qfpay.wxshop.utils.ConstValue;
 import qfpay.wxshop.utils.Utils;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;

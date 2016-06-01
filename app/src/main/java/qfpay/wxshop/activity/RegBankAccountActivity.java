@@ -48,7 +48,6 @@ public class RegBankAccountActivity extends BaseActivity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		getUmenBsStaticUrl(); 
 	}
 	
 	@AfterViews
@@ -114,20 +113,7 @@ public class RegBankAccountActivity extends BaseActivity {
 		}
 		return true;
 	}
-	
-	public void getUmenBsStaticUrl() {
-		if (Utils.isCanConnectionNetWork(this)) {
-			new Thread(new Runnable() {
-				@Override
-				public void run() {
-					if (rateString == null) {
-						rateString = MobclickAgent.getConfigParams(RegBankAccountActivity.this, ConstValue.ONLINE_RATE);
-					}
-				}
-			}).start();
-		}
-	}
-	
+
 	private static Dialog dialog;
 	
 	protected void showConfirmDialog() {

@@ -6,8 +6,6 @@ import java.util.Calendar;
 import java.util.Date;
 
 import qfpay.wxshop.R;
-import qfpay.wxshop.activity.ManPromoActivity;
-import qfpay.wxshop.activity.*;
 import qfpay.wxshop.wheel.deflaut.ArrayWheelAdapter;
 import qfpay.wxshop.wheel.deflaut.OnWheelChangedListener;
 import qfpay.wxshop.wheel.deflaut.OnWheelScrollListener;
@@ -152,18 +150,6 @@ public class TimePickerWheel extends LinearLayout {
 			return;
 		}
 		String dateStr = dateStrs.get(this.provinceIndex);
-		if (!(this.cityIndex > hours.size())) {
-			outsideView.setText(dateStr + " " +hours.get(cityIndex));
-			// 生成需要的str
-			Date date = dates.get(provinceIndex);
-			if (currentSelection == ManPromoActivity.START_TIME_SELECTION) {
-				ManPromoActivity_.startTime = format3.format(date) + cityIndex
-						+ ":00:00";
-			} else if (currentSelection == ManPromoActivity.END_TIME_SELECTION) {
-				ManPromoActivity_.endTime = format3.format(date) + cityIndex
-						+ ":00:00";
-			}
-		}
 	}
 
 	public void setCityTextView(TextView outsideView) {

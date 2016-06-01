@@ -3,8 +3,6 @@ package qfpay.wxshop.ui.view;
 import qfpay.wxshop.R;
 import qfpay.wxshop.WxShopApplication;
 import qfpay.wxshop.ui.main.MainActivity;
-import qfpay.wxshop.ui.main.fragment.*;
-import qfpay.wxshop.ui.web.*;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -22,12 +20,12 @@ public class MaijiaxiuListView extends ListView {
     private View mEmptyFotterView;
     private LayoutInflater mInflater;
     private Context mContext;
-    private MaijiaxiuFragment fragment;
+//    private MaijiaxiuFragment fragment;
     public boolean isaddedEmptyFooter = false;
 
-    public void setFragment(MaijiaxiuFragment fragment) {
-        this.fragment = fragment;
-    }
+//    public void setFragment(MaijiaxiuFragment fragment) {
+//        this.fragment = fragment;
+//    }
 
     public MaijiaxiuListView(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
@@ -54,25 +52,25 @@ public class MaijiaxiuListView extends ListView {
 
     }
 
-    public void checkFooterView() {
-        if (MaijiaxiuFragment_.data.isEmpty() && MaijiaxiuFragment_.nodata) {
-            removeFooterView();
-            addEmptyFooterView();
-            return;
-        }
-        // 空列表 有数据
-        if (MaijiaxiuFragment_.data.isEmpty() && !MaijiaxiuFragment_.nodata) {
-            if (handler != null) {
-                handler.sendEmptyMessage(MaijiaxiuFragment_.ACTION_GET_DATA);
-            }
-            return;
-        }
-        if (!MaijiaxiuFragment_.data.isEmpty()) {
-            addFooter();
-            return;
-        }
-
-    }
+//    public void checkFooterView() {
+//        if (MaijiaxiuFragment_.data.isEmpty() && MaijiaxiuFragment_.nodata) {
+//            removeFooterView();
+//            addEmptyFooterView();
+//            return;
+//        }
+//        // 空列表 有数据
+//        if (MaijiaxiuFragment_.data.isEmpty() && !MaijiaxiuFragment_.nodata) {
+//            if (handler != null) {
+//                handler.sendEmptyMessage(MaijiaxiuFragment_.ACTION_GET_DATA);
+//            }
+//            return;
+//        }
+//        if (!MaijiaxiuFragment_.data.isEmpty()) {
+//            addFooter();
+//            return;
+//        }
+//
+//    }
 
     public View getmFooterView() {
         return mFooterMOREView;
@@ -115,16 +113,16 @@ public class MaijiaxiuListView extends ListView {
 
         Button btnSee = (Button) mEmptyFotterView
                 .findViewById(R.id.btn_empty_see);
-        btnSee.setOnClickListener(new OnClickListener() {
-
-            @Override
-            public void onClick(View arg0) {
-                if (fragment != null) {
-                    ((MainActivity) fragment.getActivity()).onAddBuyersShow();
-                }
-                mEmptyFotterView.setVisibility(View.INVISIBLE);
-            }
-        });
+//        btnSee.setOnClickListener(new OnClickListener() {
+//
+//            @Override
+//            public void onClick(View arg0) {
+//                if (fragment != null) {
+//                    ((MainActivity) fragment.getActivity()).onAddBuyersShow();
+//                }
+//                mEmptyFotterView.setVisibility(View.INVISIBLE);
+//            }
+//        });
         mEmptyFotterView.findViewById(R.id.tv_empty_link).setOnClickListener(
                 new OnClickListener() {
 
@@ -139,7 +137,7 @@ public class MaijiaxiuListView extends ListView {
 //						fragment.startActivity(intent);
 
 
-                        CommonWebActivity_.intent(fragment.getActivity()).url("http://" + WxShopApplication.app.getDomainMMWDUrl() + "/h5/show.html?shopid=605").title("查看她人买家秀").start();
+//                        CommonWebActivity_.intent(fragment.getActivity()).url("http://" + WxShopApplication.app.getDomainMMWDUrl() + "/h5/show.html?shopid=605").title("查看她人买家秀").start();
                     }
                 });
 

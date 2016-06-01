@@ -1,8 +1,6 @@
 package qfpay.wxshop.ui.view;
 
 import qfpay.wxshop.R;
-import qfpay.wxshop.ui.main.fragment.HuoYuanFragment;
-import qfpay.wxshop.ui.main.fragment.MineBuysListFragment;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -20,12 +18,12 @@ public class MineBuyListView extends ListView {
 	private View mEmptyFotterView;
 	private LayoutInflater mInflater;
 	private Context mContext;
-	private MineBuysListFragment fragment;
+//	private MineBuysListFragment fragment;
 	public boolean isaddedEmptyFooter = false;
 
-	public void setFragment(MineBuysListFragment fragment) {
-		this.fragment = fragment;
-	}
+//	public void setFragment(MineBuysListFragment fragment) {
+//		this.fragment = fragment;
+//	}
 
 	public MineBuyListView(Context context, AttributeSet attrs, int defStyle) {
 		super(context, attrs, defStyle);
@@ -52,26 +50,26 @@ public class MineBuyListView extends ListView {
 
 	}
 
-	public void checkFooterView() {
-		
-		if (MineBuysListFragment_.data.isEmpty() && MineBuysListFragment_.nodata) {
-			removeFooterView();
-			addEmptyFooterView();
-			return;
-		}
-		// 空列表 有数据
-		if (MineBuysListFragment_.data.isEmpty() && !MineBuysListFragment_.nodata) {
-			if (handler != null) {
-				handler.sendEmptyMessage(MineBuysListFragment_.ACTION_GET_DATA);
-			}
-			return;
-		}
-		if (!MineBuysListFragment_.data.isEmpty()) {
-			addFooter();
-			return;
-		}
-
-	}
+//	public void checkFooterView() {
+//
+//		if (MineBuysListFragment_.data.isEmpty() && MineBuysListFragment_.nodata) {
+//			removeFooterView();
+//			addEmptyFooterView();
+//			return;
+//		}
+//		// 空列表 有数据
+//		if (MineBuysListFragment_.data.isEmpty() && !MineBuysListFragment_.nodata) {
+//			if (handler != null) {
+//				handler.sendEmptyMessage(MineBuysListFragment_.ACTION_GET_DATA);
+//			}
+//			return;
+//		}
+//		if (!MineBuysListFragment_.data.isEmpty()) {
+//			addFooter();
+//			return;
+//		}
+//
+//	}
 
 	public View getmFooterView() {
 		return mFooterMOREView;
@@ -113,16 +111,16 @@ public class MineBuyListView extends ListView {
 
 		ImageView btnSee = (ImageView) mEmptyFotterView
 				.findViewById(R.id.btn_empty_see);
-		btnSee.setOnClickListener(new OnClickListener() {
-
-			@Override
-			public void onClick(View arg0) {
-				HuoYuanFragment fragment = (HuoYuanFragment) MainTab.HUOYUAN
-		                .getFragment();
-		        fragment.changePager(0);
-				
-			}
-		});
+//		btnSee.setOnClickListener(new OnClickListener() {
+//
+//			@Override
+//			public void onClick(View arg0) {
+//				HuoYuanFragment fragment = (HuoYuanFragment) MainTab.HUOYUAN
+//		                .getFragment();
+//		        fragment.changePager(0);
+//
+//			}
+//		});
 	}
 
 	private Handler handler;

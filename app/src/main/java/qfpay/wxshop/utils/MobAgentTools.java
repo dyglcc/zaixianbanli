@@ -18,31 +18,20 @@ public class MobAgentTools {
 		if (!isStatic) {
 			return;
 		}
-		long startTime = WxShopApplication.dataEngine.getRegTimeMillist();
-		if (startTime == 0) {
-			MobclickAgent.onEvent(context, key);
-		} else {
-			if ((System.currentTimeMillis() - startTime) > extra) {
-				MobclickAgent.onEvent(context, key);
-			} else {
-				MobclickAgent.onEvent(context, key + "_newuser");
-			}
-		}
 	}
 	public static void OnEventMobOnDiffUser(Context context, String key,Map<String, String> map) {
 		if (!isStatic) {
 			return;
 		}
-		long startTime = WxShopApplication.dataEngine.getRegTimeMillist();
-		if (startTime == 0) {
-			MobclickAgent.onEvent(context, key,map);
-		} else {
-			if ((System.currentTimeMillis() - startTime) > extra) {
-				MobclickAgent.onEvent(context, key,map);
-			} else {
-				MobclickAgent.onEvent(context, key + "_newuser",map);
-			}
-		}
+//		if (startTime == 0) {
+//			MobclickAgent.onEvent(context, key,map);
+//		} else {
+//			if ((System.currentTimeMillis() - startTime) > extra) {
+//				MobclickAgent.onEvent(context, key,map);
+//			} else {
+//				MobclickAgent.onEvent(context, key + "_newuser",map);
+//			}
+//		}
 	}
 
 	public static void OnvalueMobOnDiffUser(Context context, String key,
@@ -50,16 +39,6 @@ public class MobAgentTools {
 		
 		if (!isStatic) {
 			return;
-		}
-		long startTime = WxShopApplication.dataEngine.getRegTimeMillist();
-		if (startTime == 0) {
-			MobclickAgent.onEventValue(context, key,map, value);
-		} else {
-			if ((System.currentTimeMillis() - startTime) > extra) {
-				MobclickAgent.onEventValue(context, key, map, value);
-			} else {
-				MobclickAgent.onEventValue(context, key + "_newuser", map, value);
-			}
 		}
 	}
 }

@@ -1,6 +1,5 @@
 package qfpay.wxshop.data.beans;
 
-import qfpay.wxshop.utils.MobAgentTools;
 import java.io.Serializable;
 
 public class UnitBean implements Serializable {

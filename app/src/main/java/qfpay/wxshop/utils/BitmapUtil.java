@@ -16,6 +16,8 @@ import android.graphics.Matrix;
 import android.graphics.Rect;
 import android.util.Log;
 
+import com.adhoc.utils.T;
+
 public class BitmapUtil {
 	/**
 	 * 

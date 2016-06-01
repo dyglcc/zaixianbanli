@@ -2,10 +2,6 @@ package qfpay.wxshop.activity;
 
 import qfpay.wxshop.utils.MobAgentTools;
 import qfpay.wxshop.R;
-import qfpay.wxshop.WxShopApplication;
-import qfpay.wxshop.config.WDConfig;
-import qfpay.wxshop.utils.QFCommonUtils;
-import qfpay.wxshop.utils.Utils;
 
 import android.app.Activity;
 import android.content.ComponentName;
@@ -22,7 +18,6 @@ import android.view.Window;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.indicator.CirclePageIndicator;
 import com.indicator.PageIndicator;
 import com.indicator.TabPageIndicator;
 
@@ -87,7 +82,7 @@ public class NewIntroductionActivity extends Activity {
 
         // 快捷方式的图标
         ShortcutIconResource iconRes = Intent.ShortcutIconResource.fromContext(
-                this, R.drawable.icon);
+                this, R.drawable.ic_launcher);
         shortcut.putExtra(Intent.EXTRA_SHORTCUT_ICON_RESOURCE, iconRes);
 
         sendBroadcast(shortcut);
@@ -141,11 +136,6 @@ public class NewIntroductionActivity extends Activity {
 
     private void initUi() {
         shouFaImageView = (ImageView) page5.findViewById(R.id.imageView1);
-        if (QFCommonUtils.isFirstLaunch(this)) {
-            shouFaImageView.setVisibility(View.VISIBLE);
-        } else {
-            shouFaImageView.setVisibility(View.INVISIBLE);
-        }
         tvRegister = (TextView) page5.findViewById(R.id.tv_register);
         tvLogin = (TextView) page5.findViewById(R.id.tv_login);
         tvOldLogin = (TextView) page5.findViewById(R.id.tv_old_login);

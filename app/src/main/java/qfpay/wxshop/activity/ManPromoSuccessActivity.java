@@ -107,9 +107,6 @@ public class ManPromoSuccessActivity extends BaseActivity {
 		if (gms == null) {
 			Toaster.l(this, "空了！");
 		}
-		WxShopApplication.psb.setNeedRefresh(true);
-		WxShopApplication.psb.setPos(pos);
-		WxShopApplication.psb.setGms(gms);
 		finish();
 	}
 

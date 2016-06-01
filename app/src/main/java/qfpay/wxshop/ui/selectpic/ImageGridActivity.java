@@ -5,7 +5,6 @@ import java.util.List;
 
 import qfpay.wxshop.R;
 import qfpay.wxshop.WxShopApplication;
-import qfpay.wxshop.ui.commodity.detailmanager.*;
 import qfpay.wxshop.ui.selectpic.ImageGridAdapter.TextCallback;
 import qfpay.wxshop.utils.Toaster;
 
@@ -27,8 +26,6 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.androidquery.AQuery;
-
 public class ImageGridActivity extends Activity {
 	public static final String EXTRA_IMAGE_LIST = "imagelist";
 
@@ -40,7 +37,6 @@ public class ImageGridActivity extends Activity {
 	private LinearLayout layout;
 	public static final int REFRESH_HORISCROLLVIEW_ADD = 10;
 	public static final int REFRESH_HORISCROLLVIEW_REMOVE = REFRESH_HORISCROLLVIEW_ADD + 1;
-	private AQuery aq;
 
 	Handler mHandler = new Handler() {
 		@Override
@@ -78,7 +74,6 @@ public class ImageGridActivity extends Activity {
 		
 		BitmapCache.getInstance().init(this);
 
-		aq = new AQuery(this);
 		layout = (LinearLayout) findViewById(R.id.selected_image_layout);
 		horiScroll = (HorizontalScrollView) findViewById(R.id.scrollview);
 		AlbumHelper.getHelper().init(this);
@@ -96,22 +91,11 @@ public class ImageGridActivity extends Activity {
 //
 //		});
 		
-		findViewById(R.id.btn_complete).setOnClickListener(new OnClickListener() {
-			
-			@Override
-			public void onClick(View v) {
-				
-				Intent intent = new Intent(ImageGridActivity.this, ItemDetailManagerActivity_.class);
-				setResult(Activity.RESULT_OK, intent);
-				finish();
-				
-			}
-		});
 		findViewById(R.id.btn_back).setOnClickListener(new OnClickListener() {
-			
+
 			@Override
 			public void onClick(View v) {
-				
+
 				finish();
 				WxShopApplication.paths.clear();
 				startActivity(new Intent(ImageGridActivity.this,AlbumActivity.class));
@@ -139,7 +123,6 @@ public class ImageGridActivity extends Activity {
 		imageView.setTag(itemAdd);
 		layout.addView(imageView);
 //		imageView.setImageBitmap(BitmapFactory.decodeFile(itemAdd.thumbnailPath));
-		aq.id(imageView).image(new File(itemAdd.imagePath),104);
 		imageView.postDelayed(new Runnable() {
 			@Override
 			public void run() {

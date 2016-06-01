@@ -1,6 +1,5 @@
 package qfpay.wxshop.ui.web.huoyuan;
 
-import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -9,9 +8,11 @@ import android.graphics.drawable.AnimationDrawable;
 import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.AsyncTask;
+import android.support.v7.app.ActionBar;
 import android.view.KeyEvent;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
-import android.view.View.OnClickListener;
 import android.webkit.CookieManager;
 import android.webkit.CookieSyncManager;
 import android.webkit.DownloadListener;
@@ -26,9 +27,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.actionbarsherlock.app.ActionBar;
-import com.actionbarsherlock.view.Menu;
-import com.actionbarsherlock.view.MenuItem;
+import com.adhoc.utils.T;
 
 import org.androidannotations.annotations.AfterViews;
 import org.androidannotations.annotations.EActivity;
@@ -44,19 +43,14 @@ import java.util.Map;
 
 import qfpay.wxshop.R;
 import qfpay.wxshop.WxShopApplication;
-import qfpay.wxshop.data.net.ConstValue;
-import qfpay.wxshop.getui.ImageUtils.ImageSizeForUrl;
 import qfpay.wxshop.share.OnShareLinstener;
 import qfpay.wxshop.share.SharedPlatfrom;
 import qfpay.wxshop.share.wexinShare.UtilsWeixinShare;
 import qfpay.wxshop.share.wexinShare.WeiXinDataBean;
 import qfpay.wxshop.app.BaseActivity;
-import qfpay.wxshop.ui.common.actionbar.ShareActionProvider;
-import qfpay.wxshop.ui.main.fragment.HuoYuanFragment;
-import qfpay.wxshop.ui.main.fragment.MaijiaxiuFragment;
 import qfpay.wxshop.ui.view.WebViewSavePic;
+import qfpay.wxshop.utils.ConstValue;
 import qfpay.wxshop.utils.MobAgentTools;
-import qfpay.wxshop.utils.QFCommonUtils;
 import qfpay.wxshop.utils.Utils;
 @EActivity(R.layout.web_common_activity_huoyuan)
 public class CommonWebActivityHuoyuan extends BaseActivity implements
@@ -131,8 +125,8 @@ public class CommonWebActivityHuoyuan extends BaseActivity implements
 //        webView.getSettings().setCacheMode(WebSettings.LOAD_NO_CACHE);
 //        webView.getSettings().setDomStorageEnabled(true);
 
-        header.put("QFCOOKIE", "sessionid=" + WxShopApplication.dataEngine.getcid());
-        header.put("qf_uid", WxShopApplication.dataEngine.getUserId());
+//        header.put("QFCOOKIE", "sessionid=" + WxShopApplication.dataEngine.getcid());
+//        header.put("qf_uid", WxShopApplication.dataEngine.getUserId());
 
 //        webView.setWebViewClient(new MyWebViewClient());
         webView.setDownloadListener(new MyWebViewDownLoadListener());
@@ -147,8 +141,6 @@ public class CommonWebActivityHuoyuan extends BaseActivity implements
 
         webView.addJavascriptInterface(new callCameroJavaScriptInterface(),
                 "android_finish_page");
-        webView.addJavascriptInterface(new SendUidInterface(),
-                "android_senduid2page");
         webView.addJavascriptInterface(new OnkeybehalfSuccess(),
                 "android_behalf_success");
 //        go2Onekey();
@@ -176,15 +168,15 @@ public class CommonWebActivityHuoyuan extends BaseActivity implements
             setVisiable();
         }
     }
-    private class SendUidInterface {
-        @JavascriptInterface
-        public String clickOnAndroid() {
-
-//            Toaster.l(CommonWebActivityHuoyuan.this,"click on android get id");
-            T.i("get uid click on android .." + WxShopApplication.dataEngine.getUserId());
-            return WxShopApplication.dataEngine.getUserId();
-        }
-    }
+//    private class SendUidInterface {
+//        @JavascriptInterface
+//        public String clickOnAndroid() {
+//
+////            Toaster.l(CommonWebActivityHuoyuan.this,"click on android get id");
+//            T.i("get uid click on android .." + WxShopApplication.dataEngine.getUserId());
+//            return WxShopApplication.dataEngine.getUserId();
+//        }
+//    }
     private class OnkeybehalfSuccess {
         @JavascriptInterface
         public void clickOnAndroid() {
@@ -199,53 +191,44 @@ public class CommonWebActivityHuoyuan extends BaseActivity implements
 		tv_title = (TextView)findViewById(R.id.tv_title);
 		tv_title.setText(title);
 		btn_save = (Button) findViewById(R.id.btn_save);
-		btn_save.setOnClickListener(new OnClickListener() {
-
-			@Override
-			public void onClick(View arg0) {
-				go2Myhuoyuan();
-			}
-		});
+//		btn_save.setOnClickListener(new OnClickListener() {
+//
+//			@Override
+//			public void onClick(View arg0) {
+//				go2Myhuoyuan();
+//			}
+//		});
 //		btn_save.setVisibility(View.VISIBLE);
-		btn_back.setOnClickListener(new OnClickListener() {
-
-			@Override
-			public void onClick(View arg0) {
-
-				if(btn_save.getVisibility() == View.VISIBLE){
-					go2Myhuoyuan();
-				}else{
-                    finishAct();
-				}
-
-			}
-		});
+//		btn_back.setOnClickListener(new OnClickListener() {
+//
+//			@Override
+//			public void onClick(View arg0) {
+//
+//				if(btn_save.getVisibility() == View.VISIBLE){
+//					go2Myhuoyuan();
+//				}else{
+//                    finishAct();
+//				}
+//
+//			}
+//		});
 	}
-	public void go2Myhuoyuan(){
-		HuoYuanFragment fragment = (HuoYuanFragment) MainTab.HUOYUAN
-                .getFragment();
-        fragment.changePager(1);
-
-		Intent intent = new Intent();
-        intent.putExtra("result", MaijiaxiuFragment.ACTION_HUOYUAN_ADD);
-        setResult(Activity.RESULT_OK, intent);
-        finishAct();
-        WxShopApplication.IS_NEED_REFRESH_MINE_HUOYUAN = true;
-    }
+//	public void go2Myhuoyuan(){
+//		HuoYuanFragment fragment = (HuoYuanFragment) MainTab.HUOYUAN
+//                .getFragment();
+//        fragment.changePager(1);
+//
+//		Intent intent = new Intent();
+//        intent.putExtra("result", MaijiaxiuFragment.ACTION_HUOYUAN_ADD);
+//        setResult(Activity.RESULT_OK, intent);
+//        finishAct();
+//        WxShopApplication.IS_NEED_REFRESH_MINE_HUOYUAN = true;
+//    }
 
 
 
     @Override
 	public boolean onCreateOptionsMenu(Menu menu) {
-		getSupportMenuInflater().inflate(R.menu.webview_share, menu);
-		MenuItem shareItem = menu.findItem(R.id.menu_share);
-		if (platFroms != null) {
-			ShareActionProvider shareActionProvider = new ShareActionProvider(
-					this, shareItem, this, platFroms);
-			shareItem.setActionProvider(shareActionProvider);
-		} else {
-			menu.removeItem(R.id.menu_share);
-		}
 		return super.onCreateOptionsMenu(menu);
 	};
 
@@ -297,8 +280,6 @@ public class CommonWebActivityHuoyuan extends BaseActivity implements
 	private void shareWxFriend() {
 		WeiXinDataBean wdb = new WeiXinDataBean();
 		wdb.url = webView.getUrl();
-		wdb.imgUrl = QFCommonUtils.generateQiniuUrl(
-				"http://qmmwx.u.qiniudn.com/icon.png", ImageSizeForUrl.MIN);
 		wdb.title = shareTitle;
 		wdb.description = webView.getTitle();
 		wdb.scope = ConstValue.friend_share;
@@ -309,8 +290,6 @@ public class CommonWebActivityHuoyuan extends BaseActivity implements
 	private void shareWxMoments() {
 		WeiXinDataBean wdb = new WeiXinDataBean();
 		wdb.url = webView.getUrl();
-		wdb.imgUrl = QFCommonUtils.generateQiniuUrl(
-				"http://qmmwx.u.qiniudn.com/icon.png", ImageSizeForUrl.MIN);
 		wdb.title = shareTitle;
 		wdb.description = webView.getTitle();
 		wdb.scope = ConstValue.circle_share;
@@ -424,8 +403,8 @@ public class CommonWebActivityHuoyuan extends BaseActivity implements
     }
 
     private class WebViewTask11 extends AsyncTask<Void, Void, Boolean> {
-        String sessionCookie ="sessionid="
-                + WxShopApplication.dataEngine.getcid();
+//        String sessionCookie ="sessionid="
+//                + WxShopApplication.dataEngine.getcid();
         CookieManager cookieManager;
 
         @Override
@@ -433,10 +412,10 @@ public class CommonWebActivityHuoyuan extends BaseActivity implements
             CookieSyncManager.createInstance(CommonWebActivityHuoyuan.this);
             cookieManager = CookieManager.getInstance();
 
-            if (sessionCookie != null) {
-                                /* delete old cookies */
-                cookieManager.removeSessionCookie();
-            }
+//            if (sessionCookie != null) {
+//                                /* delete old cookies */
+//                cookieManager.removeSessionCookie();
+//            }
             super.onPreExecute();
         }
         protected Boolean doInBackground(Void... param) {
@@ -446,10 +425,10 @@ public class CommonWebActivityHuoyuan extends BaseActivity implements
         }
         @Override
         protected void onPostExecute(Boolean result) {
-            if (sessionCookie != null) {
-                cookieManager.setCookie(url, sessionCookie);
-                CookieSyncManager.getInstance().sync();
-            }
+//            if (sessionCookie != null) {
+//                cookieManager.setCookie(url, sessionCookie);
+//                CookieSyncManager.getInstance().sync();
+//            }
 
             webView.setDownloadListener(new MyWebViewDownLoadListener());
             webView.setWebViewClient(new WebViewClient() {

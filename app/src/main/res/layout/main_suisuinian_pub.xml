@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:editscroll="http://schemas.android.com/apk/res/qfpay.wxshop"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:background="#fbfefa"
     android:orientation="vertical" >
+
+    <!--xmlns:editscroll="http://schemas.android.com/apk/res/qfpay.wxshop"-->
 
     <ScrollView
         android:layout_width="fill_parent"
@@ -134,14 +135,14 @@
                         android:src="@drawable/icon_ssl_text" />
                 </LinearLayout>
 
-                <qfpay.wxshop.ui.view.EditorView
-                    android:id="@+id/parent"
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent"
-                    android:layout_marginLeft="-2dip"
-                    android:orientation="vertical"
-                    editscroll:vertical_space="@dimen/line_margin_bottom_edittext" >
-                </qfpay.wxshop.ui.view.EditorView>
+                <!--<qfpay.wxshop.ui.view.EditorView-->
+                    <!--android:id="@+id/parent"-->
+                    <!--android:layout_width="fill_parent"-->
+                    <!--android:layout_height="fill_parent"-->
+                    <!--android:layout_marginLeft="-2dip"-->
+                    <!--android:orientation="vertical"-->
+                    <!--editscroll:vertical_space="@dimen/line_margin_bottom_edittext" >-->
+                <!--</qfpay.wxshop.ui.view.EditorView>-->
             </LinearLayout>
         </LinearLayout>
     </ScrollView>

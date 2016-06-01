@@ -77,9 +77,6 @@ public class WDConfig {
 
 	public String WD_URL_HUO_YUAN = "http://mmwd.me/";
 
-	public String getShopUrl() {
-		return "http://" + WxShopApplication.app.getDomainMMWDUrl() + "/shop/";
-	}
 
     /**
      * 社交API地址
@@ -123,7 +120,7 @@ public class WDConfig {
 	 * */
 	public String getFansLoadUrl(Context context) {
 
-		return "http://"+WxShopApplication.app.getDomainMMWDUrl() + "/h5/b-fshy.html?" + "appVersion="
+		return "http:///h5/b-fshy.html?" + "appVersion="
 				+ Utils.getAppVersionString(context) + "&osversion="
 				+ Utils.getOSVerison(context);
 	}
@@ -183,7 +180,8 @@ public class WDConfig {
 	 * 展示店铺URL
 	 * */
 	public static final String SHOW_SHOP_ADDR = "http://"
-			+ WxShopApplication.app.getDomainMMWDUrl() + "/shop/";
+//			+ WxShopApplication.app.getDomainMMWDUrl() +
+			+"/shop/";
 
 	/**
 	 * 帮助
@@ -327,7 +325,7 @@ public class WDConfig {
 	 * 喵喵购
 	 * */
 	public final static String MIAOMIAOGOU = "http://"
-			+ WxShopApplication.app.getDomainMMWDUrl()
+//			+ WxShopApplication.app.getDomainMMWDUrl()
 			+ "/h5/mmg.html?ga_medium=android_b_menu_self";
 	/**
 	 * 发现个喵
@@ -340,8 +338,7 @@ public class WDConfig {
 	 * 排行榜
 	 * */
 	public String getPaihangbang() {
-		return "http://" + WxShopApplication.app.getDomainMMWDUrl()
-				+ "/h5/top.html?appversion="
+		return "http://h5/top.html?appversion="
 				+ Utils.getAppVersionString(WxShopApplication.app)
 				+ "&ga_medium=android_mmwdapp_communicate";
 	}
@@ -495,7 +492,7 @@ public class WDConfig {
         if(mPushServer !=0){
             return  "http://bj.mmwd.me/shop/";
         }
-		return "http://" + WxShopApplication.app.getDomainMMWDUrl() + "/shop/";
+		return "http:/shop/";
 	}
 
     public String getMyDynamicNotesListUrl(){
@@ -507,7 +504,9 @@ public class WDConfig {
         if(mPushServer != 0){
            return  "http://bj.mmwd.me/item/";
         }
-        return "http://" + WxShopApplication.app.getDomainMMWDUrl() + "/item/";
+        return "http://" +
+//				WxShopApplication.app.getDomainMMWDUrl() +
+				"/item/";
     }
 
 

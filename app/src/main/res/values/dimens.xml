@@ -26,6 +26,7 @@
     <dimen name="text_size_min">12dp</dimen>
     <dimen name="text_size_normal">16dp</dimen>
     <dimen name="text_size_big">18dp</dimen>
+    <dimen name="text_size_super_big">28dp</dimen>
 
     <!-- 货源tag padding -->
 

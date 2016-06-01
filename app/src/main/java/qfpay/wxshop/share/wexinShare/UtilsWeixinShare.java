@@ -7,9 +7,7 @@ import android.content.Context;
 import android.graphics.Bitmap;
 import android.widget.ImageView;
 
-import com.androidquery.AQuery;
-import com.androidquery.callback.AjaxStatus;
-import com.androidquery.callback.BitmapAjaxCallback;
+import com.adhoc.utils.T;
 import com.tencent.mm.sdk.openapi.SendMessageToWX;
 import com.tencent.mm.sdk.openapi.WXMediaMessage;
 import com.tencent.mm.sdk.openapi.WXWebpageObject;
@@ -99,18 +97,10 @@ public class UtilsWeixinShare {
 //		});
 //		tt1.start();
 
-        if(WxShopApplication.dataEngine.isFirstWeixinShare()){
-
-            share2Times(req);
-
-        }else{
-            WxShopApplication.api.sendReq(req);
-        }
 	}
 
     private static void share2Times(final SendMessageToWX.Req req) {
         WxShopApplication.api.sendReq(req);
-        WxShopApplication.dataEngine.isSetFirstWeixinShare(false);
         new Thread(new Runnable() {
             @Override
             public void run() {
@@ -149,21 +139,6 @@ public class UtilsWeixinShare {
 		if (wdb.thumbData == null) {
 
 			ImageView iv = new ImageView(WxShopApplication.app);
-
-			AQuery aQuery = new AQuery(WxShopApplication.app);
-			aQuery.id(iv).image(wdb.imgUrl, true, true, 120, 0,
-					new BitmapAjaxCallback() {
-
-						@Override
-						protected void callback(String url, ImageView iv,
-												Bitmap bm, AjaxStatus status) {
-							map = bm;
-							wdb.thumbData = BitmapUtil.bmpToByteArray(bm, true);
-							shareWeb(wdb, extra, context);
-							super.callback(url, iv, bm, status);
-						}
-
-					});
 
 			return false;
 		}

@@ -19,10 +19,8 @@ import java.util.regex.Pattern;
 import org.json.JSONException;
 
 import qfpay.wxshop.R;
-import qfpay.wxshop.WxShopApplication;
 import qfpay.wxshop.data.beans.OfficialGoodItemBean;
 import qfpay.wxshop.data.beans.SSNItemBean;
-import qfpay.wxshop.data.net.ConstValue;
 import qfpay.wxshop.dialogs.BaseDialogFragment;
 import qfpay.wxshop.dialogs.SimpleDialogFragment;
 import android.annotation.TargetApi;
@@ -67,12 +65,11 @@ import android.webkit.CookieSyncManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-//import cn.sharesdk.framework.Platform;
 
+import com.adhoc.utils.T;
 import com.qiniu.upload.tool.AuthException;
 import com.qiniu.upload.tool.Mac;
 import com.qiniu.upload.tool.PutPolicy;
-import com.squareup.okhttp.internal.Platform;
 
 @TargetApi(Build.VERSION_CODES.HONEYCOMB)
 public class Utils {
@@ -923,14 +920,13 @@ public class Utils {
 		CookieSyncManager.createInstance(context);
 		CookieManager cookieManager = CookieManager.getInstance();
 		cookieManager.setAcceptCookie(true);
-		String cookieString = "sessionid=" + WxShopApplication.dataEngine.getcid();
 		// cookieManager.removeSessionCookie();//移除
 		String pre = url.replace("http://", "");
         String domain = pre;
         if(pre.indexOf("/")!=-1){
            domain = pre.substring(0, pre.indexOf("/"));
         }
-		cookieManager.setCookie(domain, cookieString);
+//		cookieManager.setCookie(domain, cookieString);
 		CookieSyncManager.getInstance().sync();
 	}
 	public static void setCookiesHuoyuan(String url, Context context) {
@@ -943,17 +939,12 @@ public class Utils {
 		CookieSyncManager.createInstance(context);
 		CookieManager cookieManager = CookieManager.getInstance();
 		cookieManager.setAcceptCookie(true);
-		String cookieString = "qf_uid=" + WxShopApplication.dataEngine.getUserId();
 //		// cookieManager.removeSessionCookie();//移除
 		String pre = url.replace("http://", "");
         String domain = pre;
         if(pre.indexOf("/")!=-1){
            domain = pre.substring(0, pre.indexOf("/"));
         }
-        cookieManager.setCookie(".qfpay.com", "sessionid="+WxShopApplication.dataEngine.getcid());
-        cookieManager.setCookie(".qfpay.com", cookieString);
-        cookieManager.setCookie(domain, "sessionid="+WxShopApplication.dataEngine.getcid());
-        cookieManager.setCookie(domain, cookieString);
 		CookieSyncManager.getInstance().sync();
 	}
 	// public static void setCookiesOrderList(String url, Context context) {
@@ -1006,12 +997,12 @@ public class Utils {
 	}
 
 	public static String getSSNurl(SSNItemBean gb) {
-		return "http://" + WxShopApplication.app.getDomainMMWDUrl() + "/hmsg/"
+		return "http://"  + "/hmsg/"
 				+ gb.getId();
 	}
 
 	public static String getOfficialDetailUrl(OfficialGoodItemBean gb) {
-		return "http://" + WxShopApplication.app.getDomainMMWDUrl() + "/hmsg/"
+		return "http://" +"/hmsg/"
 				+ gb.getId();
 	}
 

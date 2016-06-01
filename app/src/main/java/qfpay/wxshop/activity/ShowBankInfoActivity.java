@@ -3,8 +3,8 @@ package qfpay.wxshop.activity;
 import qfpay.wxshop.R;
 import qfpay.wxshop.WxShopApplication;
 import qfpay.wxshop.config.WDConfig;
-import qfpay.wxshop.data.net.ConstValue;
 import qfpay.wxshop.app.BaseActivity;
+import qfpay.wxshop.utils.ConstValue;
 import qfpay.wxshop.utils.Utils;
 import android.content.Intent;
 import android.os.Bundle;
@@ -16,7 +16,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.TextView;
 
-import com.umeng.analytics.MobclickAgent;
+import com.adhoc.utils.T;
 
 /*
  * 银行信息界面展示
@@ -114,11 +114,11 @@ public class ShowBankInfoActivity extends BaseActivity implements Callback {
 				@Override
 				public void run() {
 
-					if (rateString == null) {
-						rateString = MobclickAgent.getConfigParams(
-								ShowBankInfoActivity.this,
-								ConstValue.ONLINE_RATE);
-					}
+//					if (rateString == null) {
+//						rateString = MobclickAgent.getConfigParams(
+//								ShowBankInfoActivity.this,
+//								ConstValue.ONLINE_RATE);
+//					}
 				}
 			}).start();
 		}
@@ -133,11 +133,11 @@ public class ShowBankInfoActivity extends BaseActivity implements Callback {
 				@Override
 				public void run() {
 
-					if (changeBankInfoString == null) {
-						changeBankInfoString = MobclickAgent.getConfigParams(
-								ShowBankInfoActivity.this,
-								ConstValue.ONLINE_BANK_INFO_CHANGE);
-					}
+//					if (changeBankInfoString == null) {
+//						changeBankInfoString = MobclickAgent.getConfigParams(
+//								ShowBankInfoActivity.this,
+//								ConstValue.ONLINE_BANK_INFO_CHANGE);
+//					}
 				}
 			}).start();
 		}
@@ -146,11 +146,8 @@ public class ShowBankInfoActivity extends BaseActivity implements Callback {
 	
 	private void initUi() {
 		tvAccount = (TextView) findViewById(R.id.tv_bankAccount);
-		tvAccount.setText(WxShopApplication.dataEngine.getBankUser());
 		tvBankCard = (TextView) findViewById(R.id.tv_card);
-		tvBankCard.setText(WxShopApplication.dataEngine.getBankAccount());
 		tvBanBranchName = (TextView) findViewById(R.id.tv_bank_branch);
-		tvBanBranchName.setText(WxShopApplication.dataEngine.getBrankBranchName());
 		tvContrachMiaoMiao = findViewById(R.id.tv_contract_miaomiao);
 		tvContrachMiaoMiao.setOnClickListener(new OnClickListener() {
 			
