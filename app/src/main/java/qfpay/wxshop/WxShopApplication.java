@@ -6,6 +6,7 @@ import android.content.Context;
 import com.adhoc.adhocsdk.AdhocTracker;
 import com.adhoc.utils.T;
 import com.tencent.mm.sdk.openapi.IWXAPI;
+import com.umeng.socialize.PlatformConfig;
 
 import org.androidannotations.annotations.EApplication;
 import org.androidannotations.api.BackgroundExecutor;
@@ -35,14 +36,23 @@ public class WxShopApplication extends Application {
 	@Override
 	public void onCreate() {
 		super.onCreate();
+		PlatformConfig.setWeixin("wx967daebe835fbeac", "5bb696d9ccd75a38c8a0bfe0675559b3");
+		//微信 appid appsecret
+//		PlatformConfig.setSinaWeibo("3921700954","04b48b094faeb16683c32669824ebdad");
+//		//新浪微博 appkey appsecret
+		PlatformConfig.setQQZone("100424468", "c7394704798a158208a74ab60104f0ba");
+		// QQ和Qzone appid appkey
+//		PlatformConfig.setAlipay("2015111700822536");
+//		//支付宝 appid
+//		PlatformConfig.setYixin("yxc0614e80c9304c11b0391514d09f13bf");
+//		//易信 appkey
+//		PlatformConfig.setTwitter("3aIN7fuF685MuZ7jtXkQxalyi", "MK6FEYG63eWcpDFgRYw4w9puJhzDl0tyuqWjZ3M7XJuuG7mMbO");
+//		//Twitter appid appkey
+//		PlatformConfig.setPinterest("1439206");
+//		//Pinterest appid
+//		PlatformConfig.setLaiwang("laiwangd497e70d4", "d497e70d4c3e4efeab1381476bac4c5e");
+//		//来往 appid appkey
 		AdhocTracker.init(this, "ADHOC_e4dff3eb-ffb3-42f6-988e-e13f4de61085");
-
-		boolean b = AdhocTracker.getExperimentFlags(this.getApplicationContext()).getBooleanFlag("mzd_enable_https", false);
-		if (b) {
-			T.i("hello0000000000000000000000000000000000000000000000000");
-		}
-
-		BackgroundExecutor.setExecutor(Executors.newScheduledThreadPool(8));
 	}
 
     public static WxShopApplication get(Context context) {

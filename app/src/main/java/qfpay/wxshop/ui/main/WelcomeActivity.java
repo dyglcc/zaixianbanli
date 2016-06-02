@@ -24,8 +24,8 @@ import qfpay.wxshop.utils.Utils;
  * 欢迎页
  */
 
+@WindowFeature({ Window.FEATURE_NO_TITLE , Window.FEATURE_INDETERMINATE_PROGRESS})
 @EActivity(R.layout.welcome_layout)
-@WindowFeature({Window.FEATURE_NO_TITLE, WindowManager.LayoutParams.FLAG_FULLSCREEN})
 public class WelcomeActivity extends BaseActivity {
 
     @ViewById

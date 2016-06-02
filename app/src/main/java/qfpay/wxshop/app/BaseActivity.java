@@ -3,8 +3,6 @@ package qfpay.wxshop.app;
 import org.androidannotations.api.BackgroundExecutor;
 
 
-import android.app.ActionBar;
-import android.app.Activity;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 

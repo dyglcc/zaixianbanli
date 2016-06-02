@@ -18,6 +18,14 @@
         android:name="getui.permission.GetuiService.qfpay.wxshop"
         android:protectionLevel="normal" />
 
+
+    <!--umeng-->
+
+    <uses-permission android:name="android.permission.SET_DEBUG_APP" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <!--umeng-->
+
+
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="getui.permission.GetuiService.qfpay.wxshop" />
@@ -41,7 +49,7 @@
     <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.CALL_PHONE" />
-    <!--<uses-permission android:name="android.permission.READ_LOGS"/>-->
+    <uses-permission android:name="android.permission.READ_LOGS"/>
 
     <uses-feature android:name="android.hardware.camera" />
     <uses-feature android:name="android.hardware.camera.autofocus" />
@@ -66,8 +74,8 @@
             android:name=".ui.main.WelcomeActivity_"
             android:exported="true"
             android:screenOrientation="portrait"
-            android:taskAffinity="qfpay.wxshop"
-            android:theme="@style/QFTransparent" >
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:taskAffinity="qfpay.wxshop" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -130,15 +138,6 @@
         <meta-data
             android:name="PUSH_GROUPID"
             android:value="" />
-
-        <!-- 配置第三方Receiver -->
-        <!-- 本地通知service 三天未打开app -->
-        <service
-            android:name=".getui.StartAlarmService"
-            android:exported="true"
-            android:label="AlarmService"
-            android:process=":alarmService" >
-        </service>
 
         <!--###########################################################-->
         <!-- 个推配置结束 -->
@@ -324,24 +323,36 @@
             android:name="app_name"
             android:value="wd" />
 
+
         <activity
-            android:name=".share.WXEntryActivity"
+            android:name="com.umeng.soexample.wxapi.WXEntryActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:exported="true"
             android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.NoTitleBar" />
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
 
-        <receiver
-            android:name=".getui.LaunchReceiver"
-            android:enabled="true"
-            android:exported="true" >
+
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true" >
             <intent-filter>
-                <action android:name="android.intent.action.BOOT_COMPLETED" >
-                </action>
-
-                <category android:name="android.intent.category.HOME" />
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="tencent100424468" />
             </intent-filter>
-        </receiver>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!--<activity-->
+            <!--android:name=".share.WXEntryActivity"-->
+            <!--android:configChanges="keyboardHidden|orientation|screenSize"-->
+            <!--android:exported="true"-->
+            <!--android:screenOrientation="portrait"-->
+            <!--android:theme="@android:style/Theme.NoTitleBar" />-->
         <!-- 高德地图APIKEY -->
         <meta-data
             android:name="com.amap.api.v2.apikey"
@@ -364,6 +375,11 @@
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+
+        <activity
+            android:name="com.umeng.socialize.editorpage.ShareActivity"
+            android:theme="@style/Theme.UMDefault"
+            android:excludeFromRecents="true"/>
 
     </application>
 

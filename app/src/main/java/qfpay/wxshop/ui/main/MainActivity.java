@@ -1,5 +1,7 @@
 package qfpay.wxshop.ui.main;
 
+import android.view.Menu;
+
 import org.androidannotations.annotations.AfterViews;
 import org.androidannotations.annotations.EActivity;
 
@@ -14,5 +16,12 @@ public class MainActivity extends BaseActivity {
     @AfterViews
     void initData() {
 
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.main, menu);
+        return true;
     }
 }
