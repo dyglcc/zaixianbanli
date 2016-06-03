@@ -23,7 +23,6 @@ package qfpay.wxshop.wheel;
 import java.util.LinkedList;
 import java.util.List;
 
-import qfpay.wxshop.R;
 import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Paint;
@@ -43,6 +42,9 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.animation.Interpolator;
 import android.widget.Scroller;
+
+import banli.jinniu.com.R;
+
 
 /**
  * Numeric wheel view.
@@ -1000,7 +1002,6 @@ public class WheelView extends View {
 	/**
 	 * Scroll the wheel
 	 * 
-	 * @param itemsToSkip
 	 *            items to scroll
 	 * @param time
 	 *            scrolling duration

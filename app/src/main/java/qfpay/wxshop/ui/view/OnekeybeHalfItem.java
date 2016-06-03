@@ -20,7 +20,7 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-import qfpay.wxshop.R;
+import banli.jinniu.com.R;
 import qfpay.wxshop.data.beans.GoodsBean;
 import qfpay.wxshop.data.beans.OnekeybehalfItemBean;
 import qfpay.wxshop.utils.MobAgentTools;

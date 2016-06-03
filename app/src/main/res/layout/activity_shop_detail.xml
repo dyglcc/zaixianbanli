@@ -1,8 +1,8 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/common_background"
-    tools:context="qfpay.wxshop.ui.BusinessCommunity.ShopDetailActivity">
+    android:background="@color/common_background">
+    <!--tools:context="qfpay.wxshop.ui.BusinessCommunity.ShopDetailActivity"-->
     <!--<RelativeLayout-->
         <!--android:layout_width="match_parent"-->
         <!--android:layout_height="wrap_content"-->

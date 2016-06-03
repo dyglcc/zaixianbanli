@@ -18,7 +18,7 @@ import java.util.regex.Pattern;
 
 import org.json.JSONException;
 
-import qfpay.wxshop.R;
+import banli.jinniu.com.R;
 import qfpay.wxshop.data.beans.OfficialGoodItemBean;
 import qfpay.wxshop.data.beans.SSNItemBean;
 import qfpay.wxshop.dialogs.BaseDialogFragment;

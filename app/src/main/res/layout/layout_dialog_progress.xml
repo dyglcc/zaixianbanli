@@ -8,8 +8,7 @@
     <ImageView
         android:id="@+id/loadingImageView"
         android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:background="@anim/anim_progress_dialog" />
+        android:layout_height="50dp" />
 
     <TextView
         android:id="@+id/id_tv_loadingmsg"

@@ -8,8 +8,7 @@
         android:id="@+id/loadingImageView"
         android:layout_width="80dp"
         android:layout_gravity="center"
-        android:layout_height="80dp"
-        android:background="@anim/anim_progress_dialog" />
+        android:layout_height="80dp" />
 
     <TextView
         android:id="@+id/id_tv_loadingmsg"

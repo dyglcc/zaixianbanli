@@ -1,7 +1,5 @@
 package com.loveplusplus.demo.image;
 
-import qfpay.wxshop.R;
-import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -12,6 +10,9 @@ import android.widget.ProgressBar;
 
 import com.co.senab.photoview.PhotoViewAttacher;
 import com.co.senab.photoview.PhotoViewAttacher.OnPhotoTapListener;
+
+import banli.jinniu.com.R;
+
 
 public class ImageDetailFragment extends Fragment {
 	private String mImageUrl;

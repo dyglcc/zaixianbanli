@@ -3,7 +3,7 @@ package qfpay.wxshop.ui.selectpic;
 import java.io.File;
 import java.util.List;
 
-import qfpay.wxshop.R;
+import banli.jinniu.com.R;
 import qfpay.wxshop.WxShopApplication;
 import qfpay.wxshop.ui.selectpic.ImageGridAdapter.TextCallback;
 import qfpay.wxshop.utils.Toaster;

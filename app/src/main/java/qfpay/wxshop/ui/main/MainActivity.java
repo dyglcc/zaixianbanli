@@ -5,7 +5,7 @@ import android.view.Menu;
 import org.androidannotations.annotations.AfterViews;
 import org.androidannotations.annotations.EActivity;
 
-import qfpay.wxshop.R;
+import banli.jinniu.com.R;
 import qfpay.wxshop.app.BaseActivity;
 
 /**

@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.os.Handler;
 import android.view.View;
 import android.view.Window;
-import android.view.WindowManager;
 import android.widget.TextView;
 
 import com.jinniu.animations.FadeInAnimation;
@@ -14,7 +13,7 @@ import org.androidannotations.annotations.EActivity;
 import org.androidannotations.annotations.ViewById;
 import org.androidannotations.annotations.WindowFeature;
 
-import qfpay.wxshop.R;
+import banli.jinniu.com.R;
 import qfpay.wxshop.WxShopApplication;
 import qfpay.wxshop.app.BaseActivity;
 import qfpay.wxshop.config.WDConfig;

@@ -1,17 +1,13 @@
 package qfpay.wxshop.utils;
 
-import qfpay.wxshop.ui.view.SquareLayout;
-import qfpay.wxshop.utils.MobAgentTools;
-import qfpay.wxshop.R;
 import android.app.Activity;
 import android.content.Context;
 import android.view.Gravity;
 import android.view.View;
-import android.widget.ImageView;
-import android.widget.LinearLayout;
-import android.widget.LinearLayout.LayoutParams;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import banli.jinniu.com.R;
 
 public class Toaster {
 

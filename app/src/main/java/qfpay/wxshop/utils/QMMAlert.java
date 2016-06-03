@@ -3,7 +3,6 @@ package qfpay.wxshop.utils;
 import java.util.ArrayList;
 import java.util.List;
 
-import qfpay.wxshop.R;
 
 import android.app.Activity;
 import android.app.Dialog;
@@ -27,6 +26,8 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
+
+import banli.jinniu.com.R;
 
 public final class QMMAlert {
 

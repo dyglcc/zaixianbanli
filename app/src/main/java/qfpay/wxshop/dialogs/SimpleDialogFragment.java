@@ -17,7 +17,6 @@ import qfpay.wxshop.utils.MobAgentTools;
 
 package qfpay.wxshop.dialogs;
 
-import qfpay.wxshop.R;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.os.Bundle;
@@ -27,6 +26,8 @@ import android.text.Html;
 import android.text.SpannedString;
 import android.text.TextUtils;
 import android.view.View;
+
+import banli.jinniu.com.R;
 
 /**
  * Dialog for displaying simple message, message with title or message with title and two buttons. Implement {@link

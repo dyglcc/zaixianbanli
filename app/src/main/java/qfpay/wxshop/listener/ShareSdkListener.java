@@ -2,7 +2,6 @@ package qfpay.wxshop.listener;
 
 import java.util.HashMap;
 
-import qfpay.wxshop.R;
 import qfpay.wxshop.activity.share.ShareActivity;
 import qfpay.wxshop.utils.MobAgentTools;
 import android.content.Context;

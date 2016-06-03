@@ -7,7 +7,7 @@ import org.androidannotations.annotations.ViewById;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import qfpay.wxshop.R;
+import banli.jinniu.com.R;
 import qfpay.wxshop.app.BaseActivity;
 import qfpay.wxshop.utils.ConstValue;
 import qfpay.wxshop.utils.Toaster;

@@ -16,8 +16,6 @@ import qfpay.wxshop.utils.MobAgentTools;
  */
 
 package qfpay.wxshop.dialogs;
-
-import qfpay.wxshop.R;
 import android.app.Dialog;
 import android.content.Context;
 import android.content.res.ColorStateList;
@@ -39,6 +37,8 @@ import android.widget.LinearLayout;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
+
+import banli.jinniu.com.R;
 
 /**
  * Base dialog fragment for all your dialogs, stylable and same design on Android 2.2+.

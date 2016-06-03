@@ -1,5 +1,6 @@
 package qfpay.wxshop.config.update;
 
+import banli.jinniu.com.R;
 import qfpay.wxshop.utils.ConstValue;
 import qfpay.wxshop.utils.MobAgentTools;
 
@@ -11,7 +12,6 @@ import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-import qfpay.wxshop.R;
 import qfpay.wxshop.utils.Toaster;
 import android.app.Activity;
 import android.app.AlertDialog;

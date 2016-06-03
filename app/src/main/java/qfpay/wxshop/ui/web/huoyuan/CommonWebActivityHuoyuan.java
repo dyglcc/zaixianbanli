@@ -41,20 +41,15 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
-import qfpay.wxshop.R;
+import banli.jinniu.com.R;
 import qfpay.wxshop.WxShopApplication;
-import qfpay.wxshop.share.OnShareLinstener;
-import qfpay.wxshop.share.SharedPlatfrom;
-import qfpay.wxshop.share.wexinShare.UtilsWeixinShare;
-import qfpay.wxshop.share.wexinShare.WeiXinDataBean;
 import qfpay.wxshop.app.BaseActivity;
 import qfpay.wxshop.ui.view.WebViewSavePic;
 import qfpay.wxshop.utils.ConstValue;
 import qfpay.wxshop.utils.MobAgentTools;
 import qfpay.wxshop.utils.Utils;
 @EActivity(R.layout.web_common_activity_huoyuan)
-public class CommonWebActivityHuoyuan extends BaseActivity implements
-		OnShareLinstener {
+public class CommonWebActivityHuoyuan extends BaseActivity {
 	@ViewById
 	Button btn_back,btn_save;
 	@ViewById
@@ -67,8 +62,6 @@ public class CommonWebActivityHuoyuan extends BaseActivity implements
 	protected String title = "";
 	@Extra
 	String push = "";
-	@Extra
-    ArrayList<SharedPlatfrom> platFroms;
 	@Extra
 	String shareTitle = "", shareName = "";
 
@@ -257,45 +250,7 @@ public class CommonWebActivityHuoyuan extends BaseActivity implements
         finish();
     }
 
-	@Override
-	public void onShare(SharedPlatfrom which) {
-		switch (which) {
-		case WXFRIEND:
-			shareWxFriend();
-			break;
-		case WXMOMENTS:
-			shareWxMoments();
-			break;
-		default:
-			break;
-		}
-		putShareEvent(getShareFromName());
-	}
 
-	@Override
-	public String getShareFromName() {
-		return shareName;
-	}
-
-	private void shareWxFriend() {
-		WeiXinDataBean wdb = new WeiXinDataBean();
-		wdb.url = webView.getUrl();
-		wdb.title = shareTitle;
-		wdb.description = webView.getTitle();
-		wdb.scope = ConstValue.friend_share;
-		UtilsWeixinShare.shareWeb(wdb,
-				ConstValue.android_mmwdapp_manageshare_wctimeline, this);
-	}
-
-	private void shareWxMoments() {
-		WeiXinDataBean wdb = new WeiXinDataBean();
-		wdb.url = webView.getUrl();
-		wdb.title = shareTitle;
-		wdb.description = webView.getTitle();
-		wdb.scope = ConstValue.circle_share;
-		UtilsWeixinShare.shareWeb(wdb,
-				ConstValue.android_mmwdapp_manageshare_wcfriend, this);
-	}
 
 	private void putShareEvent(String shareName) {
 		if (ConstValue.SHARE_NAME_FINDMIAO.equals(shareName)) {

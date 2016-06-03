@@ -1,6 +1,5 @@
 package qfpay.wxshop.ui.view;
 
-import qfpay.wxshop.R;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -18,6 +17,8 @@ import android.util.TypedValue;
 import android.widget.ImageView;
 
 import com.adhoc.utils.T;
+
+import banli.jinniu.com.R;
 
 public class CustomImageView extends ImageView {
 	/**

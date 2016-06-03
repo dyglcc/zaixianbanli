@@ -1,6 +1,6 @@
 package qfpay.wxshop.activity;
 
-import qfpay.wxshop.R;
+import banli.jinniu.com.R;
 import qfpay.wxshop.WxShopApplication;
 import android.app.Activity;
 import android.os.Bundle;

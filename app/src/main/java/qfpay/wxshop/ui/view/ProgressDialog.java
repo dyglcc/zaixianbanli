@@ -1,11 +1,12 @@
 package qfpay.wxshop.ui.view;
 
-import qfpay.wxshop.R;
 import android.app.Dialog;
 import android.content.Context;
 import android.view.Gravity;
 import android.widget.ProgressBar;
 import android.widget.TextView;
+
+import banli.jinniu.com.R;
 
 public class ProgressDialog extends Dialog {
 	ProgressBar progressbar;

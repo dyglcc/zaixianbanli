@@ -1,22 +1,5 @@
 package qfpay.wxshop.ui.web.huoyuan;
 
-import java.io.File;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
-import org.androidannotations.annotations.AfterViews;
-import org.androidannotations.annotations.EFragment;
-import org.androidannotations.annotations.ViewById;
-
-import qfpay.wxshop.R;
-import qfpay.wxshop.WxShopApplication;
-import qfpay.wxshop.share.SharedPlatfrom;
-import qfpay.wxshop.app.BaseFragment;
-import qfpay.wxshop.ui.web.*;
-import qfpay.wxshop.utils.Utils;
 import android.annotation.SuppressLint;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
@@ -35,6 +18,17 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
+import org.androidannotations.annotations.AfterViews;
+import org.androidannotations.annotations.EFragment;
+import org.androidannotations.annotations.ViewById;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import banli.jinniu.com.R;
+import qfpay.wxshop.app.BaseFragment;
+import qfpay.wxshop.utils.Utils;
+
 @EFragment(R.layout.web_common_fragment_huoyuan)
 public class CommonWebFragmentHuyuan extends BaseFragment {
 	@ViewById
@@ -48,7 +42,6 @@ public class CommonWebFragmentHuyuan extends BaseFragment {
 
 	private String url = "";
 	private boolean isNeedLoadNewActivity = false;
-	private List<SharedPlatfrom> platFroms;
 	private String shareTitle = "", shareName = "";
 
 	public void setCompeleteButton(Button button) {
@@ -63,6 +56,7 @@ public class CommonWebFragmentHuyuan extends BaseFragment {
 		if (webView == null) {
 			return;
 		}
+
 		// 创建缓存文件夹
 		webView.getSettings().setDomStorageEnabled(true);
 		webView.getSettings().setAppCacheMaxSize(1024 * 1024 * 20);
@@ -101,8 +95,8 @@ public class CommonWebFragmentHuyuan extends BaseFragment {
 				return;
 			}
 
-			CommonWebActivityHuoyuan activity = (CommonWebActivityHuoyuan) getActivity();
-			activity.setVisiable();
+//			CommonWebActivityHuoyuan activity = (CommonWebActivityHuoyuan) getActivity();
+//			activity.setVisiable();
 			// Toaster.l(getActivity(), "exe function");
 //			ActionBar supportActionBar = activity.getSupportActionBar();
 //			View view = supportActionBar.getCustomView();
@@ -126,31 +120,7 @@ public class CommonWebFragmentHuyuan extends BaseFragment {
 		}
 	}
 
-	public CommonWebFragmentHuyuan init(String url,
-			boolean isNeedLoadNewActivity) {
-		return init(url, isNeedLoadNewActivity, null, null,
-				new SharedPlatfrom[0]);
-	}
 
-	public CommonWebFragmentHuyuan init(String url,
-			boolean isNeedLoadNewActivity, String shareTitle, String shareName,
-			SharedPlatfrom... platForms) {
-		this.url = url;
-		this.isNeedLoadNewActivity = isNeedLoadNewActivity;
-		this.shareName = shareName;
-		this.shareTitle = shareTitle;
-		this.platFroms = Arrays.asList(platForms);
-		//
-		if (getActivity() != null) {
-			Utils.setCookies(url, getActivity());
-		}
-
-		if (webView != null) {
-			webView.stopLoading();
-			webView.loadUrl(url, header);
-		}
-		return this;
-	}
 
 	@Override
 	public void onFragmentRefresh() {
@@ -196,13 +166,9 @@ public class CommonWebFragmentHuyuan extends BaseFragment {
 			return;
 		}
 		if (shareTitle == null || "".equals(shareTitle)) {
-			CommonWebActivity_.intent(getActivity()).url(url)
-					.title(webView.getTitle()).start();
+//			CommonWebActivity_.intent(getActivity()).url(url)
+//					.title(webView.getTitle()).start();
 		} else {
-			CommonWebActivity_.intent(getActivity()).url(url)
-					.title(webView.getTitle()).shareName(this.shareName)
-					.shareTitle(this.shareTitle).platFroms((ArrayList<SharedPlatfrom>) this.platFroms)
-					.start();
 		}
 	}
 

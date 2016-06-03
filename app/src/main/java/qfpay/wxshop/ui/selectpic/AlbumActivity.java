@@ -3,7 +3,7 @@ package qfpay.wxshop.ui.selectpic;
 import java.io.Serializable;
 import java.util.List;
 
-import qfpay.wxshop.R;
+import banli.jinniu.com.R;
 import qfpay.wxshop.WxShopApplication;
 import android.app.Activity;
 import android.content.Intent;

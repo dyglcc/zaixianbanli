@@ -13,11 +13,8 @@ import com.adhoc.pic.Picasso;
 
 import java.text.SimpleDateFormat;
 
-import qfpay.wxshop.R;
-import qfpay.wxshop.activity.SSNEditActivity;
-import qfpay.wxshop.activity.SSNEditActivity_;
+import banli.jinniu.com.R;
 import qfpay.wxshop.data.beans.SSNItemBean;
-import qfpay.wxshop.ui.web.CommonWebActivity_;
 import qfpay.wxshop.utils.MobAgentTools;
 import qfpay.wxshop.utils.Toaster;
 import qfpay.wxshop.utils.Utils;
@@ -145,8 +142,8 @@ public class SSNItem extends LinearLayout {
 			public void onClick(View arg0) {
 				MobAgentTools.OnEventMobOnDiffUser(context,
 						"Click_HybridText_Edit");
-				SSNEditActivity_.intent(context).item(gb).editpos(pos)
-						.startForResult(SSNEditActivity.SSN_EDIT);
+//				SSNEditActivity_.intent(context).item(gb).editpos(pos)
+//						.startForResult(SSNEditActivity.SSN_EDIT);
 			}
 		});
 		iv_extra_1.setOnClickListener(new OnClickListener() {
@@ -187,9 +184,9 @@ public class SSNItem extends LinearLayout {
 		if (gb.getTitle() != null) {
 			title = gb.getTitle();
 		}
-		CommonWebActivity_
-				.intent(context)
-				.url(Utils.getSSNurl(gb)).title(title).start();
+//		CommonWebActivity_
+//				.intent(context)
+//				.url(Utils.getSSNurl(gb)).title(title).start();
 	}
 
 	protected void showDialogConfirmCanclePromo(String content, final int pos) {

@@ -1,7 +1,6 @@
 package qfpay.wxshop.dialogs;
 
-import qfpay.wxshop.utils.MobAgentTools;
-import qfpay.wxshop.R;
+import banli.jinniu.com.R;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.res.TypedArray;

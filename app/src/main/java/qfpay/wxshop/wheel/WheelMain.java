@@ -1,12 +1,12 @@
 package qfpay.wxshop.wheel;
 
+import banli.jinniu.com.R;
 import qfpay.wxshop.utils.MobAgentTools;
 
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
 
-import qfpay.wxshop.R;
 import qfpay.wxshop.data.beans.CityBean;
 import qfpay.wxshop.data.beans.ProvinceBean;
 import qfpay.wxshop.utils.RegisterJsonTool;

@@ -1,11 +1,11 @@
 package qfpay.wxshop.ui.selectpic;
 
+import banli.jinniu.com.R;
 import qfpay.wxshop.ui.selectpic.BitmapCache.ImageCallback;
 
 import java.lang.ref.SoftReference;
 import java.util.List;
 
-import qfpay.wxshop.R;
 import android.app.Activity;
 import android.graphics.Bitmap;
 import android.util.Log;

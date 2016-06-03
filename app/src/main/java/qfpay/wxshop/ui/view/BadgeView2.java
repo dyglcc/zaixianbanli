@@ -23,7 +23,8 @@ import android.widget.LinearLayout;
 import android.widget.TabWidget;
 import android.widget.TextView;
 
-import qfpay.wxshop.R;
+import banli.jinniu.com.R;
+
 
 /**
  * A simple text label view that can be applied as a "badge" to any given {@link android.view.View}. 
@@ -173,7 +174,7 @@ public class BadgeView2 extends TextView {
             group.removeView(target);
             group.addView(container,index,lp2);
 
-            TextView textView = new TextView(context,null,R.attr.vpiTitlePageIndicatorTextViewStyle);
+            TextView textView = new TextView(context,null, R.attr.vpiTitlePageIndicatorTextViewStyle);
             textView.setText(R.string.community_pagertitle_mydynamic);
             container.addView(textView,new FrameLayout.LayoutParams(LayoutParams.WRAP_CONTENT,LayoutParams.WRAP_CONTENT,Gravity.CENTER));
             this.setVisibility(View.GONE);

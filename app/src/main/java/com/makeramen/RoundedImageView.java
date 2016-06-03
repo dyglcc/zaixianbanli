@@ -1,6 +1,5 @@
 package com.makeramen;
 
-import qfpay.wxshop.R;
 import android.content.Context;
 import android.content.res.ColorStateList;
 import android.content.res.Resources;
@@ -12,6 +11,9 @@ import android.net.Uri;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.widget.ImageView;
+
+import banli.jinniu.com.R;
+
 
 public class RoundedImageView extends ImageView {
 

@@ -1,7 +1,7 @@
 package qfpay.wxshop.activity;
 
+import banli.jinniu.com.R;
 import qfpay.wxshop.utils.MobAgentTools;
-import qfpay.wxshop.R;
 
 import android.app.Activity;
 import android.content.ComponentName;

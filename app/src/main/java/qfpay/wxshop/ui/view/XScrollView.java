@@ -1,6 +1,5 @@
 package qfpay.wxshop.ui.view;
 
-import qfpay.wxshop.R;
 import android.annotation.TargetApi;
 import android.content.Context;
 import android.os.Build;
@@ -19,6 +18,8 @@ import android.widget.RelativeLayout;
 import android.widget.ScrollView;
 import android.widget.Scroller;
 import android.widget.TextView;
+
+import banli.jinniu.com.R;
 
 /**
  * XScrollView, modified from {@link com.markmao.pulltorefresh.widget.XListView}

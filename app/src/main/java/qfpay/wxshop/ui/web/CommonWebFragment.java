@@ -1,9 +1,6 @@
 package qfpay.wxshop.ui.web;
 
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 import org.androidannotations.annotations.AfterViews;
@@ -11,9 +8,7 @@ import org.androidannotations.annotations.EFragment;
 import org.androidannotations.annotations.ViewById;
 import org.androidannotations.annotations.res.DrawableRes;
 
-import qfpay.wxshop.R;
-import qfpay.wxshop.WxShopApplication;
-import qfpay.wxshop.share.SharedPlatfrom;
+import banli.jinniu.com.R;
 import qfpay.wxshop.app.BaseFragment;
 import qfpay.wxshop.utils.Utils;
 
@@ -48,7 +43,6 @@ public class CommonWebFragment extends BaseFragment {
 
     private String url = "";
     private boolean isNeedLoadNewActivity = false;
-    private List<SharedPlatfrom> platFroms;
     private String shareTitle = "",
             shareName = "",
             title = "";
@@ -81,39 +75,12 @@ public class CommonWebFragment extends BaseFragment {
             webView.loadUrl(url, header);
         }
     }
-    public CommonWebFragment init(String url, boolean isNeedLoadNewActivity) {
-        return init(url, isNeedLoadNewActivity, null, null, new SharedPlatfrom[0]);
-    }
-    public CommonWebFragment init(String url, boolean isNeedLoadNewActivity, String title) {
-        return init(url, isNeedLoadNewActivity, null, null, title, new SharedPlatfrom[0]);
-    }
-    public CommonWebFragment init(String url, boolean isNeedLoadNewActivity, String shareTitle, String shareName, SharedPlatfrom... platForms) {
-        this.url = url;
-        this.isNeedLoadNewActivity = isNeedLoadNewActivity;
-        this.shareName = shareName;
-        this.shareTitle = shareTitle;
-        this.platFroms = Arrays.asList(platForms);
-
-        if (getActivity() != null) {
-            Utils.setCookies(url, getActivity());
-            if (url != null && !"".equals(url)) {
-                webView.loadUrl(url,header);
-            }
-        }
-
-        if (webView != null) {
-            webView.stopLoading();
-            webView.loadUrl(url,header);
-        }
-        return this;
-    }
-    public CommonWebFragment init(String url, boolean isNeedLoadNewActivity, String shareTitle, String shareName, String title, SharedPlatfrom... platForms) {
+    public CommonWebFragment init(String url, boolean isNeedLoadNewActivity, String shareTitle, String shareName, String title) {
         this.url = url;
         this.isNeedLoadNewActivity = isNeedLoadNewActivity;
         this.shareName = shareName;
         this.shareTitle = shareTitle;
         this.title = title;
-        this.platFroms = Arrays.asList(platForms);
 
         if (getActivity() != null) {
             Utils.setCookies(url, getActivity());
@@ -174,10 +141,7 @@ public class CommonWebFragment extends BaseFragment {
             title = webView.getTitle();
         }
         if (shareTitle == null || "".equals(shareTitle)) {
-            CommonWebActivity_.intent(getActivity()).url(url).title(title).start();
         } else {
-            CommonWebActivity_.intent(getActivity()).url(url).title(title)
-                    .shareName(this.shareName).shareTitle(this.shareTitle).platFroms((ArrayList<SharedPlatfrom>) this.platFroms).start();
         }
     }
 

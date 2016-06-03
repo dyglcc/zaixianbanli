@@ -2,7 +2,7 @@ package qfpay.wxshop.activity;
 
 import java.util.List;
 
-import qfpay.wxshop.R;
+import banli.jinniu.com.R;
 import qfpay.wxshop.image.jinniu.ProgressUploadFile;
 import qfpay.wxshop.takepicUtils.PictureBean;
 import qfpay.wxshop.takepicUtils.TakePicUtils;

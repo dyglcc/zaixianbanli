@@ -1,7 +1,5 @@
 package qfpay.wxshop.ui.view;
 
-import qfpay.wxshop.R;
-
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.os.Handler;
@@ -10,6 +8,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.ListView;
+
+import banli.jinniu.com.R;
 
 public class MineBuyListView extends ListView {
 

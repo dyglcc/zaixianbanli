@@ -1,18 +1,5 @@
 package qfpay.wxshop.activity;
 
-import qfpay.wxshop.R;
-import qfpay.wxshop.WxShopApplication;
-import qfpay.wxshop.activity.share.ShareActivity;
-import qfpay.wxshop.share.OnShareLinstener;
-import qfpay.wxshop.share.SharedPlatfrom;
-import qfpay.wxshop.app.BaseActivity;
-
-import qfpay.wxshop.ui.view.WebViewSavePic;
-import qfpay.wxshop.utils.ConstValue;
-import qfpay.wxshop.utils.ShareUtils;
-import qfpay.wxshop.utils.Toaster;
-import qfpay.wxshop.utils.Utils;
-
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -40,11 +27,18 @@ import org.androidannotations.annotations.res.DrawableRes;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import banli.jinniu.com.R;
+import qfpay.wxshop.activity.share.ShareActivity;
+import qfpay.wxshop.app.BaseActivity;
+import qfpay.wxshop.ui.view.WebViewSavePic;
+import qfpay.wxshop.utils.ConstValue;
+import qfpay.wxshop.utils.Utils;
 /**
  * 预览店铺页面
  */
 @EActivity(R.layout.main_preview_webview)
-public class ManagePreViewActivity extends BaseActivity implements OnShareLinstener {
+public class ManagePreViewActivity extends BaseActivity  {
     @ViewById(R.id.contact_webview)
     WebViewSavePic webView;
 
@@ -75,12 +69,6 @@ public class ManagePreViewActivity extends BaseActivity implements OnShareLinste
             @Override
             public void onClick(View view) {
 
-                List<SharedPlatfrom> platfroms = new ArrayList<SharedPlatfrom>();
-                platfroms.add(SharedPlatfrom.WXFRIEND);
-                platfroms.add(SharedPlatfrom.WXMOMENTS);
-                platfroms.add(SharedPlatfrom.ONEKEY);
-                platfroms.add(SharedPlatfrom.COPY);
-//                SharePopupView.showSharePopupwin(view, ManagePreViewActivity.this, platfroms);
         }
         });
 //        if (gooditem != null) {
@@ -102,12 +90,6 @@ public class ManagePreViewActivity extends BaseActivity implements OnShareLinste
             @Override
             public void onClick(View view) {
 
-                List<SharedPlatfrom> platfroms = new ArrayList<SharedPlatfrom>();
-                platfroms.add(SharedPlatfrom.WXFRIEND);
-                platfroms.add(SharedPlatfrom.WXMOMENTS);
-                platfroms.add(SharedPlatfrom.ONEKEY);
-                platfroms.add(SharedPlatfrom.COPY);
-//                SharePopupView.showSharePopupwin(view, ManagePreViewActivity.this, platfroms);
 
             }
         });
@@ -125,7 +107,7 @@ public class ManagePreViewActivity extends BaseActivity implements OnShareLinste
         webView.getSettings().setCacheMode(WebSettings.LOAD_NORMAL);
         webView.getSettings().setDomStorageEnabled(true);
         webView.getSettings().setJavaScriptCanOpenWindowsAutomatically(true);
-        webView.setDownloadListener(new MyWebViewDownLoadListener());
+//        webView.setDownloadListener(new MyWebViewDownLoadListener());
         webView.setWebViewClient(new WebViewClient() {
             public boolean shouldOverrideUrlLoading(WebView view, String url) {
                 Utils.setCookies(url, ManagePreViewActivity.this);
@@ -211,47 +193,7 @@ public class ManagePreViewActivity extends BaseActivity implements OnShareLinste
         webView.loadUrl(url);
     }
 
-    @Override
-    public void onShare(SharedPlatfrom which) {
-        switch (which) {
-            case ONEKEY:
-//                WxShopApplication.shareBean = ShareUtils.getShareBean(gooditem, this);
-                Intent intent = new Intent(ManagePreViewActivity.this, ShareActivity.class);
-                intent.putExtra(ConstValue.gaSrcfrom, ga_medium);
-                intent.putExtra("share_content_type", ShareActivity.SHARE_CONTENT_GOOD_ITEM);
-                startActivity(intent);
-                break;
-            case WXFRIEND:
-//                ShareUtils.friendGoodItem(gooditem, this, ga_medium +"wcfriend");
-                break;
-            case WXMOMENTS:
-//                ShareUtils.momentsGoodItem(gooditem, this, ga_medium+"wctimeline");
-                break;
-            case COPY:
-//                Toaster.l(ManagePreViewActivity.this, "已复制商品链接");
-//                Utils.saveClipBoard(ManagePreViewActivity.this,
-//                        "http://" + WxShopApplication.app.getDomainMMWDUrl() + "/item/" + gooditem.getGoodsId());
-                break;
-            default:
-                break;
-        }
-    }
 
-    @Override
-    public String getShareFromName() {
-        return "商品";
-    }
-
-    private class MyWebViewDownLoadListener implements DownloadListener {
-
-        @Override
-        public void onDownloadStart(String url, String userAgent, String contentDisposition, String mimetype,
-                                    long contentLength) {
-            Uri uri = Uri.parse(url);
-            Intent intent = new Intent(Intent.ACTION_VIEW, uri);
-            startActivity(intent);
-        }
-    }
 
     enum PageState {
         COMPLETE, ERROR, LOADING

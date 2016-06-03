@@ -1,6 +1,5 @@
 package qfpay.wxshop.ui.view;
 
-import qfpay.wxshop.R;
 import android.content.Context;
 import android.util.AttributeSet;
 import android.view.Gravity;
@@ -12,6 +11,8 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
+
+import banli.jinniu.com.R;
 
 /**
  * The header view for {@link com.markmao.pulltorefresh.widget.XListView} and

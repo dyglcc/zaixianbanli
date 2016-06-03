@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
 
-import qfpay.wxshop.R;
+import banli.jinniu.com.R;
 import qfpay.wxshop.wheel.deflaut.ArrayWheelAdapter;
 import qfpay.wxshop.wheel.deflaut.OnWheelChangedListener;
 import qfpay.wxshop.wheel.deflaut.OnWheelScrollListener;

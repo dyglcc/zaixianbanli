@@ -1,12 +1,12 @@
 package qfpay.wxshop.ui.selectpic;
 
+import banli.jinniu.com.R;
 import qfpay.wxshop.utils.MobAgentTools;
 import java.io.BufferedInputStream;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 
-import qfpay.wxshop.R;
 
 import android.content.Context;
 import android.graphics.Bitmap;

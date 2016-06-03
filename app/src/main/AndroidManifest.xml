@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="qfpay.wxshop" >
+    package="banli.jinniu.com" >
 <!--
 项目用gradle构建，version code 和version name 在build.gradle中配置
 -->
@@ -55,7 +55,7 @@
     <uses-feature android:name="android.hardware.camera.autofocus" />
 
     <application
-        android:name=".WxShopApplication_"
+        android:name="qfpay.wxshop.WxShopApplication_"
         android:allowBackup="true"
         android:allowClearUserData="false"
         android:icon="@drawable/ic_launcher"
@@ -71,7 +71,7 @@
         <!-- Activity -->
         <!-- 欢迎页 -->
         <activity
-            android:name=".ui.main.WelcomeActivity_"
+            android:name="qfpay.wxshop.ui.main.WelcomeActivity_"
             android:exported="true"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.NoActionBar"
@@ -84,7 +84,7 @@
         </activity>
         <!-- 主界面(Tab) -->
         <activity
-            android:name=".ui.main.MainActivity_"
+            android:name="qfpay.wxshop.ui.main.MainActivity_"
             android:configChanges="keyboardHidden|orientation"
             android:hardwareAccelerated="true"
             android:launchMode="singleTask"
@@ -93,19 +93,14 @@
         <!--android:theme="@style/Theme.PageIndicatorDefaults"-->
         <!-- 所有无需特殊处理的页面的WebView包装 -->
         <activity
-            android:name=".ui.web.CommonWebActivity_"
-            android:configChanges="orientation|keyboardHidden|navigation"
-            android:exported="true"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".ui.web.WebActivity_"
+            android:name="qfpay.wxshop.ui.web.WebActivity_"
             android:configChanges="orientation|keyboardHidden|navigation"
             android:exported="true"
             android:screenOrientation="portrait" />
 
         <!-- 货源详情页面 -->
         <activity
-            android:name=".ui.web.huoyuan.CommonWebActivityHuoyuan_"
+            android:name="qfpay.wxshop.ui.web.huoyuan.CommonWebActivityHuoyuan_"
             android:configChanges="orientation|keyboardHidden|navigation"
             android:exported="true"
             android:screenOrientation="portrait" />
@@ -117,11 +112,11 @@
             android:theme="@android:style/Theme.NoTitleBar" />
         <!-- 店铺背景选择页 -->
         <activity
-            android:name=".activity.ShopHeaderPhotoPickerActivity_"
+            android:name="qfpay.wxshop.activity.ShopHeaderPhotoPickerActivity_"
             android:configChanges="orientation|keyboardHidden|navigation"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activity.menu.MyInComeActivity"
+            android:name="qfpay.wxshop.activity.menu.MyInComeActivity"
             android:configChanges="orientation|keyboardHidden|navigation"
             android:screenOrientation="portrait" />
         <!-- 店铺信息页 -->
@@ -144,7 +139,7 @@
 
         <!--引导滑屏页面-->
         <activity
-            android:name=".activity.NewIntroductionActivity"
+            android:name="qfpay.wxshop.activity.NewIntroductionActivity"
             android:configChanges="orientation|keyboardHidden|navigation"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Translucent.NoTitleBar" >
@@ -158,42 +153,42 @@
         </activity>
         <!--店铺名称编辑-->
         <activity
-            android:name=".activity.ShopNameEditActivity_"
+            android:name="qfpay.wxshop.activity.ShopNameEditActivity_"
             android:configChanges="orientation|keyboardHidden|navigation"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.NoTitleBar" >
         </activity>
         <!--微信名称编辑-->
         <activity
-            android:name=".activity.WeixinEditActivity_"
+            android:name="qfpay.wxshop.activity.WeixinEditActivity_"
             android:configChanges="orientation|keyboardHidden|navigation"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.NoTitleBar" >
         </activity>
         <!--图片显示类-->
         <activity
-            android:name=".ui.selectpic.ImageGridActivity"
+            android:name="qfpay.wxshop.ui.selectpic.ImageGridActivity"
             android:configChanges="orientation|keyboardHidden|navigation"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.NoTitleBar" >
         </activity>
         <!--相册缩略页面-->
         <activity
-            android:name=".ui.selectpic.AlbumActivity"
+            android:name="qfpay.wxshop.ui.selectpic.AlbumActivity"
             android:configChanges="orientation|keyboardHidden|navigation"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.NoTitleBar" >
         </activity>
         <!--公告引导介绍-->
         <activity
-            android:name=".activity.FunctionNoticeActivity"
+            android:name="qfpay.wxshop.activity.FunctionNoticeActivity"
             android:configChanges="orientation|keyboardHidden|navigation"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.NoTitleBar" >
         </activity>
         <!--买家秀引导介绍-->
         <activity
-            android:name=".activity.MaijiaxiuEmptyActivity_"
+            android:name="qfpay.wxshop.activity.MaijiaxiuEmptyActivity_"
             android:configChanges="orientation|keyboardHidden|navigation"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.NoTitleBar" >
@@ -201,7 +196,7 @@
         <!--设置秒杀-->
         <!--设置秒杀成功-->
         <activity
-            android:name=".activity.ManPromoSuccessActivity_"
+            android:name="qfpay.wxshop.activity.ManPromoSuccessActivity_"
             android:configChanges="orientation|keyboardHidden|navigation"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.NoTitleBar"
@@ -209,7 +204,7 @@
         </activity>
         <!--分享页面-->
         <activity
-            android:name=".activity.share.ShareActivity"
+            android:name="qfpay.wxshop.activity.share.ShareActivity"
             android:configChanges="orientation|keyboardHidden|navigation"
             android:screenOrientation="portrait"
             android:theme="@style/QFAppTheme"
@@ -217,21 +212,21 @@
         </activity>
         <!--通用webviewactivity-->
         <activity
-            android:name=".activity.GeneralWebViewActivity"
+            android:name="qfpay.wxshop.activity.GeneralWebViewActivity"
             android:configChanges="orientation|keyboardHidden|navigation"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.NoTitleBar" >
         </activity>
         <!--修改密码页面-->
         <activity
-            android:name=".activity.ChangePwdActivity"
+            android:name="qfpay.wxshop.activity.ChangePwdActivity"
             android:configChanges="orientation|keyboardHidden|navigation"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.NoTitleBar" >
         </activity>
         <!--更改银行卡账户-->
         <activity
-            android:name=".activity.ChangeBankCardInfoActivity"
+            android:name="qfpay.wxshop.activity.ChangeBankCardInfoActivity"
             android:configChanges="orientation|keyboardHidden|navigation"
             android:screenOrientation="portrait"
             android:exported="true"
@@ -239,7 +234,7 @@
         </activity>
         <!--编辑店铺名称-->
         <activity
-            android:name=".activity.InputShopNameActivity"
+            android:name="qfpay.wxshop.activity.InputShopNameActivity"
             android:configChanges="orientation|keyboardHidden|navigation"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.NoTitleBar"
@@ -248,13 +243,13 @@
         <!--登陆银行账号-->
         <!--登陆前一页，注册-->
         <activity
-            android:name=".activity.LoginPreviewActivity"
+            android:name="qfpay.wxshop.activity.LoginPreviewActivity"
             android:configChanges="orientation|keyboardHidden|navigation"
             android:screenOrientation="portrait" >
         </activity>
         <!--注册银行账号-->
         <activity
-            android:name=".activity.RegBankAccountActivity_"
+            android:name="qfpay.wxshop.activity.RegBankAccountActivity_"
             android:configChanges="orientation|keyboardHidden|navigation"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.NoTitleBar"
@@ -263,7 +258,7 @@
 
         <!--选择银行-->
         <activity
-            android:name=".activity.BankPickerActivity_"
+            android:name="qfpay.wxshop.activity.BankPickerActivity_"
             android:configChanges="orientation|keyboardHidden|navigation"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.NoTitleBar"
@@ -272,7 +267,7 @@
 
         <!--展示银行卡信息-->
         <activity
-            android:name=".activity.ShowBankInfoActivity"
+            android:name="qfpay.wxshop.activity.ShowBankInfoActivity"
             android:configChanges="orientation|keyboardHidden|navigation"
             android:screenOrientation="portrait" >
         </activity>
@@ -280,25 +275,25 @@
 
         <!--碎碎念发布-->
         <activity
-            android:name=".activity.SSNPublishActivity_"
+            android:name="qfpay.wxshop.activity.SSNPublishActivity_"
             android:configChanges="orientation|keyboardHidden|navigation"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize" >
         </activity>
         <!--碎碎念编辑-->
         <activity
-            android:name=".activity.SSNEditActivity_"
+            android:name="qfpay.wxshop.activity.SSNEditActivity_"
             android:configChanges="orientation|keyboardHidden|navigation"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize" >
         </activity>
         <activity
-            android:name=".activity.LabelActivity_"
+            android:name="qfpay.wxshop.activity.LabelActivity_"
             android:hardwareAccelerated="true"
             android:label="@string/title_activity_more"
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
         <activity
-            android:name=".activity.WeixinQmmActivity"
+            android:name="qfpay.wxshop.activity.WeixinQmmActivity"
             android:configChanges="orientation|keyboardHidden|navigation"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.NoTitleBar" >
@@ -324,12 +319,12 @@
             android:value="wd" />
 
 
-        <activity
-            android:name="com.umeng.soexample.wxapi.WXEntryActivity"
-            android:configChanges="keyboardHidden|orientation|screenSize"
-            android:exported="true"
-            android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!--<activity-->
+            <!--android:name=".wxapi.WXEntryActivity"-->
+            <!--android:theme="@android:style/Theme.Translucent.NoTitleBar"-->
+            <!--android:configChanges="keyboardHidden|orientation|screenSize"-->
+            <!--android:exported="true"-->
+            <!--android:screenOrientation="portrait" />`-->
 
 
         <activity
@@ -343,33 +338,33 @@
                 <data android:scheme="tencent100424468" />
             </intent-filter>
         </activity>
-        <activity
-            android:name="com.tencent.connect.common.AssistActivity"
-            android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
         <!--<activity-->
-            <!--android:name=".share.WXEntryActivity"-->
-            <!--android:configChanges="keyboardHidden|orientation|screenSize"-->
-            <!--android:exported="true"-->
+            <!--android:name="com.tencent.connect.common.AssistActivity"-->
             <!--android:screenOrientation="portrait"-->
-            <!--android:theme="@android:style/Theme.NoTitleBar" />-->
+            <!--android:theme="@android:style/Theme.Translucent.NoTitleBar" />-->
+        <activity
+            android:name="qfpay.wxshop.wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
         <!-- 高德地图APIKEY -->
         <meta-data
             android:name="com.amap.api.v2.apikey"
             android:value="6d013aa533a74cdf324d4706900239e8" />
 
         <!--sharesdk 授权页面-->
-        <activity
-            android:name="com.tencent.tauth.AuthActivity"
-            android:noHistory="true"
-            android:launchMode="singleTask" >
-            <intent-filter>
-                <action android:name="android.intent.action.VIEW" />
-                <category android:name="android.intent.category.DEFAULT" />
-                <category android:name="android.intent.category.BROWSABLE" />
-                <data android:scheme="tencent101004970" />
-            </intent-filter>
-        </activity>
+        <!--<activity-->
+            <!--android:name="com.tencent.tauth.AuthActivity"-->
+            <!--android:noHistory="true"-->
+            <!--android:launchMode="singleTask" >-->
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.VIEW" />-->
+                <!--<category android:name="android.intent.category.DEFAULT" />-->
+                <!--<category android:name="android.intent.category.BROWSABLE" />-->
+                <!--<data android:scheme="tencent101004970" />-->
+            <!--</intent-filter>-->
+        <!--</activity>-->
         <activity
             android:name="com.tencent.connect.common.AssistActivity"
             android:configChanges="orientation|keyboardHidden"

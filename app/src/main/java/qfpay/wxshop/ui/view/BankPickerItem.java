@@ -1,7 +1,7 @@
 package qfpay.wxshop.ui.view;
 
+import banli.jinniu.com.R;
 import qfpay.wxshop.utils.MobAgentTools;
-import qfpay.wxshop.R;
 import qfpay.wxshop.activity.BankPickerActivity;
 import qfpay.wxshop.data.beans.BankBean;
 import android.content.Context;

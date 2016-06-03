@@ -2,7 +2,7 @@ package qfpay.wxshop.wheel.deflaut;
 
 import java.util.ArrayList;
 
-import qfpay.wxshop.R;
+import banli.jinniu.com.R;
 import qfpay.wxshop.data.beans.CityBean;
 import qfpay.wxshop.data.beans.ProvinceBean;
 import qfpay.wxshop.utils.RegisterJsonTool;

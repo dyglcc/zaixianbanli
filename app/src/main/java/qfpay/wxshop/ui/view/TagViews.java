@@ -2,7 +2,6 @@ package qfpay.wxshop.ui.view;
 
 import java.util.List;
 
-import qfpay.wxshop.R;
 import android.content.Context;
 import android.graphics.Color;
 import android.graphics.Rect;
@@ -12,6 +11,8 @@ import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+
+import banli.jinniu.com.R;
 
 public class TagViews extends ViewGroup {
 

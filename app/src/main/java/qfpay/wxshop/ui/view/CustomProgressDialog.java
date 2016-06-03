@@ -1,8 +1,8 @@
 package qfpay.wxshop.ui.view;
 
+import banli.jinniu.com.R;
 import qfpay.wxshop.utils.MobAgentTools;
 
-import qfpay.wxshop.R;
 import android.app.Dialog;
 import android.content.Context;
 import android.graphics.drawable.AnimationDrawable;
@@ -32,7 +32,7 @@ public class CustomProgressDialog extends Dialog {
     }
 	
 	public static CustomProgressDialog createDialog(Context context){
-		customProgressDialog = new CustomProgressDialog(context,R.style.CustomProgressDialog);
+		customProgressDialog = new CustomProgressDialog(context, R.style.CustomProgressDialog);
 		customProgressDialog.setContentView(R.layout.layout_dialog_progress);
 		customProgressDialog.getWindow().getAttributes().gravity = Gravity.CENTER;
 		

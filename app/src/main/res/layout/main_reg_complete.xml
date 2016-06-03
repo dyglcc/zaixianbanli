@@ -121,7 +121,6 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="-4dip"
             android:layout_marginTop="-4dip"
-            android:background="@anim/anim_cheap_chick"
             android:visibility="visible" />
 
         <ImageView
@@ -131,7 +130,6 @@
             android:layout_alignRight="@+id/btn_save"
             android:layout_alignTop="@+id/btn_save"
             android:layout_marginTop="-44dip"
-            android:background="@anim/anim_lovely_cat"
             android:scaleType="center" />
     </RelativeLayout>
 

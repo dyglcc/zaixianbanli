@@ -9,7 +9,7 @@ import org.androidannotations.annotations.Click;
 import org.androidannotations.annotations.EActivity;
 import org.androidannotations.annotations.ViewById;
 
-import qfpay.wxshop.R;
+import banli.jinniu.com.R;
 import qfpay.wxshop.app.BaseActivity;
 import qfpay.wxshop.utils.Toaster;
 import qfpay.wxshop.utils.Utils;

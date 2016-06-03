@@ -1,13 +1,12 @@
 package qfpay.wxshop.activity;
 
 import org.androidannotations.annotations.AfterViews;
-import org.androidannotations.annotations.Bean;
 import org.androidannotations.annotations.Click;
 import org.androidannotations.annotations.EActivity;
 import org.androidannotations.annotations.Extra;
 import org.androidannotations.annotations.ViewById;
 
-import qfpay.wxshop.R;
+import banli.jinniu.com.R;
 import qfpay.wxshop.WxShopApplication;
 import qfpay.wxshop.activity.share.ShareActivity;
 import qfpay.wxshop.data.beans.GoodMSBean;
@@ -15,7 +14,6 @@ import qfpay.wxshop.data.beans.GoodsBean;
 import qfpay.wxshop.app.BaseActivity;
 import qfpay.wxshop.utils.ConstValue;
 import qfpay.wxshop.utils.MobAgentTools;
-import qfpay.wxshop.utils.ShareUtils;
 import qfpay.wxshop.utils.Toaster;
 import android.content.Intent;
 import android.view.View;
@@ -110,32 +108,8 @@ public class ManPromoSuccessActivity extends BaseActivity {
 		finish();
 	}
 
-	@Click(R.id.ll_share_moments)
-	void shareMoments() {
-		MobAgentTools.OnEventMobOnDiffUser(this,
-				"seckill_sharegoods_circle_manage");
-		ShareUtils.momentsGoodItem(gb, ManPromoSuccessActivity.this, "android_mmwdapp_seckill_wctimeline");
 
-	}
 
-	@Click(R.id.ll_share_friends)
-	void shareWX() {
-		MobAgentTools.OnEventMobOnDiffUser(this,
-				"seckill_sharegoods_wechat_manage");
-		ShareUtils.friendGoodItem(gb, ManPromoSuccessActivity.this, "android_mmwdapp_seckill_wcfriend");
-	}
-
-	@Click(R.id.ll_share_onekey)
-	void shareOneKey() {
-		MobAgentTools.OnEventMobOnDiffUser(this,
-				"seckill_sharegoods_onekey_manage");
-
-		WxShopApplication.shareBean = ShareUtils.getShareBean(gb, ManPromoSuccessActivity.this);
-		Intent intent = new Intent(ManPromoSuccessActivity.this, ShareActivity.class);
-		intent.putExtra(ConstValue.gaSrcfrom, "android_mmwdapp_seckill_");
-		intent.putExtra("share_content_type", ShareActivity.SHARE_CONTENT_MANPRO_SUCCESS);
-		startActivity(intent);
-	}
 
 	@Override
 	protected void onDestroy() {
