@@ -5,6 +5,7 @@ import android.content.Context;
 
 import com.adhoc.adhocsdk.AdhocTracker;
 import com.adhoc.utils.T;
+import com.tencent.bugly.crashreport.CrashReport;
 import com.tencent.mm.sdk.openapi.IWXAPI;
 import com.umeng.socialize.PlatformConfig;
 
@@ -36,6 +37,7 @@ public class WxShopApplication extends Application {
 	@Override
 	public void onCreate() {
 		super.onCreate();
+
 		PlatformConfig.setWeixin("wx967daebe835fbeac", "5bb696d9ccd75a38c8a0bfe0675559b3");
 		//微信 appid appsecret
 //		PlatformConfig.setSinaWeibo("3921700954","04b48b094faeb16683c32669824ebdad");
@@ -53,6 +55,10 @@ public class WxShopApplication extends Application {
 //		PlatformConfig.setLaiwang("laiwangd497e70d4", "d497e70d4c3e4efeab1381476bac4c5e");
 //		//来往 appid appkey
 		AdhocTracker.init(this, "ADHOC_e4dff3eb-ffb3-42f6-988e-e13f4de61085");
+
+		// bugly
+		CrashReport.initCrashReport(getApplicationContext(), "900033658", false);
+//		CrashReport.testJavaCrash();
 	}
 
     public static WxShopApplication get(Context context) {

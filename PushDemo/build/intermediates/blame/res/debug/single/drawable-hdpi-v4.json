@@ -1,0 +1,38 @@
+[
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/PushDemo/build/intermediates/res/merged/debug/drawable-hdpi-v4/delete.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/PushDemo/res/drawable-hdpi/delete.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/PushDemo/build/intermediates/res/merged/debug/drawable-hdpi-v4/search_frame.9.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/PushDemo/res/drawable-hdpi/search_frame.9.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/PushDemo/build/intermediates/res/merged/debug/drawable-hdpi-v4/open_button.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/PushDemo/res/drawable-hdpi/open_button.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/PushDemo/build/intermediates/res/merged/debug/drawable-hdpi-v4/top_background.xml",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/PushDemo/res/drawable-hdpi/top_background.xml"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/PushDemo/build/intermediates/res/merged/debug/drawable-hdpi-v4/search_btn_background.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/PushDemo/res/drawable-hdpi/search_btn_background.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/PushDemo/build/intermediates/res/merged/debug/drawable-hdpi-v4/list_item_color_bg.xml",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/PushDemo/res/drawable-hdpi/list_item_color_bg.xml"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/PushDemo/build/intermediates/res/merged/debug/drawable-hdpi-v4/search_top_background.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/PushDemo/res/drawable-hdpi/search_top_background.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/PushDemo/build/intermediates/res/merged/debug/drawable-hdpi-v4/ic_launcher.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/PushDemo/res/drawable-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/PushDemo/build/intermediates/res/merged/debug/drawable-hdpi-v4/close_button.png",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/PushDemo/res/drawable-hdpi/close_button.png"
+    }
+]

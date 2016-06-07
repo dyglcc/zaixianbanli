@@ -188,3 +188,7 @@
 }
 #不要混淆adhoc的所有interface
 -keep interface com.adhoc.adhocsdk.OnAdHocReceivedData { *; }
+
+# bugly
+-dontwarn com.tencent.bugly.**
+-keep public class com.tencent.bugly.**{*;}

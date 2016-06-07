@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/PushDemo/build/intermediates/res/merged/debug/layout/activity_add_localnotification.xml",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/PushDemo/res/layout/activity_add_localnotification.xml"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/PushDemo/build/intermediates/res/merged/debug/layout/localnotification_item.xml",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/PushDemo/res/layout/localnotification_item.xml"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/PushDemo/build/intermediates/res/merged/debug/layout/notification_view.xml",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/PushDemo/res/layout/notification_view.xml"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/PushDemo/build/intermediates/res/merged/debug/layout/activity_localnotification.xml",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/PushDemo/res/layout/activity_localnotification.xml"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/PushDemo/build/intermediates/res/merged/debug/layout/activity_test.xml",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/PushDemo/res/layout/activity_test.xml"
+    },
+    {
+        "merged": "/Users/dongyuangui/GITHUB/zaixianbanli/PushDemo/build/intermediates/res/merged/debug/layout/activity_main.xml",
+        "source": "/Users/dongyuangui/GITHUB/zaixianbanli/PushDemo/res/layout/activity_main.xml"
+    }
+]
