@@ -38,7 +38,8 @@ import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import banli.jinniu.com.R;
+import jiafen.jinniu.com.R;
+
 
 /**
  * Base dialog fragment for all your dialogs, stylable and same design on Android 2.2+.

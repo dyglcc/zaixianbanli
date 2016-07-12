@@ -33,7 +33,7 @@ import java.util.regex.Pattern;
 //import cn.sharesdk.tencent.qzone.QZone;
 //import cn.sharesdk.tencent.weibo.TencentWeibo;
 //import m.framework.utils.UIHandler;
-import banli.jinniu.com.R;
+import jiafen.jinniu.com.R;
 import qfpay.wxshop.WxShopApplication;
 import qfpay.wxshop.app.BaseActivity;
 import qfpay.wxshop.utils.ConstValue;

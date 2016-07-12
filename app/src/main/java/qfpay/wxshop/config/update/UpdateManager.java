@@ -1,6 +1,6 @@
 package qfpay.wxshop.config.update;
 
-import banli.jinniu.com.R;
+import jiafen.jinniu.com.R;
 import qfpay.wxshop.utils.ConstValue;
 import qfpay.wxshop.utils.MobAgentTools;
 

@@ -8,7 +8,7 @@ apply plugin: 'android-apt'
 apt {
     arguments {
         androidManifestFile variant.outputs[0].processResources.manifestFile
-        resourcePackageName 'banli.jinniu.com'
+        resourcePackageName 'jiafen.jinniu.com'
     }
 }
 
@@ -119,6 +119,7 @@ dependencies {
     compile files('libs/org.apache.http.legacy.jar')
     compile project(':Pushlib')
     compile files('libs/bugly_crash_release__2.1.5.jar')
+//    compile 'com.android.support:support-v4:21.0.+'
 }
 
 apply plugin: 'announce'

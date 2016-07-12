@@ -6,7 +6,7 @@ import org.androidannotations.annotations.EActivity;
 import org.androidannotations.annotations.Extra;
 import org.androidannotations.annotations.ViewById;
 
-import banli.jinniu.com.R;
+import jiafen.jinniu.com.R;
 import qfpay.wxshop.WxShopApplication;
 import qfpay.wxshop.activity.share.ShareActivity;
 import qfpay.wxshop.data.beans.GoodMSBean;

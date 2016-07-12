@@ -43,7 +43,7 @@ import android.view.View;
 import android.view.animation.Interpolator;
 import android.widget.Scroller;
 
-import banli.jinniu.com.R;
+import jiafen.jinniu.com.R;
 
 
 /**

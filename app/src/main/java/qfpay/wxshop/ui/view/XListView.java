@@ -19,7 +19,8 @@ import android.widget.RelativeLayout;
 import android.widget.Scroller;
 import android.widget.TextView;
 
-import banli.jinniu.com.R;
+import jiafen.jinniu.com.R;
+
 
 /**
  * XListView, it's based on <a href="https://github.com/Maxwin-z/XListView-Android">XListView(Maxwin)</a>

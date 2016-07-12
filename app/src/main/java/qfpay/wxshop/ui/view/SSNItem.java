@@ -13,7 +13,7 @@ import com.adhoc.pic.Picasso;
 
 import java.text.SimpleDateFormat;
 
-import banli.jinniu.com.R;
+import jiafen.jinniu.com.R;
 import qfpay.wxshop.data.beans.SSNItemBean;
 import qfpay.wxshop.utils.MobAgentTools;
 import qfpay.wxshop.utils.Toaster;

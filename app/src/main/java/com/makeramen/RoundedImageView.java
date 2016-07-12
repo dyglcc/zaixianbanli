@@ -12,7 +12,7 @@ import android.util.AttributeSet;
 import android.util.Log;
 import android.widget.ImageView;
 
-import banli.jinniu.com.R;
+import jiafen.jinniu.com.R;
 
 
 public class RoundedImageView extends ImageView {

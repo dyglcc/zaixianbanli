@@ -27,7 +27,8 @@ import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import banli.jinniu.com.R;
+import jiafen.jinniu.com.R;
+
 
 public final class QMMAlert {
 

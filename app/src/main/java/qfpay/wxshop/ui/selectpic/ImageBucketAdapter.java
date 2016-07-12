@@ -1,6 +1,6 @@
 package qfpay.wxshop.ui.selectpic;
 
-import banli.jinniu.com.R;
+import jiafen.jinniu.com.R;
 import qfpay.wxshop.ui.selectpic.BitmapCache.ImageCallback;
 
 import java.lang.ref.SoftReference;

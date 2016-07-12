@@ -9,7 +9,8 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.ListView;
 
-import banli.jinniu.com.R;
+import jiafen.jinniu.com.R;
+
 
 public class MineBuyListView extends ListView {
 

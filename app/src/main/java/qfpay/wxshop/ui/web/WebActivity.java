@@ -30,7 +30,7 @@ import org.androidannotations.annotations.ViewById;
 import java.util.HashMap;
 import java.util.Map;
 
-import banli.jinniu.com.R;
+import jiafen.jinniu.com.R;
 import qfpay.wxshop.app.BaseActivity;
 import qfpay.wxshop.ui.view.WebViewSavePic;
 import qfpay.wxshop.utils.Utils;

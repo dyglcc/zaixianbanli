@@ -19,7 +19,8 @@ import android.widget.ScrollView;
 import android.widget.Scroller;
 import android.widget.TextView;
 
-import banli.jinniu.com.R;
+import jiafen.jinniu.com.R;
+
 
 /**
  * XScrollView, modified from {@link com.markmao.pulltorefresh.widget.XListView}

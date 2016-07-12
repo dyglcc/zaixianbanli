@@ -27,7 +27,8 @@ import android.text.SpannedString;
 import android.text.TextUtils;
 import android.view.View;
 
-import banli.jinniu.com.R;
+import jiafen.jinniu.com.R;
+
 
 /**
  * Dialog for displaying simple message, message with title or message with title and two buttons. Implement {@link

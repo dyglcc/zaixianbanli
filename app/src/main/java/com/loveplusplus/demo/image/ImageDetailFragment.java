@@ -11,7 +11,7 @@ import android.widget.ProgressBar;
 import com.co.senab.photoview.PhotoViewAttacher;
 import com.co.senab.photoview.PhotoViewAttacher.OnPhotoTapListener;
 
-import banli.jinniu.com.R;
+import jiafen.jinniu.com.R;
 
 
 public class ImageDetailFragment extends Fragment {

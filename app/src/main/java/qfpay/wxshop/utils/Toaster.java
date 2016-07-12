@@ -7,7 +7,8 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import banli.jinniu.com.R;
+import jiafen.jinniu.com.R;
+
 
 public class Toaster {
 

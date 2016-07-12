@@ -28,7 +28,7 @@ import org.androidannotations.annotations.res.DrawableRes;
 import java.util.ArrayList;
 import java.util.List;
 
-import banli.jinniu.com.R;
+import jiafen.jinniu.com.R;
 import qfpay.wxshop.activity.share.ShareActivity;
 import qfpay.wxshop.app.BaseActivity;
 import qfpay.wxshop.ui.view.WebViewSavePic;

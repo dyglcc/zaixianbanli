@@ -16,7 +16,7 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.Date;
 
-import banli.jinniu.com.R;
+import jiafen.jinniu.com.R;
 import qfpay.wxshop.utils.ConstValue;
 import qfpay.wxshop.utils.QMMAlert;
 import qfpay.wxshop.utils.Toaster;

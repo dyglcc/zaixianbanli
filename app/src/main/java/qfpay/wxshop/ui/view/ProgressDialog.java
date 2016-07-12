@@ -6,7 +6,8 @@ import android.view.Gravity;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
-import banli.jinniu.com.R;
+import jiafen.jinniu.com.R;
+
 
 public class ProgressDialog extends Dialog {
 	ProgressBar progressbar;

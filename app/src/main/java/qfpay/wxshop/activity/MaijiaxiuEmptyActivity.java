@@ -10,8 +10,8 @@ import org.androidannotations.annotations.Click;
 import org.androidannotations.annotations.EActivity;
 import org.androidannotations.annotations.ViewById;
 
-import banli.jinniu.com.R;
 import de.greenrobot.event.EventBus;
+import jiafen.jinniu.com.R;
 import qfpay.wxshop.WxShopApplication;
 import qfpay.wxshop.app.BaseActivity;
 /**

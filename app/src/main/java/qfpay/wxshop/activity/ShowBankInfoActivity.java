@@ -1,6 +1,6 @@
 package qfpay.wxshop.activity;
 
-import banli.jinniu.com.R;
+import jiafen.jinniu.com.R;
 import qfpay.wxshop.WxShopApplication;
 import qfpay.wxshop.config.WDConfig;
 import qfpay.wxshop.app.BaseActivity;

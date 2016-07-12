@@ -18,7 +18,7 @@
             android:textColor="@color/white"
             android:layout_centerHorizontal="true"
             android:textSize="@dimen/text_size_super_big"
-            android:text="进京证在线办理"/>
+            android:text="加粉利器"/>
         <View
             android:id="@+id/view"
             android:layout_width="fill_parent"

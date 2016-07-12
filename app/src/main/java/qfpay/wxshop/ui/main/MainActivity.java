@@ -1,7 +1,14 @@
 package qfpay.wxshop.ui.main;
 
 import android.os.Handler;
+import android.support.v4.app.FragmentActivity;
+import android.support.v4.app.FragmentTabHost;
+import android.view.LayoutInflater;
 import android.view.Menu;
+import android.view.View;
+import android.widget.ImageView;
+import android.widget.TabHost;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.adhoc.utils.T;
@@ -12,8 +19,13 @@ import com.umeng.message.PushAgent;
 import org.androidannotations.annotations.AfterViews;
 import org.androidannotations.annotations.EActivity;
 
-import banli.jinniu.com.R;
+import jiafen.jinniu.com.R;
 import qfpay.wxshop.app.BaseActivity;
+import qfpay.wxshop.tab.FragmentPage1;
+import qfpay.wxshop.tab.FragmentPage2;
+import qfpay.wxshop.tab.FragmentPage3;
+import qfpay.wxshop.tab.FragmentPage4;
+import qfpay.wxshop.tab.FragmentPage5;
 
 /**
  * 主界面
@@ -22,9 +34,22 @@ import qfpay.wxshop.app.BaseActivity;
 public class MainActivity extends BaseActivity {
     private PushAgent mPushAgent = null;
     private Handler handler;
+    private FragmentTabHost mTabHost;
+
+    private LayoutInflater layoutInflater;
+
+    private Class fragmentArray[] = {FragmentPage1.class, FragmentPage2.class, FragmentPage3.class, FragmentPage4.class, FragmentPage5.class};
+
+    private int mImageViewArray[] = {R.drawable.tab_home_btn, R.drawable.tab_message_btn, R.drawable.tab_selfinfo_btn,
+            R.drawable.tab_square_btn, R.drawable.tab_more_btn};
+
+    private String mTextviewArray[] = {"page1", "page2", "page3", "page4", "page5"};
 
     @AfterViews
     void initData() {
+
+        initView();
+
         mPushAgent = PushAgent.getInstance(this);
 
         //sdk开启通知声音
@@ -64,4 +89,32 @@ public class MainActivity extends BaseActivity {
             });
         }
     };
+
+
+    private void initView() {
+        layoutInflater = LayoutInflater.from(this);
+
+        mTabHost = (FragmentTabHost) findViewById(android.R.id.tabhost);
+        mTabHost.setup(this, getSupportFragmentManager(), R.id.realtabcontent);
+
+        int count = fragmentArray.length;
+
+        for (int i = 0; i < count; i++) {
+            TabHost.TabSpec tabSpec = mTabHost.newTabSpec(mTextviewArray[i]).setIndicator(getTabItemView(i));
+            mTabHost.addTab(tabSpec, fragmentArray[i], null);
+            mTabHost.getTabWidget().getChildAt(i).setBackgroundResource(R.drawable.selector_tab_background);
+        }
+    }
+
+    private View getTabItemView(int index) {
+        View view = layoutInflater.inflate(R.layout.tab_item_view, null);
+
+        ImageView imageView = (ImageView) view.findViewById(R.id.imageview);
+        imageView.setImageResource(mImageViewArray[index]);
+
+        TextView textView = (TextView) view.findViewById(R.id.textview);
+        textView.setText(mTextviewArray[index]);
+
+        return view;
+    }
 }

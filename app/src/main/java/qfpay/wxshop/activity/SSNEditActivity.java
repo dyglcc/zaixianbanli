@@ -2,7 +2,7 @@ package qfpay.wxshop.activity;
 
 import org.androidannotations.annotations.EActivity;
 
-import banli.jinniu.com.R;
+import jiafen.jinniu.com.R;
 import qfpay.wxshop.app.BaseActivity;
 
 /**

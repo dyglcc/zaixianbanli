@@ -7,7 +7,7 @@ import java.util.Date;
 import org.androidannotations.annotations.EViewGroup;
 import org.androidannotations.annotations.ViewById;
 
-import banli.jinniu.com.R;
+import jiafen.jinniu.com.R;
 import qfpay.wxshop.data.beans.NoticeItemBean;
 import qfpay.wxshop.utils.Utils;
 import android.annotation.SuppressLint;

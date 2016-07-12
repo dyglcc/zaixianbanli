@@ -31,7 +31,7 @@ import java.io.File;
 import java.util.HashMap;
 import java.util.Map;
 
-import banli.jinniu.com.R;
+import jiafen.jinniu.com.R;
 import qfpay.wxshop.WxShopApplication;
 import qfpay.wxshop.app.BaseActivity;
 import qfpay.wxshop.config.WDConfig;

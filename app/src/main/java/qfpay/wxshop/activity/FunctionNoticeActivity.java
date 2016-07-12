@@ -1,12 +1,13 @@
 package qfpay.wxshop.activity;
 
-import banli.jinniu.com.R;
-import qfpay.wxshop.WxShopApplication;
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.ImageView;
+
+import jiafen.jinniu.com.R;
+
 /**
  * 公告引导介绍页面
  */

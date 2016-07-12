@@ -5,7 +5,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
 
-import banli.jinniu.com.R;
+import jiafen.jinniu.com.R;
 import qfpay.wxshop.WxShopApplication;
 import qfpay.wxshop.data.beans.BuyerResponseWrapper.BuyerShowBean;
 import qfpay.wxshop.data.beans.BuyerResponseWrapper.ImageBean;
