@@ -1,5 +1,6 @@
 package qfpay.wxshop.ui.main;
 
+import android.content.Context;
 import android.os.Handler;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentTabHost;
@@ -18,6 +19,11 @@ import com.umeng.message.PushAgent;
 
 import org.androidannotations.annotations.AfterViews;
 import org.androidannotations.annotations.EActivity;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 
 import jiafen.jinniu.com.R;
 import qfpay.wxshop.app.BaseActivity;
@@ -64,6 +70,16 @@ public class MainActivity extends BaseActivity {
 
         //开启推送并设置注册的回调处理
         mPushAgent.enable(mRegisterCallback);
+
+        // testcode
+
+        try {
+            String str = inputStreamToString(MainActivity.this, "shanghai.txt");
+            T.i("str is " + str);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
     }
 
     @Override
@@ -116,5 +132,18 @@ public class MainActivity extends BaseActivity {
         textView.setText(mTextviewArray[index]);
 
         return view;
+    }
+
+    public static String inputStreamToString(Context context,String metadataFileName) throws IOException {
+        InputStream in = context.getAssets().open(metadataFileName);
+        BufferedReader reader = new BufferedReader(new InputStreamReader(in,"utf-8"));
+        StringBuilder sb = new StringBuilder();
+        String str = "";
+        while((str = reader.readLine())!=null){
+            sb.append(str);
+        }
+        reader.close();
+        in.close();
+        return sb.toString();
     }
 }
