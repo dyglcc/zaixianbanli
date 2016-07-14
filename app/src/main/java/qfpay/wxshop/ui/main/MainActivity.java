@@ -1,8 +1,6 @@
 package qfpay.wxshop.ui.main;
 
-import android.content.Context;
 import android.os.Handler;
-import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentTabHost;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -12,11 +10,8 @@ import android.widget.TabHost;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.adhoc.http.Request;
-import com.adhoc.net.AdhocNet;
 import com.adhoc.utils.T;
 import com.umeng.message.IUmengRegisterCallback;
-import com.umeng.message.MsgConstant;
 import com.umeng.message.PushAgent;
 
 import org.androidannotations.annotations.AfterViews;
@@ -25,10 +20,7 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
 import java.util.Iterator;
 
 import jiafen.jinniu.com.R;
@@ -80,20 +72,23 @@ public class MainActivity extends BaseActivity {
 
         // testcode
 //
-//        try {
-//            String contextStr = Utils.inputStreamToString(MainActivity.this, "area.json");
-//            JSONArray array = new JSONArray(contextStr);
-//            int length = array.length();
-//            for (int i = 0; i < length; i++) {
-//                JSONObject object = array.getJSONObject(i);
-//                    Iterator iterator = object.keys();
-//                    String province = (String) iterator.next();
-//                    JSONArray array1 = object.getJSONArray(province);
-//                    int lengthC = array1.length();
-//                    String[] cities = new String[lengthC];
-//                    for (int j = 0; j < lengthC; j++) {
-//                        cities[j] = array1.getString(j);
-//                        String pinyin = Utils.converterToPinyin(cities[j]);
+        int cs = 0;
+        try {
+            String contextStr = Utils.inputStreamToString(MainActivity.this, "area.json");
+            JSONArray array = new JSONArray(contextStr);
+
+            int length = array.length();
+            for (int i = 0; i < length; i++) {
+                JSONObject object = array.getJSONObject(i);
+                Iterator iterator = object.keys();
+                String province = (String) iterator.next();
+                JSONArray array1 = object.getJSONArray(province);
+                int lengthC = array1.length();
+                String[] cities = new String[lengthC];
+                for (int j = 0; j < lengthC; j++) {
+                    cities[j] = array1.getString(j);
+                    cs++;
+                    String pinyin = Utils.converterToPinyin(cities[j]);
 //                        if(pinyin.equals("shanghai")){
 //                            T.i("----------------------");
 //                            try {
@@ -103,22 +98,23 @@ public class MainActivity extends BaseActivity {
 //                                e.printStackTrace();
 //                            }
 //                        }
-//                        T.i(pinyin);
+                    T.i(pinyin);
+
+                }
+                T.i(object.toString());
+                T.i(province + " " + array1.toString());
+//                T.i(object);
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+        T.i("多少个城市" + cs);
+
+//        Request request = new Request.Builder().url()
 //
-//                }
-//                T.i(object.toString());
-//                T.i(province + " " + array1.toString());
-////                T.i(object);
-//            }
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        } catch (JSONException e) {
-//            e.printStackTrace();
-//        }
-
-        Request request = new Request.Builder().url()
-
-        AdhocNet.getInstance().enqueue();
+//        AdhocNet.getInstance().enqueue();
 
     }
 

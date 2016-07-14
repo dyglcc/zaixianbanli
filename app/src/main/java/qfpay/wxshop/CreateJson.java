@@ -1,11 +1,19 @@
 package qfpay.wxshop;
 
+import com.adhoc.http.Callback;
+import com.adhoc.http.Request;
+import com.adhoc.http.Response;
+import com.adhoc.net.AdhocNet;
+
 import net.sourceforge.pinyin4j.PinyinHelper;
 import net.sourceforge.pinyin4j.format.HanyuPinyinCaseType;
 import net.sourceforge.pinyin4j.format.HanyuPinyinOutputFormat;
 import net.sourceforge.pinyin4j.format.HanyuPinyinToneType;
 import net.sourceforge.pinyin4j.format.exception.BadHanyuPinyinOutputFormatCombination;
 
+import org.json.JSONException;
+
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Hashtable;
 import java.util.List;
@@ -47,27 +55,27 @@ public class CreateJson {
         // 获取页面内如
 
 
-//        Request request = new Request.Builder().url("http://www.0597zp.com/city/tianjin/tianjin.php").build();
-//        AdhocNet.getInstance().enqueue(request, new Callback() {
-//            @Override
-//            public void onFailure(Request request, IOException e) {
-//
-//            }
-//
-//            @Override
-//            public void onResponse(Response response) throws IOException, JSONException {
-//                if(response== null){
-//                    return;
-//                }
-//                if(response.isSuccessful()){
-//                    String string = response.body().string();
-//                    System.out.println(string);
-//                }
-//
-//            }
-//        });
+        Request request = new Request.Builder().url("http://www.0597zp.com/city/fujian/xiamen.php").build();
+        AdhocNet.getInstance().enqueue(request, new Callback() {
+            @Override
+            public void onFailure(Request request, IOException e) {
 
-        String str = converterToPinyin("日喀 则手机昌都手机拉萨手机林芝手机山南手机阿里手机那曲手机");
+            }
+
+            @Override
+            public void onResponse(Response response) throws IOException, JSONException {
+                if(response== null){
+                    return;
+                }
+                if(response.isSuccessful()){
+                    String string = response.body().string();
+                    System.out.println(string);
+                }
+
+            }
+        });
+
+        String str = converterToPinyin("滁州手机");
         System.out.println(str);
 
 
