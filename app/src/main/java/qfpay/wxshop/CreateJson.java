@@ -55,25 +55,28 @@ public class CreateJson {
         // 获取页面内如
 
 
-        Request request = new Request.Builder().url("http://www.0597zp.com/city/tianjin/tianjin.php").build();
-        AdhocNet.getInstance().enqueue(request, new Callback() {
-            @Override
-            public void onFailure(Request request, IOException e) {
+//        Request request = new Request.Builder().url("http://www.0597zp.com/city/tianjin/tianjin.php").build();
+//        AdhocNet.getInstance().enqueue(request, new Callback() {
+//            @Override
+//            public void onFailure(Request request, IOException e) {
+//
+//            }
+//
+//            @Override
+//            public void onResponse(Response response) throws IOException, JSONException {
+//                if(response== null){
+//                    return;
+//                }
+//                if(response.isSuccessful()){
+//                    String string = response.body().string();
+//                    System.out.println(string);
+//                }
+//
+//            }
+//        });
 
-            }
-
-            @Override
-            public void onResponse(Response response) throws IOException, JSONException {
-                if(response== null){
-                    return;
-                }
-                if(response.isSuccessful()){
-                    String string = response.body().string();
-                    System.out.println(string);
-                }
-
-            }
-        });
+        String str = converterToFirstSpell("上海");
+        System.out.println(str);
 
 
     }
@@ -98,13 +101,14 @@ public class CreateJson {
                     String[] strs = PinyinHelper.toHanyuPinyinStringArray(
                             nameChar[i], defaultFormat);
                     if (strs != null) {
-                        for (int j = 0; j < strs.length; j++) {
-                            // 取首字母
-                            pinyinName.append(strs[j].charAt(0));
-                            if (j != strs.length - 1) {
-                                pinyinName.append(",");
-                            }
-                        }
+//                        for (int j = 0; j < strs.length; j++) {
+//                            // 取首字母
+//                            pinyinName.append(strs[j].charAt(0));
+//                            if (j != strs.length - 1) {
+//                                pinyinName.append(",");
+//                            }
+//                        }
+
                     }
                     // else {
                     // pinyinName.append(nameChar[i]);
@@ -117,8 +121,8 @@ public class CreateJson {
             }
             pinyinName.append(" ");
         }
-        // return pinyinName.toString();
-        return parseTheChineseByObject(discountTheChinese(pinyinName.toString()));
+         return pinyinName.toString();
+//        return parseTheChineseByObject(discountTheChinese(pinyinName.toString()));
     }
     /**
      * 去除多音字重复数据
