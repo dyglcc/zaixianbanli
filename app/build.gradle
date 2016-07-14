@@ -119,7 +119,8 @@ dependencies {
     compile files('libs/org.apache.http.legacy.jar')
     compile project(':Pushlib')
     compile files('libs/bugly_crash_release__2.1.5.jar')
-//    compile 'com.android.support:support-v4:21.0.+'
+    //    compile 'com.android.support:support-v4:21.0.+'
+    compile files('libs/pinyin4j-2.5.0.jar')
 }
 
 apply plugin: 'announce'
