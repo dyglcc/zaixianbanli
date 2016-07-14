@@ -9,6 +9,7 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.security.MessageDigest;
@@ -70,6 +71,12 @@ import com.adhoc.utils.T;
 import com.qiniu.upload.tool.AuthException;
 import com.qiniu.upload.tool.Mac;
 import com.qiniu.upload.tool.PutPolicy;
+
+import net.sourceforge.pinyin4j.PinyinHelper;
+import net.sourceforge.pinyin4j.format.HanyuPinyinCaseType;
+import net.sourceforge.pinyin4j.format.HanyuPinyinOutputFormat;
+import net.sourceforge.pinyin4j.format.HanyuPinyinToneType;
+import net.sourceforge.pinyin4j.format.exception.BadHanyuPinyinOutputFormatCombination;
 
 @TargetApi(Build.VERSION_CODES.HONEYCOMB)
 public class Utils {
@@ -365,6 +372,52 @@ public class Utils {
 			return sb.toString();
 		}
 		return cardNum;
+	}
+
+	/**
+	 * 汉字转换位汉语拼音首字母，英文字符不变，特殊字符丢失 支持多音字，生成方式如（重当参:cdc,zds,cds,zdc）
+	 *
+	 * @param chines 汉字
+	 * @return 拼音
+	 */
+	public static String converterToPinyin(String chines) {
+		StringBuilder pinyinName = new StringBuilder();
+		char[] nameChar = chines.toCharArray();
+		HanyuPinyinOutputFormat defaultFormat = new HanyuPinyinOutputFormat();
+		defaultFormat.setCaseType(HanyuPinyinCaseType.LOWERCASE);
+		defaultFormat.setToneType(HanyuPinyinToneType.WITHOUT_TONE);
+		for (int i = 0; i < nameChar.length; i++) {
+			if (nameChar[i] > 128) {
+				try {
+					// 取得当前汉字的所有全拼
+					String[] strs = PinyinHelper.toHanyuPinyinStringArray(
+							nameChar[i], defaultFormat);
+					if (strs != null && strs.length > 0) {
+
+						pinyinName.append(strs[0]);
+
+					}
+				} catch (BadHanyuPinyinOutputFormatCombination e) {
+					e.printStackTrace();
+				}
+			} else {
+				pinyinName.append(nameChar[i]);
+			}
+		}
+		return pinyinName.toString();
+//        return parseTheChineseByObject(discountTheChinese(pinyinName.toString()));
+	}
+	public static String inputStreamToString(Context context,String metadataFileName) throws IOException {
+		InputStream in = context.getAssets().open(metadataFileName);
+		BufferedReader reader = new BufferedReader(new InputStreamReader(in,"utf-8"));
+		StringBuilder sb = new StringBuilder();
+		String str = "";
+		while((str = reader.readLine())!=null){
+			sb.append(str);
+		}
+		reader.close();
+		in.close();
+		return sb.toString();
 	}
 
 	public static boolean isRightIdNum(String idString) {

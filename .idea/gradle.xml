@@ -15,6 +15,15 @@
             <option value="$PROJECT_DIR$/app" />
           </set>
         </option>
+        <option name="myModules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/PushDemo" />
+            <option value="$PROJECT_DIR$/Pushlib" />
+            <option value="$PROJECT_DIR$/android_sdk_v0" />
+            <option value="$PROJECT_DIR$/app" />
+          </set>
+        </option>
       </GradleProjectSettings>
     </option>
   </component>

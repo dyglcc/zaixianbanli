@@ -12,6 +12,8 @@ import android.widget.TabHost;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.adhoc.http.Request;
+import com.adhoc.net.AdhocNet;
 import com.adhoc.utils.T;
 import com.umeng.message.IUmengRegisterCallback;
 import com.umeng.message.MsgConstant;
@@ -19,11 +21,15 @@ import com.umeng.message.PushAgent;
 
 import org.androidannotations.annotations.AfterViews;
 import org.androidannotations.annotations.EActivity;
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.util.Iterator;
 
 import jiafen.jinniu.com.R;
 import qfpay.wxshop.app.BaseActivity;
@@ -32,6 +38,7 @@ import qfpay.wxshop.tab.FragmentPage2;
 import qfpay.wxshop.tab.FragmentPage3;
 import qfpay.wxshop.tab.FragmentPage4;
 import qfpay.wxshop.tab.FragmentPage5;
+import qfpay.wxshop.utils.Utils;
 
 /**
  * 主界面
@@ -56,29 +63,62 @@ public class MainActivity extends BaseActivity {
 
         initView();
 
-        mPushAgent = PushAgent.getInstance(this);
-
-        //sdk开启通知声音
-        mPushAgent.setNotificationPlaySound(MsgConstant.NOTIFICATION_PLAY_SDK_ENABLE);
-        // sdk关闭通知声音
-        // 通知声音由服务端控制
-
-        //应用程序启动统计
-        //参考集成文档的1.5.1.2
-        //http://dev.umeng.com/push/android/integration#1_5_1
-        mPushAgent.onAppStart();
-
-        //开启推送并设置注册的回调处理
-        mPushAgent.enable(mRegisterCallback);
+//        mPushAgent = PushAgent.getInstance(this);
+//
+//        //sdk开启通知声音
+//        mPushAgent.setNotificationPlaySound(MsgConstant.NOTIFICATION_PLAY_SDK_ENABLE);
+//        // sdk关闭通知声音
+//        // 通知声音由服务端控制
+//
+//        //应用程序启动统计
+//        //参考集成文档的1.5.1.2
+//        //http://dev.umeng.com/push/android/integration#1_5_1
+//        mPushAgent.onAppStart();
+//
+//        //开启推送并设置注册的回调处理
+//        mPushAgent.enable(mRegisterCallback);
 
         // testcode
+//
+//        try {
+//            String contextStr = Utils.inputStreamToString(MainActivity.this, "area.json");
+//            JSONArray array = new JSONArray(contextStr);
+//            int length = array.length();
+//            for (int i = 0; i < length; i++) {
+//                JSONObject object = array.getJSONObject(i);
+//                    Iterator iterator = object.keys();
+//                    String province = (String) iterator.next();
+//                    JSONArray array1 = object.getJSONArray(province);
+//                    int lengthC = array1.length();
+//                    String[] cities = new String[lengthC];
+//                    for (int j = 0; j < lengthC; j++) {
+//                        cities[j] = array1.getString(j);
+//                        String pinyin = Utils.converterToPinyin(cities[j]);
+//                        if(pinyin.equals("shanghai")){
+//                            T.i("----------------------");
+//                            try {
+//                                String str = Utils.inputStreamToString(MainActivity.this, "shanghai.txt");
+//                                T.i("str is " + str);
+//                            } catch (IOException e) {
+//                                e.printStackTrace();
+//                            }
+//                        }
+//                        T.i(pinyin);
+//
+//                }
+//                T.i(object.toString());
+//                T.i(province + " " + array1.toString());
+////                T.i(object);
+//            }
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        } catch (JSONException e) {
+//            e.printStackTrace();
+//        }
 
-        try {
-            String str = inputStreamToString(MainActivity.this, "shanghai.txt");
-            T.i("str is " + str);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        Request request = new Request.Builder().url()
+
+        AdhocNet.getInstance().enqueue();
 
     }
 
@@ -132,18 +172,5 @@ public class MainActivity extends BaseActivity {
         textView.setText(mTextviewArray[index]);
 
         return view;
-    }
-
-    public static String inputStreamToString(Context context,String metadataFileName) throws IOException {
-        InputStream in = context.getAssets().open(metadataFileName);
-        BufferedReader reader = new BufferedReader(new InputStreamReader(in,"utf-8"));
-        StringBuilder sb = new StringBuilder();
-        String str = "";
-        while((str = reader.readLine())!=null){
-            sb.append(str);
-        }
-        reader.close();
-        in.close();
-        return sb.toString();
     }
 }

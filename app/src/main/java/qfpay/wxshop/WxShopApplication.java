@@ -54,7 +54,7 @@ public class WxShopApplication extends Application {
 //		//Pinterest appid
 //		PlatformConfig.setLaiwang("laiwangd497e70d4", "d497e70d4c3e4efeab1381476bac4c5e");
 //		//来往 appid appkey
-		AdhocTracker.init(this, "ADHOC_e4dff3eb-ffb3-42f6-988e-e13f4de61085");
+//		AdhocTracker.init(this, "ADHOC_e4dff3eb-ffb3-42f6-988e-e13f4de61085");
 
 		// bugly
 		CrashReport.initCrashReport(getApplicationContext(), "900033658", false);

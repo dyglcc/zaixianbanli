@@ -1,19 +1,11 @@
 package qfpay.wxshop;
 
-import com.adhoc.http.Callback;
-import com.adhoc.http.Request;
-import com.adhoc.http.Response;
-import com.adhoc.net.AdhocNet;
-
 import net.sourceforge.pinyin4j.PinyinHelper;
 import net.sourceforge.pinyin4j.format.HanyuPinyinCaseType;
 import net.sourceforge.pinyin4j.format.HanyuPinyinOutputFormat;
 import net.sourceforge.pinyin4j.format.HanyuPinyinToneType;
 import net.sourceforge.pinyin4j.format.exception.BadHanyuPinyinOutputFormatCombination;
 
-import org.json.JSONException;
-
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Hashtable;
 import java.util.List;
@@ -25,7 +17,7 @@ import java.util.Map;
 public class CreateJson {
 
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
 //        JSONArray array = new JSONArray();
 ////        JSONObject bj=
 //        Province beijingProvince = new Province();
@@ -75,7 +67,7 @@ public class CreateJson {
 //            }
 //        });
 
-        String str = converterToFirstSpell("上海");
+        String str = converterToPinyin("日喀 则手机昌都手机拉萨手机林芝手机山南手机阿里手机那曲手机");
         System.out.println(str);
 
 
@@ -84,12 +76,11 @@ public class CreateJson {
     /**
      * 汉字转换位汉语拼音首字母，英文字符不变，特殊字符丢失 支持多音字，生成方式如（重当参:cdc,zds,cds,zdc）
      *
-     * @param chines
-     *            汉字
+     * @param chines 汉字
      * @return 拼音
      */
-    public static String converterToFirstSpell(String chines) {
-        StringBuffer pinyinName = new StringBuffer();
+    public static String converterToPinyin(String chines) {
+        StringBuilder pinyinName = new StringBuilder();
         char[] nameChar = chines.toCharArray();
         HanyuPinyinOutputFormat defaultFormat = new HanyuPinyinOutputFormat();
         defaultFormat.setCaseType(HanyuPinyinCaseType.LOWERCASE);
@@ -100,30 +91,22 @@ public class CreateJson {
                     // 取得当前汉字的所有全拼
                     String[] strs = PinyinHelper.toHanyuPinyinStringArray(
                             nameChar[i], defaultFormat);
-                    if (strs != null) {
-//                        for (int j = 0; j < strs.length; j++) {
-//                            // 取首字母
-//                            pinyinName.append(strs[j].charAt(0));
-//                            if (j != strs.length - 1) {
-//                                pinyinName.append(",");
-//                            }
-//                        }
+                    if (strs != null && strs.length > 0) {
+
+                        pinyinName.append(strs[0]);
 
                     }
-                    // else {
-                    // pinyinName.append(nameChar[i]);
-                    // }
                 } catch (BadHanyuPinyinOutputFormatCombination e) {
                     e.printStackTrace();
                 }
             } else {
                 pinyinName.append(nameChar[i]);
             }
-            pinyinName.append(" ");
         }
-         return pinyinName.toString();
+        return pinyinName.toString();
 //        return parseTheChineseByObject(discountTheChinese(pinyinName.toString()));
     }
+
     /**
      * 去除多音字重复数据
      *
