@@ -25,7 +25,7 @@ import java.util.Iterator;
 
 import jiafen.jinniu.com.R;
 import qfpay.wxshop.app.BaseActivity;
-import qfpay.wxshop.tab.FragmentPage1;
+import qfpay.wxshop.tab.NumberSegment;
 import qfpay.wxshop.tab.FragmentPage2;
 import qfpay.wxshop.tab.FragmentPage3;
 import qfpay.wxshop.tab.FragmentPage4;
@@ -43,7 +43,7 @@ public class MainActivity extends BaseActivity {
 
     private LayoutInflater layoutInflater;
 
-    private Class fragmentArray[] = {FragmentPage1.class, FragmentPage2.class, FragmentPage3.class, FragmentPage4.class, FragmentPage5.class};
+    private Class fragmentArray[] = {NumberSegment.class, FragmentPage2.class, FragmentPage3.class, FragmentPage4.class, FragmentPage5.class};
 
     private int mImageViewArray[] = {R.drawable.tab_home_btn, R.drawable.tab_message_btn, R.drawable.tab_selfinfo_btn,
             R.drawable.tab_square_btn, R.drawable.tab_more_btn};

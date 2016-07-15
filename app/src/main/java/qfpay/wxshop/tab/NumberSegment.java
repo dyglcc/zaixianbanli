@@ -9,12 +9,12 @@ import android.view.ViewGroup;
 import jiafen.jinniu.com.R;
 
 
-public class FragmentPage1 extends Fragment{
+public class NumberSegment extends Fragment{
 
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
 		
-		return inflater.inflate(R.layout.fragment_1, null);
+		return inflater.inflate(R.layout.main_number_segment, null);
 	}	
 }
