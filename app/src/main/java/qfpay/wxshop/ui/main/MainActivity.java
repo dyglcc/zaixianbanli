@@ -71,7 +71,6 @@ public class MainActivity extends BaseActivity {
 //        mPushAgent.enable(mRegisterCallback);
 
         // testcode
-//
         int cs = 0;
         try {
             String contextStr = Utils.inputStreamToString(MainActivity.this, "area.json");

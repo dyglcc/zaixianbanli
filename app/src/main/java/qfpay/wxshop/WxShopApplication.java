@@ -3,18 +3,14 @@ package qfpay.wxshop;
 import android.app.Application;
 import android.content.Context;
 
-import com.adhoc.adhocsdk.AdhocTracker;
-import com.adhoc.utils.T;
 import com.tencent.bugly.crashreport.CrashReport;
 import com.tencent.mm.sdk.openapi.IWXAPI;
 import com.umeng.socialize.PlatformConfig;
 
 import org.androidannotations.annotations.EApplication;
-import org.androidannotations.api.BackgroundExecutor;
 
 import java.util.LinkedList;
-import java.util.concurrent.Executors;
-
+import com.squareup.leakcanary.LeakCanary;
 import qfpay.wxshop.data.beans.ShareBean;
 import qfpay.wxshop.ui.main.MainActivity;
 import qfpay.wxshop.ui.selectpic.ImageItem;
@@ -59,6 +55,7 @@ public class WxShopApplication extends Application {
 		// bugly
 		CrashReport.initCrashReport(getApplicationContext(), "900033658", false);
 //		CrashReport.testJavaCrash();
+		LeakCanary.install(this);
 	}
 
     public static WxShopApplication get(Context context) {

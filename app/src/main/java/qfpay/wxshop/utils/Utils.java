@@ -419,6 +419,18 @@ public class Utils {
 		in.close();
 		return sb.toString();
 	}
+//	public static String[] getAssetsStingfileContent(Context context,String metadataFileName) throws IOException {
+//		InputStream in = context.getAssets().open(metadataFileName);
+//		BufferedReader reader = new BufferedReader(new InputStreamReader(in,"utf-8"));
+//		StringBuilder sb = new StringBuilder();
+//		String str = "";
+//		while((str = reader.readLine())!=null){
+//			sb.append(str);
+//		}
+//		reader.close();
+//		in.close();
+//		return sb.toString();
+//	}
 
 	public static boolean isRightIdNum(String idString) {
 		// TODO Auto-generated method stub

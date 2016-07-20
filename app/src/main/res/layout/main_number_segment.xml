@@ -1,17 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical">
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="选择省份" />
+        android:textSize="@dimen/text_size_normal"
+        android:text="选择省份"
+        android:textColor="@color/common_black" />
 
-    <LinearLayout
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-        
-    </LinearLayout>
+        android:layout_height="180dp" />
+
+    <TextView
+        android:id="@+id/textView_city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="选择地区"
+        android:textSize="@dimen/text_size_normal"
+        android:textColor="@color/common_black" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView_city"
+        android:layout_width="match_parent"
+        android:layout_height="190dp" />
 </LinearLayout>
