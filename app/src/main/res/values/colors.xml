@@ -27,7 +27,8 @@
 	<color name="blue">#0000FF</color>
 	<color name="grey777">#777</color>
     <color name="zong">#4c2020</color>
-    
+    <color name="yellow">#ff9900</color>
+
     <color name="dialog_cancle_blue">#afe5f9</color>
     <drawable name="dialog_cancle_blue">#afe5f9</drawable>
     <color name="promo_text_color">#808080</color>

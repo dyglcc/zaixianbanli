@@ -8,11 +8,8 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TabHost;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.adhoc.utils.T;
-import com.umeng.message.IUmengRegisterCallback;
-import com.umeng.message.PushAgent;
 
 import org.androidannotations.annotations.AfterViews;
 import org.androidannotations.annotations.EActivity;
@@ -37,7 +34,6 @@ import qfpay.wxshop.utils.Utils;
  */
 @EActivity(R.layout.main_myshop)
 public class MainActivity extends BaseActivity {
-    private PushAgent mPushAgent = null;
     private Handler handler;
     private FragmentTabHost mTabHost;
 
@@ -123,24 +119,6 @@ public class MainActivity extends BaseActivity {
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
     }
-
-    public IUmengRegisterCallback mRegisterCallback = new IUmengRegisterCallback() {
-
-        @Override
-        public void onRegistered(String registrationId) {
-            // TODO Auto-generated method stub
-            handler.post(new Runnable() {
-
-                @Override
-                public void run() {
-                    // TODO Auto-generated method stub
-                    Toast.makeText(MainActivity.this, "sdkfsdk", Toast.LENGTH_LONG).show();
-                    T.i("sdfsdddddddddddddddddd");
-                }
-            });
-        }
-    };
-
 
     private void initView() {
         layoutInflater = LayoutInflater.from(this);

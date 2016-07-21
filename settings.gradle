@@ -1,1 +1,1 @@
-include ':app', ':android_sdk_v0', ':Pushlib', ':PushDemo'
+include ':app', ':android_sdk_v0'

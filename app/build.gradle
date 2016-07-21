@@ -14,7 +14,7 @@ apt {
 
 android {
     compileSdkVersion 21
-    buildToolsVersion '23.0.2'
+    buildToolsVersion '23.0.3'
     // The Application Setting
     defaultConfig {
         applicationId "jiafen.jinniu.com"
@@ -117,7 +117,6 @@ dependencies {
     compile files('libs/SocialSDK_WeiXin_2.jar')
     compile files('libs/umeng_social_sdk.jar')
     compile files('libs/org.apache.http.legacy.jar')
-    compile project(':Pushlib')
     compile files('libs/bugly_crash_release__2.1.5.jar')
     //    compile 'com.android.support:support-v4:21.0.+'
     compile files('libs/pinyin4j-2.5.0.jar')
