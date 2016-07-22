@@ -23,6 +23,7 @@ import java.util.Iterator;
 
 import jiafen.jinniu.com.R;
 import qfpay.wxshop.listener.MyItemClickListener;
+import qfpay.wxshop.recylerView.SpaceItemDecoration;
 import qfpay.wxshop.utils.Utils;
 
 
@@ -51,6 +52,8 @@ public class NumberSegment extends Fragment {
 //        GridLayoutManager mgr = new GridLayoutManager(getActivity(), 8);
 //        recylcer.setLayoutManager(mgr);
         //ListView效果的 LinearLayoutManager
+        int spacingInPixels = getResources().getDimensionPixelSize(R.dimen.recyler_space);
+        recylcer.addItemDecoration(new SpaceItemDecoration(spacingInPixels));
         GridLayoutManager mgr = new GridLayoutManager(getActivity(), 6);
 //        mgr.setOrientation(LinearLayoutManager.VERTICAL);
         recylcer.setLayoutManager(mgr);
@@ -63,6 +66,8 @@ public class NumberSegment extends Fragment {
 
         // init cities
         RecyclerView recylcerCity = (RecyclerView) view.findViewById(R.id.recyclerView_city);
+        int spacingInPixels_city = getResources().getDimensionPixelSize(R.dimen.recyler_space);
+        recylcerCity.addItemDecoration(new SpaceItemDecoration(spacingInPixels_city));
         GridLayoutManager mgrCity = new GridLayoutManager(getActivity(), 4);
         recylcerCity.setLayoutManager(mgrCity);
         //设置适配器

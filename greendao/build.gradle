@@ -1,0 +1,20 @@
+project(':greendao') {
+    apply plugin: 'com.android.library'
+    apply plugin: 'application'
+    apply plugin: 'java'
+    mainClassName "jiafen.jinniu.com.greendao"
+    def outputDir = "../app/src/main/java-gen"
+
+    dependencies {
+        compile fileTree(include: ['*.jar'], dir: 'libs')
+        compile 'org.greenrobot:greendao-generator:3.0.0'
+    }
+    task createDocs {
+        def docs = file(outputDir)
+        docs.mkdirs()
+    }
+    run {
+        args outputDir
+    }
+}
+

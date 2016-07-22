@@ -3,6 +3,7 @@ package qfpay.wxshop;
 import android.app.Application;
 import android.content.Context;
 
+import com.squareup.leakcanary.LeakCanary;
 import com.tencent.bugly.crashreport.CrashReport;
 import com.tencent.mm.sdk.openapi.IWXAPI;
 import com.umeng.socialize.PlatformConfig;
@@ -10,7 +11,7 @@ import com.umeng.socialize.PlatformConfig;
 import org.androidannotations.annotations.EApplication;
 
 import java.util.LinkedList;
-import com.squareup.leakcanary.LeakCanary;
+
 import qfpay.wxshop.data.beans.ShareBean;
 import qfpay.wxshop.ui.main.MainActivity;
 import qfpay.wxshop.ui.selectpic.ImageItem;
@@ -22,7 +23,6 @@ public class WxShopApplication extends Application {
 
 
 	public static ShareBean shareBean;
-
 
 	public static LinkedList<ImageItem> paths = new LinkedList<ImageItem>();
 	// testTester
@@ -75,7 +75,6 @@ public class WxShopApplication extends Application {
 	public WxShopApplication() {
 		app = this;
 	}
-
 
 
 }

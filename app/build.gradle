@@ -1,17 +1,20 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'org.greenrobot:greendao-gradle-plugin:3.0.0'
+    }
+}
 apply plugin: 'com.android.application'
 apply plugin: 'android-apt'
-//apply plugin: 'hugo'
-
-//def APPversion = '3.3.2'
-
-// Setup the Annotations Complier
+apply plugin: 'org.greenrobot.greendao'
 apt {
     arguments {
         androidManifestFile variant.outputs[0].processResources.manifestFile
         resourcePackageName 'jiafen.jinniu.com'
     }
 }
-
 android {
     compileSdkVersion 21
     buildToolsVersion '23.0.3'
@@ -41,15 +44,9 @@ android {
 //        }
     }
     sourceSets {
-//        main {
-//            manifest.srcFile 'AndroidManifest.xml'
-//            java.srcDirs = ['src']
-//            resources.srcDirs = ['src']
-//            aidl.srcDirs = ['src']
-//            renderscript.srcDirs = ['src']
-//            res.srcDirs = ['res']
-//            assets.srcDirs = ['assets']
-//        }
+        main {
+            java.srcDirs = ['src/main/java','src/main/java-gen']
+        }
         // Move the tests to tests/java, tests/res, etc...
         instrumentTest.setRoot('tests')
         debug.setRoot('build-types/debug')
@@ -87,6 +84,10 @@ android {
     productFlavors {
     }
 }
+
+greendao {
+    schemaVersion 1000
+}
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     compile 'com.github.lzyzsd:circleprogress:1.0.1@aar'
@@ -97,9 +98,6 @@ dependencies {
     compile 'com.google.code.gson:gson:2.3.1'
     // EventBus
     compile 'de.greenrobot:eventbus:2.4.0'
-    // OrmLite
-    compile 'com.j256.ormlite:ormlite-android:4.48'
-    compile 'com.j256.ormlite:ormlite-core:4.48'
     // AndroidViewAni
     compile files('libs/mta-sdk-1.6.2.jar')
     compile files('libs/open_sdk_r4547.jar')
@@ -121,6 +119,6 @@ dependencies {
     //    compile 'com.android.support:support-v4:21.0.+'
     compile files('libs/pinyin4j-2.5.0.jar')
     compile 'com.squareup.leakcanary:leakcanary-android-no-op:1.4-beta2'
+    compile 'org.greenrobot:greendao:3.0.1'
 }
-
 apply plugin: 'announce'
