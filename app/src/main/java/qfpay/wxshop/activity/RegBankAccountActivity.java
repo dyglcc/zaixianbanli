@@ -81,9 +81,6 @@ public class RegBankAccountActivity extends BaseActivity {
 
 	@Click(R.id.tv_confirm)
 	void doneEdit() {
-		if (isEditAll()) {
-			showConfirmDialog();
-		}
 	}
 	
 	@Click(R.id.tv_later)
@@ -92,27 +89,6 @@ public class RegBankAccountActivity extends BaseActivity {
 		MobAgentTools.OnEventMobOnDiffUser(RegBankAccountActivity.this, "skip_bankinfo");
 	}
 	
-	boolean isEditAll() {
-		String bankName = et_bank.getText().toString();
-		String card = et_card.getText().toString().replaceAll(ConstValue.fengefu, "");
-		String account = et_account.getText().toString();
-		if (bankName == null || "".equals(bankName)) {
-			showDialogInputError(getString(R.string.needInputBranchName));
-			return false;
-		}
-		if (card == null || "".equals(card) || !Utils.isRightBankCard(card)) {
-			showDialogInputError(getString(R.string.card_number_wrong));
-			et_card.setText("");
-			et_card.requestFocus();
-			return false;
-		}
-		if (account == null || "".equals(account)) {
-			showDialogInputError(getString(R.string.input_account_name));
-			et_account.requestFocus();
-			return false;
-		}
-		return true;
-	}
 
 	private static Dialog dialog;
 	

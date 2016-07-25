@@ -110,11 +110,6 @@
             android:configChanges="orientation|keyboardHidden|navigation"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.NoTitleBar" />
-        <!-- 店铺背景选择页 -->
-        <activity
-            android:name="qfpay.wxshop.activity.ShopHeaderPhotoPickerActivity_"
-            android:configChanges="orientation|keyboardHidden|navigation"
-            android:screenOrientation="portrait" />
         <activity
             android:name="qfpay.wxshop.activity.menu.MyInComeActivity"
             android:configChanges="orientation|keyboardHidden|navigation"
@@ -141,9 +136,9 @@
             android:name="UMENG_MESSAGE_SECRET"
             android:value="872e3bc6fc8dabfc8624a370f197ba30" >
         </meta-data>
-        <service
-            android:name="com.service.MyPushIntentService"
-            android:process=":push" />
+        <!--<service-->
+            <!--android:name="com.service.MyPushIntentService"-->
+            <!--android:process=":push" />-->
 
         <!--###########################################################-->
         <!-- 个推配置结束 -->

@@ -1,15 +1,18 @@
 package qfpay.wxshop.tab;
 
+import android.content.OperationApplicationException;
 import android.os.Bundle;
-import android.os.Handler;
+import android.os.RemoteException;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.adhoc.utils.T;
 
@@ -18,11 +21,19 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
+import java.util.Random;
 
+import jiafen.jinniu.com.Add_history;
+import jiafen.jinniu.com.Add_historyDao;
+import jiafen.jinniu.com.DaoSession;
+import jiafen.jinniu.com.PhoneNumber;
+import jiafen.jinniu.com.PhoneNumberDao;
 import jiafen.jinniu.com.R;
-import qfpay.wxshop.listener.MyItemClickListener;
+import qfpay.wxshop.WxShopApplication;
+import qfpay.wxshop.data.beans.Tb_contacts;
 import qfpay.wxshop.recylerView.SpaceItemDecoration;
 import qfpay.wxshop.utils.Utils;
 
@@ -37,11 +48,16 @@ public class NumberSegment extends Fragment {
     private String[] haoduans;
     private int pos_pro;
     private int pos_city;
+    private Button btn_daoru;
+    private EditText edt_count;
+    private String[] numbers;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.main_number_segment, null);
+        btn_daoru = (Button) view.findViewById(R.id.btn_daoru);
+        edt_count = (EditText) view.findViewById(R.id.edt_count);
         //找到 RecyclerView
         RecyclerView recylcer = (RecyclerView) view.findViewById(R.id.recyclerView);
         //ListView效果的 LinearLayoutManager
@@ -58,10 +74,8 @@ public class NumberSegment extends Fragment {
 //        mgr.setOrientation(LinearLayoutManager.VERTICAL);
         recylcer.setLayoutManager(mgr);
 
-        MyAdapter provinceAdapter = new MyAdapter();
-        provinceAdapter.setmListener(new ProvinceClickListener());
         //设置适配器
-        recylcer.setAdapter(provinceAdapter);
+        recylcer.setAdapter(new MyAdapter());
 
 
         // init cities
@@ -74,6 +88,19 @@ public class NumberSegment extends Fragment {
         adapterCity = new MyAdapterCity();
         recylcerCity.setAdapter(adapterCity);
         displayCities(data[0]);
+
+
+        btn_daoru.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String countStr = edt_count.getText().toString();
+                if (!TextUtils.isEmpty(countStr)) {
+
+                    int count = Integer.parseInt(countStr);
+                    addHisHaoduan(count, datacities[pos_city]);
+                }
+            }
+        });
 
         return view;
     }
@@ -97,36 +124,15 @@ public class NumberSegment extends Fragment {
         } catch (JSONException e) {
             e.printStackTrace();
         }
+
+        // 初始化数据库
+        createDao();
         super.onCreate(savedInstanceState);
-    }
-
-    class CityClickLister implements MyItemClickListener {
-        @Override
-        public void onItemClick(View view, int postion) {
-
-            if (datacities != null) {
-                Toast.makeText(getActivity(), datacities[postion], Toast.LENGTH_LONG).show();
-            }
-
-
-        }
-    }
-
-    class ProvinceClickListener implements MyItemClickListener {
-        @Override
-        public void onItemClick(View view, int postion) {
-
-            if (view != null) {
-                view.setBackgroundColor(getActivity().getResources().getColor(R.color.yellow));
-            }
-
-        }
     }
 
 
     class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
 
-        private ProvinceClickListener mListener;
 
         //RecyclerView显示的子View
         //该方法返回是ViewHolder，当有可复用View时，就不再调用
@@ -136,17 +142,13 @@ public class NumberSegment extends Fragment {
             return new ViewHolder(v);
         }
 
-        public void setmListener(ProvinceClickListener mListener) {
-            this.mListener = mListener;
-        }
-
         //将数据绑定到子View，会自动复用View
         @Override
         public void onBindViewHolder(ViewHolder viewHolder, int i) {
             viewHolder.textView.setText(data[i]);
             if (pos_pro == i) {
                 viewHolder.textView.setBackgroundColor(getActivity().getResources().getColor(R.color.yellow));
-            }else{
+            } else {
                 viewHolder.textView.setBackgroundColor(getActivity().getResources().getColor(R.color.white));
             }
         }
@@ -175,7 +177,7 @@ public class NumberSegment extends Fragment {
 
             @Override
             public void onClick(View v) {
-                if(pos_pro ==getPosition()){
+                if (pos_pro == getPosition()) {
                     return;
                 }
                 pos_pro = getPosition();
@@ -223,7 +225,7 @@ public class NumberSegment extends Fragment {
             viewHolder.textView.setText(datacities[i]);
             if (i == pos_city) {
                 viewHolder.textView.setBackgroundColor(getActivity().getResources().getColor(R.color.yellow));
-            }else{
+            } else {
                 viewHolder.textView.setBackgroundColor(getActivity().getResources().getColor(R.color.white));
             }
         }
@@ -238,7 +240,7 @@ public class NumberSegment extends Fragment {
         //自定义的ViewHolder,减少findViewById调用次数
         class ViewHolderCity extends RecyclerView.ViewHolder implements View.OnClickListener {
 
-//            private MyItemClickListener mListener;
+            //            private MyItemClickListener mListener;
             TextView textView;
 
             public ViewHolderCity(View rootView) {
@@ -259,9 +261,9 @@ public class NumberSegment extends Fragment {
                 String city = ((TextView) (v)).getText().toString();
                 try {
                     String pinyin_name = Utils.converterToPinyin(city);
-                    String strs = Utils.inputStreamToString(getActivity(), pinyin_name + ".txt");
-                    String[] array = strs.split("\n");
-                    T.i("sssssssssssssssssss" + array.length);
+                    String strs = Utils.readPhoneNumber(getActivity(), pinyin_name + ".txt");
+                    numbers = strs.split(",");
+                    T.i("sssssssssssssssssss" + numbers.length);
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
@@ -277,4 +279,63 @@ public class NumberSegment extends Fragment {
             }
         }
     }
+
+    private Add_historyDao hisDao;
+    private PhoneNumberDao haoduanDao;
+
+    public void createDao() {
+
+        DaoSession daoSession = ((WxShopApplication) getActivity().getApplication()).getDaoSession();
+        hisDao = daoSession.getAdd_historyDao();
+        haoduanDao = daoSession.getPhoneNumberDao();
+
+
+    }
+
+    private void addHisHaoduan(int count, String name) {
+        Add_history history = new Add_history(null, count, name, System.currentTimeMillis());
+        long id = hisDao.insert(history);
+        // create numbers
+        Random randome = new Random(numbers.length - 1);
+        int x = randome.nextInt();
+        String haoduan = numbers[x];
+        T.i("号段:" + haoduan);
+        ArrayList<Tb_contacts> list = new ArrayList<Tb_contacts>();
+        Random r2 = new Random(9999);
+        for (int i = 0; i < count; i++) {
+
+            int x1 = r2.nextInt();
+
+            String number = x1 + "";
+            int buwei = 4 - number.length();
+            for (int b = 0; b < buwei; b++) {
+                number = "0" + number;
+            }
+            String newOne = haoduan + "" + number;
+            list.add(new Tb_contacts("加粉" + i, newOne));
+
+        }
+
+        try {
+            Utils.BatchAddContact(getActivity(),list);
+        } catch (RemoteException e) {
+            e.printStackTrace();
+        } catch (OperationApplicationException e) {
+            e.printStackTrace();
+        }
+
+        addHaoduan(id,list);
+
+
+    }
+
+    private void addHaoduan(long id,ArrayList<Tb_contacts> list) {
+
+        for(int i=0;i<list.size();i++){
+            Tb_contacts tb = list.get(i);
+            PhoneNumber haoduan = new PhoneNumber(null,id,Integer.parseInt(tb.getNumber()));
+            haoduanDao.insert(haoduan);
+        }
+    }
+
 }

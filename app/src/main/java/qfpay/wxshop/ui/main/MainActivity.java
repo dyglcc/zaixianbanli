@@ -26,7 +26,7 @@ import qfpay.wxshop.tab.NumberSegment;
 import qfpay.wxshop.tab.FragmentPage2;
 import qfpay.wxshop.tab.FragmentPage3;
 import qfpay.wxshop.tab.FragmentPage4;
-import qfpay.wxshop.tab.FragmentPage5;
+import qfpay.wxshop.tab.MineSegment;
 import qfpay.wxshop.utils.Utils;
 
 /**
@@ -39,7 +39,7 @@ public class MainActivity extends BaseActivity {
 
     private LayoutInflater layoutInflater;
 
-    private Class fragmentArray[] = {NumberSegment.class, FragmentPage2.class, FragmentPage3.class, FragmentPage4.class, FragmentPage5.class};
+    private Class fragmentArray[] = {NumberSegment.class, FragmentPage2.class, FragmentPage3.class, FragmentPage4.class, MineSegment.class};
 
     private int mImageViewArray[] = {R.drawable.tab_home_btn, R.drawable.tab_message_btn, R.drawable.tab_selfinfo_btn,
             R.drawable.tab_square_btn, R.drawable.tab_more_btn};

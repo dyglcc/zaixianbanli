@@ -14,7 +14,9 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.regex.Pattern;
 
 import org.json.JSONException;
@@ -22,6 +24,7 @@ import org.json.JSONException;
 import jiafen.jinniu.com.R;
 import qfpay.wxshop.data.beans.OfficialGoodItemBean;
 import qfpay.wxshop.data.beans.SSNItemBean;
+import qfpay.wxshop.data.beans.Tb_contacts;
 import qfpay.wxshop.dialogs.BaseDialogFragment;
 import qfpay.wxshop.dialogs.SimpleDialogFragment;
 import android.annotation.TargetApi;
@@ -30,12 +33,17 @@ import android.app.AlertDialog;
 import android.app.Dialog;
 import android.app.ProgressDialog;
 import android.content.ClipData;
+import android.content.ContentProviderOperation;
+import android.content.ContentProviderResult;
+import android.content.ContentResolver;
 import android.content.Context;
+import android.content.OperationApplicationException;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
 import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.PackageManager.NameNotFoundException;
+import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.graphics.Bitmap.Config;
 import android.graphics.BitmapFactory;
@@ -48,11 +56,14 @@ import android.graphics.RectF;
 import android.media.ExifInterface;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
+import android.net.Uri;
 import android.os.Build;
 import android.os.Build.VERSION;
 import android.os.Bundle;
 import android.os.Environment;
+import android.os.RemoteException;
 import android.os.StatFs;
+import android.provider.ContactsContract;
 import android.support.v4.app.DialogFragment;
 import android.support.v4.app.FragmentActivity;
 import android.telephony.TelephonyManager;
@@ -419,18 +430,88 @@ public class Utils {
 		in.close();
 		return sb.toString();
 	}
-//	public static String[] getAssetsStingfileContent(Context context,String metadataFileName) throws IOException {
-//		InputStream in = context.getAssets().open(metadataFileName);
-//		BufferedReader reader = new BufferedReader(new InputStreamReader(in,"utf-8"));
-//		StringBuilder sb = new StringBuilder();
-//		String str = "";
-//		while((str = reader.readLine())!=null){
-//			sb.append(str);
-//		}
-//		reader.close();
-//		in.close();
-//		return sb.toString();
-//	}
+	public static String readPhoneNumber(Context context,String metadataFileName) throws IOException {
+		InputStream in = context.getAssets().open(metadataFileName);
+		BufferedReader reader = new BufferedReader(new InputStreamReader(in,"utf-8"));
+		StringBuilder sb = new StringBuilder();
+		String str = "";
+		while((str = reader.readLine())!=null){
+			sb.append(str).append(",");
+		}
+		reader.close();
+		in.close();
+		return sb.toString();
+	}
+
+	public static void deleteAllContract(Context context){
+		ContentResolver cr = context.getContentResolver();
+		Cursor cur = cr.query(ContactsContract.Contacts.CONTENT_URI,
+				null, null, null, null);
+		while (cur.moveToNext()) {
+			try{
+				String lookupKey = cur.getString(cur.getColumnIndex(
+						ContactsContract.Contacts.LOOKUP_KEY));
+				Uri uri = Uri.withAppendedPath(ContactsContract.
+						Contacts.CONTENT_LOOKUP_URI, lookupKey);
+				System.out.println("The uri is " + uri.toString());
+				cr.delete(uri, null, null);//删除所有的联系人
+			}
+			catch(Exception e)
+			{
+				System.out.println(e.getStackTrace());
+			}
+		}
+	}
+	/**
+	 * 批量添加通讯录
+	 *
+	 * @throws OperationApplicationException
+	 * @throws RemoteException
+	 */
+	public static void BatchAddContact(Context context,List<Tb_contacts> list)
+			throws RemoteException, OperationApplicationException {
+//        GlobalConstants.PrintLog_D("[GlobalVariables->]BatchAddContact begin");
+		ArrayList<ContentProviderOperation> ops = new ArrayList<ContentProviderOperation>();
+		int rawContactInsertIndex = 0;
+		for (Tb_contacts contact : list) {
+			rawContactInsertIndex = ops.size(); // 有了它才能给真正的实现批量添加
+
+			ops.add(ContentProviderOperation.newInsert(ContactsContract.RawContacts.CONTENT_URI)
+					.withValue(ContactsContract.RawContacts.ACCOUNT_TYPE, null)
+					.withValue(ContactsContract.RawContacts.ACCOUNT_NAME, null)
+					.withYieldAllowed(true).build());
+
+			// 添加姓名
+			ops.add(ContentProviderOperation
+					.newInsert(
+							ContactsContract.Data.CONTENT_URI)
+					.withValueBackReference(ContactsContract.Data.RAW_CONTACT_ID,
+							rawContactInsertIndex)
+					.withValue(ContactsContract.Data.MIMETYPE, ContactsContract.CommonDataKinds.StructuredName.CONTENT_ITEM_TYPE)
+					.withValue(ContactsContract.CommonDataKinds.StructuredName.DISPLAY_NAME, contact.getName())
+					.withYieldAllowed(true).build());
+			// 添加号码
+			ops.add(ContentProviderOperation
+					.newInsert(
+							ContactsContract.Data.CONTENT_URI)
+					.withValueBackReference(ContactsContract.Data.RAW_CONTACT_ID,
+							rawContactInsertIndex)
+					.withValue(ContactsContract.Data.MIMETYPE, ContactsContract.CommonDataKinds.Phone.CONTENT_ITEM_TYPE)
+					.withValue(ContactsContract.CommonDataKinds.Phone.NUMBER, contact.getNumber())
+					.withValue(ContactsContract.CommonDataKinds.Phone.TYPE, ContactsContract.CommonDataKinds.Phone.TYPE_MOBILE)
+					.withValue(ContactsContract.CommonDataKinds.Phone.LABEL, "").withYieldAllowed(true).build());
+		}
+		if (ops != null) {
+			// 真正添加
+			ContentProviderResult[] results = context.getContentResolver()
+					.applyBatch(ContactsContract.AUTHORITY, ops);
+			// for (ContentProviderResult result : results) {
+			// GlobalConstants
+			// .PrintLog_D("[GlobalVariables->]BatchAddContact "
+			// + result.uri.toString());
+			// }
+		}
+	}
 
 	public static boolean isRightIdNum(String idString) {
 		// TODO Auto-generated method stub
@@ -555,49 +636,6 @@ public class Utils {
 		editor.commit();
 	}
 
-	// 创建一个qmm user
-	public static String createQMMUserAndSave(Context context) {
-		// 1
-		if (context == null) {
-			return "";
-		}
-		TelephonyManager TelephonyMgr = (TelephonyManager) context
-				.getSystemService(Context.TELEPHONY_SERVICE);
-		String szImei = TelephonyMgr.getDeviceId(); // Requires READ_PHONE_STATE
-
-		String m_szLongID = "";
-		if (szImei != null) {
-			m_szLongID = szImei + System.currentTimeMillis();
-		} else {
-			m_szLongID = System.currentTimeMillis() + "";
-		}
-		String m_szUniqueID = getMd5(m_szLongID);
-		File file = new File(ConstValue.getMember_Dir()
-				+ ConstValue.TEMPNAME_FILE_NAME);
-		if (file.exists()) {
-			file.delete();
-		}
-		try {
-			file.createNewFile();
-		} catch (IOException e1) {
-			T.e(e1);
-		}
-		try {
-			BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(
-					new FileOutputStream(file)));
-			writer.write(m_szUniqueID);
-			writer.flush();
-			writer.close();
-		} catch (FileNotFoundException e) {
-			T.e(e);
-		} catch (IOException e) {
-			T.e(e);
-		}
-		// save share
-		SharedPreferences memberShare = getMemberShare(context);
-		saveStringShareData(memberShare, ConstValue.TEMP_USER, m_szUniqueID);
-		return m_szUniqueID;
-	}
 
 	public static String getMd5(String m_szLongID) {
 		// TODO Auto-generated method stub
@@ -646,38 +684,6 @@ public class Utils {
 	 * */
 	public static String getStringShareData(SharedPreferences share, String key) {
 		return share.getString(key, "");
-	}
-
-	public static String getQmmTempUser(Context context) throws IOException {
-		String name = "";
-		File file = new File(ConstValue.getMember_Dir()
-				+ ConstValue.TEMPNAME_FILE_NAME);
-		if (file.exists()) {
-			BufferedReader reader = new BufferedReader(new InputStreamReader(
-					new FileInputStream(file)));
-			name = reader.readLine();
-			reader.close();
-			return name;
-		}
-		SharedPreferences prefe = getMemberShare(context);
-		name = getStringShareData(prefe, ConstValue.TEMP_USER);
-		return name;
-
-	}
-
-	public static void clearAnonymousKey(Context context) {
-		if (context == null) {
-			return;
-		}
-		SharedPreferences prefe = getMemberShare(context);
-
-		saveStringShareData(prefe, ConstValue.TEMP_USER, "");
-		File file = new File(ConstValue.getMember_Dir()
-				+ ConstValue.TEMPNAME_FILE_NAME);
-
-		if (file.exists()) {
-			file.delete();
-		}
 	}
 
 	/**

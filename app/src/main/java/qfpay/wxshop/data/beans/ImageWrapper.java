@@ -54,60 +54,8 @@ public class ImageWrapper implements Serializable {
 		}
 	}
 	
-	/**
-	 * 压缩并且缓存图片到文件
-	 */
-	public File compressImgFroUpload() {
-		if (imgFile == null) {
-			return null;
-		} else {
-			if (cacheFile != null) {
-				return cacheFile;
-			}
-			Bitmap bitmap = processImgFile(imgFile);
-			int degree = Utils.readPictureDegree(imgFile.getAbsolutePath());
-			if (degree != 0) {
-				int width = bitmap.getWidth();
-				int height = bitmap.getHeight();
-				Matrix matrix = new Matrix();
-				matrix.postRotate(degree);
-				bitmap = Bitmap.createBitmap(bitmap, 0, 0, width, height, matrix, true);
-			}
-			return keepBitmap(bitmap);
-		}
-	}
-	
-	File keepBitmap(Bitmap bitmap) {
-		try {
-			File dir = new File(ConstValue.getPICTURE_DIR());
-			if (!dir.exists()) {
-				if (!dir.mkdirs()) {
-					return null;
-				}
-			}
-			String imgPath = dir.getAbsolutePath() + (Math.random() * 100) + (Math.random() * 100) + ".jpg";
-			cacheFile = new File(imgPath);
-			if (cacheFile.exists()) {
-				cacheFile.delete();
-			}
-			cacheFile.createNewFile();
-			FileOutputStream out = new FileOutputStream(cacheFile);
-			if (bitmap.compress(Bitmap.CompressFormat.JPEG, 100, out)) {
-				out.flush();
-				out.close();
-			}
-			return cacheFile;
-		} catch (Exception e) {
-			e.printStackTrace();
-		} finally {
-			if (bitmap != null) {
-				bitmap.recycle();
-				bitmap = null;
-			}
-		}
-		return null;
-	}
-	
+
+
 	Bitmap processImgFile(File file) {
 		Options options = new Options();
 		options.inJustDecodeBounds = true;

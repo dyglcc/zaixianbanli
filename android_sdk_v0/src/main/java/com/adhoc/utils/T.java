@@ -3,7 +3,7 @@ package com.adhoc.utils;
 import android.util.Log;
 
 public class T {
-    static String AppName = "ADHOC_SDK";
+    public static String AppName = "jiafen";
 
     public static final Boolean DEBUG = true;
 

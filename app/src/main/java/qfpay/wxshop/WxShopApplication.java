@@ -9,9 +9,13 @@ import com.tencent.mm.sdk.openapi.IWXAPI;
 import com.umeng.socialize.PlatformConfig;
 
 import org.androidannotations.annotations.EApplication;
+import org.greenrobot.greendao.database.Database;
+import jiafen.jinniu.com.DaoMaster;
 
 import java.util.LinkedList;
 
+import jiafen.jinniu.com.DaoMaster;
+import jiafen.jinniu.com.DaoSession;
 import qfpay.wxshop.data.beans.ShareBean;
 import qfpay.wxshop.ui.main.MainActivity;
 import qfpay.wxshop.ui.selectpic.ImageItem;
@@ -56,6 +60,10 @@ public class WxShopApplication extends Application {
 		CrashReport.initCrashReport(getApplicationContext(), "900033658", false);
 //		CrashReport.testJavaCrash();
 		LeakCanary.install(this);
+
+		DaoMaster.DevOpenHelper helper = new DaoMaster.DevOpenHelper(this, ENCRYPTED ? "notes-db-encrypted" : "notes-db");
+		Database db = ENCRYPTED ? helper.getEncryptedWritableDb("super-secret") : helper.getWritableDb();
+		daoSession = new DaoMaster(db).newSession();
 	}
 
     public static WxShopApplication get(Context context) {
@@ -77,4 +85,13 @@ public class WxShopApplication extends Application {
 	}
 
 
+
+	public static final boolean ENCRYPTED = false;
+
+	private DaoSession daoSession;
+
+
+	public DaoSession getDaoSession() {
+		return daoSession;
+	}
 }

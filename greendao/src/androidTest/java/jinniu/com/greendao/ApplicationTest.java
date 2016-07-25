@@ -1,4 +1,4 @@
-package jiafen.jinniu.com.greendao;
+package jinniu.com.greendao;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;
