@@ -49,6 +49,7 @@
         <Button
             android:id="@+id/btn_daoru"
             android:layout_width="wrap_content"
+            android:textColor="@color/white"
             android:layout_height="wrap_content"
             android:text="生成号码并导入" />
     </LinearLayout>

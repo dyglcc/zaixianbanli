@@ -4,6 +4,7 @@ import android.os.Handler;
 import android.support.v4.app.FragmentTabHost;
 import android.view.LayoutInflater;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TabHost;
@@ -67,45 +68,6 @@ public class MainActivity extends BaseActivity {
 //        mPushAgent.enable(mRegisterCallback);
 
         // testcode
-        int cs = 0;
-        try {
-            String contextStr = Utils.inputStreamToString(MainActivity.this, "area.json");
-            JSONArray array = new JSONArray(contextStr);
-
-            int length = array.length();
-            for (int i = 0; i < length; i++) {
-                JSONObject object = array.getJSONObject(i);
-                Iterator iterator = object.keys();
-                String province = (String) iterator.next();
-                JSONArray array1 = object.getJSONArray(province);
-                int lengthC = array1.length();
-                String[] cities = new String[lengthC];
-                for (int j = 0; j < lengthC; j++) {
-                    cities[j] = array1.getString(j);
-                    cs++;
-                    String pinyin = Utils.converterToPinyin(cities[j]);
-//                        if(pinyin.equals("shanghai")){
-//                            T.i("----------------------");
-//                            try {
-//                                String str = Utils.inputStreamToString(MainActivity.this, "shanghai.txt");
-//                                T.i("str is " + str);
-//                            } catch (IOException e) {
-//                                e.printStackTrace();
-//                            }
-//                        }
-                    T.i(pinyin);
-
-                }
-                T.i(object.toString());
-                T.i(province + " " + array1.toString());
-//                T.i(object);
-            }
-        } catch (IOException e) {
-            e.printStackTrace();
-        } catch (JSONException e) {
-            e.printStackTrace();
-        }
-        T.i("多少个城市" + cs);
 
 //        Request request = new Request.Builder().url()
 //
@@ -145,5 +107,13 @@ public class MainActivity extends BaseActivity {
         textView.setText(mTextviewArray[index]);
 
         return view;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if(item.getItemId()==R.id.menu_clear){
+            Utils.deleteAllContract(getApplicationContext());
+        }
+        return super.onOptionsItemSelected(item);
     }
 }

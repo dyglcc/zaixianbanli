@@ -32,8 +32,7 @@ public class WxShopApplication extends Application {
 	// testTester
 	public String mTesterUrl;
 	public int mServerType;
-    public MainActivity main;
-
+	public static WxShopApplication instance;
 	@Override
 	public void onCreate() {
 		super.onCreate();
@@ -64,6 +63,7 @@ public class WxShopApplication extends Application {
 		DaoMaster.DevOpenHelper helper = new DaoMaster.DevOpenHelper(this, ENCRYPTED ? "notes-db-encrypted" : "notes-db");
 		Database db = ENCRYPTED ? helper.getEncryptedWritableDb("super-secret") : helper.getWritableDb();
 		daoSession = new DaoMaster(db).newSession();
+		instance = this;
 	}
 
     public static WxShopApplication get(Context context) {

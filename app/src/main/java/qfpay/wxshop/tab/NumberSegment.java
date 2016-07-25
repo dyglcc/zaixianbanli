@@ -70,7 +70,7 @@ public class NumberSegment extends Fragment {
         //ListView效果的 LinearLayoutManager
         int spacingInPixels = getResources().getDimensionPixelSize(R.dimen.recyler_space);
         recylcer.addItemDecoration(new SpaceItemDecoration(spacingInPixels));
-        GridLayoutManager mgr = new GridLayoutManager(getActivity(), 6);
+        GridLayoutManager mgr = new GridLayoutManager(WxShopApplication.instance, 6);
 //        mgr.setOrientation(LinearLayoutManager.VERTICAL);
         recylcer.setLayoutManager(mgr);
 
@@ -82,7 +82,7 @@ public class NumberSegment extends Fragment {
         RecyclerView recylcerCity = (RecyclerView) view.findViewById(R.id.recyclerView_city);
         int spacingInPixels_city = getResources().getDimensionPixelSize(R.dimen.recyler_space);
         recylcerCity.addItemDecoration(new SpaceItemDecoration(spacingInPixels_city));
-        GridLayoutManager mgrCity = new GridLayoutManager(getActivity(), 4);
+        GridLayoutManager mgrCity = new GridLayoutManager(WxShopApplication.instance, 4);
         recylcerCity.setLayoutManager(mgrCity);
         //设置适配器
         adapterCity = new MyAdapterCity();
@@ -108,7 +108,7 @@ public class NumberSegment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         try {
-            arrayStr = Utils.inputStreamToString(getActivity(), "area.json");
+            arrayStr = Utils.inputStreamToString(WxShopApplication.instance, "area.json");
             JSONArray array = new JSONArray(arrayStr);
             int len = array.length();
             data = new String[len];
@@ -147,9 +147,9 @@ public class NumberSegment extends Fragment {
         public void onBindViewHolder(ViewHolder viewHolder, int i) {
             viewHolder.textView.setText(data[i]);
             if (pos_pro == i) {
-                viewHolder.textView.setBackgroundColor(getActivity().getResources().getColor(R.color.yellow));
+                viewHolder.textView.setBackgroundColor(WxShopApplication.instance.getResources().getColor(R.color.yellow));
             } else {
-                viewHolder.textView.setBackgroundColor(getActivity().getResources().getColor(R.color.white));
+                viewHolder.textView.setBackgroundColor(WxShopApplication.instance.getResources().getColor(R.color.white));
             }
         }
 
@@ -224,9 +224,9 @@ public class NumberSegment extends Fragment {
         public void onBindViewHolder(ViewHolderCity viewHolder, int i) {
             viewHolder.textView.setText(datacities[i]);
             if (i == pos_city) {
-                viewHolder.textView.setBackgroundColor(getActivity().getResources().getColor(R.color.yellow));
+                viewHolder.textView.setBackgroundColor(WxShopApplication.instance.getResources().getColor(R.color.yellow));
             } else {
-                viewHolder.textView.setBackgroundColor(getActivity().getResources().getColor(R.color.white));
+                viewHolder.textView.setBackgroundColor(WxShopApplication.instance.getResources().getColor(R.color.white));
             }
         }
 
@@ -261,7 +261,7 @@ public class NumberSegment extends Fragment {
                 String city = ((TextView) (v)).getText().toString();
                 try {
                     String pinyin_name = Utils.converterToPinyin(city);
-                    String strs = Utils.readPhoneNumber(getActivity(), pinyin_name + ".txt");
+                    String strs = Utils.readPhoneNumber(WxShopApplication.instance, pinyin_name + ".txt");
                     numbers = strs.split(",");
                     T.i("sssssssssssssssssss" + numbers.length);
                 } catch (IOException e) {
@@ -285,7 +285,7 @@ public class NumberSegment extends Fragment {
 
     public void createDao() {
 
-        DaoSession daoSession = ((WxShopApplication) getActivity().getApplication()).getDaoSession();
+        DaoSession daoSession = WxShopApplication.instance.getDaoSession();
         hisDao = daoSession.getAdd_historyDao();
         haoduanDao = daoSession.getPhoneNumberDao();
 
@@ -317,7 +317,7 @@ public class NumberSegment extends Fragment {
         }
 
         try {
-            Utils.BatchAddContact(getActivity(),list);
+            Utils.BatchAddContact(WxShopApplication.instance,list);
         } catch (RemoteException e) {
             e.printStackTrace();
         } catch (OperationApplicationException e) {

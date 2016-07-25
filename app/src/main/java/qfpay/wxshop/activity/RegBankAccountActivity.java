@@ -64,7 +64,7 @@ public class RegBankAccountActivity extends BaseActivity {
 			}
 			@Override
 			public String tiaoShuju(String str, String fengefu) {
-				return Utils.tiaoShujuCard(str, fengefu);
+				return "";
 			}
 		});
 	}
