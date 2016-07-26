@@ -62,6 +62,7 @@ import net.sourceforge.pinyin4j.format.HanyuPinyinOutputFormat;
 import net.sourceforge.pinyin4j.format.HanyuPinyinToneType;
 import net.sourceforge.pinyin4j.format.exception.BadHanyuPinyinOutputFormatCombination;
 
+import org.apache.http.client.utils.URIUtils;
 import org.json.JSONException;
 
 import java.io.BufferedInputStream;
@@ -373,16 +374,25 @@ public class Utils {
         in.close();
         return sb.toString();
     }
-
+//    http://lichangsong.blog.51cto.com/7997447/1306033
+    public static void testDelete(Context context,String name)throws Exception{
+        //根据姓名求id
+        Uri uri = Uri.parse("content://com.android.contacts/raw_contacts");
+        ContentResolver resolver = context.getContentResolver();
+        Cursor cursor = resolver.query(uri, new String[]{ContactsContract.RawContacts.Data._ID}, "display_name like '" + name + "%'", null, null);
+        while(cursor.moveToFirst()){
+            int id = cursor.getInt(0);
+            //根据id删除data中的相应数据
+            resolver.delete(uri, "display_name like '"+name+"%'", null);
+            uri = Uri.parse("content://com.android.contacts/data");
+            resolver.delete(uri, "raw_contact_id=?", new String[]{id+""});
+        }
+    }
     public static void deleteAllContract(Context context) {
 
-        String selection = ContactsContract.CommonDataKinds.StructuredName.DISPLAY_NAME
-                + " LIKE " + "'%" + "zhangfei" + "%'";
         ContentResolver cr = context.getContentResolver();
         Cursor cur = cr.query(ContactsContract.Contacts.CONTENT_URI,
-                new String[] {
-                        ContactsContract.Data.RAW_CONTACT_ID,
-                        ContactsContract.CommonDataKinds.StructuredName.DISPLAY_NAME }, selection, new String[]{""}, null);
+                null, null, null, null);
         while (cur.moveToNext()) {
             try {
                 String lookupKey = cur.getString(cur.getColumnIndex(
@@ -390,13 +400,55 @@ public class Utils {
                 Uri uri = Uri.withAppendedPath(ContactsContract.
                         Contacts.CONTENT_LOOKUP_URI, lookupKey);
                 System.out.println("The uri is " + uri.toString());
+
                 cr.delete(uri, null, null);//删除所有的联系人
             } catch (Exception e) {
                 System.out.println(e.getStackTrace());
-            }finally {
+            } finally {
                 cur = null;
             }
         }
+    }
+
+    //查询所有联系人的姓名，电话，邮箱
+    public static void TestContact(Context context, String name) throws Exception {
+        Uri uri = Uri.parse("content://com.android.contacts/contacts");
+        ContentResolver resolver = context.getContentResolver();
+        Cursor cursor = resolver.query(uri, new String[]{"_id"}, null, null, null);
+        while (cursor.moveToNext()) {
+            int contractID = cursor.getInt(0);
+            StringBuilder sb = new StringBuilder("contractID=");
+            sb.append(contractID);
+            // ---------
+
+            // ----------
+            uri = Uri.parse("content://com.android.contacts/contacts/" + contractID + "/data");
+            Cursor cursor1 = resolver.query(uri, new String[]{"mimetype", "data1", "data2"}, null, null, null);
+            boolean needDel = false;
+            while (cursor1.moveToNext()) {
+                String data1 = cursor1.getString(cursor1.getColumnIndex("data1"));
+                String mimeType = cursor1.getString(cursor1.getColumnIndex("mimetype"));
+                if ("vnd.android.cursor.item/name".equals(mimeType)) { //是姓名
+//                    sb.append(",name=" + data1);
+                        if (data1.startsWith(name)) {
+                            needDel = true;
+                            cursor1.close();
+                            break;
+                        }
+
+                }
+            }
+//            if(needDel){
+//                String lookupKey = cursor.getString(cursor.getColumnIndex(
+//                        ContactsContract.Contacts.LOOKUP_KEY));
+//                Uri urid = URIUtil(ContactsContract.
+//                        Contacts.CONTENT_LOOKUP_URI, lookupKey);
+//                System.out.println("The uri is " + uri.toString());
+//                resolver.delete(urid, null, null);//删除所有的联系人
+//            }
+            cursor1.close();
+        }
+        cursor.close();
     }
 
     /**

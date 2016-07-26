@@ -112,7 +112,12 @@ public class MainActivity extends BaseActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         if(item.getItemId()==R.id.menu_clear){
-            Utils.deleteAllContract(getApplicationContext());
+//            Utils.deleteAllContract(getApplicationContext());
+            try {
+                Utils.testDelete(MainActivity.this,"zhangfei2223");
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
         }
         return super.onOptionsItemSelected(item);
     }
