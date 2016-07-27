@@ -1,6 +1,8 @@
 package qfpay.wxshop.ui.main;
 
+import android.app.ProgressDialog;
 import android.os.Handler;
+import android.os.Message;
 import android.support.v4.app.FragmentTabHost;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -10,16 +12,11 @@ import android.widget.ImageView;
 import android.widget.TabHost;
 import android.widget.TextView;
 
-import com.adhoc.utils.T;
 
 import org.androidannotations.annotations.AfterViews;
 import org.androidannotations.annotations.EActivity;
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
 
-import java.io.IOException;
-import java.util.Iterator;
+import java.util.ArrayList;
 
 import jiafen.jinniu.com.R;
 import qfpay.wxshop.app.BaseActivity;
@@ -28,13 +25,14 @@ import qfpay.wxshop.tab.FragmentPage2;
 import qfpay.wxshop.tab.FragmentPage3;
 import qfpay.wxshop.tab.FragmentPage4;
 import qfpay.wxshop.tab.MineSegment;
+//import qfpay.wxshop.ui.view.ProgressDialog;
 import qfpay.wxshop.utils.Utils;
 
 /**
  * 主界面
  */
 @EActivity(R.layout.main_myshop)
-public class MainActivity extends BaseActivity {
+public class MainActivity extends BaseActivity implements Handler.Callback {
     private Handler handler;
     private FragmentTabHost mTabHost;
 
@@ -72,6 +70,7 @@ public class MainActivity extends BaseActivity {
 //        Request request = new Request.Builder().url()
 //
 //        AdhocNet.getInstance().enqueue();
+        handler = new Handler(this);
 
     }
 
@@ -109,16 +108,47 @@ public class MainActivity extends BaseActivity {
         return view;
     }
 
+    ProgressDialog dialog;
+
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        if(item.getItemId()==R.id.menu_clear){
+        if (item.getItemId() == R.id.menu_clear) {
 //            Utils.deleteAllContract(getApplicationContext());
-            try {
-                Utils.testDelete(MainActivity.this,"zhangfei2223");
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
+            dialog = new ProgressDialog(MainActivity.this);
+            dialog.setIndeterminate(true);
+            dialog.setMessage("正在处理...请稍等");
+            dialog.setCanceledOnTouchOutside(false);
+            dialog.show();
+
+            new Thread(new Runnable() {
+                @Override
+                public void run() {
+                    try {
+                        ArrayList list = Utils.TestContact(MainActivity.this, "加粉");
+                        Utils.testDelete(MainActivity.this, list);
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
+                    handler.sendEmptyMessage(1);
+                }
+            }).start();
+
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public boolean handleMessage(Message msg) {
+        switch (msg.what) {
+            case 1:
+                if (dialog != null) {
+                    if (dialog.isShowing()) {
+                        dialog.dismiss();
+                    }
+                }
+                break;
+        }
+
+        return false;
     }
 }

@@ -12,7 +12,7 @@ public class PhoneNumber {
     @Id
     private Long id;
     private long his_id;
-    private int phonenum;
+    private long phonenum;
 
     @Generated
     public PhoneNumber() {
@@ -23,7 +23,7 @@ public class PhoneNumber {
     }
 
     @Generated
-    public PhoneNumber(Long id, long his_id, int phonenum) {
+    public PhoneNumber(Long id, long his_id, long phonenum) {
         this.id = id;
         this.his_id = his_id;
         this.phonenum = phonenum;
@@ -45,7 +45,7 @@ public class PhoneNumber {
         this.his_id = his_id;
     }
 
-    public int getPhonenum() {
+    public long getPhonenum() {
         return phonenum;
     }
 

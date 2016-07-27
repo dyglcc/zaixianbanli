@@ -374,20 +374,28 @@ public class Utils {
         in.close();
         return sb.toString();
     }
-//    http://lichangsong.blog.51cto.com/7997447/1306033
-    public static void testDelete(Context context,String name)throws Exception{
-        //根据姓名求id
-        Uri uri = Uri.parse("content://com.android.contacts/raw_contacts");
-        ContentResolver resolver = context.getContentResolver();
-        Cursor cursor = resolver.query(uri, new String[]{ContactsContract.RawContacts.Data._ID}, "display_name like '" + name + "%'", null, null);
-        while(cursor.moveToFirst()){
-            int id = cursor.getInt(0);
-            //根据id删除data中的相应数据
-            resolver.delete(uri, "display_name like '"+name+"%'", null);
-            uri = Uri.parse("content://com.android.contacts/data");
-            resolver.delete(uri, "raw_contact_id=?", new String[]{id+""});
+
+    //    http://lichangsong.blog.51cto.com/7997447/1306033
+    public static void testDelete(Context context, ArrayList<String> list) throws Exception {
+        for (int i = 0; i < list.size(); i++) {
+            //根据姓名求id
+            String name = list.get(i);
+            Uri uri = Uri.parse("content://com.android.contacts/raw_contacts");
+            ContentResolver resolver = context.getContentResolver();
+            Cursor cursor = resolver.query(uri, new String[]{ContactsContract.RawContacts.Data._ID}, "display_name = ?", new String[]{name}, null);
+            if (cursor.moveToFirst()) {
+                int id = cursor.getInt(0);
+                //根据id删除data中的相应数据
+                resolver.delete(uri, "display_name =?", new String[]{name});
+                uri = Uri.parse("content://com.android.contacts/data");
+                resolver.delete(uri, "raw_contact_id=?", new String[]{id + ""});
+            }
+            cursor.close();
+
         }
+
     }
+
     public static void deleteAllContract(Context context) {
 
         ContentResolver cr = context.getContentResolver();
@@ -411,7 +419,8 @@ public class Utils {
     }
 
     //查询所有联系人的姓名，电话，邮箱
-    public static void TestContact(Context context, String name) throws Exception {
+    public static ArrayList<String> TestContact(Context context, String name) throws Exception {
+        ArrayList<String> list = new ArrayList<>();
         Uri uri = Uri.parse("content://com.android.contacts/contacts");
         ContentResolver resolver = context.getContentResolver();
         Cursor cursor = resolver.query(uri, new String[]{"_id"}, null, null, null);
@@ -430,11 +439,10 @@ public class Utils {
                 String mimeType = cursor1.getString(cursor1.getColumnIndex("mimetype"));
                 if ("vnd.android.cursor.item/name".equals(mimeType)) { //是姓名
 //                    sb.append(",name=" + data1);
-                        if (data1.startsWith(name)) {
-                            needDel = true;
-                            cursor1.close();
-                            break;
-                        }
+                    if (data1.startsWith(name)) {
+                        list.add(data1);
+                        break;
+                    }
 
                 }
             }
@@ -449,6 +457,7 @@ public class Utils {
             cursor1.close();
         }
         cursor.close();
+        return list;
     }
 
     /**
@@ -774,6 +783,7 @@ public class Utils {
     }
 
     private static Dialog dialog = null;
+    private static ProgressDialog progress_dialog = null;
     private static AlertDialog alertDialog = null;
 
     public static Dialog showDialog(final Context context,
@@ -906,6 +916,31 @@ public class Utils {
         btnRight.setOnClickListener(clickRightListener);
         dialog.show();
         return dialog;
+    }
+
+    public static ProgressDialog showFragmentDialog(Context context,
+                                                    String messStr) {
+        if (context == null) {
+            return null;
+        }
+        if (progress_dialog != null && progress_dialog.isShowing()) {
+            android.app.Activity activity = (android.app.Activity) context;
+            if (activity != null && !activity.isFinishing()) {
+                progress_dialog.dismiss();
+            }
+        }
+        progress_dialog = new ProgressDialog(context);
+        progress_dialog.setIndeterminate(true);
+        progress_dialog.setMessage(messStr);
+        progress_dialog.setCanceledOnTouchOutside(false);
+        progress_dialog.show();
+        return progress_dialog;
+    }
+
+    public static void closeDialog() {
+        if (progress_dialog != null) {
+            progress_dialog.dismiss();
+        }
     }
 
     // 获取AppKey

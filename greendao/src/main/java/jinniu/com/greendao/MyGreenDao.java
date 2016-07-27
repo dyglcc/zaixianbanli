@@ -19,7 +19,7 @@ public class MyGreenDao {
         // schema2.enableActiveEntitiesByDefault();
         // schema2.enableKeepSectionsByDefault();
         // 一旦你拥有了一个 Schema 对象后，你便可以使用它添加实体（Entities）了。
-        addNote(schema);
+//        addNote(schema);
         addHistoryHaoduan(schema);
         addHaoduan(schema);
         // 最后我们将使用 DAOGenerator 类的 generateAll() 方法自动生成代码，此处你需要根据自己的情况更改输出目录（既之前创建的 java-gen)。

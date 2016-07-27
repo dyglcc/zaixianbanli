@@ -2,6 +2,8 @@ package qfpay.wxshop.tab;
 
 import android.content.OperationApplicationException;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Message;
 import android.os.RemoteException;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.GridLayoutManager;
@@ -15,6 +17,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 import com.adhoc.utils.T;
+import com.adhoc.utils.Toaster;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -38,8 +41,8 @@ import qfpay.wxshop.recylerView.SpaceItemDecoration;
 import qfpay.wxshop.utils.Utils;
 
 
-public class NumberSegment extends Fragment {
-
+public class NumberSegment extends Fragment implements Handler.Callback {
+    private Handler handler;
     private String arrayStr = null;
     private String[] data;
     private String[] datacities;
@@ -93,11 +96,19 @@ public class NumberSegment extends Fragment {
         btn_daoru.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String countStr = edt_count.getText().toString();
+                final String countStr = edt_count.getText().toString();
                 if (!TextUtils.isEmpty(countStr)) {
 
-                    int count = Integer.parseInt(countStr);
-                    addHisHaoduan(count, datacities[pos_city]);
+                    Utils.showFragmentDialog(getActivity(),"正在处理....请稍等");
+                    new Thread(new Runnable() {
+                        @Override
+                        public void run() {
+                            int count = Integer.parseInt(countStr);
+                            addHisHaoduan(count, datacities[pos_city]);
+                            handler.sendEmptyMessage(1);
+                        }
+                    }).start();
+
                 }
             }
         });
@@ -127,7 +138,18 @@ public class NumberSegment extends Fragment {
 
         // 初始化数据库
         createDao();
+        handler = new Handler(this);
         super.onCreate(savedInstanceState);
+    }
+
+    @Override
+    public boolean handleMessage(Message msg) {
+        switch (msg.what) {
+            case 1:
+                Utils.closeDialog();
+                break;
+        }
+        return false;
     }
 
 
@@ -182,8 +204,12 @@ public class NumberSegment extends Fragment {
                 }
                 pos_pro = getPosition();
                 pos_city = 0;
-                MyAdapter.this.notifyDataSetChanged();
                 displayCities(((TextView) v).getText().toString());
+                MyAdapter.this.notifyDataSetChanged();
+//                adapterCity.notifyDataSetChanged();
+
+                // 初始化numbers
+//                setNumbers(datacities[0]);
 
             }
         }
@@ -258,15 +284,9 @@ public class NumberSegment extends Fragment {
 
             @Override
             public void onClick(View v) {
-                String city = ((TextView) (v)).getText().toString();
-                try {
-                    String pinyin_name = Utils.converterToPinyin(city);
-                    String strs = Utils.readPhoneNumber(WxShopApplication.instance, pinyin_name + ".txt");
-                    numbers = strs.split(",");
-                    T.i("sssssssssssssssssss" + numbers.length);
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
+//                String city = ((TextView) (v)).getText().toString();
+//                setNumbers(city);
+//                T.i("sssssssssssssssssss" + numbers.length);
 //                if (mListener != null) {
 //
 //                    mListener.onItemClick(v, getPosition());
@@ -277,6 +297,19 @@ public class NumberSegment extends Fragment {
                 adapterCity.notifyDataSetChanged();
 
             }
+        }
+    }
+
+    private void setNumbers(String city) {
+        String pinyin_name = Utils.converterToPinyin(city);
+        String strs = null;
+        try {
+            strs = Utils.readPhoneNumber(WxShopApplication.instance, pinyin_name + ".txt");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        if(strs!=null){
+            numbers = strs.split(",");
         }
     }
 
@@ -295,16 +328,23 @@ public class NumberSegment extends Fragment {
     private void addHisHaoduan(int count, String name) {
         Add_history history = new Add_history(null, count, name, System.currentTimeMillis());
         long id = hisDao.insert(history);
+
+        setNumbers(datacities[pos_city]);
         // create numbers
-        Random randome = new Random(numbers.length - 1);
-        int x = randome.nextInt();
+        Random randome = new Random();
+        if(numbers == null){
+            T.i(datacities[pos_city] + " " + pos_city);
+            Toaster.toast(WxShopApplication.instance,"获取手机号段失败了");
+            return;
+        }
+        int x  = randome.nextInt(numbers.length);
         String haoduan = numbers[x];
         T.i("号段:" + haoduan);
         ArrayList<Tb_contacts> list = new ArrayList<Tb_contacts>();
-        Random r2 = new Random(9999);
+        Random r2 = new Random();
         for (int i = 0; i < count; i++) {
 
-            int x1 = r2.nextInt();
+            int x1 = r2.nextInt(9999);
 
             String number = x1 + "";
             int buwei = 4 - number.length();
@@ -317,23 +357,23 @@ public class NumberSegment extends Fragment {
         }
 
         try {
-            Utils.BatchAddContact(WxShopApplication.instance,list);
+            Utils.BatchAddContact(WxShopApplication.instance, list);
         } catch (RemoteException e) {
             e.printStackTrace();
         } catch (OperationApplicationException e) {
             e.printStackTrace();
         }
 
-        addHaoduan(id,list);
+        addHaoduan(id, list);
 
 
     }
 
-    private void addHaoduan(long id,ArrayList<Tb_contacts> list) {
+    private void addHaoduan(long id, ArrayList<Tb_contacts> list) {
 
-        for(int i=0;i<list.size();i++){
+        for (int i = 0; i < list.size(); i++) {
             Tb_contacts tb = list.get(i);
-            PhoneNumber haoduan = new PhoneNumber(null,id,Integer.parseInt(tb.getNumber()));
+            PhoneNumber haoduan = new PhoneNumber(null, id, Long.parseLong(tb.getNumber()));
             haoduanDao.insert(haoduan);
         }
     }
