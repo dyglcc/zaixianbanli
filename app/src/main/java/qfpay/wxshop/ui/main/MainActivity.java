@@ -12,7 +12,6 @@ import android.widget.ImageView;
 import android.widget.TabHost;
 import android.widget.TextView;
 
-
 import org.androidannotations.annotations.AfterViews;
 import org.androidannotations.annotations.EActivity;
 
@@ -20,13 +19,14 @@ import java.util.ArrayList;
 
 import jiafen.jinniu.com.R;
 import qfpay.wxshop.app.BaseActivity;
-import qfpay.wxshop.tab.NumberSegment;
 import qfpay.wxshop.tab.FragmentPage2;
 import qfpay.wxshop.tab.FragmentPage3;
-import qfpay.wxshop.tab.FragmentPage4;
+import qfpay.wxshop.tab.HistorySegment;
 import qfpay.wxshop.tab.MineSegment;
-//import qfpay.wxshop.ui.view.ProgressDialog;
+import qfpay.wxshop.tab.NumberSegment;
 import qfpay.wxshop.utils.Utils;
+
+//import qfpay.wxshop.ui.view.ProgressDialog;
 
 /**
  * 主界面
@@ -38,7 +38,7 @@ public class MainActivity extends BaseActivity implements Handler.Callback {
 
     private LayoutInflater layoutInflater;
 
-    private Class fragmentArray[] = {NumberSegment.class, FragmentPage2.class, FragmentPage3.class, FragmentPage4.class, MineSegment.class};
+    private Class fragmentArray[] = {NumberSegment.class, FragmentPage2.class, FragmentPage3.class, HistorySegment.class, MineSegment.class};
 
     private int mImageViewArray[] = {R.drawable.tab_home_btn, R.drawable.tab_message_btn, R.drawable.tab_selfinfo_btn,
             R.drawable.tab_square_btn, R.drawable.tab_more_btn};

@@ -2,8 +2,6 @@ package qfpay.wxshop.adapter;
 
 import android.database.Cursor;
 
-import com.frankzhu.recyclerviewdemo.db.ItemsDataHelper;
-
 /**
  * Author:    ZhuWenWu
  * Version    V1.0
@@ -16,21 +14,23 @@ import com.frankzhu.recyclerviewdemo.db.ItemsDataHelper;
  * Why & What is modified:
  */
 public class DemoItem {
-    public int id;
-    public String title;
+    private long time;
+    private String city;
+    private int count;
 
     public DemoItem() {
     }
 
-    public DemoItem(int id, String title) {
-        this.id = id;
-        this.title = title;
+    public DemoItem(long time,String city,int count) {
+        this.time = time;
+        this.city = city;
+        this.count = count;
     }
 
     public static DemoItem fromCursor(Cursor cursor) {
         DemoItem demoItem = new DemoItem();
-        demoItem.id = cursor.getInt(cursor.getColumnIndex(ItemsDataHelper.ItemsDBInfo.ID));
-        demoItem.title = cursor.getString(cursor.getColumnIndex(ItemsDataHelper.ItemsDBInfo.TITLE));
+//        demoItem.id = cursor.getInt(cursor.getColumnIndex(ItemsDataHelper.ItemsDBInfo.ID));
+//        demoItem.title = cursor.getString(cursor.getColumnIndex(ItemsDataHelper.ItemsDBInfo.TITLE));
         return demoItem;
     }
 }

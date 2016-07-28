@@ -20,7 +20,7 @@ public class MainTabActivity extends FragmentActivity{
 	
 	private LayoutInflater layoutInflater;
 		
-	private Class fragmentArray[] = {NumberSegment.class,FragmentPage2.class,FragmentPage3.class,FragmentPage4.class,MineSegment.class};
+	private Class fragmentArray[] = {NumberSegment.class,FragmentPage2.class,FragmentPage3.class,HistorySegment.class,MineSegment.class};
 	
 	private int mImageViewArray[] = {R.drawable.tab_home_btn,R.drawable.tab_message_btn,R.drawable.tab_selfinfo_btn,
 									 R.drawable.tab_square_btn,R.drawable.tab_more_btn};

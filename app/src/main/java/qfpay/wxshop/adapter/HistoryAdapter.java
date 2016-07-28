@@ -1,23 +1,15 @@
 package qfpay.wxshop.adapter;
 
 import android.content.Context;
-import android.content.Intent;
 import android.database.Cursor;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.frankzhu.recyclerviewdemo.R;
-import com.frankzhu.recyclerviewdemo.bean.DemoItem;
-import com.frankzhu.recyclerviewdemo.ui.DetailActivity;
-import com.frankzhu.recyclerviewdemo.ui.SelectActivity;
+import jiafen.jinniu.com.R;
 
-import butterknife.Bind;
-import butterknife.ButterKnife;
-import butterknife.OnClick;
 
 /**
  * Author:    ZhuWenWu
@@ -30,10 +22,10 @@ import butterknife.OnClick;
  * 2015/2/25        ZhuWenWu            1.0                    1.0
  * Why & What is modified:
  */
-public class ItemsAdapter extends BaseAbstractRecycleCursorAdapter<RecyclerView.ViewHolder> {
+public class HistoryAdapter extends BaseAbstractRecycleCursorAdapter<RecyclerView.ViewHolder> {
     private final LayoutInflater mLayoutInflater;
 
-    public ItemsAdapter(Context context) {
+    public HistoryAdapter(Context context) {
         super(context, null);
         mLayoutInflater = LayoutInflater.from(context);
     }
@@ -41,24 +33,33 @@ public class ItemsAdapter extends BaseAbstractRecycleCursorAdapter<RecyclerView.
     @Override
     public void onBindViewHolder(RecyclerView.ViewHolder holder, Cursor cursor) {
         DemoItem item = DemoItem.fromCursor(cursor);
-        ((NormalTextViewHolder) holder).mTextView.setText(item.title);
+//        ((NormalTextViewHolder) holder).mTextView.setText(item.title);
     }
 
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        return new NormalTextViewHolder(mLayoutInflater.inflate(R.layout.item_text, parent, false), this);
+        return new NormalTextViewHolder(mLayoutInflater.inflate(R.layout.list_item_history, parent, false));
     }
 
     public static class NormalTextViewHolder extends RecyclerView.ViewHolder {
-        @Bind(R.id.text_view)
-        TextView mTextView;
-        ItemsAdapter mAdapter;
+        TextView city;
+        TextView time;
+        TextView count;
 
-        NormalTextViewHolder(View view, ItemsAdapter adapter) {
-            super(view);
-            mAdapter = adapter;
-            ButterKnife.bind(this, view);
+
+        public NormalTextViewHolder(View itemView) {
+            super(itemView);
+            city = (TextView) itemView.findViewById(R.id.city);
+            time = (TextView) itemView.findViewById(R.id.tv_time);
+            count = (TextView) itemView.findViewById(R.id.count);
         }
-
     }
+
+    public DemoItem getItem(){
+        DemoItem demoItem = new DemoItem();
+//        demoItem.id = cursor.getInt(cursor.getColumnIndex(ItemsDataHelper.ItemsDBInfo.ID));
+//        demoItem.title = cursor.getString(cursor.getColumnIndex(ItemsDataHelper.ItemsDBInfo.TITLE));
+        return demoItem;
+    }
+
 }

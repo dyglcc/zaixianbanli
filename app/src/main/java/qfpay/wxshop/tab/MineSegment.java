@@ -29,7 +29,7 @@ public class MineSegment extends Fragment{
 			@Override
 			public void onClick(View v) {
 
-			}
+				}
 		});
 		return view;
 	}
