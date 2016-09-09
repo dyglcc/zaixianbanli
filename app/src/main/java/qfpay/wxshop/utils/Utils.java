@@ -6,16 +6,20 @@ import android.app.AlertDialog;
 import android.app.Dialog;
 import android.app.ProgressDialog;
 import android.content.ClipData;
+import android.content.ComponentName;
 import android.content.ContentProviderOperation;
 import android.content.ContentProviderResult;
 import android.content.ContentResolver;
 import android.content.Context;
+import android.content.Intent;
 import android.content.OperationApplicationException;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
 import android.content.pm.ApplicationInfo;
+import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.PackageManager.NameNotFoundException;
+import android.content.pm.ResolveInfo;
 import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.graphics.Bitmap.Config;
@@ -51,7 +55,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import com.adhoc.utils.T;
+import com.adhoc.utils.*;
 import com.qiniu.upload.tool.AuthException;
 import com.qiniu.upload.tool.Mac;
 import com.qiniu.upload.tool.PutPolicy;
@@ -1332,5 +1336,31 @@ public class Utils {
             }
         }
         return false;
+    }
+    public static void runApp(Context context, String packageName) {
+        PackageInfo pi;
+        try {
+            pi = context.getPackageManager().getPackageInfo(packageName, 0);
+            Intent resolveIntent = new Intent(Intent.ACTION_MAIN, null);
+            resolveIntent.setPackage(pi.packageName);
+            PackageManager pManager = context.getPackageManager();
+            List apps = pManager.queryIntentActivities(
+                    resolveIntent, 0);
+
+            ResolveInfo ri = (ResolveInfo) apps.iterator().next();
+            if (ri != null) {
+                packageName = ri.activityInfo.packageName;
+                String className = ri.activityInfo.name;
+                Intent intent = new Intent(Intent.ACTION_MAIN);
+                ComponentName cn = new ComponentName(packageName, className);
+                intent.setComponent(cn);
+                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                context.startActivity(intent);
+            }
+        } catch (PackageManager.NameNotFoundException e) {
+            T.e(e);
+            com.adhoc.utils.Toaster.toast(context, "未能启动app :" + packageName);
+        }
+
     }
 }

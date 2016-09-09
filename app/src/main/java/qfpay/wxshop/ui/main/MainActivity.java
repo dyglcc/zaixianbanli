@@ -1,8 +1,10 @@
 package qfpay.wxshop.ui.main;
 
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.os.Handler;
 import android.os.Message;
+import android.provider.Settings;
 import android.support.v4.app.FragmentTabHost;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -150,5 +152,10 @@ public class MainActivity extends BaseActivity implements Handler.Callback {
         }
 
         return false;
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
     }
 }

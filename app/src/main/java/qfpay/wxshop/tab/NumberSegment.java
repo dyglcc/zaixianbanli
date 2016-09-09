@@ -1,10 +1,12 @@
 package qfpay.wxshop.tab;
 
+import android.content.Intent;
 import android.content.OperationApplicationException;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.os.RemoteException;
+import android.provider.Settings;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -93,13 +95,23 @@ public class NumberSegment extends Fragment implements Handler.Callback {
         displayCities(data[0]);
 
 
+        view.findViewById(R.id.button_setting).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+//                startActivity(new Intent(Settings.ACTION_WIRELESS_SETTINGS));
+                startActivity(new Intent(Settings.ACTION_WIFI_SETTINGS));
+//                Utils.runApp(getActivity(),"com.android.settings");
+
+            }
+        });
         btn_daoru.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 final String countStr = edt_count.getText().toString();
                 if (!TextUtils.isEmpty(countStr)) {
 
-                    Utils.showFragmentDialog(getActivity(),"正在处理....请稍等");
+                    Utils.showFragmentDialog(getActivity(), "正在处理....请稍等");
                     new Thread(new Runnable() {
                         @Override
                         public void run() {

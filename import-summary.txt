@@ -7,46 +7,50 @@ The following files were *not* copied into the new Gradle project; you
 should evaluate whether these are still needed in your project and if
 so manually move them:
 
-* ic_launcher-web.png
-* proguard-project.txt
-
-Replaced Jars with Dependencies:
---------------------------------
-The importer recognized the following .jar files as third party
-libraries and replaced them with Gradle dependencies instead. This has
-the advantage that more explicit version information is known, and the
-libraries can be updated automatically. However, it is possible that
-the .jar file in your project was of an older version than the
-dependency we picked, which could render the project not compileable.
-You can disable the jar replacement in the import wizard and try again:
-
-android-support-v4.jar => com.android.support:support-v4:19.+
+* .DS_Store
+* Android.mk
+* bsp/
+* bsp/.DS_Store
+* bsp/com/
+* bsp/com/.DS_Store
+* bsp/com/mediatek/
+* bsp/com/mediatek/.DS_Store
+* bsp/com/mediatek/FMRadio/
+* bsp/com/mediatek/FMRadio/ExtensionUtils.java
+* ext/
+* ext/.DS_Store
+* ext/Android.mk
+* ext/src/
+* ext/src/.DS_Store
+* ext/src/com/
+* ext/src/com/.DS_Store
+* ext/src/com/mediatek/
+* ext/src/com/mediatek/.DS_Store
+* ext/src/com/mediatek/FMRadio/
+* ext/src/com/mediatek/FMRadio/.DS_Store
+* ext/src/com/mediatek/FMRadio/ext/
+* ext/src/com/mediatek/FMRadio/ext/DefaultProjectStringExt.java
+* ext/src/com/mediatek/FMRadio/ext/IProjectStringExt.java
+* turnkey/
+* turnkey/.DS_Store
+* turnkey/com/
+* turnkey/com/.DS_Store
+* turnkey/com/mediatek/
+* turnkey/com/mediatek/.DS_Store
+* turnkey/com/mediatek/FMRadio/
+* turnkey/com/mediatek/FMRadio/ExtensionUtils.java
 
 Moved Files:
 ------------
 Android Gradle projects use a different directory structure than ADT
 Eclipse projects. Here's how the projects were restructured:
 
-* AndroidManifest.xml => fuzzyQueryContacts/src/main/AndroidManifest.xml
-* assets/ => fuzzyQueryContacts/src/main/assets/
-* lint.xml => fuzzyQueryContacts/lint.xml
-* res/ => fuzzyQueryContacts/src/main/res/
-* src/ => fuzzyQueryContacts/src/main/java/
-* show_head_toast_bg.9.PNG => show_head_toast_bg.9.png
-
-Missing Android Support Repository:
------------------------------------
-Some useful libraries, such as the Android Support Library, are
-installed from a special Maven repository, which should be installed
-via the SDK manager.
-
-It looks like this library is missing from your SDK installation at:
-null
-
-To install it, open the SDK manager, and in the Extras category,
-select "Android Support Repository". You may also want to install the
-"Google Repository" if you want to use libraries like Google Play
-Services.
+* AndroidManifest.xml => fMRadio/src/main/AndroidManifest.xml
+* res/ => fMRadio/src/main/res/
+* src/ => fMRadio/src/main/java/
+* src/.DS_Store => fMRadio/src/main/resources/.DS_Store
+* src/com/.DS_Store => fMRadio/src/main/resources/com/.DS_Store
+* src/com/mediatek/.DS_Store => fMRadio/src/main/resources/com/mediatek/.DS_Store
 
 Next Steps:
 -----------
