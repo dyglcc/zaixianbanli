@@ -13,7 +13,7 @@ import org.androidannotations.annotations.EActivity;
 import org.androidannotations.annotations.ViewById;
 import org.androidannotations.annotations.WindowFeature;
 
-import banli.jinniu.com.R;
+import com.benben.mall.R;
 import qfpay.wxshop.WxShopApplication;
 import qfpay.wxshop.app.BaseActivity;
 import qfpay.wxshop.config.WDConfig;

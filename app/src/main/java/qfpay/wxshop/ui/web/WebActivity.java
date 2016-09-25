@@ -30,7 +30,7 @@ import org.androidannotations.annotations.ViewById;
 import java.util.HashMap;
 import java.util.Map;
 
-import banli.jinniu.com.R;
+import com.benben.mall.R;
 import qfpay.wxshop.app.BaseActivity;
 import qfpay.wxshop.ui.view.WebViewSavePic;
 import qfpay.wxshop.utils.Utils;
@@ -160,74 +160,5 @@ public class WebActivity extends BaseActivity {
 			webView.loadUrl(url,header);
 		}
 	}
-//	private class WebViewTask extends AsyncTask<Void, Void, Boolean> {
-//		String sessionCookie;
-//		CookieManager cookieManager;
-//		
-//		@Override
-//		protected void onPreExecute() {
-//			CookieSyncManager.createInstance(WebActivity.this);
-//			cookieManager = CookieManager.getInstance();
-//			
-//			sessionCookie = WxShopApplication.dataEngine.getcid();
-//			
-//			if (sessionCookie != null) {
-//				// delete old cookies
-//				cookieManager.removeSessionCookie();
-//			}
-//			super.onPreExecute();
-//		}
-//		
-//		protected Boolean doInBackground(Void... param) {
-//			// this is very important - THIS IS THE HACK
-//			SystemClock.sleep(1000);
-//			return false;
-//		}
-//		
-//		@Override
-//		protected void onPostExecute(Boolean result) {
-//			if (sessionCookie != null) {
-//				cookieManager.removeAllCookie();
-//				cookieManager.setCookie(url, sessionCookie);
-//				CookieSyncManager.getInstance().sync();
-//			}
-//			
-//			WebSettings webSettings = webView.getSettings();
-//			webSettings.setJavaScriptEnabled(true);
-//			webSettings.setDefaultTextEncodingName("utf-8");
-//			webSettings.setBuiltInZoomControls(false);
-//			webSettings.setSupportZoom(false);
-//			webSettings.setCacheMode(WebSettings.LOAD_DEFAULT);
-//			webSettings.setDomStorageEnabled(true);
-//			webSettings.setJavaScriptCanOpenWindowsAutomatically(true);
-//			// webSettings.setUserAgent();
-//			webView.setWebViewClient(new WebViewClient() {
-//				
-//				public void onReceivedSslError(WebView view,
-//						SslErrorHandler handler, SslError error) {
-//					handler.proceed();
-//					webView.loadUrl(url,header);
-//					super.onReceivedSslError(view, handler, error);
-//				}
-//				
-//				public boolean shouldOverrideUrlLoading(WebView view, String url) {
-//					webView.loadUrl(url,header);
-//					return true;
-//				}
-//				
-//				public void onPageStarted(WebView view, String url,
-//						Bitmap favicon) {
-//				}
-//				
-//				public void onPageFinished(WebView view, String url) {
-//				}
-//				
-//				public void onReceivedError(WebView view, int errorCode,
-//						String description, String failingUrl) {
-//				}
-//			});
-//			webView.loadUrl(url,header);
-//		}
-//	}
 
 }

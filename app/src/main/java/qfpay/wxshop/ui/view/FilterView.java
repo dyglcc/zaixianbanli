@@ -12,7 +12,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import banli.jinniu.com.R;
+import com.benben.mall.R;
+
 
 public class FilterView extends ViewGroup {
 

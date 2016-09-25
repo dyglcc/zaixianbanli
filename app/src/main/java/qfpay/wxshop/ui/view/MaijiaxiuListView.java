@@ -1,6 +1,6 @@
 package qfpay.wxshop.ui.view;
 
-import banli.jinniu.com.R;
+import com.benben.mall.R;
 import qfpay.wxshop.ui.main.MainActivity;
 
 import android.annotation.SuppressLint;

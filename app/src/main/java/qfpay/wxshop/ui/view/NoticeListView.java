@@ -1,7 +1,5 @@
 package qfpay.wxshop.ui.view;
 
-import banli.jinniu.com.R;
-import qfpay.wxshop.activity.*;
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.os.Handler;
@@ -9,6 +7,8 @@ import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ListView;
+
+import com.benben.mall.R;
 
 public class NoticeListView extends ListView {
 

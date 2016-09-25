@@ -1,6 +1,6 @@
 package qfpay.wxshop.ui.selectpic;
 
-import banli.jinniu.com.R;
+import com.benben.mall.R;
 import qfpay.wxshop.utils.MobAgentTools;
 import java.io.BufferedInputStream;
 import java.io.File;

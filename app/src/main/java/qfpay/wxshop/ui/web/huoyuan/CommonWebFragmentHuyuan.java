@@ -25,7 +25,7 @@ import org.androidannotations.annotations.ViewById;
 import java.util.HashMap;
 import java.util.Map;
 
-import banli.jinniu.com.R;
+import com.benben.mall.R;
 import qfpay.wxshop.app.BaseFragment;
 import qfpay.wxshop.utils.Utils;
 

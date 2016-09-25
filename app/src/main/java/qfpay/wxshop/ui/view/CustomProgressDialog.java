@@ -1,6 +1,6 @@
 package qfpay.wxshop.ui.view;
 
-import banli.jinniu.com.R;
+import com.benben.mall.R;
 import qfpay.wxshop.utils.MobAgentTools;
 
 import android.app.Dialog;

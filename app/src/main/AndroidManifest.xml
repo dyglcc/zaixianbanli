@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="banli.jinniu.com" >
+    package="com.benben.mall" >
 <!--
 项目用gradle构建，version code 和version name 在build.gradle中配置
 -->

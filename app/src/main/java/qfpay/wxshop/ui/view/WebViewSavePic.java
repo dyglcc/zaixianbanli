@@ -9,6 +9,8 @@ import android.view.View;
 import android.webkit.WebView;
 import android.widget.Toast;
 
+import com.benben.mall.R;
+
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.InputStream;
@@ -16,7 +18,6 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.Date;
 
-import banli.jinniu.com.R;
 import qfpay.wxshop.utils.ConstValue;
 import qfpay.wxshop.utils.QMMAlert;
 import qfpay.wxshop.utils.Toaster;

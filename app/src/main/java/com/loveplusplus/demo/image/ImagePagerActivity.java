@@ -8,7 +8,7 @@ import android.support.v4.app.FragmentStatePagerAdapter;
 import android.support.v4.view.ViewPager.OnPageChangeListener;
 import android.widget.TextView;
 
-import banli.jinniu.com.R;
+import com.benben.mall.R;
 
 
 /**

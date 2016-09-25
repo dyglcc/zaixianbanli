@@ -18,7 +18,7 @@ import android.widget.ImageView;
 
 import com.adhoc.utils.T;
 
-import banli.jinniu.com.R;
+import com.benben.mall.R;
 
 public class CustomImageView extends ImageView {
 	/**

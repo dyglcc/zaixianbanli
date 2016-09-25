@@ -18,9 +18,7 @@ import java.util.regex.Pattern;
 
 import org.json.JSONException;
 
-import banli.jinniu.com.R;
-import qfpay.wxshop.data.beans.OfficialGoodItemBean;
-import qfpay.wxshop.data.beans.SSNItemBean;
+import com.benben.mall.R;
 import qfpay.wxshop.dialogs.BaseDialogFragment;
 import qfpay.wxshop.dialogs.SimpleDialogFragment;
 import android.annotation.TargetApi;
@@ -996,15 +994,6 @@ public class Utils {
 		return channel;
 	}
 
-	public static String getSSNurl(SSNItemBean gb) {
-		return "http://"  + "/hmsg/"
-				+ gb.getId();
-	}
-
-	public static String getOfficialDetailUrl(OfficialGoodItemBean gb) {
-		return "http://" +"/hmsg/"
-				+ gb.getId();
-	}
 
 	public static String getOSVerison(Context activity) {
 		return Build.VERSION.RELEASE;

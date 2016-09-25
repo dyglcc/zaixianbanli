@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import banli.jinniu.com.R;
+import com.benben.mall.R;
 
 public class Toaster {
 

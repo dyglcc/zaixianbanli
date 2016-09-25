@@ -9,7 +9,7 @@ import android.view.animation.RotateAnimation;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import banli.jinniu.com.R;
+import com.benben.mall.R;
 
 /**
  * The footer view for {@link com.markmao.pulltorefresh.widget.XListView} and

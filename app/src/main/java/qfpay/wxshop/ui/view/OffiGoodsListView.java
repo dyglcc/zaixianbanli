@@ -8,7 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ListView;
 
-import banli.jinniu.com.R;
+import com.benben.mall.R;
 
 public class OffiGoodsListView extends ListView {
 

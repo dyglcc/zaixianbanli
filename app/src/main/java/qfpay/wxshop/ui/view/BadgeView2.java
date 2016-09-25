@@ -23,7 +23,7 @@ import android.widget.LinearLayout;
 import android.widget.TabWidget;
 import android.widget.TextView;
 
-import banli.jinniu.com.R;
+import com.benben.mall.R;
 
 
 /**

@@ -5,7 +5,7 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
-import banli.jinniu.com.R;
+import com.benben.mall.R;
 import qfpay.wxshop.WxShopApplication;
 import qfpay.wxshop.ui.selectpic.AlbumActivity;
 import qfpay.wxshop.utils.ConstValue;

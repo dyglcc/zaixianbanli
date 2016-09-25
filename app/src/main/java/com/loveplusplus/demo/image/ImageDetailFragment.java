@@ -8,10 +8,10 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 
+import com.benben.mall.R;
 import com.co.senab.photoview.PhotoViewAttacher;
 import com.co.senab.photoview.PhotoViewAttacher.OnPhotoTapListener;
 
-import banli.jinniu.com.R;
 
 
 public class ImageDetailFragment extends Fragment {

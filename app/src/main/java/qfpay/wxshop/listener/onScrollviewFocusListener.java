@@ -1,1 +1,0 @@
-package qfpay.wxshop.listener;public interface onScrollviewFocusListener {	void onfocus();}

@@ -12,7 +12,7 @@ import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
-import banli.jinniu.com.R;
+import com.benben.mall.R;
 
 /**
  * The header view for {@link com.markmao.pulltorefresh.widget.XListView} and
