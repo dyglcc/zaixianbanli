@@ -27,7 +27,6 @@ import android.widget.HorizontalScrollView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-
 import com.benben.mall.R;
 
 import static android.view.ViewGroup.LayoutParams.MATCH_PARENT;
@@ -87,7 +86,7 @@ public class TabPageIndicator extends HorizontalScrollView implements PageIndica
     private final IcsLinearLayout mTabLayout;
 
     private ViewPager mViewPager;
-    private ViewPager.OnPageChangeListener mListener;
+    private OnPageChangeListener mListener;
 
     private int mMaxTabWidth;
     private int mSelectedTabIndex;

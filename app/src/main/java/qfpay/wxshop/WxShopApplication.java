@@ -7,14 +7,11 @@ import org.androidannotations.annotations.EApplication;
 import java.util.LinkedList;
 
 import qfpay.wxshop.ui.main.MainActivity;
-import qfpay.wxshop.ui.selectpic.ImageItem;
 
 @EApplication
 public class WxShopApplication extends Application {
 	public static  boolean IS_NEED_REFRESH_ONE_KEY_BEFALLF = false;
 
-	public static LinkedList<ImageItem> paths = new LinkedList<ImageItem>();
-	// testTester
 	public String mTesterUrl;
 	public int mServerType;
     public MainActivity main;
@@ -23,25 +20,6 @@ public class WxShopApplication extends Application {
 	public void onCreate() {
 		super.onCreate();
 
-		//微信 appid appsecret
-//		PlatformConfig.setSinaWeibo("3921700954","04b48b094faeb16683c32669824ebdad");
-//		//新浪微博 appkey appsecret
-		// QQ和Qzone appid appkey
-//		PlatformConfig.setAlipay("2015111700822536");
-//		//支付宝 appid
-//		PlatformConfig.setYixin("yxc0614e80c9304c11b0391514d09f13bf");
-//		//易信 appkey
-//		PlatformConfig.setTwitter("3aIN7fuF685MuZ7jtXkQxalyi", "MK6FEYG63eWcpDFgRYw4w9puJhzDl0tyuqWjZ3M7XJuuG7mMbO");
-//		//Twitter appid appkey
-//		PlatformConfig.setPinterest("1439206");
-//		//Pinterest appid
-//		PlatformConfig.setLaiwang("laiwangd497e70d4", "d497e70d4c3e4efeab1381476bac4c5e");
-//		//来往 appid appkey
-//		AdhocTracker.init(this, "ADHOC_e4dff3eb-ffb3-42f6-988e-e13f4de61085");
-
-		// bugly
-//		CrashReport.initCrashReport(getApplicationContext(), "900033658", false);
-//		CrashReport.testJavaCrash();
 	}
 
     public static WxShopApplication get(Context context) {
@@ -61,7 +39,5 @@ public class WxShopApplication extends Application {
 	public WxShopApplication() {
 		app = this;
 	}
-
-
 
 }

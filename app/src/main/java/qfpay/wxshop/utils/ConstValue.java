@@ -5,8 +5,7 @@ import android.os.Environment;
 public class ConstValue {
 	public static final String CACHE_KEY = "json_cache_key";
 
-	public static final String PREFS_NAME = "qianfang.register";
-	public static final String PREFS_MEMBER = "qianfang.member";
+	public static final String PREFS_NAME = "jinniu";
 
 	public final static int SERVER_ERROR = 10;
 	public final static int ACCESS_ERROR = 5;
@@ -350,4 +349,6 @@ public class ConstValue {
 	public static final String THREAD_CANCELABLE = "cancelable";
 	
 	public static final String 	SHARE_NAME_FINDMIAO = "发现个喵";
+
+	public static String NEWINTRO ="newIntro";
 }

@@ -1,35 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content" >
-
-    <!--
-         <ImageView
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:scaleType="center"
-        android:src="@drawable/az01" />
-    -->
 
     <android.support.v4.view.ViewPager
         android:id="@+id/pager"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent" />
 
-    <!--<com.indicator.CirclePageIndicator-->
-        <!--android:id="@+id/indicator"-->
-        <!--android:layout_width="fill_parent"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:layout_marginTop="20dip"-->
-        <!--android:padding="10dip"-->
-        <!--app:fillColor="#ffffff"-->
-        <!--app:radius="4dip"-->
-        <!--app:strokeColor="#ffffff"-->
-        <!--app:strokeWidth="1dip" />-->
-    <com.indicator.TabPageIndicator
+    <com.indicator.CirclePageIndicator
         android:id="@+id/indicator"
         android:layout_width="fill_parent"
+        android:layout_alignParentBottom="true"
         android:layout_height="45dip"
-        android:background="@color/common_background" />
+        android:layout_marginBottom="150dip">
+    </com.indicator.CirclePageIndicator>
 
-</FrameLayout>
+</RelativeLayout>

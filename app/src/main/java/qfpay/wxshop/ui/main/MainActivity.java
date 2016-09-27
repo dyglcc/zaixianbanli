@@ -1,41 +1,33 @@
 package qfpay.wxshop.ui.main;
 
-import android.app.Activity;
 import android.app.AlertDialog;
+import android.app.ProgressDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.net.Uri;
-import android.net.http.SslError;
-import android.os.AsyncTask;
-import android.os.SystemClock;
 import android.support.v7.app.ActionBar;
-import android.webkit.CookieManager;
-import android.webkit.JsResult;
-import android.webkit.SslErrorHandler;
-import android.webkit.WebChromeClient;
+import android.view.View;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import com.benben.mall.R;
+import com.wang.avi.AVLoadingIndicatorView;
+import com.wang.avi.indicators.LineScalePulseOutRapidIndicator;
 
 import org.androidannotations.annotations.AfterViews;
-import org.androidannotations.annotations.Click;
 import org.androidannotations.annotations.EActivity;
-import org.androidannotations.annotations.Extra;
 import org.androidannotations.annotations.ViewById;
 
 import java.util.HashMap;
 import java.util.Map;
 
-import com.benben.mall.R;
-
 import qfpay.wxshop.app.BaseActivity;
-import qfpay.wxshop.ui.view.WebViewSavePic;
-import qfpay.wxshop.utils.Toaster;
-import qfpay.wxshop.utils.Utils;
 
 /**
  * 订单管理内部打开app页面
@@ -43,9 +35,7 @@ import qfpay.wxshop.utils.Utils;
 @EActivity(R.layout.main_web_activity)
 public class MainActivity extends BaseActivity {
     @ViewById
-    WebViewSavePic webView;
-    @ViewById
-    LinearLayout ll_fail;
+    WebView webView;
 
 //    @Extra
 //    String url = "http://wxpay.weixin.qq.com/pub_v2/pay/wap.v2.php";
@@ -53,23 +43,22 @@ public class MainActivity extends BaseActivity {
 //    @Extra
 //    String url = "http://www.chinaycys.com/mobile/";
 
-    @ViewById
-    Button btn_back;
 
-    @ViewById
-    TextView tv_title;
-
-    @ViewById
-    Button btn_save;
     private Map<String, String> header = new HashMap<String, String>();
+
+//    private AVLoadingIndicatorView avi;
+
+    private ProgressDialog progressBar;
 
     @AfterViews
     void init() {
         ActionBar supportActionBar = getSupportActionBar();
         supportActionBar.hide();
-        String url =getString(R.string.mobile_url);
+        String url = getString(R.string.mobile_url);
 //        tv_title.setText("订单管理");
-
+//        avi = (AVLoadingIndicatorView) findViewById(R.id.avi);
+//        avi.setIndicator(new LineScalePulseOutRapidIndicator());
+        // test
         WebSettings webSettings = webView.getSettings();
         webSettings.setJavaScriptEnabled(true);
         webSettings.setDefaultTextEncodingName("utf-8");
@@ -81,40 +70,22 @@ public class MainActivity extends BaseActivity {
         webSettings.setCacheMode(WebSettings.LOAD_DEFAULT);
         webSettings.setDomStorageEnabled(true);
         webSettings.setJavaScriptCanOpenWindowsAutomatically(true);
-        webView.setWebChromeClient(new WebChromeClient() {
-            @Override
-            public boolean onJsAlert(WebView view, String url, String message,
-                                     final JsResult result) {
-                AlertDialog.Builder b2 = new AlertDialog.Builder(MainActivity.this)
-                        .setTitle(getString(R.string.hint))
-                        .setMessage(message)
-                        .setPositiveButton("ok",
-                                new AlertDialog.OnClickListener() {
-                                    @Override
-                                    public void onClick(DialogInterface dialog,
-                                                        int which) {
-                                        result.confirm();
-                                    }
-                                });
 
-                b2.setCancelable(false);
-                b2.create();
-                b2.show();
-                return true;
-            }
-        });
+        webView.setScrollBarStyle(WebView.SCROLLBARS_OUTSIDE_OVERLAY);
+        final AlertDialog alertDialog = new AlertDialog.Builder(this).create();
+
+//        progressBar = ProgressDialog.show(MainActivity.this, "", "加载中...");
+        progressBar = new ProgressDialog(MainActivity.this,android.R.style.Theme_DeviceDefault_Light_Dialog_MinWidth);
+//        progressBar.setTitle("");
+        progressBar.setCanceledOnTouchOutside(true);
+        progressBar.setMessage("加载中...");
+        progressBar.show();
 
         webView.setWebViewClient(new WebViewClient() {
-
-//            public void onReceivedSslError(WebView view,
-//                                           SslErrorHandler handler, SslError error) {
-//                handler.proceed();
-//                webView.loadUrl(url,header);
-//                super.onReceivedSslError(view, handler, error);
-//            }
-
             public boolean shouldOverrideUrlLoading(WebView view, String url) {
-//                Utils.setCookies(url, MainActivity.this);
+                if(!progressBar.isShowing()){
+                    progressBar.show();
+                }
                 if (url.startsWith("weixin://wap/pay?")) {
                     Intent intent = new Intent();
                     intent.setAction(Intent.ACTION_VIEW);
@@ -122,28 +93,37 @@ public class MainActivity extends BaseActivity {
                     startActivity(intent);
                     return true;
                 }
-                webView.loadUrl(url, header);
-                return true;
-            }
-
-            public void onPageStarted(WebView view, String url,
-                                      Bitmap favicon) {
-            }
+                webView.loadUrl(url);
+            return true;
+        }
 
             public void onPageFinished(WebView view, String url) {
+                if (progressBar.isShowing()) {
+                    progressBar.dismiss();
+                }
             }
 
-            public void onReceivedError(WebView view, int errorCode,
-                                        String description, String failingUrl) {
+            public void onReceivedError(WebView view, int errorCode, String description, String failingUrl) {
+                Toast.makeText(MainActivity.this, "错误:" + description, Toast.LENGTH_SHORT).show();
+                alertDialog.setTitle("错误");
+                alertDialog.setMessage(description);
+                alertDialog.setButton("确定", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int which) {
+                        return;
+                    }
+                });
+                if(!isFinishing()){
+                    if(alertDialog!=null){
+                        alertDialog.show();
+                    }
+                }
             }
         });
-        webView.loadUrl(url, header);
-//        new WebViewTask().execute();
+        webView.loadUrl(url);
     }
 
     @Override
     public void onBackPressed() {
-//        btn_back();
         if (webView != null) {
             if (webView.canGoBack()) {
                 webView.goBack();
@@ -154,30 +134,5 @@ public class MainActivity extends BaseActivity {
             super.onBackPressed();
         }
     }
-//    private class WebViewTask extends AsyncTask<Void, Void, Boolean> {
-//        String sessionCookie;
-//        CookieManager cookieManager;
-//
-//        @Override
-//        protected void onPreExecute() {
-//
-////            qfpay.wxshop.utils.Utils.setCookies(url, MainActivity.this);
-//            super.onPreExecute();
-//        }
-//
-//        protected Boolean doInBackground(Void... param) {
-//            // this is very important - THIS IS THE HACK
-////            SystemClock.sleep(1000);
-//            return false;
-//        }
-//
-//        @Override
-//        protected void onPostExecute(Boolean result) {
-//
-////			qfpay.wxshop.utils.Utils.setCookiesOrderList(url, WebActivity.this);
-//            webView.loadUrl(url,header);
-//        }
-//    }
-
 
 }

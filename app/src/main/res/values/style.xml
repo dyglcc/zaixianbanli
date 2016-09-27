@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AVLoadingIndicatorView">
+        <item name="minWidth">48dip</item>
+        <item name="maxWidth">48dip</item>
+        <item name="minHeight">48dip</item>
+        <item name="maxHeight">48dip</item>
+        <item name="indicatorName">BallPulseIndicator</item>
+    </style>
+
+    <style name="AVLoadingIndicatorView.Large">
+        <item name="minWidth">76dip</item>
+        <item name="maxWidth">76dip</item>
+        <item name="minHeight">76dip</item>
+        <item name="maxHeight">76dip</item>
+        <item name="indicatorName">BallPulseIndicator</item>
+    </style>
+
+    <style name="AVLoadingIndicatorView.Small">
+        <item name="minWidth">24dip</item>
+        <item name="maxWidth">24dip</item>
+        <item name="minHeight">24dip</item>
+        <item name="maxHeight">24dip</item>
+        <item name="indicatorName">BallPulseIndicator</item>
+    </style>
+
+
+    <!--<style name="loading_dialog" parent="android:Theme.Holo.Light.Dialog.MinWidth">-->
+    <style name="loading_dialog" parent="android:Theme.DeviceDefault.Light.Dialog.MinWidth">
+        <!--<item name="android:windowFrame">@null</item>       &lt;!&ndash; Dialog的windowFrame框为无 &ndash;&gt;-->
+        <!--<item name="android:windowBackground">@color/transparent</item> &lt;!&ndash; 设置dialog的背景 &ndash;&gt;-->
+        <!--<item name="android:windowNoTitle">true</item>      &lt;!&ndash; 是否显示title &ndash;&gt;-->
+        <!--<item name="android:windowIsTranslucent">true</item>    &lt;!&ndash; 是否半透明 &ndash;&gt;-->
+        <!--<item name="android:windowIsFloating">true</item>       &lt;!&ndash; 是否浮现在activity之上 &ndash;&gt;-->
+        <!--<item name="android:windowContentOverlay">@null</item>  &lt;!&ndash; 也是个drawable，定义contentoverlay的背景 &ndash;&gt;-->
+        <!--<item name="android:backgroundDimEnabled">true</item>  &lt;!&ndash; 背景是否模糊显示 &ndash;&gt;-->
+        <!--<item name="android:colorBackgroundCacheHint">@null</item>-->
+    </style>
+</resources>

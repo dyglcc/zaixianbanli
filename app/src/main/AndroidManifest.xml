@@ -2,9 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.benben.mall" >
-<!--
-项目用gradle构建，version code 和version name 在build.gradle中配置
--->
 
     <supports-screens
         android:anyDensity="true"
@@ -13,61 +10,40 @@
         android:resizeable="true"
         android:smallScreens="true" />
 
-    <!-- 自定义权限 -->
-    <permission
-        android:name="getui.permission.GetuiService.qfpay.wxshop"
-        android:protectionLevel="normal" />
-
-
-    <!--umeng-->
-
-    <uses-permission android:name="android.permission.SET_DEBUG_APP" />
-    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
-    <!--umeng-->
-
-
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-    <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
-    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
-    <uses-permission android:name="android.permission.VIBRATE" />
-    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER" />
-    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
-    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
-    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-    <uses-permission android:name="android.permission.GET_TASKS" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
-    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
-    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
     <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
-    <uses-permission android:name="android.permission.CAMERA" />
-    <uses-permission android:name="android.permission.CALL_PHONE" />
-    <uses-permission android:name="android.permission.READ_LOGS"/>
-
-    <uses-feature android:name="android.hardware.camera" />
-    <uses-feature android:name="android.hardware.camera.autofocus" />
 
 
     <application
         android:name="qfpay.wxshop.WxShopApplication_"
         android:allowBackup="true"
         android:allowClearUserData="false"
-        android:icon="@drawable/ic_launcher"
+        android:icon="@drawable/yunshang_icon"
         android:killAfterRestore="true"
         android:hardwareAccelerated="true"
         android:label="@string/app_name"
         android:largeHeap="true"
-        android:logo="@drawable/actionbar_title_icon"
+        android:logo="@drawable/yunshang_icon"
         android:persistent="true"
-        android:theme="@style/QFAppTheme"
+        android:theme="@style/Theme.AppCompat"
         tools:replace="android:icon" >
 
+
+        <!--<activity-->
+            <!--android:name="com.wang.avi.sample.SampleActivity"-->
+            <!--android:theme="@style/Theme.AppCompat"-->
+            <!--android:label="@string/app_name" >-->
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
+
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+        <!--</activity>-->
+        <activity android:name="com.wang.avi.sample.IndicatorActivity"/>
         <!-- Activity -->
         <!-- 欢迎页 -->
         <activity
@@ -89,231 +65,18 @@
             android:hardwareAccelerated="true"
             android:launchMode="singleTask"
             android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat"
             android:windowSoftInputMode="adjustNothing" />
         <!--android:theme="@style/Theme.PageIndicatorDefaults"-->
         <!-- 所有无需特殊处理的页面的WebView包装 -->
-        <activity
-            android:name="qfpay.wxshop.ui.web.WebActivity_"
-            android:configChanges="orientation|keyboardHidden|navigation"
-            android:exported="true"
-            android:screenOrientation="portrait" />
 
-        <!-- 货源详情页面 -->
-        <activity
-            android:name="qfpay.wxshop.ui.web.huoyuan.CommonWebActivityHuoyuan_"
-            android:configChanges="orientation|keyboardHidden|navigation"
-            android:exported="true"
-            android:screenOrientation="portrait" />
-        <!-- 上传商品以及编辑商品 -->
-        <activity
-            android:name="qfpay.wxshop.activity.ManagePreViewActivity_"
-            android:configChanges="orientation|keyboardHidden|navigation"
-            android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.NoTitleBar" />
-        <!-- 店铺背景选择页 -->
-        <activity
-            android:name="qfpay.wxshop.activity.ShopHeaderPhotoPickerActivity_"
-            android:configChanges="orientation|keyboardHidden|navigation"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name="qfpay.wxshop.activity.menu.MyInComeActivity"
-            android:configChanges="orientation|keyboardHidden|navigation"
-            android:screenOrientation="portrait" />
-        <!-- 店铺信息页 -->
-        <!--###########################################################-->
-        <!--<meta-data-->
-            <!--android:name="PUSH_APPID"-->
-            <!--android:value="8imafJpbTT6OWrl4CZRjA2" />-->
-        <!--<meta-data-->
-            <!--android:name="PUSH_APPKEY"-->
-            <!--android:value="zqrDyFLci6Avc6teaCndb8" />-->
-        <!--<meta-data-->
-            <!--android:name="PUSH_APPSECRET"-->
-            <!--android:value="TfBnSz6OX2AAHkjrfq9Nf4" />-->
-        <!--<meta-data-->
-            <!--android:name="PUSH_GROUPID"-->
-            <!--android:value="" />-->
-        <meta-data
-            android:name="UMENG_APPKEY"
-            android:value="574e4d70e0f55ad4bc001d32" >
-        </meta-data>
-        <meta-data
-            android:name="UMENG_MESSAGE_SECRET"
-            android:value="872e3bc6fc8dabfc8624a370f197ba30" >
-        </meta-data>
-        <service
-            android:name="com.service.MyPushIntentService"
-            android:process=":push" />
-
-        <!--###########################################################-->
-        <!-- 个推配置结束 -->
 
         <!--引导滑屏页面-->
         <activity
-            android:name="qfpay.wxshop.activity.NewIntroductionActivity"
+            android:name="qfpay.wxshop.ui.main.NewIntroductionActivity"
             android:configChanges="orientation|keyboardHidden|navigation"
             android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
-        </activity>
-        <!--买家秀图片展示器-->
-        <activity
-            android:name="com.loveplusplus.demo.image.ImagePagerActivity"
-            android:configChanges="orientation|keyboardHidden|navigation"
-            android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.NoTitleBar" >
-        </activity>
-        <!--店铺名称编辑-->
-        <activity
-            android:name="qfpay.wxshop.activity.ShopNameEditActivity_"
-            android:configChanges="orientation|keyboardHidden|navigation"
-            android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.NoTitleBar" >
-        </activity>
-        <!--微信名称编辑-->
-        <activity
-            android:name="qfpay.wxshop.activity.WeixinEditActivity_"
-            android:configChanges="orientation|keyboardHidden|navigation"
-            android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.NoTitleBar" >
-        </activity>
-        <!--图片显示类-->
-        <activity
-            android:name="qfpay.wxshop.ui.selectpic.ImageGridActivity"
-            android:configChanges="orientation|keyboardHidden|navigation"
-            android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.NoTitleBar" >
-        </activity>
-        <!--相册缩略页面-->
-        <activity
-            android:name="qfpay.wxshop.ui.selectpic.AlbumActivity"
-            android:configChanges="orientation|keyboardHidden|navigation"
-            android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.NoTitleBar" >
-        </activity>
-        <!--公告引导介绍-->
-        <activity
-            android:name="qfpay.wxshop.activity.FunctionNoticeActivity"
-            android:configChanges="orientation|keyboardHidden|navigation"
-            android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.NoTitleBar" >
-        </activity>
-        <!--买家秀引导介绍-->
-        <activity
-            android:name="qfpay.wxshop.activity.MaijiaxiuEmptyActivity_"
-            android:configChanges="orientation|keyboardHidden|navigation"
-            android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.NoTitleBar" >
-        </activity>
-        <!--设置秒杀-->
-        <!--设置秒杀成功-->
-        <activity
-            android:name="qfpay.wxshop.activity.ManPromoSuccessActivity_"
-            android:configChanges="orientation|keyboardHidden|navigation"
-            android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.NoTitleBar"
-            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" >
-        </activity>
-        <!--分享页面-->
-        <activity
-            android:name="qfpay.wxshop.activity.share.ShareActivity"
-            android:configChanges="orientation|keyboardHidden|navigation"
-            android:screenOrientation="portrait"
-            android:theme="@style/QFAppTheme"
-            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" >
-        </activity>
-        <!--通用webviewactivity-->
-        <activity
-            android:name="qfpay.wxshop.activity.GeneralWebViewActivity"
-            android:configChanges="orientation|keyboardHidden|navigation"
-            android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.NoTitleBar" >
-        </activity>
-        <!--修改密码页面-->
-        <activity
-            android:name="qfpay.wxshop.activity.ChangePwdActivity"
-            android:configChanges="orientation|keyboardHidden|navigation"
-            android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.NoTitleBar" >
-        </activity>
-        <!--更改银行卡账户-->
-        <activity
-            android:name="qfpay.wxshop.activity.ChangeBankCardInfoActivity"
-            android:configChanges="orientation|keyboardHidden|navigation"
-            android:screenOrientation="portrait"
-            android:exported="true"
-            android:theme="@android:style/Theme.NoTitleBar" >
-        </activity>
-        <!--编辑店铺名称-->
-        <activity
-            android:name="qfpay.wxshop.activity.InputShopNameActivity"
-            android:configChanges="orientation|keyboardHidden|navigation"
-            android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.NoTitleBar"
-            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" >
-        </activity>
-        <!--登陆银行账号-->
-        <!--登陆前一页，注册-->
-        <activity
-            android:name="qfpay.wxshop.activity.LoginPreviewActivity"
-            android:configChanges="orientation|keyboardHidden|navigation"
-            android:screenOrientation="portrait" >
-        </activity>
-        <!--注册银行账号-->
-        <activity
-            android:name="qfpay.wxshop.activity.RegBankAccountActivity_"
-            android:configChanges="orientation|keyboardHidden|navigation"
-            android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.NoTitleBar"
-            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" >
-        </activity>
-
-        <!--选择银行-->
-        <activity
-            android:name="qfpay.wxshop.activity.BankPickerActivity_"
-            android:configChanges="orientation|keyboardHidden|navigation"
-            android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.NoTitleBar"
-            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" >
-        </activity>
-
-        <!--展示银行卡信息-->
-        <activity
-            android:name="qfpay.wxshop.activity.ShowBankInfoActivity"
-            android:configChanges="orientation|keyboardHidden|navigation"
-            android:screenOrientation="portrait" >
-        </activity>
-        <!--微信收款-->
-
-        <!--碎碎念发布-->
-        <activity
-            android:name="qfpay.wxshop.activity.SSNPublishActivity_"
-            android:configChanges="orientation|keyboardHidden|navigation"
-            android:screenOrientation="portrait"
-            android:windowSoftInputMode="adjustResize" >
-        </activity>
-        <!--碎碎念编辑-->
-        <activity
-            android:name="qfpay.wxshop.activity.SSNEditActivity_"
-            android:configChanges="orientation|keyboardHidden|navigation"
-            android:screenOrientation="portrait"
-            android:windowSoftInputMode="adjustResize" >
-        </activity>
-        <activity
-            android:name="qfpay.wxshop.activity.LabelActivity_"
-            android:hardwareAccelerated="true"
-            android:label="@string/title_activity_more"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-        <activity
-            android:name="qfpay.wxshop.activity.WeixinQmmActivity"
-            android:configChanges="orientation|keyboardHidden|navigation"
-            android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.NoTitleBar" >
-        </activity>
-        <activity
-            android:name="qfpay.wxshop.activity.HuoyuanQmmActivity_"
-            android:configChanges="orientation|keyboardHidden|navigation"
-            android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.NoTitleBar" >
+            android:theme="@style/Theme.AppCompat" >
         </activity>
         <meta-data
             android:name="UMENG_CHANNEL"
@@ -326,41 +89,6 @@
             android:name="app_name"
             android:value="banli" />
 
-
-
-
-        <activity
-            android:name="com.tencent.tauth.AuthActivity"
-            android:launchMode="singleTask"
-            android:noHistory="true" >
-            <intent-filter>
-                <action android:name="android.intent.action.VIEW" />
-                <category android:name="android.intent.category.DEFAULT" />
-                <category android:name="android.intent.category.BROWSABLE" />
-                <data android:scheme="tencent100424468" />
-            </intent-filter>
-        </activity>
-        <!--<activity-->
-            <!--android:name="com.tencent.connect.common.AssistActivity"-->
-            <!--android:screenOrientation="portrait"-->
-            <!--android:theme="@android:style/Theme.Translucent.NoTitleBar" />-->
-        <activity
-            android:name="qfpay.wxshop.wxapi.WXEntryActivity"
-            android:configChanges="keyboardHidden|orientation|screenSize"
-            android:exported="true"
-            android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.NoTitleBar" />
-
-        <activity
-            android:name="com.tencent.connect.common.AssistActivity"
-            android:configChanges="orientation|keyboardHidden"
-            android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
-
-        <activity
-            android:name="com.umeng.socialize.editorpage.ShareActivity"
-            android:theme="@style/Theme.UMDefault"
-            android:excludeFromRecents="true"/>
 
     </application>
 
