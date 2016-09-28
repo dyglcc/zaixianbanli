@@ -9,12 +9,12 @@
         android:id="@+id/rl_default"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#00a1ef" >
+        android:background="#fff" >
         <ImageView
             android:layout_width="120dp"
             android:id="@+id/tv_online"
             android:layout_centerHorizontal="true"
-            android:src="@drawable/yunshang_icon"
+            android:src="@drawable/icon"
             android:layout_above="@+id/view"
             android:layout_height="120dp" />
         <!--<TextView-->
@@ -51,7 +51,7 @@
         android:textSize="16dp"
         android:layout_marginBottom="50dp"
         android:text="sdf"
-        android:textColor="@android:color/white" />
+        android:textColor="#2684c0" />
 
     <ImageView
         android:id="@+id/iv_firstlaunch"

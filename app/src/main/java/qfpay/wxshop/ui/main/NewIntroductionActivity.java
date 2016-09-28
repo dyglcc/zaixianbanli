@@ -173,7 +173,7 @@ public class NewIntroductionActivity extends AppCompatActivity {
     private class MyViewPagerAdapter extends PagerAdapter {
         @Override
         public int getCount() {
-            return 3;
+            return 1;
         }
 
         @Override
@@ -190,17 +190,18 @@ public class NewIntroductionActivity extends AppCompatActivity {
         public Object instantiateItem(ViewGroup container, int position) {
             View new_view = null;
 
-            if (position == 0) {
-                new_view = page1;
-            } else if (position == 1) {
-                new_view = page2;
-            }
-//            else if (position == 2) {
-//                new_view = page3;
-//            } else if (position == 3) {
-//                new_view = page4;
+//            if (position == 0) {
+//                new_view = page1;
+//            } else if (position == 1) {
+//                new_view = page2;
 //            }
-            else if (position == 2) {
+////            else if (position == 2) {
+////                new_view = page3;
+////            } else if (position == 3) {
+////                new_view = page4;
+////            }
+//            else
+            if (position == 0) {
                 new_view = page5;
             }
 

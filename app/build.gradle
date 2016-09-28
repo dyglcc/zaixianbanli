@@ -17,7 +17,7 @@ android {
     buildToolsVersion '23.0.3'
     // The Application Setting
     defaultConfig {
-        applicationId "com.benben.mall"
+        applicationId "com.zhemeibuer.mall"
         minSdkVersion 11
         targetSdkVersion 21
         versionCode 1
@@ -57,12 +57,12 @@ android {
     }
     // The build types, can define multi-type
     buildTypes {
-//        release {
-//            minifyEnabled true
-//            shrinkResources true
-//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-//            signingConfig signingConfigs.release // use the signing setting
-//        }
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release // use the signing setting
+        }
 //        debug {
 //            minifyEnabled false
 //        shrinkResources true

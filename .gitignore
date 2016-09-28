@@ -11,3 +11,5 @@ greendao/build
 /app/build
 /android/build
 build
+.idea/
+

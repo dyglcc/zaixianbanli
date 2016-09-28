@@ -44,6 +44,7 @@ public class MainActivity extends BaseActivity {
 //    String url = "http://www.chinaycys.com/mobile/";
 
 
+    private String shouye = "http://www.heremm.com/mobile/";
     private Map<String, String> header = new HashMap<String, String>();
 
 //    private AVLoadingIndicatorView avi;
@@ -75,7 +76,7 @@ public class MainActivity extends BaseActivity {
         final AlertDialog alertDialog = new AlertDialog.Builder(this).create();
 
 //        progressBar = ProgressDialog.show(MainActivity.this, "", "加载中...");
-        progressBar = new ProgressDialog(MainActivity.this,android.R.style.Theme_DeviceDefault_Light_Dialog_MinWidth);
+        progressBar = new ProgressDialog(MainActivity.this, android.R.style.Theme_DeviceDefault_Light_Dialog_MinWidth);
 //        progressBar.setTitle("");
         progressBar.setCanceledOnTouchOutside(true);
         progressBar.setMessage("加载中...");
@@ -83,7 +84,7 @@ public class MainActivity extends BaseActivity {
 
         webView.setWebViewClient(new WebViewClient() {
             public boolean shouldOverrideUrlLoading(WebView view, String url) {
-                if(!progressBar.isShowing()){
+                if (!progressBar.isShowing()) {
                     progressBar.show();
                 }
                 if (url.startsWith("weixin://wap/pay?")) {
@@ -93,9 +94,13 @@ public class MainActivity extends BaseActivity {
                     startActivity(intent);
                     return true;
                 }
-                webView.loadUrl(url);
-            return true;
-        }
+                if (url.equals(shouye)) {
+                    webView.loadUrl(url + "index.php");
+                } else {
+                    webView.loadUrl(url);
+                }
+                return true;
+            }
 
             public void onPageFinished(WebView view, String url) {
                 if (progressBar.isShowing()) {
@@ -112,8 +117,8 @@ public class MainActivity extends BaseActivity {
                         return;
                     }
                 });
-                if(!isFinishing()){
-                    if(alertDialog!=null){
+                if (!isFinishing()) {
+                    if (alertDialog != null) {
                         alertDialog.show();
                     }
                 }

@@ -1,7 +1,7 @@
 <resources>
-    <string name="app_name">友城云商</string>
-    <string name="welcome_str">友城云商商城</string>
+    <string name="app_name">这美不二</string>
+    <string name="welcome_str">这美不二</string>
     <!--<string name="mobile_url">http://192.168.3.4/jinyi/mobile</string>-->
-    <string name="mobile_url">http://www.chinaycys.com/mobile</string>
+    <string name="mobile_url">http://www.heremm.com/mobile/index.php</string>
 
 </resources>
