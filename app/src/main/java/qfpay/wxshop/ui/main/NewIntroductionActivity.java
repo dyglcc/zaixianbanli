@@ -34,8 +34,9 @@ public class NewIntroductionActivity extends AppCompatActivity {
     private LayoutInflater inflater;
 
     //	private View page1, page2, page3, page5;
-    private View page1, page2, page3, page4, page5;
+    private View page1, page2, page3, page5;
     private ViewPager pager;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -156,7 +157,7 @@ public class NewIntroductionActivity extends AppCompatActivity {
         inflater = LayoutInflater.from(this);
         page1 = inflater.inflate(R.layout.layout_page1, null);
         page2 = inflater.inflate(R.layout.layout_page2, null);
-//        page3 = inflater.inflate(R.layout.layout_page3, null);
+        page3 = inflater.inflate(R.layout.layout_page3, null);
 //        page4 = inflater.inflate(R.layout.layout_page4, null);
         page5 = inflater.inflate(R.layout.main_login_preview, null);
 
@@ -173,7 +174,7 @@ public class NewIntroductionActivity extends AppCompatActivity {
     private class MyViewPagerAdapter extends PagerAdapter {
         @Override
         public int getCount() {
-            return 1;
+            return 4;
         }
 
         @Override
@@ -190,18 +191,18 @@ public class NewIntroductionActivity extends AppCompatActivity {
         public Object instantiateItem(ViewGroup container, int position) {
             View new_view = null;
 
-//            if (position == 0) {
-//                new_view = page1;
-//            } else if (position == 1) {
-//                new_view = page2;
-//            }
-////            else if (position == 2) {
-////                new_view = page3;
-////            } else if (position == 3) {
+            if (position == 0) {
+                new_view = page1;
+            } else if (position == 1) {
+                new_view = page2;
+            } else if (position == 2) {
+                new_view = page3;
+            }
+// else if (position == 3) {
 ////                new_view = page4;
 ////            }
 //            else
-            if (position == 0) {
+            if (position == 3) {
                 new_view = page5;
             }
 
@@ -226,9 +227,6 @@ public class NewIntroductionActivity extends AppCompatActivity {
         }
         if (page3 != null) {
             page3 = null;
-        }
-        if (page4 != null) {
-            page4 = null;
         }
         if (page5 != null) {
             page5 = null;
