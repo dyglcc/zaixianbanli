@@ -1,9 +1,0 @@
-1.优化指标自动统计原理，利用反射设置click监听。
-2.监听设置基于android View的事件消费机制。
-3.例子，Button设置了优化指标，那么其父View的自动统计功能将会被覆盖。
-4.因为事件会被button消费。父窗口将不会被统计。
-
-5.api level 9 及以上可以使用adhoc_sdk，9以下的将会不做任何操作，获取flag和上报数据、可视化编辑界面。
-6.api level 14及以上可以使用可视编辑实验版本。
-
-7.Adhoctracker.init()方法需要写在Application

@@ -97,8 +97,19 @@ public class MainActivity extends BaseActivity {
                 if (url.equals(shouye)) {
                     webView.loadUrl(url + "index.php");
                 } else {
+                    if (url.startsWith("tel")) {
+                        if (progressBar != null) {
+                            if (progressBar.isShowing()) {
+                                progressBar.dismiss();
+                            }
+                        }
+                        startActivity(new Intent(Intent.ACTION_DIAL, Uri.parse(url)));
+
+                        return true;
+                    }
                     webView.loadUrl(url);
                 }
+
                 return true;
             }
 
